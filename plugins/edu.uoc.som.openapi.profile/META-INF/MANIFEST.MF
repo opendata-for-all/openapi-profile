@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OpenAPI Profile
+Bundle-SymbolicName: edu.uoc.som.openapi.profile
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: SOM Research Lab
+Automatic-Module-Name: edu.uoc.som.openapi.profile
