@@ -1,7 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OpenAPI Profile
-Bundle-SymbolicName: edu.uoc.som.openapi.profile
+Bundle-SymbolicName: edu.uoc.som.openapi.profile;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: SOM Research Lab
 Automatic-Module-Name: edu.uoc.som.openapi.profile
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.uml2.uml;bundle-version="5.5.0",
+ org.eclipse.papyrus.uml.extensionpoints

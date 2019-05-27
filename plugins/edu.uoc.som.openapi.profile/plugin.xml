@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://OPENAPI_PROFILES/"
+            target="platform:/plugin/edu.uoc.som.openapi.profile/resources/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="Profile for OpenAPI specification"
+            iconpath="icons/icon.png"
+            name="OpenAPI Profile"
+            path="pathmap://OPENAPI_PROFILES/openapi.profile.uml"
+            provider="UOC - SOM Research Lab">
+      </profile>
+   </extension>
+
+</plugin>
