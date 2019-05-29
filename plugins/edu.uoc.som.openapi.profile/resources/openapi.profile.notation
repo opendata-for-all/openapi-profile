@@ -326,6 +326,10 @@
         <element xmi:type="uml:Property" href="openapi.profile.uml#_GrrAIH1GEemCU627TT0glQ"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Grs1UX1GEemCU627TT0glQ"/>
       </children>
+      <children xmi:type="notation:Shape" xmi:id="_TRpYEIH6EemswdQWSE7dKA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="openapi.profile.uml#_TQNNoIH6EemswdQWSE7dKA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TRpYEYH6EemswdQWSE7dKA"/>
+      </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_OndAZH1FEemCU627TT0glQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_OndAZX1FEemCU627TT0glQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_OndAZn1FEemCU627TT0glQ"/>
