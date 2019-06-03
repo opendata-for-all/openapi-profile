@@ -1,10 +1,19 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: OpenAPI Profile
+Bundle-Name: %pluginName
 Bundle-SymbolicName: edu.uoc.som.openapi.profile;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: SOM Research Lab
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: edu.som.uoc.openapiprofile,
+ edu.som.uoc.openapiprofile.impl,
+ edu.som.uoc.openapiprofile.util
 Automatic-Module-Name: edu.uoc.som.openapi.profile
-Require-Bundle: org.eclipse.emf.ecore,
- org.eclipse.uml2.uml;bundle-version="5.5.0",
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.uml2.types;visibility:=reexport,
+ org.eclipse.uml2.uml;bundle-version="5.5.0";visibility:=reexport,
  org.eclipse.papyrus.uml.extensionpoints
+Bundle-ActivationPolicy: lazy

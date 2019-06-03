@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="3.4"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
 <plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated openapi.profile -->
+      <package
+            uri="http://edu.uoc.som/openapi/profile/1.0"
+            class="edu.som.uoc.openapiprofile.OpenapiprofilePackage"
+            genModel="resources/openapi.profile.genmodel"/>
+   </extension>
    <extension
          point="org.eclipse.emf.ecore.uri_mapping">
       <mapping
@@ -9,13 +21,19 @@
       </mapping>
    </extension>
    <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://OPENAPI_PROFILES/openapi.profile.uml#_8zK3wHyGEemaV87q0fd26g"
+            uri="http://edu.uoc.som/openapi/profile/1.0">
+      </profile>
+   </extension>
+   <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
-            description="Profile for OpenAPI specification"
+            description="OpenAPI profile"
             iconpath="icons/icon.png"
-            name="OpenAPI Profile"
-            path="pathmap://OPENAPI_PROFILES/openapi.profile.uml"
-            provider="UOC - SOM Research Lab">
+            name="OpenAPI"
+            path="pathmap://OPENAPI_PROFILES/openapi.profile.uml">
       </profile>
    </extension>
 
