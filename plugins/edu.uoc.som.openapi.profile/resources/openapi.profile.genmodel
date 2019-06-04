@@ -130,13 +130,13 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//SecurityDefinitions/base_Model"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//SecurityRequirements">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//Security">
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//SecurityRequirements/securityRequirements"/>
+          createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Security/securityRequirements"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//SecurityRequirements/base_Model"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Security/base_Model"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//SecurityRequirements/base_Operation"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Security/base_Operation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//Tags">
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -144,8 +144,8 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Tags/base_Model"/>
     </genClasses>
-    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="types" disposableProviderFactory="true"
-        ecorePackage="openapiprofile.ecore#//types">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="types" basePackage="edu.som.uoc.openapiprofile"
+        disposableProviderFactory="true" ecorePackage="openapiprofile.ecore#//types">
       <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/SchemeType">
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SchemeType/undefined"/>
         <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SchemeType/http"/>

@@ -126,9 +126,9 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS: {
-				SecurityRequirements securityRequirements = (SecurityRequirements)theEObject;
-				T result = caseSecurityRequirements(securityRequirements);
+			case OpenapiprofilePackage.SECURITY: {
+				Security security = (Security)theEObject;
+				T result = caseSecurity(security);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -293,17 +293,17 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Security Requirements</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Security</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Security Requirements</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Security</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSecurityRequirements(SecurityRequirements object) {
+	public T caseSecurity(Security object) {
 		return null;
 	}
 

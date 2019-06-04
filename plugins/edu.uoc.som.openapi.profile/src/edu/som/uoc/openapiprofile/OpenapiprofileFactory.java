@@ -112,13 +112,13 @@ public interface OpenapiprofileFactory extends EFactory {
 	SecurityDefinitions createSecurityDefinitions();
 
 	/**
-	 * Returns a new object of class '<em>Security Requirements</em>'.
+	 * Returns a new object of class '<em>Security</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Security Requirements</em>'.
+	 * @return a new object of class '<em>Security</em>'.
 	 * @generated
 	 */
-	SecurityRequirements createSecurityRequirements();
+	Security createSecurity();
 
 	/**
 	 * Returns a new object of class '<em>Tags</em>'.

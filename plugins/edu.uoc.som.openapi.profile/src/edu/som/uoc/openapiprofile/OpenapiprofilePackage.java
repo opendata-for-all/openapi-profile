@@ -860,14 +860,14 @@ public interface OpenapiprofilePackage extends EPackage {
 	int SECURITY_DEFINITIONS_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.SecurityRequirementsImpl <em>Security Requirements</em>}' class.
+	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.SecurityImpl <em>Security</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see edu.som.uoc.openapiprofile.impl.SecurityRequirementsImpl
-	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurityRequirements()
+	 * @see edu.som.uoc.openapiprofile.impl.SecurityImpl
+	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurity()
 	 * @generated
 	 */
-	int SECURITY_REQUIREMENTS = 10;
+	int SECURITY = 10;
 
 	/**
 	 * The feature id for the '<em><b>Security Requirements</b></em>' containment reference list.
@@ -876,7 +876,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS = 0;
+	int SECURITY__SECURITY_REQUIREMENTS = 0;
 
 	/**
 	 * The feature id for the '<em><b>Base Model</b></em>' reference.
@@ -885,7 +885,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENTS__BASE_MODEL = 1;
+	int SECURITY__BASE_MODEL = 1;
 
 	/**
 	 * The feature id for the '<em><b>Base Operation</b></em>' reference.
@@ -894,25 +894,25 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENTS__BASE_OPERATION = 2;
+	int SECURITY__BASE_OPERATION = 2;
 
 	/**
-	 * The number of structural features of the '<em>Security Requirements</em>' class.
+	 * The number of structural features of the '<em>Security</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENTS_FEATURE_COUNT = 3;
+	int SECURITY_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Security Requirements</em>' class.
+	 * The number of operations of the '<em>Security</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENTS_OPERATION_COUNT = 0;
+	int SECURITY_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.TagsImpl <em>Tags</em>}' class.
@@ -1700,47 +1700,47 @@ public interface OpenapiprofilePackage extends EPackage {
 	EReference getSecurityDefinitions_Base_Model();
 
 	/**
-	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.SecurityRequirements <em>Security Requirements</em>}'.
+	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.Security <em>Security</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Security Requirements</em>'.
-	 * @see edu.som.uoc.openapiprofile.SecurityRequirements
+	 * @return the meta object for class '<em>Security</em>'.
+	 * @see edu.som.uoc.openapiprofile.Security
 	 * @generated
 	 */
-	EClass getSecurityRequirements();
+	EClass getSecurity();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link edu.som.uoc.openapiprofile.SecurityRequirements#getSecurityRequirements <em>Security Requirements</em>}'.
+	 * Returns the meta object for the containment reference list '{@link edu.som.uoc.openapiprofile.Security#getSecurityRequirements <em>Security Requirements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Security Requirements</em>'.
-	 * @see edu.som.uoc.openapiprofile.SecurityRequirements#getSecurityRequirements()
-	 * @see #getSecurityRequirements()
+	 * @see edu.som.uoc.openapiprofile.Security#getSecurityRequirements()
+	 * @see #getSecurity()
 	 * @generated
 	 */
-	EReference getSecurityRequirements_SecurityRequirements();
+	EReference getSecurity_SecurityRequirements();
 
 	/**
-	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.SecurityRequirements#getBase_Model <em>Base Model</em>}'.
+	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.Security#getBase_Model <em>Base Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Model</em>'.
-	 * @see edu.som.uoc.openapiprofile.SecurityRequirements#getBase_Model()
-	 * @see #getSecurityRequirements()
+	 * @see edu.som.uoc.openapiprofile.Security#getBase_Model()
+	 * @see #getSecurity()
 	 * @generated
 	 */
-	EReference getSecurityRequirements_Base_Model();
+	EReference getSecurity_Base_Model();
 
 	/**
-	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.SecurityRequirements#getBase_Operation <em>Base Operation</em>}'.
+	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.Security#getBase_Operation <em>Base Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Operation</em>'.
-	 * @see edu.som.uoc.openapiprofile.SecurityRequirements#getBase_Operation()
-	 * @see #getSecurityRequirements()
+	 * @see edu.som.uoc.openapiprofile.Security#getBase_Operation()
+	 * @see #getSecurity()
 	 * @generated
 	 */
-	EReference getSecurityRequirements_Base_Operation();
+	EReference getSecurity_Base_Operation();
 
 	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.Tags <em>Tags</em>}'.
@@ -2362,14 +2362,14 @@ public interface OpenapiprofilePackage extends EPackage {
 		EReference SECURITY_DEFINITIONS__BASE_MODEL = eINSTANCE.getSecurityDefinitions_Base_Model();
 
 		/**
-		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.SecurityRequirementsImpl <em>Security Requirements</em>}' class.
+		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.SecurityImpl <em>Security</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see edu.som.uoc.openapiprofile.impl.SecurityRequirementsImpl
-		 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurityRequirements()
+		 * @see edu.som.uoc.openapiprofile.impl.SecurityImpl
+		 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurity()
 		 * @generated
 		 */
-		EClass SECURITY_REQUIREMENTS = eINSTANCE.getSecurityRequirements();
+		EClass SECURITY = eINSTANCE.getSecurity();
 
 		/**
 		 * The meta object literal for the '<em><b>Security Requirements</b></em>' containment reference list feature.
@@ -2377,7 +2377,7 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS = eINSTANCE.getSecurityRequirements_SecurityRequirements();
+		EReference SECURITY__SECURITY_REQUIREMENTS = eINSTANCE.getSecurity_SecurityRequirements();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Model</b></em>' reference feature.
@@ -2385,7 +2385,7 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SECURITY_REQUIREMENTS__BASE_MODEL = eINSTANCE.getSecurityRequirements_Base_Model();
+		EReference SECURITY__BASE_MODEL = eINSTANCE.getSecurity_Base_Model();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Operation</b></em>' reference feature.
@@ -2393,7 +2393,7 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SECURITY_REQUIREMENTS__BASE_OPERATION = eINSTANCE.getSecurityRequirements_Base_Operation();
+		EReference SECURITY__BASE_OPERATION = eINSTANCE.getSecurity_Base_Operation();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.TagsImpl <em>Tags</em>}' class.

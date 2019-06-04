@@ -12,8 +12,8 @@ import edu.som.uoc.openapiprofile.ExternalDocs;
 import edu.som.uoc.openapiprofile.OpenapiprofileFactory;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 import edu.som.uoc.openapiprofile.Schema;
+import edu.som.uoc.openapiprofile.Security;
 import edu.som.uoc.openapiprofile.SecurityDefinitions;
-import edu.som.uoc.openapiprofile.SecurityRequirements;
 import edu.som.uoc.openapiprofile.Tags;
 
 import edu.som.uoc.openapiprofile.types.impl.typesPackageImpl;
@@ -114,7 +114,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass securityRequirementsEClass = null;
+	private EClass securityEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -812,8 +812,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSecurityRequirements() {
-		return securityRequirementsEClass;
+	public EClass getSecurity() {
+		return securityEClass;
 	}
 
 	/**
@@ -821,8 +821,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSecurityRequirements_SecurityRequirements() {
-		return (EReference)securityRequirementsEClass.getEStructuralFeatures().get(0);
+	public EReference getSecurity_SecurityRequirements() {
+		return (EReference)securityEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -830,8 +830,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSecurityRequirements_Base_Model() {
-		return (EReference)securityRequirementsEClass.getEStructuralFeatures().get(1);
+	public EReference getSecurity_Base_Model() {
+		return (EReference)securityEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -839,8 +839,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSecurityRequirements_Base_Operation() {
-		return (EReference)securityRequirementsEClass.getEStructuralFeatures().get(2);
+	public EReference getSecurity_Base_Operation() {
+		return (EReference)securityEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -976,10 +976,10 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEReference(securityDefinitionsEClass, SECURITY_DEFINITIONS__SECURITY_SCHEMES);
 		createEReference(securityDefinitionsEClass, SECURITY_DEFINITIONS__BASE_MODEL);
 
-		securityRequirementsEClass = createEClass(SECURITY_REQUIREMENTS);
-		createEReference(securityRequirementsEClass, SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS);
-		createEReference(securityRequirementsEClass, SECURITY_REQUIREMENTS__BASE_MODEL);
-		createEReference(securityRequirementsEClass, SECURITY_REQUIREMENTS__BASE_OPERATION);
+		securityEClass = createEClass(SECURITY);
+		createEReference(securityEClass, SECURITY__SECURITY_REQUIREMENTS);
+		createEReference(securityEClass, SECURITY__BASE_MODEL);
+		createEReference(securityEClass, SECURITY__BASE_OPERATION);
 
 		tagsEClass = createEClass(TAGS);
 		createEReference(tagsEClass, TAGS__TAGS);
@@ -1102,10 +1102,10 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEReference(getSecurityDefinitions_SecuritySchemes(), thetypesPackage.getSecurityScheme(), null, "securitySchemes", null, 0, -1, SecurityDefinitions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSecurityDefinitions_Base_Model(), theUMLPackage.getModel(), null, "base_Model", null, 0, 1, SecurityDefinitions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(securityRequirementsEClass, SecurityRequirements.class, "SecurityRequirements", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSecurityRequirements_SecurityRequirements(), thetypesPackage.getSecurityRequirement(), null, "securityRequirements", null, 0, -1, SecurityRequirements.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getSecurityRequirements_Base_Model(), theUMLPackage.getModel(), null, "base_Model", null, 0, 1, SecurityRequirements.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getSecurityRequirements_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, SecurityRequirements.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(securityEClass, Security.class, "Security", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSecurity_SecurityRequirements(), thetypesPackage.getSecurityRequirement(), null, "securityRequirements", null, 0, -1, Security.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSecurity_Base_Model(), theUMLPackage.getModel(), null, "base_Model", null, 0, 1, Security.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSecurity_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, Security.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(tagsEClass, Tags.class, "Tags", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTags_Tags(), thetypesPackage.getTag(), null, "tags", null, 1, -1, Tags.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

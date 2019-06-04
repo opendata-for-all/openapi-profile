@@ -3,7 +3,7 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-import edu.som.uoc.openapiprofile.SecurityRequirements;
+import edu.som.uoc.openapiprofile.Security;
 
 import edu.som.uoc.openapiprofile.types.SecurityRequirement;
 
@@ -28,20 +28,20 @@ import org.eclipse.uml2.uml.Operation;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Security Requirements</b></em>'.
+ * An implementation of the model object '<em><b>Security</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityRequirementsImpl#getSecurityRequirements <em>Security Requirements</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityRequirementsImpl#getBase_Model <em>Base Model</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityRequirementsImpl#getBase_Operation <em>Base Operation</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityImpl#getSecurityRequirements <em>Security Requirements</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityImpl#getBase_Model <em>Base Model</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityImpl#getBase_Operation <em>Base Operation</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container implements SecurityRequirements {
+public class SecurityImpl extends MinimalEObjectImpl.Container implements Security {
 	/**
 	 * The cached value of the '{@link #getSecurityRequirements() <em>Security Requirements</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -77,7 +77,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SecurityRequirementsImpl() {
+	protected SecurityImpl() {
 		super();
 	}
 
@@ -88,7 +88,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return OpenapiprofilePackage.Literals.SECURITY_REQUIREMENTS;
+		return OpenapiprofilePackage.Literals.SECURITY;
 	}
 
 	/**
@@ -98,7 +98,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	 */
 	public EList<SecurityRequirement> getSecurityRequirements() {
 		if (securityRequirements == null) {
-			securityRequirements = new EObjectContainmentEList<SecurityRequirement>(SecurityRequirement.class, this, OpenapiprofilePackage.SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS);
+			securityRequirements = new EObjectContainmentEList<SecurityRequirement>(SecurityRequirement.class, this, OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS);
 		}
 		return securityRequirements;
 	}
@@ -114,7 +114,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 			base_Model = (Model)eResolveProxy(oldBase_Model);
 			if (base_Model != oldBase_Model) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_MODEL, oldBase_Model, base_Model));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenapiprofilePackage.SECURITY__BASE_MODEL, oldBase_Model, base_Model));
 			}
 		}
 		return base_Model;
@@ -138,7 +138,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 		Model oldBase_Model = base_Model;
 		base_Model = newBase_Model;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_MODEL, oldBase_Model, base_Model));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SECURITY__BASE_MODEL, oldBase_Model, base_Model));
 	}
 
 	/**
@@ -152,7 +152,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 			base_Operation = (Operation)eResolveProxy(oldBase_Operation);
 			if (base_Operation != oldBase_Operation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_OPERATION, oldBase_Operation, base_Operation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenapiprofilePackage.SECURITY__BASE_OPERATION, oldBase_Operation, base_Operation));
 			}
 		}
 		return base_Operation;
@@ -176,7 +176,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 		Operation oldBase_Operation = base_Operation;
 		base_Operation = newBase_Operation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_OPERATION, oldBase_Operation, base_Operation));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SECURITY__BASE_OPERATION, oldBase_Operation, base_Operation));
 	}
 
 	/**
@@ -187,7 +187,7 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS:
+			case OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS:
 				return ((InternalEList<?>)getSecurityRequirements()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -201,12 +201,12 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS:
+			case OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS:
 				return getSecurityRequirements();
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_MODEL:
+			case OpenapiprofilePackage.SECURITY__BASE_MODEL:
 				if (resolve) return getBase_Model();
 				return basicGetBase_Model();
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_OPERATION:
+			case OpenapiprofilePackage.SECURITY__BASE_OPERATION:
 				if (resolve) return getBase_Operation();
 				return basicGetBase_Operation();
 		}
@@ -222,14 +222,14 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS:
+			case OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS:
 				getSecurityRequirements().clear();
 				getSecurityRequirements().addAll((Collection<? extends SecurityRequirement>)newValue);
 				return;
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_MODEL:
+			case OpenapiprofilePackage.SECURITY__BASE_MODEL:
 				setBase_Model((Model)newValue);
 				return;
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_OPERATION:
+			case OpenapiprofilePackage.SECURITY__BASE_OPERATION:
 				setBase_Operation((Operation)newValue);
 				return;
 		}
@@ -244,13 +244,13 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS:
+			case OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS:
 				getSecurityRequirements().clear();
 				return;
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_MODEL:
+			case OpenapiprofilePackage.SECURITY__BASE_MODEL:
 				setBase_Model((Model)null);
 				return;
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_OPERATION:
+			case OpenapiprofilePackage.SECURITY__BASE_OPERATION:
 				setBase_Operation((Operation)null);
 				return;
 		}
@@ -265,14 +265,14 @@ public class SecurityRequirementsImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__SECURITY_REQUIREMENTS:
+			case OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS:
 				return securityRequirements != null && !securityRequirements.isEmpty();
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_MODEL:
+			case OpenapiprofilePackage.SECURITY__BASE_MODEL:
 				return base_Model != null;
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS__BASE_OPERATION:
+			case OpenapiprofilePackage.SECURITY__BASE_OPERATION:
 				return base_Operation != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //SecurityRequirementsImpl
+} //SecurityImpl

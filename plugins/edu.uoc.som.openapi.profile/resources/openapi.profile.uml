@@ -558,7 +558,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qkal4X1REemCU627TT0glQ"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_SAydQH1REemCU627TT0glQ" name="SecurityRequirements">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_SAydQH1REemCU627TT0glQ" name="Security">
       <ownedAttribute xmi:id="_V-EyMH1REemCU627TT0glQ" name="securityRequirements" type="_adxp8H1MEemCU627TT0glQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aMhIkH1REemCU627TT0glQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aModUH1REemCU627TT0glQ" value="*"/>
@@ -618,11 +618,11 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_QkZXwH1REemCU627TT0glQ" name="E_SecurityDefinitions_Model47" memberEnd="_QkZ-0H1REemCU627TT0glQ _Qkal4H1REemCU627TT0glQ">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_QkZ-0H1REemCU627TT0glQ" name="extension_SecurityDefinitions" type="_BpCywH1REemCU627TT0glQ" aggregation="composite" association="_QkZXwH1REemCU627TT0glQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_dnfaoH1REemCU627TT0glQ" name="E_SecurityRequirements_Model49" memberEnd="_dngBsH1REemCU627TT0glQ _dngowH1REemCU627TT0glQ">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_dngBsH1REemCU627TT0glQ" name="extension_SecurityRequirements" type="_SAydQH1REemCU627TT0glQ" aggregation="composite" association="_dnfaoH1REemCU627TT0glQ"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_dnfaoH1REemCU627TT0glQ" name="E_Security_Model1" memberEnd="_dngBsH1REemCU627TT0glQ _dngowH1REemCU627TT0glQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_dngBsH1REemCU627TT0glQ" name="extension_Security" type="_SAydQH1REemCU627TT0glQ" aggregation="composite" association="_dnfaoH1REemCU627TT0glQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_gYwoYH1REemCU627TT0glQ" name="E_SecurityRequirements_Operation50" memberEnd="_gYxPcH1REemCU627TT0glQ _gYx2gH1REemCU627TT0glQ">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_gYxPcH1REemCU627TT0glQ" name="extension_SecurityRequirements" type="_SAydQH1REemCU627TT0glQ" aggregation="composite" association="_gYwoYH1REemCU627TT0glQ"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_gYwoYH1REemCU627TT0glQ" name="E_Security_Operation1" memberEnd="_gYxPcH1REemCU627TT0glQ _gYx2gH1REemCU627TT0glQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_gYxPcH1REemCU627TT0glQ" name="extension_Security" type="_SAydQH1REemCU627TT0glQ" aggregation="composite" association="_gYwoYH1REemCU627TT0glQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_DL_RkH1kEemCU627TT0glQ" name="E_APIResponse_Parameter51" memberEnd="_DMBt0H1kEemCU627TT0glQ _DMCU4H1kEemCU627TT0glQ">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_DMBt0H1kEemCU627TT0glQ" name="extension_APIResponse" type="_69-YAH1HEemCU627TT0glQ" aggregation="composite" association="_DL_RkH1kEemCU627TT0glQ"/>

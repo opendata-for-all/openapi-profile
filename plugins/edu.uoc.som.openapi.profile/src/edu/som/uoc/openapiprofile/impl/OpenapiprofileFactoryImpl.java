@@ -66,7 +66,7 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 			case OpenapiprofilePackage.API_INFO: return createAPIInfo();
 			case OpenapiprofilePackage.EXTERNAL_DOCS: return createExternalDocs();
 			case OpenapiprofilePackage.SECURITY_DEFINITIONS: return createSecurityDefinitions();
-			case OpenapiprofilePackage.SECURITY_REQUIREMENTS: return createSecurityRequirements();
+			case OpenapiprofilePackage.SECURITY: return createSecurity();
 			case OpenapiprofilePackage.TAGS: return createTags();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -178,9 +178,9 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecurityRequirements createSecurityRequirements() {
-		SecurityRequirementsImpl securityRequirements = new SecurityRequirementsImpl();
-		return securityRequirements;
+	public Security createSecurity() {
+		SecurityImpl security = new SecurityImpl();
+		return security;
 	}
 
 	/**
