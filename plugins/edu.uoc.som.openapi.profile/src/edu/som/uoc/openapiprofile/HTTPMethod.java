@@ -19,16 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum HTTPMethod implements Enumerator {
 	/**
-	 * The '<em><b>Undefined</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #UNDEFINED_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	UNDEFINED(0, "undefined", "undefined"),
-
-	/**
 	 * The '<em><b>Get</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36,7 +26,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	GET(1, "get", "get"),
+	GET(0, "get", "get"),
 
 	/**
 	 * The '<em><b>Post</b></em>' literal object.
@@ -46,7 +36,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	POST(2, "post", "post"),
+	POST(1, "post", "post"),
 
 	/**
 	 * The '<em><b>Put</b></em>' literal object.
@@ -56,7 +46,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PUT(3, "put", "put"),
+	PUT(2, "put", "put"),
 
 	/**
 	 * The '<em><b>Patch</b></em>' literal object.
@@ -66,7 +56,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PATCH(4, "patch", "patch"),
+	PATCH(3, "patch", "patch"),
 
 	/**
 	 * The '<em><b>Options</b></em>' literal object.
@@ -76,7 +66,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OPTIONS(5, "options", "options"),
+	OPTIONS(4, "options", "options"),
 
 	/**
 	 * The '<em><b>Delete</b></em>' literal object.
@@ -86,18 +76,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DELETE(6, "delete", "delete");
-
-	/**
-	 * The '<em><b>Undefined</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #UNDEFINED
-	 * @model name="undefined"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int UNDEFINED_VALUE = 0;
+	DELETE(5, "delete", "delete");
 
 	/**
 	 * The '<em><b>Get</b></em>' literal value.
@@ -108,7 +87,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int GET_VALUE = 1;
+	public static final int GET_VALUE = 0;
 
 	/**
 	 * The '<em><b>Post</b></em>' literal value.
@@ -119,7 +98,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int POST_VALUE = 2;
+	public static final int POST_VALUE = 1;
 
 	/**
 	 * The '<em><b>Put</b></em>' literal value.
@@ -130,7 +109,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PUT_VALUE = 3;
+	public static final int PUT_VALUE = 2;
 
 	/**
 	 * The '<em><b>Patch</b></em>' literal value.
@@ -141,7 +120,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PATCH_VALUE = 4;
+	public static final int PATCH_VALUE = 3;
 
 	/**
 	 * The '<em><b>Options</b></em>' literal value.
@@ -152,7 +131,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int OPTIONS_VALUE = 5;
+	public static final int OPTIONS_VALUE = 4;
 
 	/**
 	 * The '<em><b>Delete</b></em>' literal value.
@@ -163,7 +142,7 @@ public enum HTTPMethod implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int DELETE_VALUE = 6;
+	public static final int DELETE_VALUE = 5;
 
 	/**
 	 * An array of all the '<em><b>HTTP Method</b></em>' enumerators.
@@ -173,7 +152,6 @@ public enum HTTPMethod implements Enumerator {
 	 */
 	private static final HTTPMethod[] VALUES_ARRAY =
 		new HTTPMethod[] {
-			UNDEFINED,
 			GET,
 			POST,
 			PUT,
@@ -236,7 +214,6 @@ public enum HTTPMethod implements Enumerator {
 	 */
 	public static HTTPMethod get(int value) {
 		switch (value) {
-			case UNDEFINED_VALUE: return UNDEFINED;
 			case GET_VALUE: return GET;
 			case POST_VALUE: return POST;
 			case PUT_VALUE: return PUT;

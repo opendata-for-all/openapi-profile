@@ -19,16 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum SchemeType implements Enumerator {
 	/**
-	 * The '<em><b>Undefined</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #UNDEFINED_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	UNDEFINED(0, "undefined", "undefined"),
-
-	/**
 	 * The '<em><b>Http</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36,7 +26,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	HTTP(1, "http", "http"),
+	HTTP(0, "http", "http"),
 
 	/**
 	 * The '<em><b>Https</b></em>' literal object.
@@ -46,7 +36,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	HTTPS(2, "https", "https"),
+	HTTPS(1, "https", "https"),
 
 	/**
 	 * The '<em><b>Ws</b></em>' literal object.
@@ -56,7 +46,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	WS(3, "ws", "ws"),
+	WS(2, "ws", "ws"),
 
 	/**
 	 * The '<em><b>Wss</b></em>' literal object.
@@ -66,18 +56,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	WSS(4, "wss", "wss");
-
-	/**
-	 * The '<em><b>Undefined</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #UNDEFINED
-	 * @model name="undefined"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int UNDEFINED_VALUE = 0;
+	WSS(3, "wss", "wss");
 
 	/**
 	 * The '<em><b>Http</b></em>' literal value.
@@ -88,7 +67,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int HTTP_VALUE = 1;
+	public static final int HTTP_VALUE = 0;
 
 	/**
 	 * The '<em><b>Https</b></em>' literal value.
@@ -99,7 +78,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int HTTPS_VALUE = 2;
+	public static final int HTTPS_VALUE = 1;
 
 	/**
 	 * The '<em><b>Ws</b></em>' literal value.
@@ -110,7 +89,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int WS_VALUE = 3;
+	public static final int WS_VALUE = 2;
 
 	/**
 	 * The '<em><b>Wss</b></em>' literal value.
@@ -121,7 +100,7 @@ public enum SchemeType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int WSS_VALUE = 4;
+	public static final int WSS_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>Scheme Type</b></em>' enumerators.
@@ -131,7 +110,6 @@ public enum SchemeType implements Enumerator {
 	 */
 	private static final SchemeType[] VALUES_ARRAY =
 		new SchemeType[] {
-			UNDEFINED,
 			HTTP,
 			HTTPS,
 			WS,
@@ -192,7 +170,6 @@ public enum SchemeType implements Enumerator {
 	 */
 	public static SchemeType get(int value) {
 		switch (value) {
-			case UNDEFINED_VALUE: return UNDEFINED;
 			case HTTP_VALUE: return HTTP;
 			case HTTPS_VALUE: return HTTPS;
 			case WS_VALUE: return WS;

@@ -4,6 +4,8 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.API;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+import edu.som.uoc.openapiprofile.SchemeType;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -87,7 +89,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<edu.som.uoc.openapiprofile.SchemeType> schemes;
+	protected EList<SchemeType> schemes;
 
 	/**
 	 * The cached value of the '{@link #getConsumes() <em>Consumes</em>}' attribute list.
@@ -185,9 +187,9 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<edu.som.uoc.openapiprofile.SchemeType> getSchemes() {
+	public EList<SchemeType> getSchemes() {
 		if (schemes == null) {
-			schemes = new EDataTypeUniqueEList<edu.som.uoc.openapiprofile.SchemeType>(edu.som.uoc.openapiprofile.SchemeType.class, this, OpenapiprofilePackage.API__SCHEMES);
+			schemes = new EDataTypeUniqueEList<SchemeType>(SchemeType.class, this, OpenapiprofilePackage.API__SCHEMES);
 		}
 		return schemes;
 	}
@@ -296,7 +298,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 				return;
 			case OpenapiprofilePackage.API__SCHEMES:
 				getSchemes().clear();
-				getSchemes().addAll((Collection<? extends edu.som.uoc.openapiprofile.SchemeType>)newValue);
+				getSchemes().addAll((Collection<? extends SchemeType>)newValue);
 				return;
 			case OpenapiprofilePackage.API__CONSUMES:
 				getConsumes().clear();

@@ -3,15 +3,16 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIParameter;
+import edu.som.uoc.openapiprofile.CollectionFormat;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+import edu.som.uoc.openapiprofile.ParameterLocation;
+
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.uml2.uml.Parameter;
 
@@ -23,37 +24,15 @@ import org.eclipse.uml2.uml.Parameter;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getLocation <em>Location</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getAllowEmptyValues <em>Allow Empty Values</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getBase_Parameter <em>Base Parameter</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getConstraints <em>Constraints</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class APIParameterImpl extends MinimalEObjectImpl.Container implements APIParameter {
-	/**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String DESCRIPTION_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
-	protected String description = DESCRIPTION_EDEFAULT;
-
+public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParameter {
 	/**
 	 * The default value of the '{@link #getLocation() <em>Location</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -62,7 +41,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected static final edu.som.uoc.openapiprofile.ParameterLocation LOCATION_EDEFAULT = edu.som.uoc.openapiprofile.ParameterLocation.UNDEFINED;
+	protected static final ParameterLocation LOCATION_EDEFAULT = ParameterLocation.QUERY;
 
 	/**
 	 * The cached value of the '{@link #getLocation() <em>Location</em>}' attribute.
@@ -72,7 +51,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected edu.som.uoc.openapiprofile.ParameterLocation location = LOCATION_EDEFAULT;
+	protected ParameterLocation location = LOCATION_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
@@ -82,7 +61,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Object ALLOW_EMPTY_VALUES_EDEFAULT = null;
+	protected static final Boolean ALLOW_EMPTY_VALUES_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
@@ -92,7 +71,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected Object allowEmptyValues = ALLOW_EMPTY_VALUES_EDEFAULT;
+	protected Boolean allowEmptyValues = ALLOW_EMPTY_VALUES_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.
@@ -102,7 +81,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected static final edu.som.uoc.openapiprofile.CollectionFormat COLLECTION_FORMAT_EDEFAULT = edu.som.uoc.openapiprofile.CollectionFormat.UNDEFINED;
+	protected static final CollectionFormat COLLECTION_FORMAT_EDEFAULT = CollectionFormat.CSV;
 
 	/**
 	 * The cached value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.
@@ -112,7 +91,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected edu.som.uoc.openapiprofile.CollectionFormat collectionFormat = COLLECTION_FORMAT_EDEFAULT;
+	protected CollectionFormat collectionFormat = COLLECTION_FORMAT_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getBase_Parameter() <em>Base Parameter</em>}' reference.
@@ -123,16 +102,6 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @ordered
 	 */
 	protected Parameter base_Parameter;
-
-	/**
-	 * The cached value of the '{@link #getConstraints() <em>Constraints</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConstraints()
-	 * @generated
-	 * @ordered
-	 */
-	protected edu.som.uoc.openapiprofile.JSONSchemaConstraints constraints;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,28 +127,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDescription() {
-		return description;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__DESCRIPTION, oldDescription, description));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public edu.som.uoc.openapiprofile.ParameterLocation getLocation() {
+	public ParameterLocation getLocation() {
 		return location;
 	}
 
@@ -188,8 +136,8 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocation(edu.som.uoc.openapiprofile.ParameterLocation newLocation) {
-		edu.som.uoc.openapiprofile.ParameterLocation oldLocation = location;
+	public void setLocation(ParameterLocation newLocation) {
+		ParameterLocation oldLocation = location;
 		location = newLocation == null ? LOCATION_EDEFAULT : newLocation;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__LOCATION, oldLocation, location));
@@ -200,7 +148,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object getAllowEmptyValues() {
+	public Boolean getAllowEmptyValues() {
 		return allowEmptyValues;
 	}
 
@@ -209,8 +157,8 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAllowEmptyValues(Object newAllowEmptyValues) {
-		Object oldAllowEmptyValues = allowEmptyValues;
+	public void setAllowEmptyValues(Boolean newAllowEmptyValues) {
+		Boolean oldAllowEmptyValues = allowEmptyValues;
 		allowEmptyValues = newAllowEmptyValues;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES, oldAllowEmptyValues, allowEmptyValues));
@@ -221,7 +169,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public edu.som.uoc.openapiprofile.CollectionFormat getCollectionFormat() {
+	public CollectionFormat getCollectionFormat() {
 		return collectionFormat;
 	}
 
@@ -230,8 +178,8 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCollectionFormat(edu.som.uoc.openapiprofile.CollectionFormat newCollectionFormat) {
-		edu.som.uoc.openapiprofile.CollectionFormat oldCollectionFormat = collectionFormat;
+	public void setCollectionFormat(CollectionFormat newCollectionFormat) {
+		CollectionFormat oldCollectionFormat = collectionFormat;
 		collectionFormat = newCollectionFormat == null ? COLLECTION_FORMAT_EDEFAULT : newCollectionFormat;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
@@ -280,68 +228,9 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public edu.som.uoc.openapiprofile.JSONSchemaConstraints getConstraints() {
-		return constraints;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints newConstraints, NotificationChain msgs) {
-		edu.som.uoc.openapiprofile.JSONSchemaConstraints oldConstraints = constraints;
-		constraints = newConstraints;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS, oldConstraints, newConstraints);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints newConstraints) {
-		if (newConstraints != constraints) {
-			NotificationChain msgs = null;
-			if (constraints != null)
-				msgs = ((InternalEObject)constraints).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS, null, msgs);
-			if (newConstraints != null)
-				msgs = ((InternalEObject)newConstraints).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS, null, msgs);
-			msgs = basicSetConstraints(newConstraints, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS, newConstraints, newConstraints));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS:
-				return basicSetConstraints(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
-				return getDescription();
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return getLocation();
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
@@ -351,8 +240,6 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				if (resolve) return getBase_Parameter();
 				return basicGetBase_Parameter();
-			case OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS:
-				return getConstraints();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -365,23 +252,17 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
-				setLocation((edu.som.uoc.openapiprofile.ParameterLocation)newValue);
+				setLocation((ParameterLocation)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				setAllowEmptyValues((Object)newValue);
+				setAllowEmptyValues((Boolean)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
-				setCollectionFormat((edu.som.uoc.openapiprofile.CollectionFormat)newValue);
+				setCollectionFormat((CollectionFormat)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
-				return;
-			case OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS:
-				setConstraints((edu.som.uoc.openapiprofile.JSONSchemaConstraints)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -395,9 +276,6 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				setLocation(LOCATION_EDEFAULT);
 				return;
@@ -409,9 +287,6 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				setBase_Parameter((Parameter)null);
-				return;
-			case OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS:
-				setConstraints((edu.som.uoc.openapiprofile.JSONSchemaConstraints)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -425,8 +300,6 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return location != LOCATION_EDEFAULT;
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
@@ -435,8 +308,6 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				return base_Parameter != null;
-			case OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS:
-				return constraints != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -451,9 +322,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", location: ");
+		result.append(" (location: ");
 		result.append(location);
 		result.append(", allowEmptyValues: ");
 		result.append(allowEmptyValues);

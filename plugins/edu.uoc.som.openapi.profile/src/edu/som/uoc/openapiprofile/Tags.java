@@ -40,7 +40,7 @@ public interface Tags extends EObject {
 	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
-	EList<edu.som.uoc.openapiprofile.Tag> getTags();
+	EList<Tag> getTags();
 
 	/**
 	 * Returns the value of the '<em><b>Base Model</b></em>' reference.

@@ -70,12 +70,12 @@ public interface APIOperation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Method</em>' attribute.
 	 * @see edu.som.uoc.openapiprofile.HTTPMethod
-	 * @see #setMethod(edu.som.uoc.openapiprofile.HTTPMethod)
+	 * @see #setMethod(HTTPMethod)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIOperation_Method()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	edu.som.uoc.openapiprofile.HTTPMethod getMethod();
+	HTTPMethod getMethod();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIOperation#getMethod <em>Method</em>}' attribute.
@@ -86,7 +86,7 @@ public interface APIOperation extends EObject {
 	 * @see #getMethod()
 	 * @generated
 	 */
-	void setMethod(edu.som.uoc.openapiprofile.HTTPMethod value);
+	void setMethod(HTTPMethod value);
 
 	/**
 	 * Returns the value of the '<em><b>Produces</b></em>' attribute list.
@@ -136,7 +136,7 @@ public interface APIOperation extends EObject {
 	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<edu.som.uoc.openapiprofile.SchemeType> getSchemes();
+	EList<SchemeType> getSchemes();
 
 	/**
 	 * Returns the value of the '<em><b>Summary</b></em>' attribute.

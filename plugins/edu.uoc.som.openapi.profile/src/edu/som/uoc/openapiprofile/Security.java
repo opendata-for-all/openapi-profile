@@ -42,7 +42,7 @@ public interface Security extends EObject {
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	EList<edu.som.uoc.openapiprofile.SecurityRequirement> getSecurityRequirements();
+	EList<SecurityRequirement> getSecurityRequirements();
 
 	/**
 	 * Returns the value of the '<em><b>Base Model</b></em>' reference.

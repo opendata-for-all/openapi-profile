@@ -3,7 +3,10 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIOperation;
+import edu.som.uoc.openapiprofile.HTTPMethod;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+import edu.som.uoc.openapiprofile.SchemeType;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -70,7 +73,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected static final edu.som.uoc.openapiprofile.HTTPMethod METHOD_EDEFAULT = edu.som.uoc.openapiprofile.HTTPMethod.UNDEFINED;
+	protected static final HTTPMethod METHOD_EDEFAULT = HTTPMethod.GET;
 
 	/**
 	 * The cached value of the '{@link #getMethod() <em>Method</em>}' attribute.
@@ -80,7 +83,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected edu.som.uoc.openapiprofile.HTTPMethod method = METHOD_EDEFAULT;
+	protected HTTPMethod method = METHOD_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getProduces() <em>Produces</em>}' attribute list.
@@ -110,7 +113,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<edu.som.uoc.openapiprofile.SchemeType> schemes;
+	protected EList<SchemeType> schemes;
 
 	/**
 	 * The default value of the '{@link #getSummary() <em>Summary</em>}' attribute.
@@ -217,7 +220,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public edu.som.uoc.openapiprofile.HTTPMethod getMethod() {
+	public HTTPMethod getMethod() {
 		return method;
 	}
 
@@ -226,8 +229,8 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMethod(edu.som.uoc.openapiprofile.HTTPMethod newMethod) {
-		edu.som.uoc.openapiprofile.HTTPMethod oldMethod = method;
+	public void setMethod(HTTPMethod newMethod) {
+		HTTPMethod oldMethod = method;
 		method = newMethod == null ? METHOD_EDEFAULT : newMethod;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_OPERATION__METHOD, oldMethod, method));
@@ -262,9 +265,9 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<edu.som.uoc.openapiprofile.SchemeType> getSchemes() {
+	public EList<SchemeType> getSchemes() {
 		if (schemes == null) {
-			schemes = new EDataTypeUniqueEList<edu.som.uoc.openapiprofile.SchemeType>(edu.som.uoc.openapiprofile.SchemeType.class, this, OpenapiprofilePackage.API_OPERATION__SCHEMES);
+			schemes = new EDataTypeUniqueEList<SchemeType>(SchemeType.class, this, OpenapiprofilePackage.API_OPERATION__SCHEMES);
 		}
 		return schemes;
 	}
@@ -405,7 +408,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 				setRelativePath((String)newValue);
 				return;
 			case OpenapiprofilePackage.API_OPERATION__METHOD:
-				setMethod((edu.som.uoc.openapiprofile.HTTPMethod)newValue);
+				setMethod((HTTPMethod)newValue);
 				return;
 			case OpenapiprofilePackage.API_OPERATION__PRODUCES:
 				getProduces().clear();
@@ -417,7 +420,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 				return;
 			case OpenapiprofilePackage.API_OPERATION__SCHEMES:
 				getSchemes().clear();
-				getSchemes().addAll((Collection<? extends edu.som.uoc.openapiprofile.SchemeType>)newValue);
+				getSchemes().addAll((Collection<? extends SchemeType>)newValue);
 				return;
 			case OpenapiprofilePackage.API_OPERATION__SUMMARY:
 				setSummary((String)newValue);

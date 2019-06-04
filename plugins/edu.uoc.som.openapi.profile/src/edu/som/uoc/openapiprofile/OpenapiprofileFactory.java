@@ -40,6 +40,15 @@ public interface OpenapiprofileFactory extends EFactory {
 	Schema createSchema();
 
 	/**
+	 * Returns a new object of class '<em>XML Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XML Element</em>'.
+	 * @generated
+	 */
+	XMLElement createXMLElement();
+
+	/**
 	 * Returns a new object of class '<em>API Property</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,33 +56,6 @@ public interface OpenapiprofileFactory extends EFactory {
 	 * @generated
 	 */
 	APIProperty createAPIProperty();
-
-	/**
-	 * Returns a new object of class '<em>XML Format</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XML Format</em>'.
-	 * @generated
-	 */
-	XMLFormat createXMLFormat();
-
-	/**
-	 * Returns a new object of class '<em>JSON Schema Constraints</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>JSON Schema Constraints</em>'.
-	 * @generated
-	 */
-	JSONSchemaConstraints createJSONSchemaConstraints();
-
-	/**
-	 * Returns a new object of class '<em>API Data Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>API Data Type</em>'.
-	 * @generated
-	 */
-	APIDataType createAPIDataType();
 
 	/**
 	 * Returns a new object of class '<em>API Operation</em>'.
@@ -128,6 +110,24 @@ public interface OpenapiprofileFactory extends EFactory {
 	 * @generated
 	 */
 	APIInfo createAPIInfo();
+
+	/**
+	 * Returns a new object of class '<em>License</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>License</em>'.
+	 * @generated
+	 */
+	License createLicense();
+
+	/**
+	 * Returns a new object of class '<em>Contact</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Contact</em>'.
+	 * @generated
+	 */
+	Contact createContact();
 
 	/**
 	 * Returns a new object of class '<em>External Docs</em>'.

@@ -19,16 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum JSONDataType implements Enumerator {
 	/**
-	 * The '<em><b>Undefined</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #UNDEFINED_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	UNDEFINED(0, "undefined", "undefined"),
-
-	/**
 	 * The '<em><b>Boolean</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36,7 +26,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	BOOLEAN(1, "boolean", "boolean"),
+	BOOLEAN(0, "boolean", "boolean"),
 
 	/**
 	 * The '<em><b>Integer</b></em>' literal object.
@@ -46,7 +36,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INTEGER(2, "integer", "integer"),
+	INTEGER(1, "integer", "integer"),
 
 	/**
 	 * The '<em><b>Number</b></em>' literal object.
@@ -56,7 +46,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	NUMBER(3, "number", "number"),
+	NUMBER(2, "number", "number"),
 
 	/**
 	 * The '<em><b>String</b></em>' literal object.
@@ -66,7 +56,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	STRING(4, "string", "string"),
+	STRING(3, "string", "string"),
 
 	/**
 	 * The '<em><b>File</b></em>' literal object.
@@ -76,18 +66,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	FILE(5, "file", "file");
-
-	/**
-	 * The '<em><b>Undefined</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #UNDEFINED
-	 * @model name="undefined"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int UNDEFINED_VALUE = 0;
+	FILE(4, "file", "file");
 
 	/**
 	 * The '<em><b>Boolean</b></em>' literal value.
@@ -98,7 +77,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BOOLEAN_VALUE = 1;
+	public static final int BOOLEAN_VALUE = 0;
 
 	/**
 	 * The '<em><b>Integer</b></em>' literal value.
@@ -109,7 +88,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int INTEGER_VALUE = 2;
+	public static final int INTEGER_VALUE = 1;
 
 	/**
 	 * The '<em><b>Number</b></em>' literal value.
@@ -120,7 +99,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NUMBER_VALUE = 3;
+	public static final int NUMBER_VALUE = 2;
 
 	/**
 	 * The '<em><b>String</b></em>' literal value.
@@ -131,7 +110,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int STRING_VALUE = 4;
+	public static final int STRING_VALUE = 3;
 
 	/**
 	 * The '<em><b>File</b></em>' literal value.
@@ -142,7 +121,7 @@ public enum JSONDataType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int FILE_VALUE = 5;
+	public static final int FILE_VALUE = 4;
 
 	/**
 	 * An array of all the '<em><b>JSON Data Type</b></em>' enumerators.
@@ -152,7 +131,6 @@ public enum JSONDataType implements Enumerator {
 	 */
 	private static final JSONDataType[] VALUES_ARRAY =
 		new JSONDataType[] {
-			UNDEFINED,
 			BOOLEAN,
 			INTEGER,
 			NUMBER,
@@ -214,7 +192,6 @@ public enum JSONDataType implements Enumerator {
 	 */
 	public static JSONDataType get(int value) {
 		switch (value) {
-			case UNDEFINED_VALUE: return UNDEFINED;
 			case BOOLEAN_VALUE: return BOOLEAN;
 			case INTEGER_VALUE: return INTEGER;
 			case NUMBER_VALUE: return NUMBER;

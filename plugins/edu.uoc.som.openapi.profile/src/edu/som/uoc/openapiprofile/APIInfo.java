@@ -19,11 +19,8 @@ import org.eclipse.uml2.uml.Model;
  *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getTermsOfService <em>Terms Of Service</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getVersion <em>Version</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getLicenseName <em>License Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getLicenseURL <em>License URL</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getContactName <em>Contact Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getContactURL <em>Contact URL</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getContactEmail <em>Contact Email</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getLicense <em>License</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getContact <em>Contact</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIInfo#getBase_Model <em>Base Model</em>}</li>
  * </ul>
  *
@@ -137,134 +134,56 @@ public interface APIInfo extends EObject {
 	void setVersion(String value);
 
 	/**
-	 * Returns the value of the '<em><b>License Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>License</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>License Name</em>' attribute isn't clear,
+	 * If the meaning of the '<em>License</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>License Name</em>' attribute.
-	 * @see #setLicenseName(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIInfo_LicenseName()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @return the value of the '<em>License</em>' containment reference.
+	 * @see #setLicense(License)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIInfo_License()
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	String getLicenseName();
+	License getLicense();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIInfo#getLicenseName <em>License Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIInfo#getLicense <em>License</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>License Name</em>' attribute.
-	 * @see #getLicenseName()
+	 * @param value the new value of the '<em>License</em>' containment reference.
+	 * @see #getLicense()
 	 * @generated
 	 */
-	void setLicenseName(String value);
+	void setLicense(License value);
 
 	/**
-	 * Returns the value of the '<em><b>License URL</b></em>' attribute.
+	 * Returns the value of the '<em><b>Contact</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>License URL</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Contact</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>License URL</em>' attribute.
-	 * @see #setLicenseURL(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIInfo_LicenseURL()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @return the value of the '<em>Contact</em>' containment reference.
+	 * @see #setContact(Contact)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIInfo_Contact()
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	String getLicenseURL();
+	Contact getContact();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIInfo#getLicenseURL <em>License URL</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIInfo#getContact <em>Contact</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>License URL</em>' attribute.
-	 * @see #getLicenseURL()
+	 * @param value the new value of the '<em>Contact</em>' containment reference.
+	 * @see #getContact()
 	 * @generated
 	 */
-	void setLicenseURL(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Name</em>' attribute.
-	 * @see #setContactName(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIInfo_ContactName()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getContactName();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIInfo#getContactName <em>Contact Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Name</em>' attribute.
-	 * @see #getContactName()
-	 * @generated
-	 */
-	void setContactName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact URL</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact URL</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact URL</em>' attribute.
-	 * @see #setContactURL(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIInfo_ContactURL()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getContactURL();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIInfo#getContactURL <em>Contact URL</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact URL</em>' attribute.
-	 * @see #getContactURL()
-	 * @generated
-	 */
-	void setContactURL(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact Email</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Email</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Email</em>' attribute.
-	 * @see #setContactEmail(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIInfo_ContactEmail()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getContactEmail();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIInfo#getContactEmail <em>Contact Email</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Email</em>' attribute.
-	 * @see #getContactEmail()
-	 * @generated
-	 */
-	void setContactEmail(String value);
+	void setContact(Contact value);
 
 	/**
 	 * Returns the value of the '<em><b>Base Model</b></em>' reference.

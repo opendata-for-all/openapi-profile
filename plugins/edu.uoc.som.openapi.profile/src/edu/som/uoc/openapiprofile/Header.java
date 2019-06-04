@@ -19,7 +19,15 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getFormat <em>Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getArray <em>Array</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getCollectionFormat <em>Collection Format</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Header#getConstraints <em>Constraints</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getMinItems <em>Min Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getPattern <em>Pattern</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getMinimum <em>Minimum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getMinLength <em>Min Length</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getMaxLength <em>Max Length</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getMaximum <em>Maximum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getMaxItems <em>Max Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader()
@@ -145,10 +153,10 @@ public interface Header extends EObject {
 	 * @return the value of the '<em>Array</em>' attribute.
 	 * @see #setArray(Boolean)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Array()
-	 * @model dataType="edu.som.uoc.openapiprofile.EBooleanObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
 	 * @generated
 	 */
-	Object getArray();
+	Boolean getArray();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getArray <em>Array</em>}' attribute.
@@ -158,7 +166,7 @@ public interface Header extends EObject {
 	 * @see #getArray()
 	 * @generated
 	 */
-	void setArray(Object value);
+	void setArray(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Collection Format</b></em>' attribute.
@@ -190,29 +198,237 @@ public interface Header extends EObject {
 	void setCollectionFormat(CollectionFormat value);
 
 	/**
-	 * Returns the value of the '<em><b>Constraints</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Min Items</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Constraints</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Min Items</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Constraints</em>' containment reference.
-	 * @see #setConstraints(JSONSchemaConstraints)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Constraints()
-	 * @model containment="true" ordered="false"
+	 * @return the value of the '<em>Min Items</em>' attribute.
+	 * @see #setMinItems(Integer)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_MinItems()
+	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
 	 * @generated
 	 */
-	JSONSchemaConstraints getConstraints();
+	Integer getMinItems();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getConstraints <em>Constraints</em>}' containment reference.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getMinItems <em>Min Items</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Constraints</em>' containment reference.
-	 * @see #getConstraints()
+	 * @param value the new value of the '<em>Min Items</em>' attribute.
+	 * @see #getMinItems()
 	 * @generated
 	 */
-	void setConstraints(JSONSchemaConstraints value);
+	void setMinItems(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>Pattern</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Pattern</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Pattern</em>' attribute.
+	 * @see #setPattern(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Pattern()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getPattern();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getPattern <em>Pattern</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Pattern</em>' attribute.
+	 * @see #getPattern()
+	 * @generated
+	 */
+	void setPattern(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Exclusive Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Exclusive Minimum</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Exclusive Minimum</em>' attribute.
+	 * @see #setExclusiveMinimum(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_ExclusiveMinimum()
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getExclusiveMinimum();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getExclusiveMinimum <em>Exclusive Minimum</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Exclusive Minimum</em>' attribute.
+	 * @see #getExclusiveMinimum()
+	 * @generated
+	 */
+	void setExclusiveMinimum(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Minimum</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Minimum</em>' attribute.
+	 * @see #setMinimum(Double)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Minimum()
+	 * @model dataType="edu.som.uoc.openapiprofile.Double" ordered="false"
+	 * @generated
+	 */
+	Double getMinimum();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getMinimum <em>Minimum</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Minimum</em>' attribute.
+	 * @see #getMinimum()
+	 * @generated
+	 */
+	void setMinimum(Double value);
+
+	/**
+	 * Returns the value of the '<em><b>Min Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Min Length</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Min Length</em>' attribute.
+	 * @see #setMinLength(Integer)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_MinLength()
+	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
+	 * @generated
+	 */
+	Integer getMinLength();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getMinLength <em>Min Length</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Min Length</em>' attribute.
+	 * @see #getMinLength()
+	 * @generated
+	 */
+	void setMinLength(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>Max Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Max Length</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Max Length</em>' attribute.
+	 * @see #setMaxLength(Integer)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_MaxLength()
+	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
+	 * @generated
+	 */
+	Integer getMaxLength();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getMaxLength <em>Max Length</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Max Length</em>' attribute.
+	 * @see #getMaxLength()
+	 * @generated
+	 */
+	void setMaxLength(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Maximum</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Maximum</em>' attribute.
+	 * @see #setMaximum(Double)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Maximum()
+	 * @model dataType="edu.som.uoc.openapiprofile.Double" ordered="false"
+	 * @generated
+	 */
+	Double getMaximum();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getMaximum <em>Maximum</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Maximum</em>' attribute.
+	 * @see #getMaximum()
+	 * @generated
+	 */
+	void setMaximum(Double value);
+
+	/**
+	 * Returns the value of the '<em><b>Max Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Max Items</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Max Items</em>' attribute.
+	 * @see #setMaxItems(Integer)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_MaxItems()
+	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
+	 * @generated
+	 */
+	Integer getMaxItems();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getMaxItems <em>Max Items</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Max Items</em>' attribute.
+	 * @see #getMaxItems()
+	 * @generated
+	 */
+	void setMaxItems(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>Exclusive Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Exclusive Maximum</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Exclusive Maximum</em>' attribute.
+	 * @see #setExclusiveMaximum(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_ExclusiveMaximum()
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getExclusiveMaximum();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getExclusiveMaximum <em>Exclusive Maximum</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Exclusive Maximum</em>' attribute.
+	 * @see #getExclusiveMaximum()
+	 * @generated
+	 */
+	void setExclusiveMaximum(Boolean value);
 
 } // Header

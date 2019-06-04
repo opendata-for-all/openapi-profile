@@ -15,11 +15,8 @@ import org.eclipse.uml2.uml.Property;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getTitle <em>Title</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getBase_Property <em>Base Property</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getConstraints <em>Constraints</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty()
@@ -27,58 +24,6 @@ import org.eclipse.uml2.uml.Property;
  * @generated
  */
 public interface APIProperty extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Title</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Title</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Title</em>' attribute.
-	 * @see #setTitle(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Title()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getTitle();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getTitle <em>Title</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Title</em>' attribute.
-	 * @see #getTitle()
-	 * @generated
-	 */
-	void setTitle(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' attribute.
-	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Description()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getDescription();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getDescription <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' attribute.
-	 * @see #getDescription()
-	 * @generated
-	 */
-	void setDescription(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Xml</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -88,12 +33,12 @@ public interface APIProperty extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Xml</em>' containment reference.
-	 * @see #setXml(edu.som.uoc.openapiprofile.XMLFormat)
+	 * @see #setXml(XMLElement)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Xml()
-	 * @model containment="true" required="true" ordered="false"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	edu.som.uoc.openapiprofile.XMLFormat getXml();
+	XMLElement getXml();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}' containment reference.
@@ -103,7 +48,7 @@ public interface APIProperty extends EObject {
 	 * @see #getXml()
 	 * @generated
 	 */
-	void setXml(edu.som.uoc.openapiprofile.XMLFormat value);
+	void setXml(XMLElement value);
 
 	/**
 	 * Returns the value of the '<em><b>Base Property</b></em>' reference.
@@ -130,31 +75,5 @@ public interface APIProperty extends EObject {
 	 * @generated
 	 */
 	void setBase_Property(Property value);
-
-	/**
-	 * Returns the value of the '<em><b>Constraints</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Constraints</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Constraints</em>' containment reference.
-	 * @see #setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Constraints()
-	 * @model containment="true" ordered="false"
-	 * @generated
-	 */
-	edu.som.uoc.openapiprofile.JSONSchemaConstraints getConstraints();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getConstraints <em>Constraints</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Constraints</em>' containment reference.
-	 * @see #getConstraints()
-	 * @generated
-	 */
-	void setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints value);
 
 } // APIProperty

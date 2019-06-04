@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.uml2.uml.Parameter;
 
 /**
@@ -15,45 +13,17 @@ import org.eclipse.uml2.uml.Parameter;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getLocation <em>Location</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValues <em>Allow Empty Values</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getBase_Parameter <em>Base Parameter</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getConstraints <em>Constraints</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter()
  * @model
  * @generated
  */
-public interface APIParameter extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' attribute.
-	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_Description()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getDescription();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getDescription <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' attribute.
-	 * @see #getDescription()
-	 * @generated
-	 */
-	void setDescription(String value);
-
+public interface APIParameter extends JSONSchemaSubset {
 	/**
 	 * Returns the value of the '<em><b>Location</b></em>' attribute.
 	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.ParameterLocation}.
@@ -65,12 +35,12 @@ public interface APIParameter extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location</em>' attribute.
 	 * @see edu.som.uoc.openapiprofile.ParameterLocation
-	 * @see #setLocation(edu.som.uoc.openapiprofile.ParameterLocation)
+	 * @see #setLocation(ParameterLocation)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_Location()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	edu.som.uoc.openapiprofile.ParameterLocation getLocation();
+	ParameterLocation getLocation();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getLocation <em>Location</em>}' attribute.
@@ -81,7 +51,7 @@ public interface APIParameter extends EObject {
 	 * @see #getLocation()
 	 * @generated
 	 */
-	void setLocation(edu.som.uoc.openapiprofile.ParameterLocation value);
+	void setLocation(ParameterLocation value);
 
 	/**
 	 * Returns the value of the '<em><b>Allow Empty Values</b></em>' attribute.
@@ -94,10 +64,10 @@ public interface APIParameter extends EObject {
 	 * @return the value of the '<em>Allow Empty Values</em>' attribute.
 	 * @see #setAllowEmptyValues(Boolean)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_AllowEmptyValues()
-	 * @model dataType="edu.som.uoc.openapiprofile.EBooleanObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
 	 * @generated
 	 */
-	Object getAllowEmptyValues();
+	Boolean getAllowEmptyValues();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValues <em>Allow Empty Values</em>}' attribute.
@@ -107,7 +77,7 @@ public interface APIParameter extends EObject {
 	 * @see #getAllowEmptyValues()
 	 * @generated
 	 */
-	void setAllowEmptyValues(Object value);
+	void setAllowEmptyValues(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Collection Format</b></em>' attribute.
@@ -120,12 +90,12 @@ public interface APIParameter extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Collection Format</em>' attribute.
 	 * @see edu.som.uoc.openapiprofile.CollectionFormat
-	 * @see #setCollectionFormat(edu.som.uoc.openapiprofile.CollectionFormat)
+	 * @see #setCollectionFormat(CollectionFormat)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_CollectionFormat()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	edu.som.uoc.openapiprofile.CollectionFormat getCollectionFormat();
+	CollectionFormat getCollectionFormat();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getCollectionFormat <em>Collection Format</em>}' attribute.
@@ -136,7 +106,7 @@ public interface APIParameter extends EObject {
 	 * @see #getCollectionFormat()
 	 * @generated
 	 */
-	void setCollectionFormat(edu.som.uoc.openapiprofile.CollectionFormat value);
+	void setCollectionFormat(CollectionFormat value);
 
 	/**
 	 * Returns the value of the '<em><b>Base Parameter</b></em>' reference.
@@ -163,31 +133,5 @@ public interface APIParameter extends EObject {
 	 * @generated
 	 */
 	void setBase_Parameter(Parameter value);
-
-	/**
-	 * Returns the value of the '<em><b>Constraints</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Constraints</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Constraints</em>' containment reference.
-	 * @see #setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_Constraints()
-	 * @model containment="true" ordered="false"
-	 * @generated
-	 */
-	edu.som.uoc.openapiprofile.JSONSchemaConstraints getConstraints();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getConstraints <em>Constraints</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Constraints</em>' containment reference.
-	 * @see #getConstraints()
-	 * @generated
-	 */
-	void setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints value);
 
 } // APIParameter

@@ -59,16 +59,16 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 		switch (eClass.getClassifierID()) {
 			case OpenapiprofilePackage.API: return createAPI();
 			case OpenapiprofilePackage.SCHEMA: return createSchema();
+			case OpenapiprofilePackage.XML_ELEMENT: return createXMLElement();
 			case OpenapiprofilePackage.API_PROPERTY: return createAPIProperty();
-			case OpenapiprofilePackage.XML_FORMAT: return createXMLFormat();
-			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS: return createJSONSchemaConstraints();
-			case OpenapiprofilePackage.API_DATA_TYPE: return createAPIDataType();
 			case OpenapiprofilePackage.API_OPERATION: return createAPIOperation();
 			case OpenapiprofilePackage.API_PARAMETER: return createAPIParameter();
 			case OpenapiprofilePackage.API_RESPONSE: return createAPIResponse();
 			case OpenapiprofilePackage.HEADER: return createHeader();
 			case OpenapiprofilePackage.EXAMPLE: return createExample();
 			case OpenapiprofilePackage.API_INFO: return createAPIInfo();
+			case OpenapiprofilePackage.LICENSE: return createLicense();
+			case OpenapiprofilePackage.CONTACT: return createContact();
 			case OpenapiprofilePackage.EXTERNAL_DOCS: return createExternalDocs();
 			case OpenapiprofilePackage.SECURITY_DEFINITIONS: return createSecurityDefinitions();
 			case OpenapiprofilePackage.SECURITY_SCHEME: return createSecurityScheme();
@@ -106,12 +106,12 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 				return createAPIKeyLocationFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.OAUTH2_FLOW_TYPE:
 				return createOAuth2FlowTypeFromString(eDataType, initialValue);
-			case OpenapiprofilePackage.EINTEGER_OBJECT:
-				return createEIntegerObjectFromString(eDataType, initialValue);
-			case OpenapiprofilePackage.EBOOLEAN_OBJECT:
-				return createEBooleanObjectFromString(eDataType, initialValue);
-			case OpenapiprofilePackage.EDOUBLE_OBJECT:
-				return createEDoubleObjectFromString(eDataType, initialValue);
+			case OpenapiprofilePackage.INTEGER:
+				return createIntegerFromString(eDataType, initialValue);
+			case OpenapiprofilePackage.DOUBLE:
+				return createDoubleFromString(eDataType, initialValue);
+			case OpenapiprofilePackage.BOOLEAN:
+				return createBooleanFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -141,12 +141,12 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 				return convertAPIKeyLocationToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.OAUTH2_FLOW_TYPE:
 				return convertOAuth2FlowTypeToString(eDataType, instanceValue);
-			case OpenapiprofilePackage.EINTEGER_OBJECT:
-				return convertEIntegerObjectToString(eDataType, instanceValue);
-			case OpenapiprofilePackage.EBOOLEAN_OBJECT:
-				return convertEBooleanObjectToString(eDataType, instanceValue);
-			case OpenapiprofilePackage.EDOUBLE_OBJECT:
-				return convertEDoubleObjectToString(eDataType, instanceValue);
+			case OpenapiprofilePackage.INTEGER:
+				return convertIntegerToString(eDataType, instanceValue);
+			case OpenapiprofilePackage.DOUBLE:
+				return convertDoubleToString(eDataType, instanceValue);
+			case OpenapiprofilePackage.BOOLEAN:
+				return convertBooleanToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -177,39 +177,19 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public XMLElement createXMLElement() {
+		XMLElementImpl xmlElement = new XMLElementImpl();
+		return xmlElement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public APIProperty createAPIProperty() {
 		APIPropertyImpl apiProperty = new APIPropertyImpl();
 		return apiProperty;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XMLFormat createXMLFormat() {
-		XMLFormatImpl xmlFormat = new XMLFormatImpl();
-		return xmlFormat;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public JSONSchemaConstraints createJSONSchemaConstraints() {
-		JSONSchemaConstraintsImpl jsonSchemaConstraints = new JSONSchemaConstraintsImpl();
-		return jsonSchemaConstraints;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public APIDataType createAPIDataType() {
-		APIDataTypeImpl apiDataType = new APIDataTypeImpl();
-		return apiDataType;
 	}
 
 	/**
@@ -270,6 +250,26 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	public APIInfo createAPIInfo() {
 		APIInfoImpl apiInfo = new APIInfoImpl();
 		return apiInfo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public License createLicense() {
+		LicenseImpl license = new LicenseImpl();
+		return license;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Contact createContact() {
+		ContactImpl contact = new ContactImpl();
+		return contact;
 	}
 
 	/**
@@ -517,8 +517,8 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createEIntegerObjectFromString(EDataType eDataType, String initialValue) {
-		return super.createFromString(eDataType, initialValue);
+	public Integer createIntegerFromString(EDataType eDataType, String initialValue) {
+		return (Integer)super.createFromString(eDataType, initialValue);
 	}
 
 	/**
@@ -526,7 +526,7 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertEIntegerObjectToString(EDataType eDataType, Object instanceValue) {
+	public String convertIntegerToString(EDataType eDataType, Object instanceValue) {
 		return super.convertToString(eDataType, instanceValue);
 	}
 
@@ -535,8 +535,8 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createEBooleanObjectFromString(EDataType eDataType, String initialValue) {
-		return (Object)super.createFromString(eDataType, initialValue);
+	public Double createDoubleFromString(EDataType eDataType, String initialValue) {
+		return (Double)super.createFromString(eDataType, initialValue);
 	}
 
 	/**
@@ -544,7 +544,7 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertEBooleanObjectToString(EDataType eDataType, Object instanceValue) {
+	public String convertDoubleToString(EDataType eDataType, Object instanceValue) {
 		return super.convertToString(eDataType, instanceValue);
 	}
 
@@ -553,8 +553,8 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Object createEDoubleObjectFromString(EDataType eDataType, String initialValue) {
-		return super.createFromString(eDataType, initialValue);
+	public Boolean createBooleanFromString(EDataType eDataType, String initialValue) {
+		return (Boolean)super.createFromString(eDataType, initialValue);
 	}
 
 	/**
@@ -562,7 +562,7 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertEDoubleObjectToString(EDataType eDataType, Object instanceValue) {
+	public String convertBooleanToString(EDataType eDataType, Object instanceValue) {
 		return super.convertToString(eDataType, instanceValue);
 	}
 

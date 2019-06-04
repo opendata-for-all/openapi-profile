@@ -2,7 +2,8 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.uml2.uml.Enumeration;
+import org.eclipse.uml2.uml.PrimitiveType;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,13 +20,17 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getDiscriminator <em>Discriminator</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Class <em>Base Class</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getExample <em>Example</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getXml <em>Xml</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Enumeration <em>Base Enumeration</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema()
  * @model
  * @generated
  */
-public interface Schema extends EObject {
+public interface Schema extends PrimitiveType, JSONSchemaSubset {
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,12 +66,12 @@ public interface Schema extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Properties</em>' attribute.
-	 * @see #setMaxProperties(Object)
+	 * @see #setMaxProperties(Integer)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_MaxProperties()
-	 * @model dataType="edu.som.uoc.openapiprofile.EIntegerObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
 	 * @generated
 	 */
-	Object getMaxProperties();
+	Integer getMaxProperties();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getMaxProperties <em>Max Properties</em>}' attribute.
@@ -76,7 +81,7 @@ public interface Schema extends EObject {
 	 * @see #getMaxProperties()
 	 * @generated
 	 */
-	void setMaxProperties(Object value);
+	void setMaxProperties(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Min Properties</b></em>' attribute.
@@ -87,12 +92,12 @@ public interface Schema extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Properties</em>' attribute.
-	 * @see #setMinProperties(Object)
+	 * @see #setMinProperties(Integer)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_MinProperties()
-	 * @model dataType="edu.som.uoc.openapiprofile.EIntegerObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
 	 * @generated
 	 */
-	Object getMinProperties();
+	Integer getMinProperties();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getMinProperties <em>Min Properties</em>}' attribute.
@@ -102,7 +107,7 @@ public interface Schema extends EObject {
 	 * @see #getMinProperties()
 	 * @generated
 	 */
-	void setMinProperties(Object value);
+	void setMinProperties(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Discriminator</b></em>' attribute.
@@ -141,10 +146,10 @@ public interface Schema extends EObject {
 	 * @return the value of the '<em>Additional Properties Allowed</em>' attribute.
 	 * @see #setAdditionalPropertiesAllowed(Boolean)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_AdditionalPropertiesAllowed()
-	 * @model dataType="edu.som.uoc.openapiprofile.EBooleanObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
 	 * @generated
 	 */
-	Object getAdditionalPropertiesAllowed();
+	Boolean getAdditionalPropertiesAllowed();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}' attribute.
@@ -154,7 +159,7 @@ public interface Schema extends EObject {
 	 * @see #getAdditionalPropertiesAllowed()
 	 * @generated
 	 */
-	void setAdditionalPropertiesAllowed(Object value);
+	void setAdditionalPropertiesAllowed(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Base Class</b></em>' reference.
@@ -181,5 +186,109 @@ public interface Schema extends EObject {
 	 * @generated
 	 */
 	void setBase_Class(org.eclipse.uml2.uml.Class value);
+
+	/**
+	 * Returns the value of the '<em><b>Example</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Example</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Example</em>' attribute.
+	 * @see #setExample(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Example()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getExample();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getExample <em>Example</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Example</em>' attribute.
+	 * @see #getExample()
+	 * @generated
+	 */
+	void setExample(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Read Only</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Read Only</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Read Only</em>' attribute.
+	 * @see #setReadOnly(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_ReadOnly()
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getReadOnly();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Read Only</em>' attribute.
+	 * @see #getReadOnly()
+	 * @generated
+	 */
+	void setReadOnly(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Xml</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Xml</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Xml</em>' containment reference.
+	 * @see #setXml(XMLElement)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Xml()
+	 * @model containment="true" ordered="false"
+	 * @generated
+	 */
+	XMLElement getXml();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getXml <em>Xml</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Xml</em>' containment reference.
+	 * @see #getXml()
+	 * @generated
+	 */
+	void setXml(XMLElement value);
+
+	/**
+	 * Returns the value of the '<em><b>Base Enumeration</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Base Enumeration</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Base Enumeration</em>' reference.
+	 * @see #setBase_Enumeration(Enumeration)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Base_Enumeration()
+	 * @model ordered="false"
+	 * @generated
+	 */
+	Enumeration getBase_Enumeration();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getBase_Enumeration <em>Base Enumeration</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Base Enumeration</em>' reference.
+	 * @see #getBase_Enumeration()
+	 * @generated
+	 */
+	void setBase_Enumeration(Enumeration value);
 
 } // Schema

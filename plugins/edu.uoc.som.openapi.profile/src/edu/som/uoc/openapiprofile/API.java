@@ -98,7 +98,7 @@ public interface API extends EObject {
 	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<edu.som.uoc.openapiprofile.SchemeType> getSchemes();
+	EList<SchemeType> getSchemes();
 
 	/**
 	 * Returns the value of the '<em><b>Consumes</b></em>' attribute list.

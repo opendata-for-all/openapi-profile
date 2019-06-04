@@ -4,6 +4,8 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 import edu.som.uoc.openapiprofile.SecurityDefinitions;
+import edu.som.uoc.openapiprofile.SecurityScheme;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -45,7 +47,7 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<edu.som.uoc.openapiprofile.SecurityScheme> securitySchemes;
+	protected EList<SecurityScheme> securitySchemes;
 
 	/**
 	 * The cached value of the '{@link #getBase_Model() <em>Base Model</em>}' reference.
@@ -81,9 +83,9 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<edu.som.uoc.openapiprofile.SecurityScheme> getSecuritySchemes() {
+	public EList<SecurityScheme> getSecuritySchemes() {
 		if (securitySchemes == null) {
-			securitySchemes = new EObjectContainmentEList<edu.som.uoc.openapiprofile.SecurityScheme>(edu.som.uoc.openapiprofile.SecurityScheme.class, this, OpenapiprofilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES);
+			securitySchemes = new EObjectContainmentEList<SecurityScheme>(SecurityScheme.class, this, OpenapiprofilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES);
 		}
 		return securitySchemes;
 	}
@@ -168,7 +170,7 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 		switch (featureID) {
 			case OpenapiprofilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
 				getSecuritySchemes().clear();
-				getSecuritySchemes().addAll((Collection<? extends edu.som.uoc.openapiprofile.SecurityScheme>)newValue);
+				getSecuritySchemes().addAll((Collection<? extends SecurityScheme>)newValue);
 				return;
 			case OpenapiprofilePackage.SECURITY_DEFINITIONS__BASE_MODEL:
 				setBase_Model((Model)newValue);
