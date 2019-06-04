@@ -4,7 +4,8 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 import edu.som.uoc.openapiprofile.SecurityDefinitions;
-import edu.som.uoc.openapiprofile.SecurityScheme;
+
+import edu.som.uoc.openapiprofile.types.SecurityScheme;
 
 import java.util.Collection;
 

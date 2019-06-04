@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,14 +10,14 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>JSON Data Type</b></em>',
+ * A representation of the literals of the enumeration '<em><b>OAuth2 Flow Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONDataType()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getOAuth2FlowType()
  * @model
  * @generated
  */
-public enum JSONDataType implements Enumerator {
+public enum OAuth2FlowType implements Enumerator {
 	/**
 	 * The '<em><b>Undefined</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -29,54 +29,44 @@ public enum JSONDataType implements Enumerator {
 	UNDEFINED(0, "undefined", "undefined"),
 
 	/**
-	 * The '<em><b>Boolean</b></em>' literal object.
+	 * The '<em><b>Implicit</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BOOLEAN_VALUE
+	 * @see #IMPLICIT_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	BOOLEAN(1, "boolean", "boolean"),
+	IMPLICIT(1, "implicit", "implicit"),
 
 	/**
-	 * The '<em><b>Integer</b></em>' literal object.
+	 * The '<em><b>Password</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #INTEGER_VALUE
+	 * @see #PASSWORD_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	INTEGER(2, "integer", "integer"),
+	PASSWORD(2, "password", "password"),
 
 	/**
-	 * The '<em><b>Number</b></em>' literal object.
+	 * The '<em><b>Application</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #NUMBER_VALUE
+	 * @see #APPLICATION_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	NUMBER(3, "number", "number"),
+	APPLICATION(3, "application", "application"),
 
 	/**
-	 * The '<em><b>String</b></em>' literal object.
+	 * The '<em><b>Access Code</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #STRING_VALUE
+	 * @see #ACCESS_CODE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	STRING(4, "string", "string"),
-
-	/**
-	 * The '<em><b>File</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FILE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	FILE(5, "file", "file");
+	ACCESS_CODE(4, "accessCode", "accessCode");
 
 	/**
 	 * The '<em><b>Undefined</b></em>' literal value.
@@ -90,95 +80,83 @@ public enum JSONDataType implements Enumerator {
 	public static final int UNDEFINED_VALUE = 0;
 
 	/**
-	 * The '<em><b>Boolean</b></em>' literal value.
+	 * The '<em><b>Implicit</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BOOLEAN
-	 * @model name="boolean"
+	 * @see #IMPLICIT
+	 * @model name="implicit"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BOOLEAN_VALUE = 1;
+	public static final int IMPLICIT_VALUE = 1;
 
 	/**
-	 * The '<em><b>Integer</b></em>' literal value.
+	 * The '<em><b>Password</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #INTEGER
-	 * @model name="integer"
+	 * @see #PASSWORD
+	 * @model name="password"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int INTEGER_VALUE = 2;
+	public static final int PASSWORD_VALUE = 2;
 
 	/**
-	 * The '<em><b>Number</b></em>' literal value.
+	 * The '<em><b>Application</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #NUMBER
-	 * @model name="number"
+	 * @see #APPLICATION
+	 * @model name="application"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NUMBER_VALUE = 3;
+	public static final int APPLICATION_VALUE = 3;
 
 	/**
-	 * The '<em><b>String</b></em>' literal value.
+	 * The '<em><b>Access Code</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #STRING
-	 * @model name="string"
+	 * @see #ACCESS_CODE
+	 * @model name="accessCode"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int STRING_VALUE = 4;
+	public static final int ACCESS_CODE_VALUE = 4;
 
 	/**
-	 * The '<em><b>File</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FILE
-	 * @model name="file"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int FILE_VALUE = 5;
-
-	/**
-	 * An array of all the '<em><b>JSON Data Type</b></em>' enumerators.
+	 * An array of all the '<em><b>OAuth2 Flow Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final JSONDataType[] VALUES_ARRAY =
-		new JSONDataType[] {
+	private static final OAuth2FlowType[] VALUES_ARRAY =
+		new OAuth2FlowType[] {
 			UNDEFINED,
-			BOOLEAN,
-			INTEGER,
-			NUMBER,
-			STRING,
-			FILE,
+			IMPLICIT,
+			PASSWORD,
+			APPLICATION,
+			ACCESS_CODE,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>JSON Data Type</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>OAuth2 Flow Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<JSONDataType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<OAuth2FlowType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>JSON Data Type</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>OAuth2 Flow Type</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static JSONDataType get(String literal) {
+	public static OAuth2FlowType get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			JSONDataType result = VALUES_ARRAY[i];
+			OAuth2FlowType result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -187,16 +165,16 @@ public enum JSONDataType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>JSON Data Type</b></em>' literal with the specified name.
+	 * Returns the '<em><b>OAuth2 Flow Type</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static JSONDataType getByName(String name) {
+	public static OAuth2FlowType getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			JSONDataType result = VALUES_ARRAY[i];
+			OAuth2FlowType result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -205,21 +183,20 @@ public enum JSONDataType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>JSON Data Type</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>OAuth2 Flow Type</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static JSONDataType get(int value) {
+	public static OAuth2FlowType get(int value) {
 		switch (value) {
 			case UNDEFINED_VALUE: return UNDEFINED;
-			case BOOLEAN_VALUE: return BOOLEAN;
-			case INTEGER_VALUE: return INTEGER;
-			case NUMBER_VALUE: return NUMBER;
-			case STRING_VALUE: return STRING;
-			case FILE_VALUE: return FILE;
+			case IMPLICIT_VALUE: return IMPLICIT;
+			case PASSWORD_VALUE: return PASSWORD;
+			case APPLICATION_VALUE: return APPLICATION;
+			case ACCESS_CODE_VALUE: return ACCESS_CODE;
 		}
 		return null;
 	}
@@ -251,7 +228,7 @@ public enum JSONDataType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private JSONDataType(int value, String name, String literal) {
+	private OAuth2FlowType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -295,4 +272,4 @@ public enum JSONDataType implements Enumerator {
 		return literal;
 	}
 	
-} //JSONDataType
+} //OAuth2FlowType

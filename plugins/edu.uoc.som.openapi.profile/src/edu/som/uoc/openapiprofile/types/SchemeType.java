@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,14 +10,14 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>HTTP Method</b></em>',
+ * A representation of the literals of the enumeration '<em><b>Scheme Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHTTPMethod()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getSchemeType()
  * @model
  * @generated
  */
-public enum HTTPMethod implements Enumerator {
+public enum SchemeType implements Enumerator {
 	/**
 	 * The '<em><b>Undefined</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -29,64 +29,44 @@ public enum HTTPMethod implements Enumerator {
 	UNDEFINED(0, "undefined", "undefined"),
 
 	/**
-	 * The '<em><b>Get</b></em>' literal object.
+	 * The '<em><b>Http</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #GET_VALUE
+	 * @see #HTTP_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	GET(1, "get", "get"),
+	HTTP(1, "http", "http"),
 
 	/**
-	 * The '<em><b>Post</b></em>' literal object.
+	 * The '<em><b>Https</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #POST_VALUE
+	 * @see #HTTPS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	POST(2, "post", "post"),
+	HTTPS(2, "https", "https"),
 
 	/**
-	 * The '<em><b>Put</b></em>' literal object.
+	 * The '<em><b>Ws</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PUT_VALUE
+	 * @see #WS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	PUT(3, "put", "put"),
+	WS(3, "ws", "ws"),
 
 	/**
-	 * The '<em><b>Patch</b></em>' literal object.
+	 * The '<em><b>Wss</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PATCH_VALUE
+	 * @see #WSS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	PATCH(4, "patch", "patch"),
-
-	/**
-	 * The '<em><b>Options</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #OPTIONS_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	OPTIONS(5, "options", "options"),
-
-	/**
-	 * The '<em><b>Delete</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #DELETE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	DELETE(6, "delete", "delete");
+	WSS(4, "wss", "wss");
 
 	/**
 	 * The '<em><b>Undefined</b></em>' literal value.
@@ -100,107 +80,83 @@ public enum HTTPMethod implements Enumerator {
 	public static final int UNDEFINED_VALUE = 0;
 
 	/**
-	 * The '<em><b>Get</b></em>' literal value.
+	 * The '<em><b>Http</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #GET
-	 * @model name="get"
+	 * @see #HTTP
+	 * @model name="http"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int GET_VALUE = 1;
+	public static final int HTTP_VALUE = 1;
 
 	/**
-	 * The '<em><b>Post</b></em>' literal value.
+	 * The '<em><b>Https</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #POST
-	 * @model name="post"
+	 * @see #HTTPS
+	 * @model name="https"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int POST_VALUE = 2;
+	public static final int HTTPS_VALUE = 2;
 
 	/**
-	 * The '<em><b>Put</b></em>' literal value.
+	 * The '<em><b>Ws</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PUT
-	 * @model name="put"
+	 * @see #WS
+	 * @model name="ws"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PUT_VALUE = 3;
+	public static final int WS_VALUE = 3;
 
 	/**
-	 * The '<em><b>Patch</b></em>' literal value.
+	 * The '<em><b>Wss</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PATCH
-	 * @model name="patch"
+	 * @see #WSS
+	 * @model name="wss"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PATCH_VALUE = 4;
+	public static final int WSS_VALUE = 4;
 
 	/**
-	 * The '<em><b>Options</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #OPTIONS
-	 * @model name="options"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int OPTIONS_VALUE = 5;
-
-	/**
-	 * The '<em><b>Delete</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #DELETE
-	 * @model name="delete"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int DELETE_VALUE = 6;
-
-	/**
-	 * An array of all the '<em><b>HTTP Method</b></em>' enumerators.
+	 * An array of all the '<em><b>Scheme Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final HTTPMethod[] VALUES_ARRAY =
-		new HTTPMethod[] {
+	private static final SchemeType[] VALUES_ARRAY =
+		new SchemeType[] {
 			UNDEFINED,
-			GET,
-			POST,
-			PUT,
-			PATCH,
-			OPTIONS,
-			DELETE,
+			HTTP,
+			HTTPS,
+			WS,
+			WSS,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>HTTP Method</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>Scheme Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<HTTPMethod> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<SchemeType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>HTTP Method</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>Scheme Type</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static HTTPMethod get(String literal) {
+	public static SchemeType get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			HTTPMethod result = VALUES_ARRAY[i];
+			SchemeType result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -209,16 +165,16 @@ public enum HTTPMethod implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>HTTP Method</b></em>' literal with the specified name.
+	 * Returns the '<em><b>Scheme Type</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static HTTPMethod getByName(String name) {
+	public static SchemeType getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			HTTPMethod result = VALUES_ARRAY[i];
+			SchemeType result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -227,22 +183,20 @@ public enum HTTPMethod implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>HTTP Method</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>Scheme Type</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static HTTPMethod get(int value) {
+	public static SchemeType get(int value) {
 		switch (value) {
 			case UNDEFINED_VALUE: return UNDEFINED;
-			case GET_VALUE: return GET;
-			case POST_VALUE: return POST;
-			case PUT_VALUE: return PUT;
-			case PATCH_VALUE: return PATCH;
-			case OPTIONS_VALUE: return OPTIONS;
-			case DELETE_VALUE: return DELETE;
+			case HTTP_VALUE: return HTTP;
+			case HTTPS_VALUE: return HTTPS;
+			case WS_VALUE: return WS;
+			case WSS_VALUE: return WSS;
 		}
 		return null;
 	}
@@ -274,7 +228,7 @@ public enum HTTPMethod implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private HTTPMethod(int value, String name, String literal) {
+	private SchemeType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -318,4 +272,4 @@ public enum HTTPMethod implements Enumerator {
 		return literal;
 	}
 	
-} //HTTPMethod
+} //SchemeType

@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,14 +13,14 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.XMLFormat#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.XMLFormat#getNamespace <em>Namespace</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.XMLFormat#getPrefix <em>Prefix</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.XMLFormat#isAttribute <em>Attribute</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.XMLFormat#isWrapped <em>Wrapped</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.XMLFormat#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.XMLFormat#getNamespace <em>Namespace</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.XMLFormat#getPrefix <em>Prefix</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.XMLFormat#getAttribute <em>Attribute</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.XMLFormat#getWrapped <em>Wrapped</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getXMLFormat()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getXMLFormat()
  * @model
  * @generated
  */
@@ -35,14 +35,14 @@ public interface XMLFormat extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getXMLFormat_Name()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getXMLFormat_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.XMLFormat#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.XMLFormat#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -61,14 +61,14 @@ public interface XMLFormat extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Namespace</em>' attribute.
 	 * @see #setNamespace(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getXMLFormat_Namespace()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getXMLFormat_Namespace()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getNamespace();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.XMLFormat#getNamespace <em>Namespace</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.XMLFormat#getNamespace <em>Namespace</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Namespace</em>' attribute.
@@ -87,14 +87,14 @@ public interface XMLFormat extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Prefix</em>' attribute.
 	 * @see #setPrefix(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getXMLFormat_Prefix()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getXMLFormat_Prefix()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getPrefix();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.XMLFormat#getPrefix <em>Prefix</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.XMLFormat#getPrefix <em>Prefix</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Prefix</em>' attribute.
@@ -112,22 +112,22 @@ public interface XMLFormat extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attribute</em>' attribute.
-	 * @see #setAttribute(boolean)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getXMLFormat_Attribute()
-	 * @model dataType="org.eclipse.uml2.types.Boolean" ordered="false"
+	 * @see #setAttribute(Boolean)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getXMLFormat_Attribute()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EBooleanObject" ordered="false"
 	 * @generated
 	 */
-	boolean isAttribute();
+	Object getAttribute();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.XMLFormat#isAttribute <em>Attribute</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.XMLFormat#getAttribute <em>Attribute</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Attribute</em>' attribute.
-	 * @see #isAttribute()
+	 * @see #getAttribute()
 	 * @generated
 	 */
-	void setAttribute(boolean value);
+	void setAttribute(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Wrapped</b></em>' attribute.
@@ -138,21 +138,21 @@ public interface XMLFormat extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Wrapped</em>' attribute.
-	 * @see #setWrapped(boolean)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getXMLFormat_Wrapped()
-	 * @model dataType="org.eclipse.uml2.types.Boolean" ordered="false"
+	 * @see #setWrapped(Boolean)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getXMLFormat_Wrapped()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EBooleanObject" ordered="false"
 	 * @generated
 	 */
-	boolean isWrapped();
+	Object getWrapped();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.XMLFormat#isWrapped <em>Wrapped</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.XMLFormat#getWrapped <em>Wrapped</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Wrapped</em>' attribute.
-	 * @see #isWrapped()
+	 * @see #getWrapped()
 	 * @generated
 	 */
-	void setWrapped(boolean value);
+	void setWrapped(Object value);
 
 } // XMLFormat

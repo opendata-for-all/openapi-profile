@@ -3,8 +3,9 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-import edu.som.uoc.openapiprofile.SecurityRequirement;
 import edu.som.uoc.openapiprofile.SecurityRequirements;
+
+import edu.som.uoc.openapiprofile.types.SecurityRequirement;
 
 import java.util.Collection;
 

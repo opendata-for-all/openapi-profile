@@ -3,9 +3,10 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIProperty;
-import edu.som.uoc.openapiprofile.JSONSchemaConstraints;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-import edu.som.uoc.openapiprofile.XMLFormat;
+
+import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
+import edu.som.uoc.openapiprofile.types.XMLFormat;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;

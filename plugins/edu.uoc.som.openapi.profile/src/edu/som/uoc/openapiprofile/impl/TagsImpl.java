@@ -3,8 +3,9 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-import edu.som.uoc.openapiprofile.Tag;
 import edu.som.uoc.openapiprofile.Tags;
+
+import edu.som.uoc.openapiprofile.types.Tag;
 
 import java.util.Collection;
 

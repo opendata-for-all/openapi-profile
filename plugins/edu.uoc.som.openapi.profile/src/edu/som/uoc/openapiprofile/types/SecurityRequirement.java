@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.SecurityRequirement#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.SecurityRequirement#getScope <em>Scope</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityRequirement#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityRequirement#getScope <em>Scope</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityRequirement()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityRequirement()
  * @model
  * @generated
  */
@@ -32,14 +32,14 @@ public interface SecurityRequirement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityRequirement_Name()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityRequirement_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityRequirement#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityRequirement#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -58,14 +58,14 @@ public interface SecurityRequirement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scope</em>' attribute.
 	 * @see #setScope(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityRequirement_Scope()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityRequirement_Scope()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getScope();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityRequirement#getScope <em>Scope</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityRequirement#getScope <em>Scope</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Scope</em>' attribute.

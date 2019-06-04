@@ -3,10 +3,11 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIParameter;
-import edu.som.uoc.openapiprofile.CollectionFormat;
-import edu.som.uoc.openapiprofile.JSONSchemaConstraints;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-import edu.som.uoc.openapiprofile.ParameterLocation;
+
+import edu.som.uoc.openapiprofile.types.CollectionFormat;
+import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
+import edu.som.uoc.openapiprofile.types.ParameterLocation;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -29,7 +30,7 @@ import org.eclipse.uml2.uml.Parameter;
  * <ul>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getLocation <em>Location</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#isAllowEmptyValues <em>Allow Empty Values</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getAllowEmptyValues <em>Allow Empty Values</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getBase_Parameter <em>Base Parameter</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getConstraints <em>Constraints</em>}</li>
@@ -79,24 +80,24 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	protected ParameterLocation location = LOCATION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #isAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
+	 * The default value of the '{@link #getAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isAllowEmptyValues()
+	 * @see #getAllowEmptyValues()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean ALLOW_EMPTY_VALUES_EDEFAULT = false;
+	protected static final Object ALLOW_EMPTY_VALUES_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #isAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
+	 * The cached value of the '{@link #getAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isAllowEmptyValues()
+	 * @see #getAllowEmptyValues()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean allowEmptyValues = ALLOW_EMPTY_VALUES_EDEFAULT;
+	protected Object allowEmptyValues = ALLOW_EMPTY_VALUES_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.
@@ -204,7 +205,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAllowEmptyValues() {
+	public Object getAllowEmptyValues() {
 		return allowEmptyValues;
 	}
 
@@ -213,8 +214,8 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAllowEmptyValues(boolean newAllowEmptyValues) {
-		boolean oldAllowEmptyValues = allowEmptyValues;
+	public void setAllowEmptyValues(Object newAllowEmptyValues) {
+		Object oldAllowEmptyValues = allowEmptyValues;
 		allowEmptyValues = newAllowEmptyValues;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES, oldAllowEmptyValues, allowEmptyValues));
@@ -349,7 +350,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return getLocation();
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				return isAllowEmptyValues();
+				return getAllowEmptyValues();
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				return getCollectionFormat();
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
@@ -376,7 +377,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 				setLocation((ParameterLocation)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				setAllowEmptyValues((Boolean)newValue);
+				setAllowEmptyValues((Object)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				setCollectionFormat((CollectionFormat)newValue);
@@ -434,7 +435,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return location != LOCATION_EDEFAULT;
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				return allowEmptyValues != ALLOW_EMPTY_VALUES_EDEFAULT;
+				return ALLOW_EMPTY_VALUES_EDEFAULT == null ? allowEmptyValues != null : !ALLOW_EMPTY_VALUES_EDEFAULT.equals(allowEmptyValues);
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:

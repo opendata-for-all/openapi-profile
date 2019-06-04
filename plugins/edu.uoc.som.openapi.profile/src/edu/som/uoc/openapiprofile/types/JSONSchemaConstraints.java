@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,18 +13,18 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#isExclusiveMaximum <em>Exclusive Maximum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMinLength <em>Min Length</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMaxLength <em>Max Length</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getPattern <em>Pattern</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMinItems <em>Min Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#isExclusiveMinimum <em>Exclusive Minimum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMaxItems <em>Max Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMaximum <em>Maximum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMinimum <em>Minimum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMinLength <em>Min Length</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMaxLength <em>Max Length</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getPattern <em>Pattern</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMinItems <em>Min Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMaxItems <em>Max Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMaximum <em>Maximum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMinimum <em>Minimum</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints()
  * @model
  * @generated
  */
@@ -38,22 +38,22 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Exclusive Maximum</em>' attribute.
-	 * @see #setExclusiveMaximum(boolean)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_ExclusiveMaximum()
-	 * @model dataType="org.eclipse.uml2.types.Boolean" ordered="false"
+	 * @see #setExclusiveMaximum(Boolean)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_ExclusiveMaximum()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EBooleanObject" ordered="false"
 	 * @generated
 	 */
-	boolean isExclusiveMaximum();
+	Object getExclusiveMaximum();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#isExclusiveMaximum <em>Exclusive Maximum</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getExclusiveMaximum <em>Exclusive Maximum</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Exclusive Maximum</em>' attribute.
-	 * @see #isExclusiveMaximum()
+	 * @see #getExclusiveMaximum()
 	 * @generated
 	 */
-	void setExclusiveMaximum(boolean value);
+	void setExclusiveMaximum(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Min Length</b></em>' attribute.
@@ -64,22 +64,22 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Length</em>' attribute.
-	 * @see #setMinLength(int)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_MinLength()
-	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @see #setMinLength(Object)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_MinLength()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
 	 * @generated
 	 */
-	int getMinLength();
+	Object getMinLength();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMinLength <em>Min Length</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMinLength <em>Min Length</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Min Length</em>' attribute.
 	 * @see #getMinLength()
 	 * @generated
 	 */
-	void setMinLength(int value);
+	void setMinLength(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Max Length</b></em>' attribute.
@@ -90,22 +90,22 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Length</em>' attribute.
-	 * @see #setMaxLength(int)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_MaxLength()
-	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @see #setMaxLength(Object)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_MaxLength()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
 	 * @generated
 	 */
-	int getMaxLength();
+	Object getMaxLength();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMaxLength <em>Max Length</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMaxLength <em>Max Length</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Max Length</em>' attribute.
 	 * @see #getMaxLength()
 	 * @generated
 	 */
-	void setMaxLength(int value);
+	void setMaxLength(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Pattern</b></em>' attribute.
@@ -117,14 +117,14 @@ public interface JSONSchemaConstraints extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pattern</em>' attribute.
 	 * @see #setPattern(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_Pattern()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_Pattern()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getPattern();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getPattern <em>Pattern</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getPattern <em>Pattern</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pattern</em>' attribute.
@@ -142,22 +142,22 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Items</em>' attribute.
-	 * @see #setMinItems(int)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_MinItems()
-	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @see #setMinItems(Object)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_MinItems()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
 	 * @generated
 	 */
-	int getMinItems();
+	Object getMinItems();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMinItems <em>Min Items</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMinItems <em>Min Items</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Min Items</em>' attribute.
 	 * @see #getMinItems()
 	 * @generated
 	 */
-	void setMinItems(int value);
+	void setMinItems(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Exclusive Minimum</b></em>' attribute.
@@ -168,22 +168,22 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Exclusive Minimum</em>' attribute.
-	 * @see #setExclusiveMinimum(boolean)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_ExclusiveMinimum()
-	 * @model dataType="org.eclipse.uml2.types.Boolean" ordered="false"
+	 * @see #setExclusiveMinimum(Boolean)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_ExclusiveMinimum()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EBooleanObject" ordered="false"
 	 * @generated
 	 */
-	boolean isExclusiveMinimum();
+	Object getExclusiveMinimum();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#isExclusiveMinimum <em>Exclusive Minimum</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getExclusiveMinimum <em>Exclusive Minimum</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Exclusive Minimum</em>' attribute.
-	 * @see #isExclusiveMinimum()
+	 * @see #getExclusiveMinimum()
 	 * @generated
 	 */
-	void setExclusiveMinimum(boolean value);
+	void setExclusiveMinimum(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Max Items</b></em>' attribute.
@@ -194,22 +194,22 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Items</em>' attribute.
-	 * @see #setMaxItems(int)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_MaxItems()
-	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @see #setMaxItems(Object)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_MaxItems()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
 	 * @generated
 	 */
-	int getMaxItems();
+	Object getMaxItems();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMaxItems <em>Max Items</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMaxItems <em>Max Items</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Max Items</em>' attribute.
 	 * @see #getMaxItems()
 	 * @generated
 	 */
-	void setMaxItems(int value);
+	void setMaxItems(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Maximum</b></em>' attribute.
@@ -220,22 +220,22 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maximum</em>' attribute.
-	 * @see #setMaximum(double)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_Maximum()
-	 * @model dataType="org.eclipse.uml2.types.Real" ordered="false"
+	 * @see #setMaximum(Object)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_Maximum()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EDoubleObject" ordered="false"
 	 * @generated
 	 */
-	double getMaximum();
+	Object getMaximum();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMaximum <em>Maximum</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMaximum <em>Maximum</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Maximum</em>' attribute.
 	 * @see #getMaximum()
 	 * @generated
 	 */
-	void setMaximum(double value);
+	void setMaximum(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Minimum</b></em>' attribute.
@@ -246,21 +246,21 @@ public interface JSONSchemaConstraints extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minimum</em>' attribute.
-	 * @see #setMinimum(double)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaConstraints_Minimum()
-	 * @model dataType="org.eclipse.uml2.types.Real" ordered="false"
+	 * @see #setMinimum(Object)
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONSchemaConstraints_Minimum()
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EDoubleObject" ordered="false"
 	 * @generated
 	 */
-	double getMinimum();
+	Object getMinimum();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints#getMinimum <em>Minimum</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.JSONSchemaConstraints#getMinimum <em>Minimum</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Minimum</em>' attribute.
 	 * @see #getMinimum()
 	 * @generated
 	 */
-	void setMinimum(double value);
+	void setMinimum(Object value);
 
 } // JSONSchemaConstraints

@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.Example#getMimeType <em>Mime Type</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Example#getValue <em>Value</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.Example#getMimeType <em>Mime Type</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.Example#getValue <em>Value</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getExample()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getExample()
  * @model
  * @generated
  */
@@ -32,14 +32,14 @@ public interface Example extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mime Type</em>' attribute.
 	 * @see #setMimeType(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getExample_MimeType()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getExample_MimeType()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getMimeType();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Example#getMimeType <em>Mime Type</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.Example#getMimeType <em>Mime Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mime Type</em>' attribute.
@@ -58,14 +58,14 @@ public interface Example extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getExample_Value()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getExample_Value()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getValue();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Example#getValue <em>Value</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.Example#getValue <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Value</em>' attribute.

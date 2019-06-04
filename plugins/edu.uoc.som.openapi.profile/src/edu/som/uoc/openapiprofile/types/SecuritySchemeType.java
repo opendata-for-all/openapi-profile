@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>Security Scheme Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecuritySchemeType()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecuritySchemeType()
  * @model
  * @generated
  */

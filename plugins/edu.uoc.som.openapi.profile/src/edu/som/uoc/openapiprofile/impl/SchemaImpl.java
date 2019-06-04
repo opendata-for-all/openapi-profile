@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getMaxProperties <em>Max Properties</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getMinProperties <em>Min Properties</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getDiscriminator <em>Discriminator</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#isAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getBase_Class <em>Base Class</em>}</li>
  * </ul>
  *
@@ -53,16 +53,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	protected String title = TITLE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getMaxProperties() <em>Max Properties</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMaxProperties()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int MAX_PROPERTIES_EDEFAULT = 0;
-
-	/**
 	 * The cached value of the '{@link #getMaxProperties() <em>Max Properties</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,17 +60,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * @generated
 	 * @ordered
 	 */
-	protected int maxProperties = MAX_PROPERTIES_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getMinProperties() <em>Min Properties</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMinProperties()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int MIN_PROPERTIES_EDEFAULT = 0;
+	protected Object maxProperties;
 
 	/**
 	 * The cached value of the '{@link #getMinProperties() <em>Min Properties</em>}' attribute.
@@ -90,7 +70,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * @generated
 	 * @ordered
 	 */
-	protected int minProperties = MIN_PROPERTIES_EDEFAULT;
+	protected Object minProperties;
 
 	/**
 	 * The default value of the '{@link #getDiscriminator() <em>Discriminator</em>}' attribute.
@@ -113,24 +93,24 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	protected String discriminator = DISCRIMINATOR_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #isAdditionalPropertiesAllowed() <em>Additional Properties Allowed</em>}' attribute.
+	 * The default value of the '{@link #getAdditionalPropertiesAllowed() <em>Additional Properties Allowed</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isAdditionalPropertiesAllowed()
+	 * @see #getAdditionalPropertiesAllowed()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT = false;
+	protected static final Object ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #isAdditionalPropertiesAllowed() <em>Additional Properties Allowed</em>}' attribute.
+	 * The cached value of the '{@link #getAdditionalPropertiesAllowed() <em>Additional Properties Allowed</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isAdditionalPropertiesAllowed()
+	 * @see #getAdditionalPropertiesAllowed()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean additionalPropertiesAllowed = ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT;
+	protected Object additionalPropertiesAllowed = ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getBase_Class() <em>Base Class</em>}' reference.
@@ -187,7 +167,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getMaxProperties() {
+	public Object getMaxProperties() {
 		return maxProperties;
 	}
 
@@ -196,8 +176,8 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMaxProperties(int newMaxProperties) {
-		int oldMaxProperties = maxProperties;
+	public void setMaxProperties(Object newMaxProperties) {
+		Object oldMaxProperties = maxProperties;
 		maxProperties = newMaxProperties;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__MAX_PROPERTIES, oldMaxProperties, maxProperties));
@@ -208,7 +188,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getMinProperties() {
+	public Object getMinProperties() {
 		return minProperties;
 	}
 
@@ -217,8 +197,8 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMinProperties(int newMinProperties) {
-		int oldMinProperties = minProperties;
+	public void setMinProperties(Object newMinProperties) {
+		Object oldMinProperties = minProperties;
 		minProperties = newMinProperties;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__MIN_PROPERTIES, oldMinProperties, minProperties));
@@ -250,7 +230,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAdditionalPropertiesAllowed() {
+	public Object getAdditionalPropertiesAllowed() {
 		return additionalPropertiesAllowed;
 	}
 
@@ -259,8 +239,8 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAdditionalPropertiesAllowed(boolean newAdditionalPropertiesAllowed) {
-		boolean oldAdditionalPropertiesAllowed = additionalPropertiesAllowed;
+	public void setAdditionalPropertiesAllowed(Object newAdditionalPropertiesAllowed) {
+		Object oldAdditionalPropertiesAllowed = additionalPropertiesAllowed;
 		additionalPropertiesAllowed = newAdditionalPropertiesAllowed;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED, oldAdditionalPropertiesAllowed, additionalPropertiesAllowed));
@@ -321,7 +301,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 			case OpenapiprofilePackage.SCHEMA__DISCRIMINATOR:
 				return getDiscriminator();
 			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
-				return isAdditionalPropertiesAllowed();
+				return getAdditionalPropertiesAllowed();
 			case OpenapiprofilePackage.SCHEMA__BASE_CLASS:
 				if (resolve) return getBase_Class();
 				return basicGetBase_Class();
@@ -341,16 +321,16 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 				setTitle((String)newValue);
 				return;
 			case OpenapiprofilePackage.SCHEMA__MAX_PROPERTIES:
-				setMaxProperties((Integer)newValue);
+				setMaxProperties(newValue);
 				return;
 			case OpenapiprofilePackage.SCHEMA__MIN_PROPERTIES:
-				setMinProperties((Integer)newValue);
+				setMinProperties(newValue);
 				return;
 			case OpenapiprofilePackage.SCHEMA__DISCRIMINATOR:
 				setDiscriminator((String)newValue);
 				return;
 			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
-				setAdditionalPropertiesAllowed((Boolean)newValue);
+				setAdditionalPropertiesAllowed((Object)newValue);
 				return;
 			case OpenapiprofilePackage.SCHEMA__BASE_CLASS:
 				setBase_Class((org.eclipse.uml2.uml.Class)newValue);
@@ -371,10 +351,10 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 				setTitle(TITLE_EDEFAULT);
 				return;
 			case OpenapiprofilePackage.SCHEMA__MAX_PROPERTIES:
-				setMaxProperties(MAX_PROPERTIES_EDEFAULT);
+				setMaxProperties((Object)null);
 				return;
 			case OpenapiprofilePackage.SCHEMA__MIN_PROPERTIES:
-				setMinProperties(MIN_PROPERTIES_EDEFAULT);
+				setMinProperties((Object)null);
 				return;
 			case OpenapiprofilePackage.SCHEMA__DISCRIMINATOR:
 				setDiscriminator(DISCRIMINATOR_EDEFAULT);
@@ -400,13 +380,13 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 			case OpenapiprofilePackage.SCHEMA__TITLE:
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 			case OpenapiprofilePackage.SCHEMA__MAX_PROPERTIES:
-				return maxProperties != MAX_PROPERTIES_EDEFAULT;
+				return maxProperties != null;
 			case OpenapiprofilePackage.SCHEMA__MIN_PROPERTIES:
-				return minProperties != MIN_PROPERTIES_EDEFAULT;
+				return minProperties != null;
 			case OpenapiprofilePackage.SCHEMA__DISCRIMINATOR:
 				return DISCRIMINATOR_EDEFAULT == null ? discriminator != null : !DISCRIMINATOR_EDEFAULT.equals(discriminator);
 			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
-				return additionalPropertiesAllowed != ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT;
+				return ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT == null ? additionalPropertiesAllowed != null : !ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT.equals(additionalPropertiesAllowed);
 			case OpenapiprofilePackage.SCHEMA__BASE_CLASS:
 				return base_Class != null;
 		}

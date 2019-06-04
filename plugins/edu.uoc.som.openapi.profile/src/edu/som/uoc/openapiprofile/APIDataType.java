@@ -2,6 +2,8 @@
  */
 package edu.som.uoc.openapiprofile;
 
+import edu.som.uoc.openapiprofile.types.JSONDataType;
+
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Enumeration;
@@ -29,7 +31,7 @@ import org.eclipse.uml2.uml.PrimitiveType;
 public interface APIDataType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.JSONDataType}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.JSONDataType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
@@ -37,10 +39,10 @@ public interface APIDataType extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.JSONDataType
+	 * @see edu.som.uoc.openapiprofile.types.JSONDataType
 	 * @see #setType(JSONDataType)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIDataType_Type()
-	 * @model required="true" ordered="false"
+	 * @model ordered="false"
 	 * @generated
 	 */
 	JSONDataType getType();
@@ -50,7 +52,7 @@ public interface APIDataType extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.JSONDataType
+	 * @see edu.som.uoc.openapiprofile.types.JSONDataType
 	 * @see #getType()
 	 * @generated
 	 */
@@ -67,7 +69,7 @@ public interface APIDataType extends EObject {
 	 * @return the value of the '<em>Format</em>' attribute.
 	 * @see #setFormat(String)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIDataType_Format()
-	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getFormat();

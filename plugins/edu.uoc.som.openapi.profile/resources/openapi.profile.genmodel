@@ -33,63 +33,6 @@
   <foreignModel>openapi.profile.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="Openapiprofile" basePackage="edu.som.uoc"
       disposableProviderFactory="true" ecorePackage="openapiprofile.ecore#/">
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//SchemeType">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/http"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/https"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/ws"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/wss"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//JSONDataType">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/boolean"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/integer"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/number"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/string"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/file"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//HTTPMethod">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/get"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/post"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/put"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/patch"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/options"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/delete"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//ParameterLocation">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/query"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/header"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/path"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/formData"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/body"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//CollectionFormat">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/csv"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/ssv"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/tsv"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/pipes"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//SecuritySchemeType">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SecuritySchemeType/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SecuritySchemeType/basic"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SecuritySchemeType/apiKey"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SecuritySchemeType/oauth2"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//APIKeyLocation">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//APIKeyLocation/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//APIKeyLocation/query"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//APIKeyLocation/header"/>
-    </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//OAuth2FlowType">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//OAuth2FlowType/undefined"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//OAuth2FlowType/implicit"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//OAuth2FlowType/password"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//OAuth2FlowType/application"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//OAuth2FlowType/accessCode"/>
-    </genEnums>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//API">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//API/host"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//API/basePath"/>
@@ -117,24 +60,6 @@
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIProperty/base_Property"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIProperty/constraints"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//XMLFormat">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//XMLFormat/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//XMLFormat/namespace"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//XMLFormat/prefix"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//XMLFormat/attribute"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//XMLFormat/wrapped"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//JSONSchemaConstraints">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/exclusiveMaximum"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/minLength"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/maxLength"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/pattern"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/minItems"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/exclusiveMinimum"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/maxItems"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/maximum"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaConstraints/minimum"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//APIDataType">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIDataType/type"/>
@@ -176,20 +101,6 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIResponse/base_Parameter"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//Header">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Header/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Header/description"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Header/type"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Header/format"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Header/array"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Header/collectionFormat"/>
-      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Header/constraints"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//Example">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Example/mimeType"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Example/value"/>
-    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//APIInfo">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIInfo/title"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIInfo/description"/>
@@ -213,25 +124,6 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//ExternalDocs/base_Operation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//SecurityScheme">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScheme/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScheme/type"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScheme/description"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScheme/location"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScheme/flow"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScheme/authorizationURL"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScheme/tokenURL"/>
-      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//SecurityScheme/scopes"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//SecurityScope">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScope/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityScope/description"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//SecurityRequirement">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityRequirement/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//SecurityRequirement/scope"/>
-    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//SecurityDefinitions">
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//SecurityDefinitions/securitySchemes"/>
@@ -252,11 +144,125 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Tags/base_Model"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//Tag">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Tag/externalDocsURL"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Tag/externalDocsDescription"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Tag/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Tag/description"/>
-    </genClasses>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="types" disposableProviderFactory="true"
+        ecorePackage="openapiprofile.ecore#//types">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/SchemeType">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SchemeType/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SchemeType/http"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SchemeType/https"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SchemeType/ws"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SchemeType/wss"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/JSONDataType">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/JSONDataType/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/JSONDataType/boolean"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/JSONDataType/integer"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/JSONDataType/number"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/JSONDataType/string"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/JSONDataType/file"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/HTTPMethod">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/HTTPMethod/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/HTTPMethod/get"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/HTTPMethod/post"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/HTTPMethod/put"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/HTTPMethod/patch"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/HTTPMethod/options"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/HTTPMethod/delete"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/ParameterLocation">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/ParameterLocation/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/ParameterLocation/query"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/ParameterLocation/header"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/ParameterLocation/path"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/ParameterLocation/formData"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/ParameterLocation/body"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/CollectionFormat">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/CollectionFormat/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/CollectionFormat/csv"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/CollectionFormat/ssv"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/CollectionFormat/tsv"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/CollectionFormat/pipes"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/SecuritySchemeType">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SecuritySchemeType/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SecuritySchemeType/basic"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SecuritySchemeType/apiKey"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/SecuritySchemeType/oauth2"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/APIKeyLocation">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/APIKeyLocation/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/APIKeyLocation/query"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/APIKeyLocation/header"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//types/OAuth2FlowType">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/OAuth2FlowType/undefined"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/OAuth2FlowType/implicit"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/OAuth2FlowType/password"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/OAuth2FlowType/application"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//types/OAuth2FlowType/accessCode"/>
+      </genEnums>
+      <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="openapiprofile.ecore#//types/EIntegerObject"/>
+      <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="openapiprofile.ecore#//types/EBooleanObject"/>
+      <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="openapiprofile.ecore#//types/EDoubleObject"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/XMLFormat">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/XMLFormat/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/XMLFormat/namespace"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/XMLFormat/prefix"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/XMLFormat/attribute"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/XMLFormat/wrapped"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/Header">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Header/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Header/description"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Header/type"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Header/format"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Header/array"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Header/collectionFormat"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//types/Header/constraints"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/JSONSchemaConstraints">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/exclusiveMaximum"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/minLength"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/maxLength"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/pattern"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/minItems"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/exclusiveMinimum"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/maxItems"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/maximum"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/JSONSchemaConstraints/minimum"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/Example">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Example/mimeType"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Example/value"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/SecurityScheme">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScheme/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScheme/type"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScheme/description"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScheme/location"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScheme/flow"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScheme/authorizationURL"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScheme/tokenURL"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//types/SecurityScheme/scopes"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/SecurityScope">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScope/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityScope/description"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/SecurityRequirement">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityRequirement/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/SecurityRequirement/scope"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//types/Tag">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Tag/externalDocsURL"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Tag/externalDocsDescription"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Tag/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//types/Tag/description"/>
+      </genClasses>
+    </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>

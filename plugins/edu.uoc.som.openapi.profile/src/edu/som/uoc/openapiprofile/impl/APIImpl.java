@@ -4,7 +4,8 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.API;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-import edu.som.uoc.openapiprofile.SchemeType;
+
+import edu.som.uoc.openapiprofile.types.SchemeType;
 
 import java.util.Collection;
 

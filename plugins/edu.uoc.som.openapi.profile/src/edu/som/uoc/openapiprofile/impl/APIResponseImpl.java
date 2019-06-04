@@ -3,9 +3,10 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIResponse;
-import edu.som.uoc.openapiprofile.Example;
-import edu.som.uoc.openapiprofile.Header;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+
+import edu.som.uoc.openapiprofile.types.Example;
+import edu.som.uoc.openapiprofile.types.Header;
 
 import java.util.Collection;
 

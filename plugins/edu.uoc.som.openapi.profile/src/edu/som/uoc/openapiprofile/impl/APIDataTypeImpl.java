@@ -3,8 +3,9 @@
 package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIDataType;
-import edu.som.uoc.openapiprofile.JSONDataType;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+
+import edu.som.uoc.openapiprofile.types.JSONDataType;
 
 import org.eclipse.emf.common.notify.Notification;
 

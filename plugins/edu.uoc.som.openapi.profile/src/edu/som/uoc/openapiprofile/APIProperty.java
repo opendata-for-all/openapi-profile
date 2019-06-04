@@ -2,6 +2,9 @@
  */
 package edu.som.uoc.openapiprofile;
 
+import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
+import edu.som.uoc.openapiprofile.types.XMLFormat;
+
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Property;

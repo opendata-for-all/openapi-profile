@@ -84,18 +84,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case OpenapiprofilePackage.XML_FORMAT: {
-				XMLFormat xmlFormat = (XMLFormat)theEObject;
-				T result = caseXMLFormat(xmlFormat);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS: {
-				JSONSchemaConstraints jsonSchemaConstraints = (JSONSchemaConstraints)theEObject;
-				T result = caseJSONSchemaConstraints(jsonSchemaConstraints);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case OpenapiprofilePackage.API_DATA_TYPE: {
 				APIDataType apiDataType = (APIDataType)theEObject;
 				T result = caseAPIDataType(apiDataType);
@@ -120,18 +108,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case OpenapiprofilePackage.HEADER: {
-				Header header = (Header)theEObject;
-				T result = caseHeader(header);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.EXAMPLE: {
-				Example example = (Example)theEObject;
-				T result = caseExample(example);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case OpenapiprofilePackage.API_INFO: {
 				APIInfo apiInfo = (APIInfo)theEObject;
 				T result = caseAPIInfo(apiInfo);
@@ -141,24 +117,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 			case OpenapiprofilePackage.EXTERNAL_DOCS: {
 				ExternalDocs externalDocs = (ExternalDocs)theEObject;
 				T result = caseExternalDocs(externalDocs);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.SECURITY_SCHEME: {
-				SecurityScheme securityScheme = (SecurityScheme)theEObject;
-				T result = caseSecurityScheme(securityScheme);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.SECURITY_SCOPE: {
-				SecurityScope securityScope = (SecurityScope)theEObject;
-				T result = caseSecurityScope(securityScope);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.SECURITY_REQUIREMENT: {
-				SecurityRequirement securityRequirement = (SecurityRequirement)theEObject;
-				T result = caseSecurityRequirement(securityRequirement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -177,12 +135,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 			case OpenapiprofilePackage.TAGS: {
 				Tags tags = (Tags)theEObject;
 				T result = caseTags(tags);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.TAG: {
-				Tag tag = (Tag)theEObject;
-				T result = caseTag(tag);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -232,36 +184,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAPIProperty(APIProperty object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XML Format</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XML Format</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXMLFormat(XMLFormat object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>JSON Schema Constraints</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>JSON Schema Constraints</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseJSONSchemaConstraints(JSONSchemaConstraints object) {
 		return null;
 	}
 
@@ -326,36 +248,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Header</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Header</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHeader(Header object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Example</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Example</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseExample(Example object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>API Info</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -382,51 +274,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseExternalDocs(ExternalDocs object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Security Scheme</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Security Scheme</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSecurityScheme(SecurityScheme object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Security Scope</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Security Scope</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSecurityScope(SecurityScope object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Security Requirement</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Security Requirement</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSecurityRequirement(SecurityRequirement object) {
 		return null;
 	}
 
@@ -472,21 +319,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseTags(Tags object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Tag</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Tag</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTag(Tag object) {
 		return null;
 	}
 

@@ -49,24 +49,6 @@ public interface OpenapiprofileFactory extends EFactory {
 	APIProperty createAPIProperty();
 
 	/**
-	 * Returns a new object of class '<em>XML Format</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XML Format</em>'.
-	 * @generated
-	 */
-	XMLFormat createXMLFormat();
-
-	/**
-	 * Returns a new object of class '<em>JSON Schema Constraints</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>JSON Schema Constraints</em>'.
-	 * @generated
-	 */
-	JSONSchemaConstraints createJSONSchemaConstraints();
-
-	/**
 	 * Returns a new object of class '<em>API Data Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -103,24 +85,6 @@ public interface OpenapiprofileFactory extends EFactory {
 	APIResponse createAPIResponse();
 
 	/**
-	 * Returns a new object of class '<em>Header</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Header</em>'.
-	 * @generated
-	 */
-	Header createHeader();
-
-	/**
-	 * Returns a new object of class '<em>Example</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Example</em>'.
-	 * @generated
-	 */
-	Example createExample();
-
-	/**
 	 * Returns a new object of class '<em>API Info</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -137,33 +101,6 @@ public interface OpenapiprofileFactory extends EFactory {
 	 * @generated
 	 */
 	ExternalDocs createExternalDocs();
-
-	/**
-	 * Returns a new object of class '<em>Security Scheme</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Security Scheme</em>'.
-	 * @generated
-	 */
-	SecurityScheme createSecurityScheme();
-
-	/**
-	 * Returns a new object of class '<em>Security Scope</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Security Scope</em>'.
-	 * @generated
-	 */
-	SecurityScope createSecurityScope();
-
-	/**
-	 * Returns a new object of class '<em>Security Requirement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Security Requirement</em>'.
-	 * @generated
-	 */
-	SecurityRequirement createSecurityRequirement();
 
 	/**
 	 * Returns a new object of class '<em>Security Definitions</em>'.
@@ -191,15 +128,6 @@ public interface OpenapiprofileFactory extends EFactory {
 	 * @generated
 	 */
 	Tags createTags();
-
-	/**
-	 * Returns a new object of class '<em>Tag</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tag</em>'.
-	 * @generated
-	 */
-	Tag createTag();
 
 	/**
 	 * Returns the package supported by this factory.

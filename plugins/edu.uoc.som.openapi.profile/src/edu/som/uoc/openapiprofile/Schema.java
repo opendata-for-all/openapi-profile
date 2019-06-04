@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getMaxProperties <em>Max Properties</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getMinProperties <em>Min Properties</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getDiscriminator <em>Discriminator</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Schema#isAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Class <em>Base Class</em>}</li>
  * </ul>
  *
@@ -61,12 +61,12 @@ public interface Schema extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Properties</em>' attribute.
-	 * @see #setMaxProperties(int)
+	 * @see #setMaxProperties(Object)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_MaxProperties()
-	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
 	 * @generated
 	 */
-	int getMaxProperties();
+	Object getMaxProperties();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getMaxProperties <em>Max Properties</em>}' attribute.
@@ -76,7 +76,7 @@ public interface Schema extends EObject {
 	 * @see #getMaxProperties()
 	 * @generated
 	 */
-	void setMaxProperties(int value);
+	void setMaxProperties(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Min Properties</b></em>' attribute.
@@ -87,12 +87,12 @@ public interface Schema extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Properties</em>' attribute.
-	 * @see #setMinProperties(int)
+	 * @see #setMinProperties(Object)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_MinProperties()
-	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
 	 * @generated
 	 */
-	int getMinProperties();
+	Object getMinProperties();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getMinProperties <em>Min Properties</em>}' attribute.
@@ -102,7 +102,7 @@ public interface Schema extends EObject {
 	 * @see #getMinProperties()
 	 * @generated
 	 */
-	void setMinProperties(int value);
+	void setMinProperties(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Discriminator</b></em>' attribute.
@@ -139,22 +139,22 @@ public interface Schema extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Additional Properties Allowed</em>' attribute.
-	 * @see #setAdditionalPropertiesAllowed(boolean)
+	 * @see #setAdditionalPropertiesAllowed(Boolean)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_AdditionalPropertiesAllowed()
-	 * @model dataType="org.eclipse.uml2.types.Boolean" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.types.EBooleanObject" ordered="false"
 	 * @generated
 	 */
-	boolean isAdditionalPropertiesAllowed();
+	Object getAdditionalPropertiesAllowed();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#isAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Additional Properties Allowed</em>' attribute.
-	 * @see #isAdditionalPropertiesAllowed()
+	 * @see #getAdditionalPropertiesAllowed()
 	 * @generated
 	 */
-	void setAdditionalPropertiesAllowed(boolean value);
+	void setAdditionalPropertiesAllowed(Object value);
 
 	/**
 	 * Returns the value of the '<em><b>Base Class</b></em>' reference.

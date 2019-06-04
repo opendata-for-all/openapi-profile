@@ -2,6 +2,9 @@
  */
 package edu.som.uoc.openapiprofile;
 
+import edu.som.uoc.openapiprofile.types.Example;
+import edu.som.uoc.openapiprofile.types.Header;
+
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -83,7 +86,7 @@ public interface APIResponse extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Headers</b></em>' containment reference list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.Header}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.Header}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Headers</em>' containment reference list isn't clear,

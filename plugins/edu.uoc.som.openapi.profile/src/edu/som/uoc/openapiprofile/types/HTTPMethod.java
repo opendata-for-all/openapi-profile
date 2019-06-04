@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,14 +10,14 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>OAuth2 Flow Type</b></em>',
+ * A representation of the literals of the enumeration '<em><b>HTTP Method</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getOAuth2FlowType()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getHTTPMethod()
  * @model
  * @generated
  */
-public enum OAuth2FlowType implements Enumerator {
+public enum HTTPMethod implements Enumerator {
 	/**
 	 * The '<em><b>Undefined</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -29,44 +29,64 @@ public enum OAuth2FlowType implements Enumerator {
 	UNDEFINED(0, "undefined", "undefined"),
 
 	/**
-	 * The '<em><b>Implicit</b></em>' literal object.
+	 * The '<em><b>Get</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #IMPLICIT_VALUE
+	 * @see #GET_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	IMPLICIT(1, "implicit", "implicit"),
+	GET(1, "get", "get"),
 
 	/**
-	 * The '<em><b>Password</b></em>' literal object.
+	 * The '<em><b>Post</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PASSWORD_VALUE
+	 * @see #POST_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	PASSWORD(2, "password", "password"),
+	POST(2, "post", "post"),
 
 	/**
-	 * The '<em><b>Application</b></em>' literal object.
+	 * The '<em><b>Put</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #APPLICATION_VALUE
+	 * @see #PUT_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	APPLICATION(3, "application", "application"),
+	PUT(3, "put", "put"),
 
 	/**
-	 * The '<em><b>Access Code</b></em>' literal object.
+	 * The '<em><b>Patch</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ACCESS_CODE_VALUE
+	 * @see #PATCH_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ACCESS_CODE(4, "accessCode", "accessCode");
+	PATCH(4, "patch", "patch"),
+
+	/**
+	 * The '<em><b>Options</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #OPTIONS_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	OPTIONS(5, "options", "options"),
+
+	/**
+	 * The '<em><b>Delete</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DELETE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	DELETE(6, "delete", "delete");
 
 	/**
 	 * The '<em><b>Undefined</b></em>' literal value.
@@ -80,83 +100,107 @@ public enum OAuth2FlowType implements Enumerator {
 	public static final int UNDEFINED_VALUE = 0;
 
 	/**
-	 * The '<em><b>Implicit</b></em>' literal value.
+	 * The '<em><b>Get</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #IMPLICIT
-	 * @model name="implicit"
+	 * @see #GET
+	 * @model name="get"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int IMPLICIT_VALUE = 1;
+	public static final int GET_VALUE = 1;
 
 	/**
-	 * The '<em><b>Password</b></em>' literal value.
+	 * The '<em><b>Post</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PASSWORD
-	 * @model name="password"
+	 * @see #POST
+	 * @model name="post"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PASSWORD_VALUE = 2;
+	public static final int POST_VALUE = 2;
 
 	/**
-	 * The '<em><b>Application</b></em>' literal value.
+	 * The '<em><b>Put</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #APPLICATION
-	 * @model name="application"
+	 * @see #PUT
+	 * @model name="put"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int APPLICATION_VALUE = 3;
+	public static final int PUT_VALUE = 3;
 
 	/**
-	 * The '<em><b>Access Code</b></em>' literal value.
+	 * The '<em><b>Patch</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ACCESS_CODE
-	 * @model name="accessCode"
+	 * @see #PATCH
+	 * @model name="patch"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ACCESS_CODE_VALUE = 4;
+	public static final int PATCH_VALUE = 4;
 
 	/**
-	 * An array of all the '<em><b>OAuth2 Flow Type</b></em>' enumerators.
+	 * The '<em><b>Options</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #OPTIONS
+	 * @model name="options"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int OPTIONS_VALUE = 5;
+
+	/**
+	 * The '<em><b>Delete</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DELETE
+	 * @model name="delete"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int DELETE_VALUE = 6;
+
+	/**
+	 * An array of all the '<em><b>HTTP Method</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final OAuth2FlowType[] VALUES_ARRAY =
-		new OAuth2FlowType[] {
+	private static final HTTPMethod[] VALUES_ARRAY =
+		new HTTPMethod[] {
 			UNDEFINED,
-			IMPLICIT,
-			PASSWORD,
-			APPLICATION,
-			ACCESS_CODE,
+			GET,
+			POST,
+			PUT,
+			PATCH,
+			OPTIONS,
+			DELETE,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>OAuth2 Flow Type</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>HTTP Method</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<OAuth2FlowType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<HTTPMethod> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>OAuth2 Flow Type</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>HTTP Method</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static OAuth2FlowType get(String literal) {
+	public static HTTPMethod get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			OAuth2FlowType result = VALUES_ARRAY[i];
+			HTTPMethod result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -165,16 +209,16 @@ public enum OAuth2FlowType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>OAuth2 Flow Type</b></em>' literal with the specified name.
+	 * Returns the '<em><b>HTTP Method</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static OAuth2FlowType getByName(String name) {
+	public static HTTPMethod getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			OAuth2FlowType result = VALUES_ARRAY[i];
+			HTTPMethod result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -183,20 +227,22 @@ public enum OAuth2FlowType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>OAuth2 Flow Type</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>HTTP Method</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static OAuth2FlowType get(int value) {
+	public static HTTPMethod get(int value) {
 		switch (value) {
 			case UNDEFINED_VALUE: return UNDEFINED;
-			case IMPLICIT_VALUE: return IMPLICIT;
-			case PASSWORD_VALUE: return PASSWORD;
-			case APPLICATION_VALUE: return APPLICATION;
-			case ACCESS_CODE_VALUE: return ACCESS_CODE;
+			case GET_VALUE: return GET;
+			case POST_VALUE: return POST;
+			case PUT_VALUE: return PUT;
+			case PATCH_VALUE: return PATCH;
+			case OPTIONS_VALUE: return OPTIONS;
+			case DELETE_VALUE: return DELETE;
 		}
 		return null;
 	}
@@ -228,7 +274,7 @@ public enum OAuth2FlowType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private OAuth2FlowType(int value, String name, String literal) {
+	private HTTPMethod(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -272,4 +318,4 @@ public enum OAuth2FlowType implements Enumerator {
 		return literal;
 	}
 	
-} //OAuth2FlowType
+} //HTTPMethod

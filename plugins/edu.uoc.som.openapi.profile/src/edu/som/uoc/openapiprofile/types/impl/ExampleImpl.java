@@ -1,9 +1,9 @@
 /**
  */
-package edu.som.uoc.openapiprofile.impl;
+package edu.som.uoc.openapiprofile.types.impl;
 
-import edu.som.uoc.openapiprofile.Example;
-import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+import edu.som.uoc.openapiprofile.types.Example;
+import edu.som.uoc.openapiprofile.types.typesPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,8 +20,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.ExampleImpl#getMimeType <em>Mime Type</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.ExampleImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.impl.ExampleImpl#getMimeType <em>Mime Type</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.impl.ExampleImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
@@ -83,7 +83,7 @@ public class ExampleImpl extends MinimalEObjectImpl.Container implements Example
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return OpenapiprofilePackage.Literals.EXAMPLE;
+		return typesPackage.Literals.EXAMPLE;
 	}
 
 	/**
@@ -104,7 +104,7 @@ public class ExampleImpl extends MinimalEObjectImpl.Container implements Example
 		String oldMimeType = mimeType;
 		mimeType = newMimeType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.EXAMPLE__MIME_TYPE, oldMimeType, mimeType));
+			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.EXAMPLE__MIME_TYPE, oldMimeType, mimeType));
 	}
 
 	/**
@@ -125,7 +125,7 @@ public class ExampleImpl extends MinimalEObjectImpl.Container implements Example
 		String oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.EXAMPLE__VALUE, oldValue, value));
+			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.EXAMPLE__VALUE, oldValue, value));
 	}
 
 	/**
@@ -136,9 +136,9 @@ public class ExampleImpl extends MinimalEObjectImpl.Container implements Example
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case OpenapiprofilePackage.EXAMPLE__MIME_TYPE:
+			case typesPackage.EXAMPLE__MIME_TYPE:
 				return getMimeType();
-			case OpenapiprofilePackage.EXAMPLE__VALUE:
+			case typesPackage.EXAMPLE__VALUE:
 				return getValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -152,10 +152,10 @@ public class ExampleImpl extends MinimalEObjectImpl.Container implements Example
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case OpenapiprofilePackage.EXAMPLE__MIME_TYPE:
+			case typesPackage.EXAMPLE__MIME_TYPE:
 				setMimeType((String)newValue);
 				return;
-			case OpenapiprofilePackage.EXAMPLE__VALUE:
+			case typesPackage.EXAMPLE__VALUE:
 				setValue((String)newValue);
 				return;
 		}
@@ -170,10 +170,10 @@ public class ExampleImpl extends MinimalEObjectImpl.Container implements Example
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case OpenapiprofilePackage.EXAMPLE__MIME_TYPE:
+			case typesPackage.EXAMPLE__MIME_TYPE:
 				setMimeType(MIME_TYPE_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.EXAMPLE__VALUE:
+			case typesPackage.EXAMPLE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
 		}
@@ -188,9 +188,9 @@ public class ExampleImpl extends MinimalEObjectImpl.Container implements Example
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case OpenapiprofilePackage.EXAMPLE__MIME_TYPE:
+			case typesPackage.EXAMPLE__MIME_TYPE:
 				return MIME_TYPE_EDEFAULT == null ? mimeType != null : !MIME_TYPE_EDEFAULT.equals(mimeType);
-			case OpenapiprofilePackage.EXAMPLE__VALUE:
+			case typesPackage.EXAMPLE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 		}
 		return super.eIsSet(featureID);

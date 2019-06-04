@@ -80,14 +80,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 				return createAPIPropertyAdapter();
 			}
 			@Override
-			public Adapter caseXMLFormat(XMLFormat object) {
-				return createXMLFormatAdapter();
-			}
-			@Override
-			public Adapter caseJSONSchemaConstraints(JSONSchemaConstraints object) {
-				return createJSONSchemaConstraintsAdapter();
-			}
-			@Override
 			public Adapter caseAPIDataType(APIDataType object) {
 				return createAPIDataTypeAdapter();
 			}
@@ -104,32 +96,12 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 				return createAPIResponseAdapter();
 			}
 			@Override
-			public Adapter caseHeader(Header object) {
-				return createHeaderAdapter();
-			}
-			@Override
-			public Adapter caseExample(Example object) {
-				return createExampleAdapter();
-			}
-			@Override
 			public Adapter caseAPIInfo(APIInfo object) {
 				return createAPIInfoAdapter();
 			}
 			@Override
 			public Adapter caseExternalDocs(ExternalDocs object) {
 				return createExternalDocsAdapter();
-			}
-			@Override
-			public Adapter caseSecurityScheme(SecurityScheme object) {
-				return createSecuritySchemeAdapter();
-			}
-			@Override
-			public Adapter caseSecurityScope(SecurityScope object) {
-				return createSecurityScopeAdapter();
-			}
-			@Override
-			public Adapter caseSecurityRequirement(SecurityRequirement object) {
-				return createSecurityRequirementAdapter();
 			}
 			@Override
 			public Adapter caseSecurityDefinitions(SecurityDefinitions object) {
@@ -142,10 +114,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseTags(Tags object) {
 				return createTagsAdapter();
-			}
-			@Override
-			public Adapter caseTag(Tag object) {
-				return createTagAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -210,34 +178,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.XMLFormat <em>XML Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.XMLFormat
-	 * @generated
-	 */
-	public Adapter createXMLFormatAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.JSONSchemaConstraints <em>JSON Schema Constraints</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.JSONSchemaConstraints
-	 * @generated
-	 */
-	public Adapter createJSONSchemaConstraintsAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.APIDataType <em>API Data Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -294,34 +234,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.Header <em>Header</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.Header
-	 * @generated
-	 */
-	public Adapter createHeaderAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.Example <em>Example</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.Example
-	 * @generated
-	 */
-	public Adapter createExampleAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.APIInfo <em>API Info</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -346,48 +258,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createExternalDocsAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.SecurityScheme <em>Security Scheme</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.SecurityScheme
-	 * @generated
-	 */
-	public Adapter createSecuritySchemeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.SecurityScope <em>Security Scope</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.SecurityScope
-	 * @generated
-	 */
-	public Adapter createSecurityScopeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.SecurityRequirement <em>Security Requirement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.SecurityRequirement
-	 * @generated
-	 */
-	public Adapter createSecurityRequirementAdapter() {
 		return null;
 	}
 
@@ -430,20 +300,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTagsAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.Tag <em>Tag</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.Tag
-	 * @generated
-	 */
-	public Adapter createTagAdapter() {
 		return null;
 	}
 

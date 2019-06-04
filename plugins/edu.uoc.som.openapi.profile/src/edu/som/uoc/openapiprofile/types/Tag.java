@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile;
+package edu.som.uoc.openapiprofile.types;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,13 +13,13 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.Tag#getExternalDocsURL <em>External Docs URL</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Tag#getExternalDocsDescription <em>External Docs Description</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Tag#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Tag#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.Tag#getExternalDocsURL <em>External Docs URL</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.Tag#getExternalDocsDescription <em>External Docs Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.Tag#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.types.Tag#getDescription <em>Description</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getTag()
+ * @see edu.som.uoc.openapiprofile.types.typesPackage#getTag()
  * @model
  * @generated
  */
@@ -34,14 +34,14 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Docs URL</em>' attribute.
 	 * @see #setExternalDocsURL(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getTag_ExternalDocsURL()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getTag_ExternalDocsURL()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getExternalDocsURL();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Tag#getExternalDocsURL <em>External Docs URL</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.Tag#getExternalDocsURL <em>External Docs URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>External Docs URL</em>' attribute.
@@ -60,14 +60,14 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Docs Description</em>' attribute.
 	 * @see #setExternalDocsDescription(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getTag_ExternalDocsDescription()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getTag_ExternalDocsDescription()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getExternalDocsDescription();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Tag#getExternalDocsDescription <em>External Docs Description</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.Tag#getExternalDocsDescription <em>External Docs Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>External Docs Description</em>' attribute.
@@ -86,14 +86,14 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getTag_Name()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getTag_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Tag#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.Tag#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -112,14 +112,14 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getTag_Description()
+	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getTag_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getDescription();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Tag#getDescription <em>Description</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.Tag#getDescription <em>Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Description</em>' attribute.
