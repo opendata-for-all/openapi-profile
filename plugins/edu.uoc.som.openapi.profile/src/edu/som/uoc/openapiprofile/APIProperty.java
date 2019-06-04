@@ -2,9 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
-import edu.som.uoc.openapiprofile.types.XMLFormat;
-
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Property;
@@ -91,12 +88,12 @@ public interface APIProperty extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Xml</em>' containment reference.
-	 * @see #setXml(XMLFormat)
+	 * @see #setXml(edu.som.uoc.openapiprofile.XMLFormat)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Xml()
 	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
-	XMLFormat getXml();
+	edu.som.uoc.openapiprofile.XMLFormat getXml();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}' containment reference.
@@ -106,7 +103,7 @@ public interface APIProperty extends EObject {
 	 * @see #getXml()
 	 * @generated
 	 */
-	void setXml(XMLFormat value);
+	void setXml(edu.som.uoc.openapiprofile.XMLFormat value);
 
 	/**
 	 * Returns the value of the '<em><b>Base Property</b></em>' reference.
@@ -143,12 +140,12 @@ public interface APIProperty extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Constraints</em>' containment reference.
-	 * @see #setConstraints(JSONSchemaConstraints)
+	 * @see #setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Constraints()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	JSONSchemaConstraints getConstraints();
+	edu.som.uoc.openapiprofile.JSONSchemaConstraints getConstraints();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getConstraints <em>Constraints</em>}' containment reference.
@@ -158,6 +155,6 @@ public interface APIProperty extends EObject {
 	 * @see #getConstraints()
 	 * @generated
 	 */
-	void setConstraints(JSONSchemaConstraints value);
+	void setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints value);
 
 } // APIProperty

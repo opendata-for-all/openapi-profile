@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types;
+package edu.som.uoc.openapiprofile;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -15,17 +15,17 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getType <em>Type</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getDescription <em>Description</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getLocation <em>Location</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getFlow <em>Flow</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getAuthorizationURL <em>Authorization URL</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getTokenURL <em>Token URL</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getScopes <em>Scopes</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getType <em>Type</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getLocation <em>Location</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getFlow <em>Flow</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getAuthorizationURL <em>Authorization URL</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getTokenURL <em>Token URL</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getScopes <em>Scopes</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme()
+ * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme()
  * @model
  * @generated
  */
@@ -40,14 +40,14 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_Name()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -58,7 +58,7 @@ public interface SecurityScheme extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.SecuritySchemeType}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.SecuritySchemeType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
@@ -66,20 +66,20 @@ public interface SecurityScheme extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.SecuritySchemeType
+	 * @see edu.som.uoc.openapiprofile.SecuritySchemeType
 	 * @see #setType(SecuritySchemeType)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_Type()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_Type()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	SecuritySchemeType getType();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getType <em>Type</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getType <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.SecuritySchemeType
+	 * @see edu.som.uoc.openapiprofile.SecuritySchemeType
 	 * @see #getType()
 	 * @generated
 	 */
@@ -95,14 +95,14 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_Description()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getDescription();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getDescription <em>Description</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getDescription <em>Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Description</em>' attribute.
@@ -113,7 +113,7 @@ public interface SecurityScheme extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Location</b></em>' attribute.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.APIKeyLocation}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.APIKeyLocation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Location</em>' attribute isn't clear,
@@ -121,20 +121,20 @@ public interface SecurityScheme extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.APIKeyLocation
+	 * @see edu.som.uoc.openapiprofile.APIKeyLocation
 	 * @see #setLocation(APIKeyLocation)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_Location()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_Location()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	APIKeyLocation getLocation();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getLocation <em>Location</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getLocation <em>Location</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Location</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.APIKeyLocation
+	 * @see edu.som.uoc.openapiprofile.APIKeyLocation
 	 * @see #getLocation()
 	 * @generated
 	 */
@@ -142,7 +142,7 @@ public interface SecurityScheme extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Flow</b></em>' attribute.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.OAuth2FlowType}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.OAuth2FlowType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Flow</em>' attribute isn't clear,
@@ -150,20 +150,20 @@ public interface SecurityScheme extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Flow</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.OAuth2FlowType
+	 * @see edu.som.uoc.openapiprofile.OAuth2FlowType
 	 * @see #setFlow(OAuth2FlowType)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_Flow()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_Flow()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	OAuth2FlowType getFlow();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getFlow <em>Flow</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getFlow <em>Flow</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Flow</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.OAuth2FlowType
+	 * @see edu.som.uoc.openapiprofile.OAuth2FlowType
 	 * @see #getFlow()
 	 * @generated
 	 */
@@ -179,14 +179,14 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Authorization URL</em>' attribute.
 	 * @see #setAuthorizationURL(String)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_AuthorizationURL()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_AuthorizationURL()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getAuthorizationURL();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getAuthorizationURL <em>Authorization URL</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getAuthorizationURL <em>Authorization URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Authorization URL</em>' attribute.
@@ -205,14 +205,14 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Token URL</em>' attribute.
 	 * @see #setTokenURL(String)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_TokenURL()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_TokenURL()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getTokenURL();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScheme#getTokenURL <em>Token URL</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getTokenURL <em>Token URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Token URL</em>' attribute.
@@ -223,7 +223,7 @@ public interface SecurityScheme extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Scopes</b></em>' containment reference list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.SecurityScope}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.SecurityScope}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Scopes</em>' containment reference list isn't clear,
@@ -231,7 +231,7 @@ public interface SecurityScheme extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scopes</em>' containment reference list.
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScheme_Scopes()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_Scopes()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */

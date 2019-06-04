@@ -1,12 +1,12 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types.impl;
+package edu.som.uoc.openapiprofile.impl;
 
-import edu.som.uoc.openapiprofile.types.CollectionFormat;
-import edu.som.uoc.openapiprofile.types.Header;
-import edu.som.uoc.openapiprofile.types.JSONDataType;
-import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
-import edu.som.uoc.openapiprofile.types.typesPackage;
+import edu.som.uoc.openapiprofile.CollectionFormat;
+import edu.som.uoc.openapiprofile.Header;
+import edu.som.uoc.openapiprofile.JSONDataType;
+import edu.som.uoc.openapiprofile.JSONSchemaConstraints;
+import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -25,13 +25,13 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.HeaderImpl#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.HeaderImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.HeaderImpl#getType <em>Type</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.HeaderImpl#getFormat <em>Format</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.HeaderImpl#getArray <em>Array</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.HeaderImpl#getCollectionFormat <em>Collection Format</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.HeaderImpl#getConstraints <em>Constraints</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getType <em>Type</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getFormat <em>Format</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getArray <em>Array</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getCollectionFormat <em>Collection Format</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getConstraints <em>Constraints</em>}</li>
  * </ul>
  *
  * @generated
@@ -183,7 +183,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return typesPackage.Literals.HEADER;
+		return OpenapiprofilePackage.Literals.HEADER;
 	}
 
 	/**
@@ -204,7 +204,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__NAME, oldName, name));
 	}
 
 	/**
@@ -225,7 +225,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -246,7 +246,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		JSONDataType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__TYPE, oldType, type));
 	}
 
 	/**
@@ -267,7 +267,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldFormat = format;
 		format = newFormat;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__FORMAT, oldFormat, format));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__FORMAT, oldFormat, format));
 	}
 
 	/**
@@ -288,7 +288,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Object oldArray = array;
 		array = newArray;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__ARRAY, oldArray, array));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__ARRAY, oldArray, array));
 	}
 
 	/**
@@ -309,7 +309,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		CollectionFormat oldCollectionFormat = collectionFormat;
 		collectionFormat = newCollectionFormat == null ? COLLECTION_FORMAT_EDEFAULT : newCollectionFormat;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
 	}
 
 	/**
@@ -330,7 +330,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		JSONSchemaConstraints oldConstraints = constraints;
 		constraints = newConstraints;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__CONSTRAINTS, oldConstraints, newConstraints);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__CONSTRAINTS, oldConstraints, newConstraints);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -345,14 +345,14 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		if (newConstraints != constraints) {
 			NotificationChain msgs = null;
 			if (constraints != null)
-				msgs = ((InternalEObject)constraints).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - typesPackage.HEADER__CONSTRAINTS, null, msgs);
+				msgs = ((InternalEObject)constraints).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.HEADER__CONSTRAINTS, null, msgs);
 			if (newConstraints != null)
-				msgs = ((InternalEObject)newConstraints).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - typesPackage.HEADER__CONSTRAINTS, null, msgs);
+				msgs = ((InternalEObject)newConstraints).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.HEADER__CONSTRAINTS, null, msgs);
 			msgs = basicSetConstraints(newConstraints, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.HEADER__CONSTRAINTS, newConstraints, newConstraints));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__CONSTRAINTS, newConstraints, newConstraints));
 	}
 
 	/**
@@ -363,7 +363,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case typesPackage.HEADER__CONSTRAINTS:
+			case OpenapiprofilePackage.HEADER__CONSTRAINTS:
 				return basicSetConstraints(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -377,19 +377,19 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case typesPackage.HEADER__NAME:
+			case OpenapiprofilePackage.HEADER__NAME:
 				return getName();
-			case typesPackage.HEADER__DESCRIPTION:
+			case OpenapiprofilePackage.HEADER__DESCRIPTION:
 				return getDescription();
-			case typesPackage.HEADER__TYPE:
+			case OpenapiprofilePackage.HEADER__TYPE:
 				return getType();
-			case typesPackage.HEADER__FORMAT:
+			case OpenapiprofilePackage.HEADER__FORMAT:
 				return getFormat();
-			case typesPackage.HEADER__ARRAY:
+			case OpenapiprofilePackage.HEADER__ARRAY:
 				return getArray();
-			case typesPackage.HEADER__COLLECTION_FORMAT:
+			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				return getCollectionFormat();
-			case typesPackage.HEADER__CONSTRAINTS:
+			case OpenapiprofilePackage.HEADER__CONSTRAINTS:
 				return getConstraints();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -403,25 +403,25 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case typesPackage.HEADER__NAME:
+			case OpenapiprofilePackage.HEADER__NAME:
 				setName((String)newValue);
 				return;
-			case typesPackage.HEADER__DESCRIPTION:
+			case OpenapiprofilePackage.HEADER__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case typesPackage.HEADER__TYPE:
+			case OpenapiprofilePackage.HEADER__TYPE:
 				setType((JSONDataType)newValue);
 				return;
-			case typesPackage.HEADER__FORMAT:
+			case OpenapiprofilePackage.HEADER__FORMAT:
 				setFormat((String)newValue);
 				return;
-			case typesPackage.HEADER__ARRAY:
+			case OpenapiprofilePackage.HEADER__ARRAY:
 				setArray((Object)newValue);
 				return;
-			case typesPackage.HEADER__COLLECTION_FORMAT:
+			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				setCollectionFormat((CollectionFormat)newValue);
 				return;
-			case typesPackage.HEADER__CONSTRAINTS:
+			case OpenapiprofilePackage.HEADER__CONSTRAINTS:
 				setConstraints((JSONSchemaConstraints)newValue);
 				return;
 		}
@@ -436,25 +436,25 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case typesPackage.HEADER__NAME:
+			case OpenapiprofilePackage.HEADER__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case typesPackage.HEADER__DESCRIPTION:
+			case OpenapiprofilePackage.HEADER__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case typesPackage.HEADER__TYPE:
+			case OpenapiprofilePackage.HEADER__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
-			case typesPackage.HEADER__FORMAT:
+			case OpenapiprofilePackage.HEADER__FORMAT:
 				setFormat(FORMAT_EDEFAULT);
 				return;
-			case typesPackage.HEADER__ARRAY:
+			case OpenapiprofilePackage.HEADER__ARRAY:
 				setArray(ARRAY_EDEFAULT);
 				return;
-			case typesPackage.HEADER__COLLECTION_FORMAT:
+			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				setCollectionFormat(COLLECTION_FORMAT_EDEFAULT);
 				return;
-			case typesPackage.HEADER__CONSTRAINTS:
+			case OpenapiprofilePackage.HEADER__CONSTRAINTS:
 				setConstraints((JSONSchemaConstraints)null);
 				return;
 		}
@@ -469,19 +469,19 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case typesPackage.HEADER__NAME:
+			case OpenapiprofilePackage.HEADER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case typesPackage.HEADER__DESCRIPTION:
+			case OpenapiprofilePackage.HEADER__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case typesPackage.HEADER__TYPE:
+			case OpenapiprofilePackage.HEADER__TYPE:
 				return type != TYPE_EDEFAULT;
-			case typesPackage.HEADER__FORMAT:
+			case OpenapiprofilePackage.HEADER__FORMAT:
 				return FORMAT_EDEFAULT == null ? format != null : !FORMAT_EDEFAULT.equals(format);
-			case typesPackage.HEADER__ARRAY:
+			case OpenapiprofilePackage.HEADER__ARRAY:
 				return ARRAY_EDEFAULT == null ? array != null : !ARRAY_EDEFAULT.equals(array);
-			case typesPackage.HEADER__COLLECTION_FORMAT:
+			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
-			case typesPackage.HEADER__CONSTRAINTS:
+			case OpenapiprofilePackage.HEADER__CONSTRAINTS:
 				return constraints != null;
 		}
 		return super.eIsSet(featureID);

@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.SecurityRequirement;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -32,7 +30,7 @@ import org.eclipse.uml2.uml.Operation;
 public interface Security extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Security Requirements</b></em>' containment reference list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.SecurityRequirement}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.SecurityRequirement}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Security Requirements</em>' containment reference list isn't clear,
@@ -44,7 +42,7 @@ public interface Security extends EObject {
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	EList<SecurityRequirement> getSecurityRequirements();
+	EList<edu.som.uoc.openapiprofile.SecurityRequirement> getSecurityRequirements();
 
 	/**
 	 * Returns the value of the '<em><b>Base Model</b></em>' reference.

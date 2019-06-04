@@ -4,10 +4,6 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIResponse;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-
-import edu.som.uoc.openapiprofile.types.Example;
-import edu.som.uoc.openapiprofile.types.Header;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -92,7 +88,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Header> headers;
+	protected EList<edu.som.uoc.openapiprofile.Header> headers;
 
 	/**
 	 * The cached value of the '{@link #getExamples() <em>Examples</em>}' containment reference.
@@ -102,7 +98,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected Example examples;
+	protected edu.som.uoc.openapiprofile.Example examples;
 
 	/**
 	 * The cached value of the '{@link #getBase_Parameter() <em>Base Parameter</em>}' reference.
@@ -180,9 +176,9 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Header> getHeaders() {
+	public EList<edu.som.uoc.openapiprofile.Header> getHeaders() {
 		if (headers == null) {
-			headers = new EObjectContainmentEList<Header>(Header.class, this, OpenapiprofilePackage.API_RESPONSE__HEADERS);
+			headers = new EObjectContainmentEList<edu.som.uoc.openapiprofile.Header>(edu.som.uoc.openapiprofile.Header.class, this, OpenapiprofilePackage.API_RESPONSE__HEADERS);
 		}
 		return headers;
 	}
@@ -192,7 +188,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Example getExamples() {
+	public edu.som.uoc.openapiprofile.Example getExamples() {
 		return examples;
 	}
 
@@ -201,8 +197,8 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetExamples(Example newExamples, NotificationChain msgs) {
-		Example oldExamples = examples;
+	public NotificationChain basicSetExamples(edu.som.uoc.openapiprofile.Example newExamples, NotificationChain msgs) {
+		edu.som.uoc.openapiprofile.Example oldExamples = examples;
 		examples = newExamples;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_RESPONSE__EXAMPLES, oldExamples, newExamples);
@@ -216,7 +212,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExamples(Example newExamples) {
+	public void setExamples(edu.som.uoc.openapiprofile.Example newExamples) {
 		if (newExamples != examples) {
 			NotificationChain msgs = null;
 			if (examples != null)
@@ -324,10 +320,10 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__HEADERS:
 				getHeaders().clear();
-				getHeaders().addAll((Collection<? extends Header>)newValue);
+				getHeaders().addAll((Collection<? extends edu.som.uoc.openapiprofile.Header>)newValue);
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__EXAMPLES:
-				setExamples((Example)newValue);
+				setExamples((edu.som.uoc.openapiprofile.Example)newValue);
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
@@ -354,7 +350,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 				getHeaders().clear();
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__EXAMPLES:
-				setExamples((Example)null);
+				setExamples((edu.som.uoc.openapiprofile.Example)null);
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)null);

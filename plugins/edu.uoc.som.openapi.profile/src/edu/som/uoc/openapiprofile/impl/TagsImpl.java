@@ -4,9 +4,6 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 import edu.som.uoc.openapiprofile.Tags;
-
-import edu.som.uoc.openapiprofile.types.Tag;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -48,7 +45,7 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Tag> tags;
+	protected EList<edu.som.uoc.openapiprofile.Tag> tags;
 
 	/**
 	 * The cached value of the '{@link #getBase_Model() <em>Base Model</em>}' reference.
@@ -84,9 +81,9 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Tag> getTags() {
+	public EList<edu.som.uoc.openapiprofile.Tag> getTags() {
 		if (tags == null) {
-			tags = new EObjectContainmentEList<Tag>(Tag.class, this, OpenapiprofilePackage.TAGS__TAGS);
+			tags = new EObjectContainmentEList<edu.som.uoc.openapiprofile.Tag>(edu.som.uoc.openapiprofile.Tag.class, this, OpenapiprofilePackage.TAGS__TAGS);
 		}
 		return tags;
 	}
@@ -171,7 +168,7 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 		switch (featureID) {
 			case OpenapiprofilePackage.TAGS__TAGS:
 				getTags().clear();
-				getTags().addAll((Collection<? extends Tag>)newValue);
+				getTags().addAll((Collection<? extends edu.som.uoc.openapiprofile.Tag>)newValue);
 				return;
 			case OpenapiprofilePackage.TAGS__BASE_MODEL:
 				setBase_Model((Model)newValue);

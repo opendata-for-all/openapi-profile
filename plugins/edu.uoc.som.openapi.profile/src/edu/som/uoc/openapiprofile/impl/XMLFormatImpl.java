@@ -1,9 +1,9 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types.impl;
+package edu.som.uoc.openapiprofile.impl;
 
-import edu.som.uoc.openapiprofile.types.XMLFormat;
-import edu.som.uoc.openapiprofile.types.typesPackage;
+import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+import edu.som.uoc.openapiprofile.XMLFormat;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,11 +20,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.XMLFormatImpl#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.XMLFormatImpl#getNamespace <em>Namespace</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.XMLFormatImpl#getPrefix <em>Prefix</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.XMLFormatImpl#getAttribute <em>Attribute</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.XMLFormatImpl#getWrapped <em>Wrapped</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.XMLFormatImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.XMLFormatImpl#getNamespace <em>Namespace</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.XMLFormatImpl#getPrefix <em>Prefix</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.XMLFormatImpl#getAttribute <em>Attribute</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.XMLFormatImpl#getWrapped <em>Wrapped</em>}</li>
  * </ul>
  *
  * @generated
@@ -146,7 +146,7 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return typesPackage.Literals.XML_FORMAT;
+		return OpenapiprofilePackage.Literals.XML_FORMAT;
 	}
 
 	/**
@@ -167,7 +167,7 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.XML_FORMAT__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.XML_FORMAT__NAME, oldName, name));
 	}
 
 	/**
@@ -188,7 +188,7 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 		String oldNamespace = namespace;
 		namespace = newNamespace;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.XML_FORMAT__NAMESPACE, oldNamespace, namespace));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.XML_FORMAT__NAMESPACE, oldNamespace, namespace));
 	}
 
 	/**
@@ -209,7 +209,7 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 		String oldPrefix = prefix;
 		prefix = newPrefix;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.XML_FORMAT__PREFIX, oldPrefix, prefix));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.XML_FORMAT__PREFIX, oldPrefix, prefix));
 	}
 
 	/**
@@ -230,7 +230,7 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 		Object oldAttribute = attribute;
 		attribute = newAttribute;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.XML_FORMAT__ATTRIBUTE, oldAttribute, attribute));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.XML_FORMAT__ATTRIBUTE, oldAttribute, attribute));
 	}
 
 	/**
@@ -251,7 +251,7 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 		Object oldWrapped = wrapped;
 		wrapped = newWrapped;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.XML_FORMAT__WRAPPED, oldWrapped, wrapped));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.XML_FORMAT__WRAPPED, oldWrapped, wrapped));
 	}
 
 	/**
@@ -262,15 +262,15 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case typesPackage.XML_FORMAT__NAME:
+			case OpenapiprofilePackage.XML_FORMAT__NAME:
 				return getName();
-			case typesPackage.XML_FORMAT__NAMESPACE:
+			case OpenapiprofilePackage.XML_FORMAT__NAMESPACE:
 				return getNamespace();
-			case typesPackage.XML_FORMAT__PREFIX:
+			case OpenapiprofilePackage.XML_FORMAT__PREFIX:
 				return getPrefix();
-			case typesPackage.XML_FORMAT__ATTRIBUTE:
+			case OpenapiprofilePackage.XML_FORMAT__ATTRIBUTE:
 				return getAttribute();
-			case typesPackage.XML_FORMAT__WRAPPED:
+			case OpenapiprofilePackage.XML_FORMAT__WRAPPED:
 				return getWrapped();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -284,19 +284,19 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case typesPackage.XML_FORMAT__NAME:
+			case OpenapiprofilePackage.XML_FORMAT__NAME:
 				setName((String)newValue);
 				return;
-			case typesPackage.XML_FORMAT__NAMESPACE:
+			case OpenapiprofilePackage.XML_FORMAT__NAMESPACE:
 				setNamespace((String)newValue);
 				return;
-			case typesPackage.XML_FORMAT__PREFIX:
+			case OpenapiprofilePackage.XML_FORMAT__PREFIX:
 				setPrefix((String)newValue);
 				return;
-			case typesPackage.XML_FORMAT__ATTRIBUTE:
+			case OpenapiprofilePackage.XML_FORMAT__ATTRIBUTE:
 				setAttribute((Object)newValue);
 				return;
-			case typesPackage.XML_FORMAT__WRAPPED:
+			case OpenapiprofilePackage.XML_FORMAT__WRAPPED:
 				setWrapped((Object)newValue);
 				return;
 		}
@@ -311,19 +311,19 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case typesPackage.XML_FORMAT__NAME:
+			case OpenapiprofilePackage.XML_FORMAT__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case typesPackage.XML_FORMAT__NAMESPACE:
+			case OpenapiprofilePackage.XML_FORMAT__NAMESPACE:
 				setNamespace(NAMESPACE_EDEFAULT);
 				return;
-			case typesPackage.XML_FORMAT__PREFIX:
+			case OpenapiprofilePackage.XML_FORMAT__PREFIX:
 				setPrefix(PREFIX_EDEFAULT);
 				return;
-			case typesPackage.XML_FORMAT__ATTRIBUTE:
+			case OpenapiprofilePackage.XML_FORMAT__ATTRIBUTE:
 				setAttribute(ATTRIBUTE_EDEFAULT);
 				return;
-			case typesPackage.XML_FORMAT__WRAPPED:
+			case OpenapiprofilePackage.XML_FORMAT__WRAPPED:
 				setWrapped(WRAPPED_EDEFAULT);
 				return;
 		}
@@ -338,15 +338,15 @@ public class XMLFormatImpl extends MinimalEObjectImpl.Container implements XMLFo
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case typesPackage.XML_FORMAT__NAME:
+			case OpenapiprofilePackage.XML_FORMAT__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case typesPackage.XML_FORMAT__NAMESPACE:
+			case OpenapiprofilePackage.XML_FORMAT__NAMESPACE:
 				return NAMESPACE_EDEFAULT == null ? namespace != null : !NAMESPACE_EDEFAULT.equals(namespace);
-			case typesPackage.XML_FORMAT__PREFIX:
+			case OpenapiprofilePackage.XML_FORMAT__PREFIX:
 				return PREFIX_EDEFAULT == null ? prefix != null : !PREFIX_EDEFAULT.equals(prefix);
-			case typesPackage.XML_FORMAT__ATTRIBUTE:
+			case OpenapiprofilePackage.XML_FORMAT__ATTRIBUTE:
 				return ATTRIBUTE_EDEFAULT == null ? attribute != null : !ATTRIBUTE_EDEFAULT.equals(attribute);
-			case typesPackage.XML_FORMAT__WRAPPED:
+			case OpenapiprofilePackage.XML_FORMAT__WRAPPED:
 				return WRAPPED_EDEFAULT == null ? wrapped != null : !WRAPPED_EDEFAULT.equals(wrapped);
 		}
 		return super.eIsSet(featureID);

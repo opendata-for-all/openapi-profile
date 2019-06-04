@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.SchemeType;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -86,8 +84,8 @@ public interface API extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Schemes</b></em>' attribute list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.SchemeType}.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.SchemeType}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.SchemeType}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.SchemeType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Schemes</em>' attribute list isn't clear,
@@ -95,12 +93,12 @@ public interface API extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Schemes</em>' attribute list.
-	 * @see edu.som.uoc.openapiprofile.types.SchemeType
+	 * @see edu.som.uoc.openapiprofile.SchemeType
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPI_Schemes()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<SchemeType> getSchemes();
+	EList<edu.som.uoc.openapiprofile.SchemeType> getSchemes();
 
 	/**
 	 * Returns the value of the '<em><b>Consumes</b></em>' attribute list.

@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types;
+package edu.som.uoc.openapiprofile;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScope#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.SecurityScope#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScope#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScope#getDescription <em>Description</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScope()
+ * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScope()
  * @model
  * @generated
  */
@@ -32,14 +32,14 @@ public interface SecurityScope extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScope_Name()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScope_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScope#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScope#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -58,14 +58,14 @@ public interface SecurityScope extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapiprofile.types.typesPackage#getSecurityScope_Description()
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScope_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getDescription();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.types.SecurityScope#getDescription <em>Description</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScope#getDescription <em>Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Description</em>' attribute.

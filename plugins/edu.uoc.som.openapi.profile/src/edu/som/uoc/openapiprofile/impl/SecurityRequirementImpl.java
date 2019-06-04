@@ -1,9 +1,9 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types.impl;
+package edu.som.uoc.openapiprofile.impl;
 
-import edu.som.uoc.openapiprofile.types.SecurityRequirement;
-import edu.som.uoc.openapiprofile.types.typesPackage;
+import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
+import edu.som.uoc.openapiprofile.SecurityRequirement;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,8 +20,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.SecurityRequirementImpl#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.SecurityRequirementImpl#getScope <em>Scope</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityRequirementImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SecurityRequirementImpl#getScope <em>Scope</em>}</li>
  * </ul>
  *
  * @generated
@@ -83,7 +83,7 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return typesPackage.Literals.SECURITY_REQUIREMENT;
+		return OpenapiprofilePackage.Literals.SECURITY_REQUIREMENT;
 	}
 
 	/**
@@ -104,7 +104,7 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.SECURITY_REQUIREMENT__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SECURITY_REQUIREMENT__NAME, oldName, name));
 	}
 
 	/**
@@ -125,7 +125,7 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 		String oldScope = scope;
 		scope = newScope;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.SECURITY_REQUIREMENT__SCOPE, oldScope, scope));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SECURITY_REQUIREMENT__SCOPE, oldScope, scope));
 	}
 
 	/**
@@ -136,9 +136,9 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case typesPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__NAME:
 				return getName();
-			case typesPackage.SECURITY_REQUIREMENT__SCOPE:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__SCOPE:
 				return getScope();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -152,10 +152,10 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case typesPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__NAME:
 				setName((String)newValue);
 				return;
-			case typesPackage.SECURITY_REQUIREMENT__SCOPE:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__SCOPE:
 				setScope((String)newValue);
 				return;
 		}
@@ -170,10 +170,10 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case typesPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case typesPackage.SECURITY_REQUIREMENT__SCOPE:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__SCOPE:
 				setScope(SCOPE_EDEFAULT);
 				return;
 		}
@@ -188,9 +188,9 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case typesPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case typesPackage.SECURITY_REQUIREMENT__SCOPE:
+			case OpenapiprofilePackage.SECURITY_REQUIREMENT__SCOPE:
 				return SCOPE_EDEFAULT == null ? scope != null : !SCOPE_EDEFAULT.equals(scope);
 		}
 		return super.eIsSet(featureID);

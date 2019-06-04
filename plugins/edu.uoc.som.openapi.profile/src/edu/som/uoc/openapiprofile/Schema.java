@@ -63,7 +63,7 @@ public interface Schema extends EObject {
 	 * @return the value of the '<em>Max Properties</em>' attribute.
 	 * @see #setMaxProperties(Object)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_MaxProperties()
-	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.EIntegerObject" ordered="false"
 	 * @generated
 	 */
 	Object getMaxProperties();
@@ -89,7 +89,7 @@ public interface Schema extends EObject {
 	 * @return the value of the '<em>Min Properties</em>' attribute.
 	 * @see #setMinProperties(Object)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_MinProperties()
-	 * @model dataType="edu.som.uoc.openapiprofile.types.EIntegerObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.EIntegerObject" ordered="false"
 	 * @generated
 	 */
 	Object getMinProperties();
@@ -141,7 +141,7 @@ public interface Schema extends EObject {
 	 * @return the value of the '<em>Additional Properties Allowed</em>' attribute.
 	 * @see #setAdditionalPropertiesAllowed(Boolean)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_AdditionalPropertiesAllowed()
-	 * @model dataType="edu.som.uoc.openapiprofile.types.EBooleanObject" ordered="false"
+	 * @model dataType="edu.som.uoc.openapiprofile.EBooleanObject" ordered="false"
 	 * @generated
 	 */
 	Object getAdditionalPropertiesAllowed();

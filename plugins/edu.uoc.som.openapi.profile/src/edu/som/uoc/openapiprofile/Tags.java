@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.Tag;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -30,7 +28,7 @@ import org.eclipse.uml2.uml.Model;
 public interface Tags extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Tags</b></em>' containment reference list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.Tag}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.Tag}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Tags</em>' containment reference list isn't clear,
@@ -42,7 +40,7 @@ public interface Tags extends EObject {
 	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
-	EList<Tag> getTags();
+	EList<edu.som.uoc.openapiprofile.Tag> getTags();
 
 	/**
 	 * Returns the value of the '<em><b>Base Model</b></em>' reference.

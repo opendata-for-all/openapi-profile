@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.JSONDataType;
-
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Enumeration;
@@ -31,7 +29,7 @@ import org.eclipse.uml2.uml.PrimitiveType;
 public interface APIDataType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.JSONDataType}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.JSONDataType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
@@ -39,24 +37,24 @@ public interface APIDataType extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.JSONDataType
-	 * @see #setType(JSONDataType)
+	 * @see edu.som.uoc.openapiprofile.JSONDataType
+	 * @see #setType(edu.som.uoc.openapiprofile.JSONDataType)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIDataType_Type()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	JSONDataType getType();
+	edu.som.uoc.openapiprofile.JSONDataType getType();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIDataType#getType <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.JSONDataType
+	 * @see edu.som.uoc.openapiprofile.JSONDataType
 	 * @see #getType()
 	 * @generated
 	 */
-	void setType(JSONDataType value);
+	void setType(edu.som.uoc.openapiprofile.JSONDataType value);
 
 	/**
 	 * Returns the value of the '<em><b>Format</b></em>' attribute.

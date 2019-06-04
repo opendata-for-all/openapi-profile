@@ -4,11 +4,6 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIParameter;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-
-import edu.som.uoc.openapiprofile.types.CollectionFormat;
-import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
-import edu.som.uoc.openapiprofile.types.ParameterLocation;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -67,7 +62,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ParameterLocation LOCATION_EDEFAULT = ParameterLocation.UNDEFINED;
+	protected static final edu.som.uoc.openapiprofile.ParameterLocation LOCATION_EDEFAULT = edu.som.uoc.openapiprofile.ParameterLocation.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getLocation() <em>Location</em>}' attribute.
@@ -77,7 +72,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected ParameterLocation location = LOCATION_EDEFAULT;
+	protected edu.som.uoc.openapiprofile.ParameterLocation location = LOCATION_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
@@ -107,7 +102,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected static final CollectionFormat COLLECTION_FORMAT_EDEFAULT = CollectionFormat.UNDEFINED;
+	protected static final edu.som.uoc.openapiprofile.CollectionFormat COLLECTION_FORMAT_EDEFAULT = edu.som.uoc.openapiprofile.CollectionFormat.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.
@@ -117,7 +112,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected CollectionFormat collectionFormat = COLLECTION_FORMAT_EDEFAULT;
+	protected edu.som.uoc.openapiprofile.CollectionFormat collectionFormat = COLLECTION_FORMAT_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getBase_Parameter() <em>Base Parameter</em>}' reference.
@@ -137,7 +132,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected JSONSchemaConstraints constraints;
+	protected edu.som.uoc.openapiprofile.JSONSchemaConstraints constraints;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,7 +179,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ParameterLocation getLocation() {
+	public edu.som.uoc.openapiprofile.ParameterLocation getLocation() {
 		return location;
 	}
 
@@ -193,8 +188,8 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLocation(ParameterLocation newLocation) {
-		ParameterLocation oldLocation = location;
+	public void setLocation(edu.som.uoc.openapiprofile.ParameterLocation newLocation) {
+		edu.som.uoc.openapiprofile.ParameterLocation oldLocation = location;
 		location = newLocation == null ? LOCATION_EDEFAULT : newLocation;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__LOCATION, oldLocation, location));
@@ -226,7 +221,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CollectionFormat getCollectionFormat() {
+	public edu.som.uoc.openapiprofile.CollectionFormat getCollectionFormat() {
 		return collectionFormat;
 	}
 
@@ -235,8 +230,8 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCollectionFormat(CollectionFormat newCollectionFormat) {
-		CollectionFormat oldCollectionFormat = collectionFormat;
+	public void setCollectionFormat(edu.som.uoc.openapiprofile.CollectionFormat newCollectionFormat) {
+		edu.som.uoc.openapiprofile.CollectionFormat oldCollectionFormat = collectionFormat;
 		collectionFormat = newCollectionFormat == null ? COLLECTION_FORMAT_EDEFAULT : newCollectionFormat;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
@@ -285,7 +280,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public JSONSchemaConstraints getConstraints() {
+	public edu.som.uoc.openapiprofile.JSONSchemaConstraints getConstraints() {
 		return constraints;
 	}
 
@@ -294,8 +289,8 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConstraints(JSONSchemaConstraints newConstraints, NotificationChain msgs) {
-		JSONSchemaConstraints oldConstraints = constraints;
+	public NotificationChain basicSetConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints newConstraints, NotificationChain msgs) {
+		edu.som.uoc.openapiprofile.JSONSchemaConstraints oldConstraints = constraints;
 		constraints = newConstraints;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS, oldConstraints, newConstraints);
@@ -309,7 +304,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConstraints(JSONSchemaConstraints newConstraints) {
+	public void setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints newConstraints) {
 		if (newConstraints != constraints) {
 			NotificationChain msgs = null;
 			if (constraints != null)
@@ -374,19 +369,19 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 				setDescription((String)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
-				setLocation((ParameterLocation)newValue);
+				setLocation((edu.som.uoc.openapiprofile.ParameterLocation)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
 				setAllowEmptyValues((Object)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
-				setCollectionFormat((CollectionFormat)newValue);
+				setCollectionFormat((edu.som.uoc.openapiprofile.CollectionFormat)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS:
-				setConstraints((JSONSchemaConstraints)newValue);
+				setConstraints((edu.som.uoc.openapiprofile.JSONSchemaConstraints)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -416,7 +411,7 @@ public class APIParameterImpl extends MinimalEObjectImpl.Container implements AP
 				setBase_Parameter((Parameter)null);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__CONSTRAINTS:
-				setConstraints((JSONSchemaConstraints)null);
+				setConstraints((edu.som.uoc.openapiprofile.JSONSchemaConstraints)null);
 				return;
 		}
 		super.eUnset(featureID);

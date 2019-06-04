@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types;
+package edu.som.uoc.openapiprofile;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,14 +10,14 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>Parameter Location</b></em>',
+ * A representation of the literals of the enumeration '<em><b>API Key Location</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapiprofile.types.typesPackage#getParameterLocation()
+ * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIKeyLocation()
  * @model
  * @generated
  */
-public enum ParameterLocation implements Enumerator {
+public enum APIKeyLocation implements Enumerator {
 	/**
 	 * The '<em><b>Undefined</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -46,37 +46,7 @@ public enum ParameterLocation implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	HEADER(2, "header", "header"),
-
-	/**
-	 * The '<em><b>Path</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #PATH_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	PATH(3, "path", "path"),
-
-	/**
-	 * The '<em><b>Form Data</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FORM_DATA_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	FORM_DATA(4, "formData", "formData"),
-
-	/**
-	 * The '<em><b>Body</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #BODY_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	BODY(5, "body", "body");
+	HEADER(2, "header", "header");
 
 	/**
 	 * The '<em><b>Undefined</b></em>' literal value.
@@ -112,73 +82,37 @@ public enum ParameterLocation implements Enumerator {
 	public static final int HEADER_VALUE = 2;
 
 	/**
-	 * The '<em><b>Path</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #PATH
-	 * @model name="path"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int PATH_VALUE = 3;
-
-	/**
-	 * The '<em><b>Form Data</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FORM_DATA
-	 * @model name="formData"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int FORM_DATA_VALUE = 4;
-
-	/**
-	 * The '<em><b>Body</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #BODY
-	 * @model name="body"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int BODY_VALUE = 5;
-
-	/**
-	 * An array of all the '<em><b>Parameter Location</b></em>' enumerators.
+	 * An array of all the '<em><b>API Key Location</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final ParameterLocation[] VALUES_ARRAY =
-		new ParameterLocation[] {
+	private static final APIKeyLocation[] VALUES_ARRAY =
+		new APIKeyLocation[] {
 			UNDEFINED,
 			QUERY,
 			HEADER,
-			PATH,
-			FORM_DATA,
-			BODY,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>Parameter Location</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>API Key Location</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<ParameterLocation> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<APIKeyLocation> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Parameter Location</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>API Key Location</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ParameterLocation get(String literal) {
+	public static APIKeyLocation get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			ParameterLocation result = VALUES_ARRAY[i];
+			APIKeyLocation result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -187,16 +121,16 @@ public enum ParameterLocation implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Parameter Location</b></em>' literal with the specified name.
+	 * Returns the '<em><b>API Key Location</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ParameterLocation getByName(String name) {
+	public static APIKeyLocation getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			ParameterLocation result = VALUES_ARRAY[i];
+			APIKeyLocation result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -205,21 +139,18 @@ public enum ParameterLocation implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Parameter Location</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>API Key Location</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static ParameterLocation get(int value) {
+	public static APIKeyLocation get(int value) {
 		switch (value) {
 			case UNDEFINED_VALUE: return UNDEFINED;
 			case QUERY_VALUE: return QUERY;
 			case HEADER_VALUE: return HEADER;
-			case PATH_VALUE: return PATH;
-			case FORM_DATA_VALUE: return FORM_DATA;
-			case BODY_VALUE: return BODY;
 		}
 		return null;
 	}
@@ -251,7 +182,7 @@ public enum ParameterLocation implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private ParameterLocation(int value, String name, String literal) {
+	private APIKeyLocation(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -295,4 +226,4 @@ public enum ParameterLocation implements Enumerator {
 		return literal;
 	}
 	
-} //ParameterLocation
+} //APIKeyLocation

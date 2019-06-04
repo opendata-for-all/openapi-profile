@@ -1,9 +1,9 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types.impl;
+package edu.som.uoc.openapiprofile.impl;
 
-import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
-import edu.som.uoc.openapiprofile.types.typesPackage;
+import edu.som.uoc.openapiprofile.JSONSchemaConstraints;
+import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,15 +20,15 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getMinLength <em>Min Length</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getMaxLength <em>Max Length</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getPattern <em>Pattern</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getMinItems <em>Min Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getMaxItems <em>Max Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getMaximum <em>Maximum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.types.impl.JSONSchemaConstraintsImpl#getMinimum <em>Minimum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getMinLength <em>Min Length</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getMaxLength <em>Max Length</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getPattern <em>Pattern</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getMinItems <em>Min Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getMaxItems <em>Max Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getMaximum <em>Maximum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaConstraintsImpl#getMinimum <em>Minimum</em>}</li>
  * </ul>
  *
  * @generated
@@ -170,7 +170,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return typesPackage.Literals.JSON_SCHEMA_CONSTRAINTS;
+		return OpenapiprofilePackage.Literals.JSON_SCHEMA_CONSTRAINTS;
 	}
 
 	/**
@@ -191,7 +191,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldExclusiveMaximum = exclusiveMaximum;
 		exclusiveMaximum = newExclusiveMaximum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM, oldExclusiveMaximum, exclusiveMaximum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM, oldExclusiveMaximum, exclusiveMaximum));
 	}
 
 	/**
@@ -212,7 +212,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldMinLength = minLength;
 		minLength = newMinLength;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH, oldMinLength, minLength));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH, oldMinLength, minLength));
 	}
 
 	/**
@@ -233,7 +233,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldMaxLength = maxLength;
 		maxLength = newMaxLength;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH, oldMaxLength, maxLength));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH, oldMaxLength, maxLength));
 	}
 
 	/**
@@ -254,7 +254,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		String oldPattern = pattern;
 		pattern = newPattern;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__PATTERN, oldPattern, pattern));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__PATTERN, oldPattern, pattern));
 	}
 
 	/**
@@ -275,7 +275,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldMinItems = minItems;
 		minItems = newMinItems;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS, oldMinItems, minItems));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS, oldMinItems, minItems));
 	}
 
 	/**
@@ -296,7 +296,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldExclusiveMinimum = exclusiveMinimum;
 		exclusiveMinimum = newExclusiveMinimum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM, oldExclusiveMinimum, exclusiveMinimum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM, oldExclusiveMinimum, exclusiveMinimum));
 	}
 
 	/**
@@ -317,7 +317,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldMaxItems = maxItems;
 		maxItems = newMaxItems;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS, oldMaxItems, maxItems));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS, oldMaxItems, maxItems));
 	}
 
 	/**
@@ -338,7 +338,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldMaximum = maximum;
 		maximum = newMaximum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM, oldMaximum, maximum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM, oldMaximum, maximum));
 	}
 
 	/**
@@ -359,7 +359,7 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 		Object oldMinimum = minimum;
 		minimum = newMinimum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, typesPackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM, oldMinimum, minimum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM, oldMinimum, minimum));
 	}
 
 	/**
@@ -370,23 +370,23 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
 				return getExclusiveMaximum();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
 				return getMinLength();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
 				return getMaxLength();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
 				return getPattern();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
 				return getMinItems();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
 				return getExclusiveMinimum();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
 				return getMaxItems();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
 				return getMaximum();
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
 				return getMinimum();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -400,31 +400,31 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum((Object)newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
 				setMinLength(newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
 				setMaxLength(newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
 				setPattern((String)newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
 				setMinItems(newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum((Object)newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
 				setMaxItems(newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
 				setMaximum(newValue);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
 				setMinimum(newValue);
 				return;
 		}
@@ -439,31 +439,31 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum(EXCLUSIVE_MAXIMUM_EDEFAULT);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
 				setMinLength((Object)null);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
 				setMaxLength((Object)null);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
 				setPattern(PATTERN_EDEFAULT);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
 				setMinItems((Object)null);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum(EXCLUSIVE_MINIMUM_EDEFAULT);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
 				setMaxItems((Object)null);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
 				setMaximum((Object)null);
 				return;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
 				setMinimum((Object)null);
 				return;
 		}
@@ -478,23 +478,23 @@ public class JSONSchemaConstraintsImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MAXIMUM:
 				return EXCLUSIVE_MAXIMUM_EDEFAULT == null ? exclusiveMaximum != null : !EXCLUSIVE_MAXIMUM_EDEFAULT.equals(exclusiveMaximum);
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_LENGTH:
 				return minLength != null;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_LENGTH:
 				return maxLength != null;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__PATTERN:
 				return PATTERN_EDEFAULT == null ? pattern != null : !PATTERN_EDEFAULT.equals(pattern);
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MIN_ITEMS:
 				return minItems != null;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__EXCLUSIVE_MINIMUM:
 				return EXCLUSIVE_MINIMUM_EDEFAULT == null ? exclusiveMinimum != null : !EXCLUSIVE_MINIMUM_EDEFAULT.equals(exclusiveMinimum);
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAX_ITEMS:
 				return maxItems != null;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MAXIMUM:
 				return maximum != null;
-			case typesPackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
+			case OpenapiprofilePackage.JSON_SCHEMA_CONSTRAINTS__MINIMUM:
 				return minimum != null;
 		}
 		return super.eIsSet(featureID);

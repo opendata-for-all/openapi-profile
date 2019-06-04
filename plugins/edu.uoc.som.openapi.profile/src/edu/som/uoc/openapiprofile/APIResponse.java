@@ -2,9 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.Example;
-import edu.som.uoc.openapiprofile.types.Header;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -86,7 +83,7 @@ public interface APIResponse extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Headers</b></em>' containment reference list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.Header}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.Header}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Headers</em>' containment reference list isn't clear,
@@ -98,7 +95,7 @@ public interface APIResponse extends EObject {
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	EList<Header> getHeaders();
+	EList<edu.som.uoc.openapiprofile.Header> getHeaders();
 
 	/**
 	 * Returns the value of the '<em><b>Examples</b></em>' containment reference.
@@ -109,12 +106,12 @@ public interface APIResponse extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Examples</em>' containment reference.
-	 * @see #setExamples(Example)
+	 * @see #setExamples(edu.som.uoc.openapiprofile.Example)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIResponse_Examples()
 	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
-	Example getExamples();
+	edu.som.uoc.openapiprofile.Example getExamples();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIResponse#getExamples <em>Examples</em>}' containment reference.
@@ -124,7 +121,7 @@ public interface APIResponse extends EObject {
 	 * @see #getExamples()
 	 * @generated
 	 */
-	void setExamples(Example value);
+	void setExamples(edu.som.uoc.openapiprofile.Example value);
 
 	/**
 	 * Returns the value of the '<em><b>Base Parameter</b></em>' reference.

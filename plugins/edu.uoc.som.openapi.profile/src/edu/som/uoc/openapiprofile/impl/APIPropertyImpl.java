@@ -4,10 +4,6 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIProperty;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-
-import edu.som.uoc.openapiprofile.types.JSONSchemaConstraints;
-import edu.som.uoc.openapiprofile.types.XMLFormat;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -85,7 +81,7 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected XMLFormat xml;
+	protected edu.som.uoc.openapiprofile.XMLFormat xml;
 
 	/**
 	 * The cached value of the '{@link #getBase_Property() <em>Base Property</em>}' reference.
@@ -105,7 +101,7 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected JSONSchemaConstraints constraints;
+	protected edu.som.uoc.openapiprofile.JSONSchemaConstraints constraints;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,7 +169,7 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLFormat getXml() {
+	public edu.som.uoc.openapiprofile.XMLFormat getXml() {
 		return xml;
 	}
 
@@ -182,8 +178,8 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetXml(XMLFormat newXml, NotificationChain msgs) {
-		XMLFormat oldXml = xml;
+	public NotificationChain basicSetXml(edu.som.uoc.openapiprofile.XMLFormat newXml, NotificationChain msgs) {
+		edu.som.uoc.openapiprofile.XMLFormat oldXml = xml;
 		xml = newXml;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PROPERTY__XML, oldXml, newXml);
@@ -197,7 +193,7 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setXml(XMLFormat newXml) {
+	public void setXml(edu.som.uoc.openapiprofile.XMLFormat newXml) {
 		if (newXml != xml) {
 			NotificationChain msgs = null;
 			if (xml != null)
@@ -254,7 +250,7 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public JSONSchemaConstraints getConstraints() {
+	public edu.som.uoc.openapiprofile.JSONSchemaConstraints getConstraints() {
 		return constraints;
 	}
 
@@ -263,8 +259,8 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetConstraints(JSONSchemaConstraints newConstraints, NotificationChain msgs) {
-		JSONSchemaConstraints oldConstraints = constraints;
+	public NotificationChain basicSetConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints newConstraints, NotificationChain msgs) {
+		edu.som.uoc.openapiprofile.JSONSchemaConstraints oldConstraints = constraints;
 		constraints = newConstraints;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PROPERTY__CONSTRAINTS, oldConstraints, newConstraints);
@@ -278,7 +274,7 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setConstraints(JSONSchemaConstraints newConstraints) {
+	public void setConstraints(edu.som.uoc.openapiprofile.JSONSchemaConstraints newConstraints) {
 		if (newConstraints != constraints) {
 			NotificationChain msgs = null;
 			if (constraints != null)
@@ -346,13 +342,13 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 				setDescription((String)newValue);
 				return;
 			case OpenapiprofilePackage.API_PROPERTY__XML:
-				setXml((XMLFormat)newValue);
+				setXml((edu.som.uoc.openapiprofile.XMLFormat)newValue);
 				return;
 			case OpenapiprofilePackage.API_PROPERTY__BASE_PROPERTY:
 				setBase_Property((Property)newValue);
 				return;
 			case OpenapiprofilePackage.API_PROPERTY__CONSTRAINTS:
-				setConstraints((JSONSchemaConstraints)newValue);
+				setConstraints((edu.som.uoc.openapiprofile.JSONSchemaConstraints)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -373,13 +369,13 @@ public class APIPropertyImpl extends MinimalEObjectImpl.Container implements API
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case OpenapiprofilePackage.API_PROPERTY__XML:
-				setXml((XMLFormat)null);
+				setXml((edu.som.uoc.openapiprofile.XMLFormat)null);
 				return;
 			case OpenapiprofilePackage.API_PROPERTY__BASE_PROPERTY:
 				setBase_Property((Property)null);
 				return;
 			case OpenapiprofilePackage.API_PROPERTY__CONSTRAINTS:
-				setConstraints((JSONSchemaConstraints)null);
+				setConstraints((edu.som.uoc.openapiprofile.JSONSchemaConstraints)null);
 				return;
 		}
 		super.eUnset(featureID);

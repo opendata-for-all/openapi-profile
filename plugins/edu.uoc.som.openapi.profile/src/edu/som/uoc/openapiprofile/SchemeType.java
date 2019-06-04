@@ -1,6 +1,6 @@
 /**
  */
-package edu.som.uoc.openapiprofile.types;
+package edu.som.uoc.openapiprofile;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,14 +10,14 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>JSON Data Type</b></em>',
+ * A representation of the literals of the enumeration '<em><b>Scheme Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapiprofile.types.typesPackage#getJSONDataType()
+ * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchemeType()
  * @model
  * @generated
  */
-public enum JSONDataType implements Enumerator {
+public enum SchemeType implements Enumerator {
 	/**
 	 * The '<em><b>Undefined</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -29,54 +29,44 @@ public enum JSONDataType implements Enumerator {
 	UNDEFINED(0, "undefined", "undefined"),
 
 	/**
-	 * The '<em><b>Boolean</b></em>' literal object.
+	 * The '<em><b>Http</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BOOLEAN_VALUE
+	 * @see #HTTP_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	BOOLEAN(1, "boolean", "boolean"),
+	HTTP(1, "http", "http"),
 
 	/**
-	 * The '<em><b>Integer</b></em>' literal object.
+	 * The '<em><b>Https</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #INTEGER_VALUE
+	 * @see #HTTPS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	INTEGER(2, "integer", "integer"),
+	HTTPS(2, "https", "https"),
 
 	/**
-	 * The '<em><b>Number</b></em>' literal object.
+	 * The '<em><b>Ws</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #NUMBER_VALUE
+	 * @see #WS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	NUMBER(3, "number", "number"),
+	WS(3, "ws", "ws"),
 
 	/**
-	 * The '<em><b>String</b></em>' literal object.
+	 * The '<em><b>Wss</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #STRING_VALUE
+	 * @see #WSS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	STRING(4, "string", "string"),
-
-	/**
-	 * The '<em><b>File</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FILE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	FILE(5, "file", "file");
+	WSS(4, "wss", "wss");
 
 	/**
 	 * The '<em><b>Undefined</b></em>' literal value.
@@ -90,95 +80,83 @@ public enum JSONDataType implements Enumerator {
 	public static final int UNDEFINED_VALUE = 0;
 
 	/**
-	 * The '<em><b>Boolean</b></em>' literal value.
+	 * The '<em><b>Http</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BOOLEAN
-	 * @model name="boolean"
+	 * @see #HTTP
+	 * @model name="http"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BOOLEAN_VALUE = 1;
+	public static final int HTTP_VALUE = 1;
 
 	/**
-	 * The '<em><b>Integer</b></em>' literal value.
+	 * The '<em><b>Https</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #INTEGER
-	 * @model name="integer"
+	 * @see #HTTPS
+	 * @model name="https"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int INTEGER_VALUE = 2;
+	public static final int HTTPS_VALUE = 2;
 
 	/**
-	 * The '<em><b>Number</b></em>' literal value.
+	 * The '<em><b>Ws</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #NUMBER
-	 * @model name="number"
+	 * @see #WS
+	 * @model name="ws"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NUMBER_VALUE = 3;
+	public static final int WS_VALUE = 3;
 
 	/**
-	 * The '<em><b>String</b></em>' literal value.
+	 * The '<em><b>Wss</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #STRING
-	 * @model name="string"
+	 * @see #WSS
+	 * @model name="wss"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int STRING_VALUE = 4;
+	public static final int WSS_VALUE = 4;
 
 	/**
-	 * The '<em><b>File</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FILE
-	 * @model name="file"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int FILE_VALUE = 5;
-
-	/**
-	 * An array of all the '<em><b>JSON Data Type</b></em>' enumerators.
+	 * An array of all the '<em><b>Scheme Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final JSONDataType[] VALUES_ARRAY =
-		new JSONDataType[] {
+	private static final SchemeType[] VALUES_ARRAY =
+		new SchemeType[] {
 			UNDEFINED,
-			BOOLEAN,
-			INTEGER,
-			NUMBER,
-			STRING,
-			FILE,
+			HTTP,
+			HTTPS,
+			WS,
+			WSS,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>JSON Data Type</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>Scheme Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<JSONDataType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<SchemeType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>JSON Data Type</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>Scheme Type</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static JSONDataType get(String literal) {
+	public static SchemeType get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			JSONDataType result = VALUES_ARRAY[i];
+			SchemeType result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -187,16 +165,16 @@ public enum JSONDataType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>JSON Data Type</b></em>' literal with the specified name.
+	 * Returns the '<em><b>Scheme Type</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static JSONDataType getByName(String name) {
+	public static SchemeType getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			JSONDataType result = VALUES_ARRAY[i];
+			SchemeType result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -205,21 +183,20 @@ public enum JSONDataType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>JSON Data Type</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>Scheme Type</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static JSONDataType get(int value) {
+	public static SchemeType get(int value) {
 		switch (value) {
 			case UNDEFINED_VALUE: return UNDEFINED;
-			case BOOLEAN_VALUE: return BOOLEAN;
-			case INTEGER_VALUE: return INTEGER;
-			case NUMBER_VALUE: return NUMBER;
-			case STRING_VALUE: return STRING;
-			case FILE_VALUE: return FILE;
+			case HTTP_VALUE: return HTTP;
+			case HTTPS_VALUE: return HTTPS;
+			case WS_VALUE: return WS;
+			case WSS_VALUE: return WSS;
 		}
 		return null;
 	}
@@ -251,7 +228,7 @@ public enum JSONDataType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private JSONDataType(int value, String name, String literal) {
+	private SchemeType(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -295,4 +272,4 @@ public enum JSONDataType implements Enumerator {
 		return literal;
 	}
 	
-} //JSONDataType
+} //SchemeType

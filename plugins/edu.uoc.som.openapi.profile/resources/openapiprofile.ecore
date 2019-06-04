@@ -11,7 +11,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="basePath" ordered="false"
         lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="schemes" ordered="false"
-        upperBound="-1" eType="#//types/SchemeType"/>
+        upperBound="-1" eType="#//SchemeType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="consumes" ordered="false"
         upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="produces" ordered="false"
@@ -19,19 +19,36 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Model" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SchemeType">
+    <eLiterals name="undefined"/>
+    <eLiterals name="http" value="1"/>
+    <eLiterals name="https" value="2"/>
+    <eLiterals name="ws" value="3"/>
+    <eLiterals name="wss" value="4"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Schema">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxProperties" ordered="false"
-        eType="#//types/EIntegerObject"/>
+        eType="#//EIntegerObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="minProperties" ordered="false"
-        eType="#//types/EIntegerObject"/>
+        eType="#//EIntegerObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="discriminator" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalPropertiesAllowed"
-        ordered="false" eType="#//types/EBooleanObject"/>
+        ordered="false" eType="#//EBooleanObject"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="EIntegerObject" instanceTypeName="EIntegerObject">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="Integer"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="EBooleanObject" instanceClassName="Boolean">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="Boolean"/>
+    </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIProperty">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
@@ -39,14 +56,50 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="xml" ordered="false" lowerBound="1"
-        eType="#//types/XMLFormat" containment="true"/>
+        eType="#//XMLFormat" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Property" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" ordered="false"
-        eType="#//types/JSONSchemaConstraints" containment="true"/>
+        eType="#//JSONSchemaConstraints" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="XMLFormat">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="namespace" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prefix" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute" ordered="false"
+        eType="#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wrapped" ordered="false"
+        eType="#//EBooleanObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JSONSchemaConstraints">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclusiveMaximum" ordered="false"
+        eType="#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minLength" ordered="false"
+        eType="#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxLength" ordered="false"
+        eType="#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pattern" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minItems" ordered="false"
+        eType="#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclusiveMinimum" ordered="false"
+        eType="#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxItems" ordered="false"
+        eType="#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maximum" ordered="false"
+        eType="#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minimum" ordered="false"
+        eType="#//EDoubleObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="EDoubleObject" instanceTypeName="EDoubleObject">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="Real"/>
+    </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIDataType">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" eType="#//types/JSONDataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" eType="#//JSONDataType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_PrimitiveType" ordered="false"
@@ -54,17 +107,25 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Enumeration" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Enumeration"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="JSONDataType">
+    <eLiterals name="undefined"/>
+    <eLiterals name="boolean" value="1"/>
+    <eLiterals name="integer" value="2"/>
+    <eLiterals name="number" value="3"/>
+    <eLiterals name="string" value="4"/>
+    <eLiterals name="file" value="5"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIOperation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="relativePath" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" ordered="false"
-        eType="#//types/HTTPMethod"/>
+        eType="#//HTTPMethod"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="produces" ordered="false"
         upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="consumes" ordered="false"
         upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="schemes" ordered="false"
-        upperBound="-1" eType="#//types/SchemeType"/>
+        upperBound="-1" eType="#//SchemeType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="summary" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
@@ -74,30 +135,75 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" ordered="false" upperBound="-1"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="HTTPMethod">
+    <eLiterals name="undefined"/>
+    <eLiterals name="get" value="1"/>
+    <eLiterals name="post" value="2"/>
+    <eLiterals name="put" value="3"/>
+    <eLiterals name="patch" value="4"/>
+    <eLiterals name="options" value="5"/>
+    <eLiterals name="delete" value="6"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIParameter">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
-        eType="#//types/ParameterLocation"/>
+        eType="#//ParameterLocation"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowEmptyValues" ordered="false"
-        eType="#//types/EBooleanObject"/>
+        eType="#//EBooleanObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="collectionFormat" ordered="false"
-        eType="#//types/CollectionFormat"/>
+        eType="#//CollectionFormat"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Parameter" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Parameter"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" ordered="false"
-        eType="#//types/JSONSchemaConstraints" containment="true"/>
+        eType="#//JSONSchemaConstraints" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParameterLocation">
+    <eLiterals name="undefined"/>
+    <eLiterals name="query" value="1"/>
+    <eLiterals name="header" value="2"/>
+    <eLiterals name="path" value="3"/>
+    <eLiterals name="formData" value="4"/>
+    <eLiterals name="body" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CollectionFormat">
+    <eLiterals name="undefined"/>
+    <eLiterals name="csv" value="1"/>
+    <eLiterals name="ssv" value="2"/>
+    <eLiterals name="tsv" value="3"/>
+    <eLiterals name="pipes" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIResponse">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="headers" ordered="false"
-        upperBound="-1" eType="#//types/Header" containment="true"/>
+        upperBound="-1" eType="#//Header" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="examples" ordered="false"
-        lowerBound="1" eType="#//types/Example" containment="true"/>
+        lowerBound="1" eType="#//Example" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Parameter" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Parameter"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Header">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" lowerBound="1"
+        eType="#//JSONDataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="array" ordered="false"
+        eType="#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="collectionFormat" ordered="false"
+        eType="#//CollectionFormat"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" ordered="false"
+        eType="#//JSONSchemaConstraints" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Example">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIInfo">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
@@ -134,190 +240,74 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SecurityDefinitions">
     <eStructuralFeatures xsi:type="ecore:EReference" name="securitySchemes" ordered="false"
-        upperBound="-1" eType="#//types/SecurityScheme" containment="true"/>
+        upperBound="-1" eType="#//SecurityScheme" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Model" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityScheme">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" eType="#//SecuritySchemeType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+        eType="#//APIKeyLocation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="flow" ordered="false" eType="#//OAuth2FlowType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="authorizationURL" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tokenURL" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scopes" ordered="false"
+        upperBound="-1" eType="#//SecurityScope" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SecuritySchemeType">
+    <eLiterals name="undefined"/>
+    <eLiterals name="basic" value="1"/>
+    <eLiterals name="apiKey" value="2"/>
+    <eLiterals name="oauth2" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="APIKeyLocation">
+    <eLiterals name="undefined"/>
+    <eLiterals name="query" value="1"/>
+    <eLiterals name="header" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="OAuth2FlowType">
+    <eLiterals name="undefined"/>
+    <eLiterals name="implicit" value="1"/>
+    <eLiterals name="password" value="2"/>
+    <eLiterals name="application" value="3"/>
+    <eLiterals name="accessCode" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityScope">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Security">
     <eStructuralFeatures xsi:type="ecore:EReference" name="securityRequirements" ordered="false"
-        upperBound="-1" eType="#//types/SecurityRequirement" containment="true"/>
+        upperBound="-1" eType="#//SecurityRequirement" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Model" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Operation" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityRequirement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scope" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Tags">
     <eStructuralFeatures xsi:type="ecore:EReference" name="tags" ordered="false" lowerBound="1"
-        upperBound="-1" eType="#//types/Tag" containment="true"/>
+        upperBound="-1" eType="#//Tag" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Model" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
   </eClassifiers>
-  <eSubpackages name="types" nsURI="http:///OpenAPIProfile/types.ecore" nsPrefix="OpenAPIProfile.types">
-    <eClassifiers xsi:type="ecore:EDataType" name="EIntegerObject" instanceTypeName="EIntegerObject">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="Integer"/>
-      </eAnnotations>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EDataType" name="EBooleanObject" instanceClassName="Boolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="Boolean"/>
-      </eAnnotations>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EDataType" name="EDoubleObject" instanceTypeName="EDoubleObject">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="Real"/>
-      </eAnnotations>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="SchemeType">
-      <eLiterals name="undefined"/>
-      <eLiterals name="http" value="1"/>
-      <eLiterals name="https" value="2"/>
-      <eLiterals name="ws" value="3"/>
-      <eLiterals name="wss" value="4"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="JSONDataType">
-      <eLiterals name="undefined"/>
-      <eLiterals name="boolean" value="1"/>
-      <eLiterals name="integer" value="2"/>
-      <eLiterals name="number" value="3"/>
-      <eLiterals name="string" value="4"/>
-      <eLiterals name="file" value="5"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="HTTPMethod">
-      <eLiterals name="undefined"/>
-      <eLiterals name="get" value="1"/>
-      <eLiterals name="post" value="2"/>
-      <eLiterals name="put" value="3"/>
-      <eLiterals name="patch" value="4"/>
-      <eLiterals name="options" value="5"/>
-      <eLiterals name="delete" value="6"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="ParameterLocation">
-      <eLiterals name="undefined"/>
-      <eLiterals name="query" value="1"/>
-      <eLiterals name="header" value="2"/>
-      <eLiterals name="path" value="3"/>
-      <eLiterals name="formData" value="4"/>
-      <eLiterals name="body" value="5"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="CollectionFormat">
-      <eLiterals name="undefined"/>
-      <eLiterals name="csv" value="1"/>
-      <eLiterals name="ssv" value="2"/>
-      <eLiterals name="tsv" value="3"/>
-      <eLiterals name="pipes" value="4"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="SecuritySchemeType">
-      <eLiterals name="undefined"/>
-      <eLiterals name="basic" value="1"/>
-      <eLiterals name="apiKey" value="2"/>
-      <eLiterals name="oauth2" value="3"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="APIKeyLocation">
-      <eLiterals name="undefined"/>
-      <eLiterals name="query" value="1"/>
-      <eLiterals name="header" value="2"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="OAuth2FlowType">
-      <eLiterals name="undefined"/>
-      <eLiterals name="implicit" value="1"/>
-      <eLiterals name="password" value="2"/>
-      <eLiterals name="application" value="3"/>
-      <eLiterals name="accessCode" value="4"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="XMLFormat">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="namespace" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="prefix" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute" ordered="false"
-          eType="#//types/EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="wrapped" ordered="false"
-          eType="#//types/EBooleanObject"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Header">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
-          lowerBound="1" eType="#//types/JSONDataType"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" ordered="false"
-          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="array" ordered="false"
-          eType="#//types/EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="collectionFormat" ordered="false"
-          eType="#//types/CollectionFormat"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" ordered="false"
-          eType="#//types/JSONSchemaConstraints" containment="true"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="JSONSchemaConstraints">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclusiveMaximum" ordered="false"
-          eType="#//types/EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="minLength" ordered="false"
-          eType="#//types/EIntegerObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxLength" ordered="false"
-          eType="#//types/EIntegerObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pattern" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="minItems" ordered="false"
-          eType="#//types/EIntegerObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclusiveMinimum" ordered="false"
-          eType="#//types/EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxItems" ordered="false"
-          eType="#//types/EIntegerObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maximum" ordered="false"
-          eType="#//types/EDoubleObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="minimum" ordered="false"
-          eType="#//types/EDoubleObject"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Example">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="SecurityScheme">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
-          eType="#//types/SecuritySchemeType"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
-          eType="#//types/APIKeyLocation"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="flow" ordered="false"
-          eType="#//types/OAuth2FlowType"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="authorizationURL" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="tokenURL" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="scopes" ordered="false"
-          upperBound="-1" eType="#//types/SecurityScope" containment="true"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="SecurityScope">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="SecurityRequirement">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="scope" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Tag">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="externalDocsURL" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="externalDocsDescription"
-          ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
-          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    </eClassifiers>
-  </eSubpackages>
+  <eClassifiers xsi:type="ecore:EClass" name="Tag">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="externalDocsURL" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="externalDocsDescription"
+        ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
 </ecore:EPackage>

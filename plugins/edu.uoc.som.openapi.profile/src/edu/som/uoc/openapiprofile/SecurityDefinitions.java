@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.SecurityScheme;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -30,7 +28,7 @@ import org.eclipse.uml2.uml.Model;
 public interface SecurityDefinitions extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Security Schemes</b></em>' containment reference list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.SecurityScheme}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.SecurityScheme}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Security Schemes</em>' containment reference list isn't clear,
@@ -42,7 +40,7 @@ public interface SecurityDefinitions extends EObject {
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	EList<SecurityScheme> getSecuritySchemes();
+	EList<edu.som.uoc.openapiprofile.SecurityScheme> getSecuritySchemes();
 
 	/**
 	 * Returns the value of the '<em><b>Base Model</b></em>' reference.

@@ -4,9 +4,6 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 import edu.som.uoc.openapiprofile.Security;
-
-import edu.som.uoc.openapiprofile.types.SecurityRequirement;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -50,7 +47,7 @@ public class SecurityImpl extends MinimalEObjectImpl.Container implements Securi
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SecurityRequirement> securityRequirements;
+	protected EList<edu.som.uoc.openapiprofile.SecurityRequirement> securityRequirements;
 
 	/**
 	 * The cached value of the '{@link #getBase_Model() <em>Base Model</em>}' reference.
@@ -96,9 +93,9 @@ public class SecurityImpl extends MinimalEObjectImpl.Container implements Securi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SecurityRequirement> getSecurityRequirements() {
+	public EList<edu.som.uoc.openapiprofile.SecurityRequirement> getSecurityRequirements() {
 		if (securityRequirements == null) {
-			securityRequirements = new EObjectContainmentEList<SecurityRequirement>(SecurityRequirement.class, this, OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS);
+			securityRequirements = new EObjectContainmentEList<edu.som.uoc.openapiprofile.SecurityRequirement>(edu.som.uoc.openapiprofile.SecurityRequirement.class, this, OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS);
 		}
 		return securityRequirements;
 	}
@@ -224,7 +221,7 @@ public class SecurityImpl extends MinimalEObjectImpl.Container implements Securi
 		switch (featureID) {
 			case OpenapiprofilePackage.SECURITY__SECURITY_REQUIREMENTS:
 				getSecurityRequirements().clear();
-				getSecurityRequirements().addAll((Collection<? extends SecurityRequirement>)newValue);
+				getSecurityRequirements().addAll((Collection<? extends edu.som.uoc.openapiprofile.SecurityRequirement>)newValue);
 				return;
 			case OpenapiprofilePackage.SECURITY__BASE_MODEL:
 				setBase_Model((Model)newValue);

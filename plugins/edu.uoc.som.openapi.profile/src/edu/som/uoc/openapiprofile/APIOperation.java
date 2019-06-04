@@ -2,9 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import edu.som.uoc.openapiprofile.types.HTTPMethod;
-import edu.som.uoc.openapiprofile.types.SchemeType;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -64,7 +61,7 @@ public interface APIOperation extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Method</b></em>' attribute.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.HTTPMethod}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.HTTPMethod}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Method</em>' attribute isn't clear,
@@ -72,24 +69,24 @@ public interface APIOperation extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Method</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.HTTPMethod
-	 * @see #setMethod(HTTPMethod)
+	 * @see edu.som.uoc.openapiprofile.HTTPMethod
+	 * @see #setMethod(edu.som.uoc.openapiprofile.HTTPMethod)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIOperation_Method()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	HTTPMethod getMethod();
+	edu.som.uoc.openapiprofile.HTTPMethod getMethod();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIOperation#getMethod <em>Method</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Method</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.types.HTTPMethod
+	 * @see edu.som.uoc.openapiprofile.HTTPMethod
 	 * @see #getMethod()
 	 * @generated
 	 */
-	void setMethod(HTTPMethod value);
+	void setMethod(edu.som.uoc.openapiprofile.HTTPMethod value);
 
 	/**
 	 * Returns the value of the '<em><b>Produces</b></em>' attribute list.
@@ -125,8 +122,8 @@ public interface APIOperation extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Schemes</b></em>' attribute list.
-	 * The list contents are of type {@link edu.som.uoc.openapiprofile.types.SchemeType}.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.types.SchemeType}.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.SchemeType}.
+	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.SchemeType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Schemes</em>' attribute list isn't clear,
@@ -134,12 +131,12 @@ public interface APIOperation extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Schemes</em>' attribute list.
-	 * @see edu.som.uoc.openapiprofile.types.SchemeType
+	 * @see edu.som.uoc.openapiprofile.SchemeType
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIOperation_Schemes()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	EList<SchemeType> getSchemes();
+	EList<edu.som.uoc.openapiprofile.SchemeType> getSchemes();
 
 	/**
 	 * Returns the value of the '<em><b>Summary</b></em>' attribute.

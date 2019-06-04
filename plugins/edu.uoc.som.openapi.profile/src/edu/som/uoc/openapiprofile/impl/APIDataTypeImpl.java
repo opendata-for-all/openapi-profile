@@ -4,9 +4,6 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.APIDataType;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
-
-import edu.som.uoc.openapiprofile.types.JSONDataType;
-
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -43,7 +40,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected static final JSONDataType TYPE_EDEFAULT = JSONDataType.UNDEFINED;
+	protected static final edu.som.uoc.openapiprofile.JSONDataType TYPE_EDEFAULT = edu.som.uoc.openapiprofile.JSONDataType.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
@@ -53,7 +50,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected JSONDataType type = TYPE_EDEFAULT;
+	protected edu.som.uoc.openapiprofile.JSONDataType type = TYPE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getFormat() <em>Format</em>}' attribute.
@@ -119,7 +116,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public JSONDataType getType() {
+	public edu.som.uoc.openapiprofile.JSONDataType getType() {
 		return type;
 	}
 
@@ -128,8 +125,8 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(JSONDataType newType) {
-		JSONDataType oldType = type;
+	public void setType(edu.som.uoc.openapiprofile.JSONDataType newType) {
+		edu.som.uoc.openapiprofile.JSONDataType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_DATA_TYPE__TYPE, oldType, type));
@@ -263,7 +260,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case OpenapiprofilePackage.API_DATA_TYPE__TYPE:
-				setType((JSONDataType)newValue);
+				setType((edu.som.uoc.openapiprofile.JSONDataType)newValue);
 				return;
 			case OpenapiprofilePackage.API_DATA_TYPE__FORMAT:
 				setFormat((String)newValue);
