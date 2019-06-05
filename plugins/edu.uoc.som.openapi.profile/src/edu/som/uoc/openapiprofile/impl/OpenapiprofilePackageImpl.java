@@ -2058,14 +2058,17 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		addEEnumLiteral(schemeTypeEEnum, SchemeType.WSS);
 
 		initEEnum(httpMethodEEnum, HTTPMethod.class, "HTTPMethod");
+		addEEnumLiteral(httpMethodEEnum, HTTPMethod.UNDEFINED);
 		addEEnumLiteral(httpMethodEEnum, HTTPMethod.GET);
 		addEEnumLiteral(httpMethodEEnum, HTTPMethod.POST);
 		addEEnumLiteral(httpMethodEEnum, HTTPMethod.PUT);
 		addEEnumLiteral(httpMethodEEnum, HTTPMethod.PATCH);
 		addEEnumLiteral(httpMethodEEnum, HTTPMethod.OPTIONS);
 		addEEnumLiteral(httpMethodEEnum, HTTPMethod.DELETE);
+		addEEnumLiteral(httpMethodEEnum, HTTPMethod.HEAD);
 
 		initEEnum(parameterLocationEEnum, ParameterLocation.class, "ParameterLocation");
+		addEEnumLiteral(parameterLocationEEnum, ParameterLocation.UNDEFINED);
 		addEEnumLiteral(parameterLocationEEnum, ParameterLocation.QUERY);
 		addEEnumLiteral(parameterLocationEEnum, ParameterLocation.HEADER);
 		addEEnumLiteral(parameterLocationEEnum, ParameterLocation.PATH);
@@ -2073,12 +2076,14 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		addEEnumLiteral(parameterLocationEEnum, ParameterLocation.BODY);
 
 		initEEnum(collectionFormatEEnum, CollectionFormat.class, "CollectionFormat");
+		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.UNDEFINED);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.CSV);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.SSV);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.TSV);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.PIPES);
 
 		initEEnum(jsonDataTypeEEnum, JSONDataType.class, "JSONDataType");
+		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.UNDEFINED);
 		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.BOOLEAN);
 		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.INTEGER);
 		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.NUMBER);

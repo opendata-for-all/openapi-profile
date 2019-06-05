@@ -90,7 +90,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final JSONDataType TYPE_EDEFAULT = JSONDataType.BOOLEAN;
+	protected static final JSONDataType TYPE_EDEFAULT = JSONDataType.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
@@ -150,7 +150,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final CollectionFormat COLLECTION_FORMAT_EDEFAULT = CollectionFormat.CSV;
+	protected static final CollectionFormat COLLECTION_FORMAT_EDEFAULT = CollectionFormat.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.

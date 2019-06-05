@@ -344,6 +344,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_HUBx8HyIEemaV87q0fd26g" name="wss"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_i9SGgH1EEemCU627TT0glQ" name="JSONDataType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iIIB4IeREemhxfnNMWmiBw" name="undefined"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qQ43AH1EEemCU627TT0glQ" name="boolean"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rjS6EH1EEemCU627TT0glQ" name="integer"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tGkqsH1EEemCU627TT0glQ" name="number"/>
@@ -351,14 +352,17 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wGCsgH1EEemCU627TT0glQ" name="file"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_fjRBQH1FEemCU627TT0glQ" name="HTTPMethod">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tfSMwIekEemjMNFdDGDGzg" name="undefined"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kM2bgH1FEemCU627TT0glQ" name="get"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lis0IH1FEemCU627TT0glQ" name="post"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nMBiYH1FEemCU627TT0glQ" name="put"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qbknkH1FEemCU627TT0glQ" name="patch"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sCC2IH1FEemCU627TT0glQ" name="options"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uP0VQH1FEemCU627TT0glQ" name="delete"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xWJesIemEemjMNFdDGDGzg" name="head"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qmqAwH1GEemCU627TT0glQ" name="ParameterLocation">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uDu9oIekEemjMNFdDGDGzg" name="undefined"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vgCxkH1GEemCU627TT0glQ" name="query"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wxUzQH1GEemCU627TT0glQ" name="header"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4V27sH1GEemCU627TT0glQ" name="path"/>
@@ -366,6 +370,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_B-mXkH1HEemCU627TT0glQ" name="body"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_iknAcH1HEemCU627TT0glQ" name="CollectionFormat">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0OSbYIekEemjMNFdDGDGzg" name="undefined"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lBeEcH1HEemCU627TT0glQ" name="csv"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mWdhcH1HEemCU627TT0glQ" name="ssv"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nkgB4H1HEemCU627TT0glQ" name="tsv"/>

@@ -114,12 +114,14 @@
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="HTTPMethod">
-    <eLiterals name="get"/>
-    <eLiterals name="post" value="1"/>
-    <eLiterals name="put" value="2"/>
-    <eLiterals name="patch" value="3"/>
-    <eLiterals name="options" value="4"/>
-    <eLiterals name="delete" value="5"/>
+    <eLiterals name="undefined"/>
+    <eLiterals name="get" value="1"/>
+    <eLiterals name="post" value="2"/>
+    <eLiterals name="put" value="3"/>
+    <eLiterals name="patch" value="4"/>
+    <eLiterals name="options" value="5"/>
+    <eLiterals name="delete" value="6"/>
+    <eLiterals name="head" value="7"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIParameter" eSuperTypes="#//JSONSchemaSubset">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
@@ -132,17 +134,19 @@
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Parameter"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ParameterLocation">
-    <eLiterals name="query"/>
-    <eLiterals name="header" value="1"/>
-    <eLiterals name="path" value="2"/>
-    <eLiterals name="formData" value="3"/>
-    <eLiterals name="body" value="4"/>
+    <eLiterals name="undefined"/>
+    <eLiterals name="query" value="1"/>
+    <eLiterals name="header" value="2"/>
+    <eLiterals name="path" value="3"/>
+    <eLiterals name="formData" value="4"/>
+    <eLiterals name="body" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CollectionFormat">
-    <eLiterals name="csv"/>
-    <eLiterals name="ssv" value="1"/>
-    <eLiterals name="tsv" value="2"/>
-    <eLiterals name="pipes" value="3"/>
+    <eLiterals name="undefined"/>
+    <eLiterals name="csv" value="1"/>
+    <eLiterals name="ssv" value="2"/>
+    <eLiterals name="tsv" value="3"/>
+    <eLiterals name="pipes" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIResponse">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
@@ -187,11 +191,12 @@
         eType="#//Boolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="JSONDataType">
-    <eLiterals name="boolean"/>
-    <eLiterals name="integer" value="1"/>
-    <eLiterals name="number" value="2"/>
-    <eLiterals name="string" value="3"/>
-    <eLiterals name="file" value="4"/>
+    <eLiterals name="undefined"/>
+    <eLiterals name="boolean" value="1"/>
+    <eLiterals name="integer" value="2"/>
+    <eLiterals name="number" value="3"/>
+    <eLiterals name="string" value="4"/>
+    <eLiterals name="file" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Example">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType" ordered="false"

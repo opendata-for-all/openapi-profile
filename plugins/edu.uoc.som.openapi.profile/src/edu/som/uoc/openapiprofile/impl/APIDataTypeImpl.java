@@ -42,7 +42,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected static final JSONDataType TYPE_EDEFAULT = JSONDataType.BOOLEAN;
+	protected static final JSONDataType TYPE_EDEFAULT = JSONDataType.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.

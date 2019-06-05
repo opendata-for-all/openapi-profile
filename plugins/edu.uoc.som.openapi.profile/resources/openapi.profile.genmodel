@@ -40,14 +40,17 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/wss"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//HTTPMethod">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/undefined"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/get"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/post"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/put"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/patch"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/options"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/delete"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/head"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//ParameterLocation">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/undefined"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/query"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/header"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/path"/>
@@ -55,12 +58,14 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//ParameterLocation/body"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//CollectionFormat">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/undefined"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/csv"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/ssv"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/tsv"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/pipes"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//JSONDataType">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/undefined"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/boolean"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/integer"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/number"/>

@@ -73,7 +73,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * @generated
 	 * @ordered
 	 */
-	protected static final HTTPMethod METHOD_EDEFAULT = HTTPMethod.GET;
+	protected static final HTTPMethod METHOD_EDEFAULT = HTTPMethod.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getMethod() <em>Method</em>}' attribute.

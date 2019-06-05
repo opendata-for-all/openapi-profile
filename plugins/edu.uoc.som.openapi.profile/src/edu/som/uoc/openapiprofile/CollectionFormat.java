@@ -19,6 +19,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum CollectionFormat implements Enumerator {
 	/**
+	 * The '<em><b>Undefined</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #UNDEFINED_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	UNDEFINED(0, "undefined", "undefined"), /**
 	 * The '<em><b>Csv</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26,7 +34,7 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CSV(0, "csv", "csv"),
+	CSV(1, "csv", "csv"),
 
 	/**
 	 * The '<em><b>Ssv</b></em>' literal object.
@@ -36,7 +44,7 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SSV(1, "ssv", "ssv"),
+	SSV(2, "ssv", "ssv"),
 
 	/**
 	 * The '<em><b>Tsv</b></em>' literal object.
@@ -46,7 +54,7 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	TSV(2, "tsv", "tsv"),
+	TSV(3, "tsv", "tsv"),
 
 	/**
 	 * The '<em><b>Pipes</b></em>' literal object.
@@ -56,7 +64,18 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PIPES(3, "pipes", "pipes");
+	PIPES(4, "pipes", "pipes");
+
+	/**
+	 * The '<em><b>Undefined</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #UNDEFINED
+	 * @model name="undefined"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int UNDEFINED_VALUE = 0;
 
 	/**
 	 * The '<em><b>Csv</b></em>' literal value.
@@ -67,7 +86,7 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CSV_VALUE = 0;
+	public static final int CSV_VALUE = 1;
 
 	/**
 	 * The '<em><b>Ssv</b></em>' literal value.
@@ -78,7 +97,7 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SSV_VALUE = 1;
+	public static final int SSV_VALUE = 2;
 
 	/**
 	 * The '<em><b>Tsv</b></em>' literal value.
@@ -89,7 +108,7 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int TSV_VALUE = 2;
+	public static final int TSV_VALUE = 3;
 
 	/**
 	 * The '<em><b>Pipes</b></em>' literal value.
@@ -100,7 +119,7 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PIPES_VALUE = 3;
+	public static final int PIPES_VALUE = 4;
 
 	/**
 	 * An array of all the '<em><b>Collection Format</b></em>' enumerators.
@@ -110,6 +129,7 @@ public enum CollectionFormat implements Enumerator {
 	 */
 	private static final CollectionFormat[] VALUES_ARRAY =
 		new CollectionFormat[] {
+			UNDEFINED,
 			CSV,
 			SSV,
 			TSV,
@@ -170,6 +190,7 @@ public enum CollectionFormat implements Enumerator {
 	 */
 	public static CollectionFormat get(int value) {
 		switch (value) {
+			case UNDEFINED_VALUE: return UNDEFINED;
 			case CSV_VALUE: return CSV;
 			case SSV_VALUE: return SSV;
 			case TSV_VALUE: return TSV;

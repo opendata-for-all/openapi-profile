@@ -41,7 +41,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ParameterLocation LOCATION_EDEFAULT = ParameterLocation.QUERY;
+	protected static final ParameterLocation LOCATION_EDEFAULT = ParameterLocation.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getLocation() <em>Location</em>}' attribute.
@@ -81,7 +81,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	 * @generated
 	 * @ordered
 	 */
-	protected static final CollectionFormat COLLECTION_FORMAT_EDEFAULT = CollectionFormat.CSV;
+	protected static final CollectionFormat COLLECTION_FORMAT_EDEFAULT = CollectionFormat.UNDEFINED;
 
 	/**
 	 * The cached value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.
