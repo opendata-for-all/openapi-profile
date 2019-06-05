@@ -147,6 +147,7 @@
     <eLiterals name="ssv" value="2"/>
     <eLiterals name="tsv" value="3"/>
     <eLiterals name="pipes" value="4"/>
+    <eLiterals name="multi" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIResponse">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"

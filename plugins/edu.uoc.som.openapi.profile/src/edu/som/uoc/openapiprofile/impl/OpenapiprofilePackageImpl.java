@@ -2081,6 +2081,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.SSV);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.TSV);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.PIPES);
+		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.MULTI);
 
 		initEEnum(jsonDataTypeEEnum, JSONDataType.class, "JSONDataType");
 		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.UNDEFINED);

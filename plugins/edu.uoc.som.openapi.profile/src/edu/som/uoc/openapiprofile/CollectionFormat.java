@@ -64,7 +64,15 @@ public enum CollectionFormat implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PIPES(4, "pipes", "pipes");
+	PIPES(4, "pipes", "pipes"), /**
+	 * The '<em><b>Multi</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #MULTI_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	MULTI(5, "multi", "multi");
 
 	/**
 	 * The '<em><b>Undefined</b></em>' literal value.
@@ -122,6 +130,17 @@ public enum CollectionFormat implements Enumerator {
 	public static final int PIPES_VALUE = 4;
 
 	/**
+	 * The '<em><b>Multi</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #MULTI
+	 * @model name="multi"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int MULTI_VALUE = 5;
+
+	/**
 	 * An array of all the '<em><b>Collection Format</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -134,6 +153,7 @@ public enum CollectionFormat implements Enumerator {
 			SSV,
 			TSV,
 			PIPES,
+			MULTI,
 		};
 
 	/**
@@ -195,6 +215,7 @@ public enum CollectionFormat implements Enumerator {
 			case SSV_VALUE: return SSV;
 			case TSV_VALUE: return TSV;
 			case PIPES_VALUE: return PIPES;
+			case MULTI_VALUE: return MULTI;
 		}
 		return null;
 	}

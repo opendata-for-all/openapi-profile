@@ -440,6 +440,10 @@
         <element xmi:type="uml:EnumerationLiteral" href="openapi.profile.uml#_0OSbYIekEemjMNFdDGDGzg"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_0OXT4YekEemjMNFdDGDGzg"/>
       </children>
+      <children xmi:type="notation:Shape" xmi:id="_Yy78sIeoEemjMNFdDGDGzg" type="EnumerationLiteral_LiteralLabel">
+        <element xmi:type="uml:EnumerationLiteral" href="openapi.profile.uml#_YxvC0IeoEemjMNFdDGDGzg"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Yy78sYeoEemjMNFdDGDGzg"/>
+      </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_iko1oX1HEemCU627TT0glQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_iko1on1HEemCU627TT0glQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_iko1o31HEemCU627TT0glQ"/>
