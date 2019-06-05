@@ -98,30 +98,20 @@ public interface APIResponse extends EObject {
 	EList<Header> getHeaders();
 
 	/**
-	 * Returns the value of the '<em><b>Examples</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Examples</b></em>' containment reference list.
+	 * The list contents are of type {@link edu.som.uoc.openapiprofile.Example}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Examples</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Examples</em>' containment reference.
-	 * @see #setExamples(Example)
+	 * @return the value of the '<em>Examples</em>' containment reference list.
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIResponse_Examples()
-	 * @model containment="true" required="true" ordered="false"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	Example getExamples();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIResponse#getExamples <em>Examples</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Examples</em>' containment reference.
-	 * @see #getExamples()
-	 * @generated
-	 */
-	void setExamples(Example value);
+	EList<Example> getExamples();
 
 	/**
 	 * Returns the value of the '<em><b>Base Parameter</b></em>' reference.

@@ -156,7 +156,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="headers" ordered="false"
         upperBound="-1" eType="#//Header" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="examples" ordered="false"
-        lowerBound="1" eType="#//Example" containment="true"/>
+        upperBound="-1" eType="#//Example" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Parameter" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Parameter"/>
   </eClassifiers>

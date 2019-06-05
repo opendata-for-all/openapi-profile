@@ -94,14 +94,14 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	protected EList<Header> headers;
 
 	/**
-	 * The cached value of the '{@link #getExamples() <em>Examples</em>}' containment reference.
+	 * The cached value of the '{@link #getExamples() <em>Examples</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getExamples()
 	 * @generated
 	 * @ordered
 	 */
-	protected Example examples;
+	protected EList<Example> examples;
 
 	/**
 	 * The cached value of the '{@link #getBase_Parameter() <em>Base Parameter</em>}' reference.
@@ -191,42 +191,11 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Example getExamples() {
+	public EList<Example> getExamples() {
+		if (examples == null) {
+			examples = new EObjectContainmentEList<Example>(Example.class, this, OpenapiprofilePackage.API_RESPONSE__EXAMPLES);
+		}
 		return examples;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetExamples(Example newExamples, NotificationChain msgs) {
-		Example oldExamples = examples;
-		examples = newExamples;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_RESPONSE__EXAMPLES, oldExamples, newExamples);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setExamples(Example newExamples) {
-		if (newExamples != examples) {
-			NotificationChain msgs = null;
-			if (examples != null)
-				msgs = ((InternalEObject)examples).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.API_RESPONSE__EXAMPLES, null, msgs);
-			if (newExamples != null)
-				msgs = ((InternalEObject)newExamples).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.API_RESPONSE__EXAMPLES, null, msgs);
-			msgs = basicSetExamples(newExamples, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_RESPONSE__EXAMPLES, newExamples, newExamples));
 	}
 
 	/**
@@ -278,7 +247,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 			case OpenapiprofilePackage.API_RESPONSE__HEADERS:
 				return ((InternalEList<?>)getHeaders()).basicRemove(otherEnd, msgs);
 			case OpenapiprofilePackage.API_RESPONSE__EXAMPLES:
-				return basicSetExamples(null, msgs);
+				return ((InternalEList<?>)getExamples()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -326,7 +295,8 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 				getHeaders().addAll((Collection<? extends Header>)newValue);
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__EXAMPLES:
-				setExamples((Example)newValue);
+				getExamples().clear();
+				getExamples().addAll((Collection<? extends Example>)newValue);
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
@@ -353,7 +323,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 				getHeaders().clear();
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__EXAMPLES:
-				setExamples((Example)null);
+				getExamples().clear();
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)null);
@@ -377,7 +347,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 			case OpenapiprofilePackage.API_RESPONSE__HEADERS:
 				return headers != null && !headers.isEmpty();
 			case OpenapiprofilePackage.API_RESPONSE__EXAMPLES:
-				return examples != null;
+				return examples != null && !examples.isEmpty();
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				return base_Parameter != null;
 		}

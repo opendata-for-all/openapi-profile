@@ -194,7 +194,10 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__2LAkH1IEemCU627TT0glQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__2RuQH1IEemCU627TT0glQ" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_NeBWUH1JEemCU627TT0glQ" name="examples" type="_Bd6acH1JEemCU627TT0glQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NeBWUH1JEemCU627TT0glQ" name="examples" type="_Bd6acH1JEemCU627TT0glQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-RD5IIeqEemjMNFdDGDGzg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-RR7kIeqEemjMNFdDGDGzg" value="*"/>
+      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_DMCU4H1kEemCU627TT0glQ" name="base_Parameter" association="_DL_RkH1kEemCU627TT0glQ">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DMCU4X1kEemCU627TT0glQ"/>

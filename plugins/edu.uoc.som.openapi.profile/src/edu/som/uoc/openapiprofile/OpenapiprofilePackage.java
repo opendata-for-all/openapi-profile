@@ -922,7 +922,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_RESPONSE__HEADERS = 2;
 
 	/**
-	 * The feature id for the '<em><b>Examples</b></em>' containment reference.
+	 * The feature id for the '<em><b>Examples</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2639,10 +2639,10 @@ public interface OpenapiprofilePackage extends EPackage {
 	EReference getAPIResponse_Headers();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link edu.som.uoc.openapiprofile.APIResponse#getExamples <em>Examples</em>}'.
+	 * Returns the meta object for the containment reference list '{@link edu.som.uoc.openapiprofile.APIResponse#getExamples <em>Examples</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Examples</em>'.
+	 * @return the meta object for the containment reference list '<em>Examples</em>'.
 	 * @see edu.som.uoc.openapiprofile.APIResponse#getExamples()
 	 * @see #getAPIResponse()
 	 * @generated
@@ -4090,7 +4090,7 @@ public interface OpenapiprofilePackage extends EPackage {
 		EReference API_RESPONSE__HEADERS = eINSTANCE.getAPIResponse_Headers();
 
 		/**
-		 * The meta object literal for the '<em><b>Examples</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Examples</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
