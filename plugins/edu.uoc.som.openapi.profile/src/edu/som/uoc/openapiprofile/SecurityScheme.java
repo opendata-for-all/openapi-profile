@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getAuthorizationURL <em>Authorization URL</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getTokenURL <em>Token URL</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getScopes <em>Scopes</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.SecurityScheme#getReferenceName <em>Reference Name</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme()
@@ -236,5 +237,27 @@ public interface SecurityScheme extends EObject {
 	 * @generated
 	 */
 	EList<SecurityScope> getScopes();
+
+	/**
+	 * Returns the value of the '<em><b>Reference Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Reference Name</em>' attribute.
+	 * @see #setReferenceName(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSecurityScheme_ReferenceName()
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @generated
+	 */
+	String getReferenceName();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.SecurityScheme#getReferenceName <em>Reference Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Reference Name</em>' attribute.
+	 * @see #getReferenceName()
+	 * @generated
+	 */
+	void setReferenceName(String value);
 
 } // SecurityScheme

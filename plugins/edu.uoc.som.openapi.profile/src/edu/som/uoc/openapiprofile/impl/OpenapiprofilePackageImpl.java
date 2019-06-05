@@ -1374,6 +1374,15 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getSecurityScheme_ReferenceName() {
+		return (EAttribute)securitySchemeEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSecurityScope() {
 		return securityScopeEClass;
 	}
@@ -1831,6 +1840,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(securitySchemeEClass, SECURITY_SCHEME__AUTHORIZATION_URL);
 		createEAttribute(securitySchemeEClass, SECURITY_SCHEME__TOKEN_URL);
 		createEReference(securitySchemeEClass, SECURITY_SCHEME__SCOPES);
+		createEAttribute(securitySchemeEClass, SECURITY_SCHEME__REFERENCE_NAME);
 
 		securityScopeEClass = createEClass(SECURITY_SCOPE);
 		createEAttribute(securityScopeEClass, SECURITY_SCOPE__NAME);
@@ -2042,6 +2052,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getSecurityScheme_AuthorizationURL(), theTypesPackage.getString(), "authorizationURL", null, 0, 1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSecurityScheme_TokenURL(), theTypesPackage.getString(), "tokenURL", null, 0, 1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSecurityScheme_Scopes(), this.getSecurityScope(), null, "scopes", null, 0, -1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSecurityScheme_ReferenceName(), theTypesPackage.getString(), "referenceName", null, 1, 1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(securityScopeEClass, SecurityScope.class, "SecurityScope", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSecurityScope_Name(), theTypesPackage.getString(), "name", null, 0, 1, SecurityScope.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

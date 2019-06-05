@@ -41,6 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SecuritySchemeImpl#getAuthorizationURL <em>Authorization URL</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SecuritySchemeImpl#getTokenURL <em>Token URL</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SecuritySchemeImpl#getScopes <em>Scopes</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SecuritySchemeImpl#getReferenceName <em>Reference Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -195,6 +196,26 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	 * @ordered
 	 */
 	protected EList<SecurityScope> scopes;
+
+	/**
+	 * The default value of the '{@link #getReferenceName() <em>Reference Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getReferenceName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String REFERENCE_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getReferenceName() <em>Reference Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getReferenceName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String referenceName = REFERENCE_NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -379,6 +400,27 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getReferenceName() {
+		return referenceName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setReferenceName(String newReferenceName) {
+		String oldReferenceName = referenceName;
+		referenceName = newReferenceName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SECURITY_SCHEME__REFERENCE_NAME, oldReferenceName, referenceName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -412,6 +454,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 				return getTokenURL();
 			case OpenapiprofilePackage.SECURITY_SCHEME__SCOPES:
 				return getScopes();
+			case OpenapiprofilePackage.SECURITY_SCHEME__REFERENCE_NAME:
+				return getReferenceName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -450,6 +494,9 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 				getScopes().clear();
 				getScopes().addAll((Collection<? extends SecurityScope>)newValue);
 				return;
+			case OpenapiprofilePackage.SECURITY_SCHEME__REFERENCE_NAME:
+				setReferenceName((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -486,6 +533,9 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 			case OpenapiprofilePackage.SECURITY_SCHEME__SCOPES:
 				getScopes().clear();
 				return;
+			case OpenapiprofilePackage.SECURITY_SCHEME__REFERENCE_NAME:
+				setReferenceName(REFERENCE_NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -514,6 +564,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 				return TOKEN_URL_EDEFAULT == null ? tokenURL != null : !TOKEN_URL_EDEFAULT.equals(tokenURL);
 			case OpenapiprofilePackage.SECURITY_SCHEME__SCOPES:
 				return scopes != null && !scopes.isEmpty();
+			case OpenapiprofilePackage.SECURITY_SCHEME__REFERENCE_NAME:
+				return REFERENCE_NAME_EDEFAULT == null ? referenceName != null : !REFERENCE_NAME_EDEFAULT.equals(referenceName);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -542,6 +594,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		result.append(authorizationURL);
 		result.append(", tokenURL: ");
 		result.append(tokenURL);
+		result.append(", referenceName: ");
+		result.append(referenceName);
 		result.append(')');
 		return result.toString();
 	}

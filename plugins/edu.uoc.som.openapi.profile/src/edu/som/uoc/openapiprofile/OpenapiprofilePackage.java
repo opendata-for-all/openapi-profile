@@ -1714,13 +1714,22 @@ public interface OpenapiprofilePackage extends EPackage {
 	int SECURITY_SCHEME__SCOPES = 7;
 
 	/**
+	 * The feature id for the '<em><b>Reference Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_SCHEME__REFERENCE_NAME = 8;
+
+	/**
 	 * The number of structural features of the '<em>Security Scheme</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_SCHEME_FEATURE_COUNT = 8;
+	int SECURITY_SCHEME_FEATURE_COUNT = 9;
 
 	/**
 	 * The number of operations of the '<em>Security Scheme</em>' class.
@@ -3391,6 +3400,17 @@ public interface OpenapiprofilePackage extends EPackage {
 	EReference getSecurityScheme_Scopes();
 
 	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.SecurityScheme#getReferenceName <em>Reference Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Reference Name</em>'.
+	 * @see edu.som.uoc.openapiprofile.SecurityScheme#getReferenceName()
+	 * @see #getSecurityScheme()
+	 * @generated
+	 */
+	EAttribute getSecurityScheme_ReferenceName();
+
+	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.SecurityScope <em>Security Scope</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4709,6 +4729,14 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EReference SECURITY_SCHEME__SCOPES = eINSTANCE.getSecurityScheme_Scopes();
+
+		/**
+		 * The meta object literal for the '<em><b>Reference Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_SCHEME__REFERENCE_NAME = eINSTANCE.getSecurityScheme_ReferenceName();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.SecurityScopeImpl <em>Security Scope</em>}' class.

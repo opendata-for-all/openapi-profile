@@ -260,6 +260,8 @@
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="scopes" ordered="false"
         upperBound="-1" eType="#//SecurityScope" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referenceName" ordered="false"
+        lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SecuritySchemeType">
     <eLiterals name="undefined"/>
