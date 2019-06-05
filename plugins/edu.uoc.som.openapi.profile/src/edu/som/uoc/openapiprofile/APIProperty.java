@@ -13,7 +13,6 @@ import org.eclipse.uml2.uml.Property;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getBase_Property <em>Base Property</em>}</li>
  * </ul>
  *
@@ -22,32 +21,6 @@ import org.eclipse.uml2.uml.Property;
  * @generated
  */
 public interface APIProperty extends JSONSchemaSubset {
-	/**
-	 * Returns the value of the '<em><b>Xml</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Xml</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Xml</em>' containment reference.
-	 * @see #setXml(XMLElement)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Xml()
-	 * @model containment="true" ordered="false"
-	 * @generated
-	 */
-	XMLElement getXml();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Xml</em>' containment reference.
-	 * @see #getXml()
-	 * @generated
-	 */
-	void setXml(XMLElement value);
-
 	/**
 	 * Returns the value of the '<em><b>Base Property</b></em>' reference.
 	 * <!-- begin-user-doc -->

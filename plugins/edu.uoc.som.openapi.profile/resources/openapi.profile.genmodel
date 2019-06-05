@@ -123,7 +123,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/description"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/uniqueItems"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/default"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/multiplOf"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/multipleOf"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//XMLElement">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//XMLElement/name"/>
@@ -133,8 +133,6 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//XMLElement/wrapped"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//APIProperty">
-      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-          createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIProperty/xml"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIProperty/base_Property"/>
     </genClasses>

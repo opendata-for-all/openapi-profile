@@ -70,7 +70,7 @@
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="default" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiplOf" ordered="false"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multipleOf" ordered="false"
         eType="#//Double"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Integer" instanceClassName="java.lang.Integer"/>
@@ -92,8 +92,6 @@
         eType="#//Boolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIProperty" eSuperTypes="#//JSONSchemaSubset">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="xml" ordered="false" eType="#//XMLElement"
-        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Property" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
   </eClassifiers>

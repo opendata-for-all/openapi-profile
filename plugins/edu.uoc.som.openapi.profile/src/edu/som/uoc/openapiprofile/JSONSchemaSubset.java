@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDefault <em>Default</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultiplOf <em>Multipl Of</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset()
@@ -346,29 +346,29 @@ public interface JSONSchemaSubset extends EObject {
 	void setDefault(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Multipl Of</b></em>' attribute.
+	 * Returns the value of the '<em><b>Multiple Of</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Multipl Of</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Multiple Of</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Multipl Of</em>' attribute.
-	 * @see #setMultiplOf(Double)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_MultiplOf()
+	 * @return the value of the '<em>Multiple Of</em>' attribute.
+	 * @see #setMultipleOf(Double)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_MultipleOf()
 	 * @model dataType="edu.som.uoc.openapiprofile.Double" ordered="false"
 	 * @generated
 	 */
-	Double getMultiplOf();
+	Double getMultipleOf();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultiplOf <em>Multipl Of</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultipleOf <em>Multiple Of</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Multipl Of</em>' attribute.
-	 * @see #getMultiplOf()
+	 * @param value the new value of the '<em>Multiple Of</em>' attribute.
+	 * @see #getMultipleOf()
 	 * @generated
 	 */
-	void setMultiplOf(Double value);
+	void setMultipleOf(Double value);
 
 } // JSONSchemaSubset

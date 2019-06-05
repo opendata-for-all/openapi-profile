@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getDefault <em>Default</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMultiplOf <em>Multipl Of</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
  *
  * @generated
@@ -279,24 +279,24 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	protected String default_ = DEFAULT_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getMultiplOf() <em>Multipl Of</em>}' attribute.
+	 * The default value of the '{@link #getMultipleOf() <em>Multiple Of</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMultiplOf()
+	 * @see #getMultipleOf()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Double MULTIPL_OF_EDEFAULT = null;
+	protected static final Double MULTIPLE_OF_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getMultiplOf() <em>Multipl Of</em>}' attribute.
+	 * The cached value of the '{@link #getMultipleOf() <em>Multiple Of</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMultiplOf()
+	 * @see #getMultipleOf()
 	 * @generated
 	 * @ordered
 	 */
-	protected Double multiplOf = MULTIPL_OF_EDEFAULT;
+	protected Double multipleOf = MULTIPLE_OF_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -574,8 +574,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Double getMultiplOf() {
-		return multiplOf;
+	public Double getMultipleOf() {
+		return multipleOf;
 	}
 
 	/**
@@ -583,11 +583,11 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMultiplOf(Double newMultiplOf) {
-		Double oldMultiplOf = multiplOf;
-		multiplOf = newMultiplOf;
+	public void setMultipleOf(Double newMultipleOf) {
+		Double oldMultipleOf = multipleOf;
+		multipleOf = newMultipleOf;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPL_OF, oldMultiplOf, multiplOf));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF, oldMultipleOf, multipleOf));
 	}
 
 	/**
@@ -622,8 +622,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return getUniqueItems();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
 				return getDefault();
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPL_OF:
-				return getMultiplOf();
+			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+				return getMultipleOf();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -672,8 +672,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
 				setDefault((String)newValue);
 				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPL_OF:
-				setMultiplOf((Double)newValue);
+			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+				setMultipleOf((Double)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -723,8 +723,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
 				setDefault(DEFAULT_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPL_OF:
-				setMultiplOf(MULTIPL_OF_EDEFAULT);
+			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+				setMultipleOf(MULTIPLE_OF_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -762,8 +762,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
 				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPL_OF:
-				return MULTIPL_OF_EDEFAULT == null ? multiplOf != null : !MULTIPL_OF_EDEFAULT.equals(multiplOf);
+			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+				return MULTIPLE_OF_EDEFAULT == null ? multipleOf != null : !MULTIPLE_OF_EDEFAULT.equals(multipleOf);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -802,8 +802,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		result.append(uniqueItems);
 		result.append(", default: ");
 		result.append(default_);
-		result.append(", multiplOf: ");
-		result.append(multiplOf);
+		result.append(", multipleOf: ");
+		result.append(multipleOf);
 		result.append(')');
 		return result.toString();
 	}

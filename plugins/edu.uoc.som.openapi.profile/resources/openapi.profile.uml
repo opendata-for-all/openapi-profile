@@ -103,24 +103,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8adYIbaEemJAf1U_0U40g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8jnUIbaEemJAf1U_0U40g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_3yQ1UIbcEemJAf1U_0U40g" name="additionalPropertiesAllowed" type="_YOStgIa2EemJAf1U_0U40g">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_81Q1IIbcEemJAf1U_0U40g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_81dCYIbcEemJAf1U_0U40g" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_cQ5VkIbdEemJAf1U_0U40g" name="xml" type="_KR1LUH1CEemCU627TT0glQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c9eHsIbdEemJAf1U_0U40g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c9nRoIbdEemJAf1U_0U40g" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9Uz7QH1BEemCU627TT0glQ" name="APIProperty">
-      <generalization xmi:type="uml:Generalization" xmi:id="_xv8ZMIduEemhxfnNMWmiBw" general="_1WrA0IbVEemJAf1U_0U40g"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_W1XkYH1CEemCU627TT0glQ" name="xml" type="_KR1LUH1CEemCU627TT0glQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dt7UQIbdEemJAf1U_0U40g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_duCB8IbdEemJAf1U_0U40g" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_aUMw0H1EEemCU627TT0glQ" name="base_Property" association="_aUK7oH1EEemCU627TT0glQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rEoxQIeOEemhxfnNMWmiBw" name="base_Property" association="_aUK7oH1EEemCU627TT0glQ">
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aUMw0X1EEemCU627TT0glQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_OnbLMH1FEemCU627TT0glQ" name="APIOperation">
@@ -310,8 +298,8 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_8JWNsH1BEemCU627TT0glQ" name="E_Schema_Class10" memberEnd="_8JbGMH1BEemCU627TT0glQ _8JdicH1BEemCU627TT0glQ">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_8JbGMH1BEemCU627TT0glQ" name="extension_Schema" type="_bvGa0H0_EemCU627TT0glQ" aggregation="composite" association="_8JWNsH1BEemCU627TT0glQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Extension" xmi:id="_aUK7oH1EEemCU627TT0glQ" name="E_APIProperty_Property1" memberEnd="_aUMJwH1EEemCU627TT0glQ _aUMw0H1EEemCU627TT0glQ">
-      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_aUMJwH1EEemCU627TT0glQ" name="extension_APIProperty" type="_9Uz7QH1BEemCU627TT0glQ" aggregation="composite" association="_aUK7oH1EEemCU627TT0glQ"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_aUK7oH1EEemCU627TT0glQ" name="E_Schema_Property63" memberEnd="_aUMJwH1EEemCU627TT0glQ _rEoxQIeOEemhxfnNMWmiBw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_aUMJwH1EEemCU627TT0glQ" name="extension_Schema" type="_bvGa0H0_EemCU627TT0glQ" aggregation="composite" association="_aUK7oH1EEemCU627TT0glQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_MNRAcH1GEemCU627TT0glQ" name="E_APIOperation_Operation25" memberEnd="_MNRngH1GEemCU627TT0glQ _MNRngX1GEemCU627TT0glQ">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MNRngH1GEemCU627TT0glQ" name="extension_APIOperation" type="_OnbLMH1FEemCU627TT0glQ" aggregation="composite" association="_MNRAcH1GEemCU627TT0glQ"/>
@@ -641,7 +629,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wLBzoIbbEemJAf1U_0U40g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wLPPAIbbEemJAf1U_0U40g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_yNYs8IbbEemJAf1U_0U40g" name="multiplOf" type="_depM0Ia2EemJAf1U_0U40g">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yNYs8IbbEemJAf1U_0U40g" name="multipleOf" type="_depM0Ia2EemJAf1U_0U40g">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yNYs8YbbEemJAf1U_0U40g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yNYs8obbEemJAf1U_0U40g" value="1"/>
       </ownedAttribute>

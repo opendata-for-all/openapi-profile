@@ -260,13 +260,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int JSON_SCHEMA_SUBSET__DEFAULT = 11;
 
 	/**
-	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
+	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int JSON_SCHEMA_SUBSET__MULTIPL_OF = 12;
+	int JSON_SCHEMA_SUBSET__MULTIPLE_OF = 12;
 
 	/**
 	 * The number of structural features of the '<em>JSON Schema Subset</em>' class.
@@ -405,13 +405,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int SCHEMA__DEFAULT = JSON_SCHEMA_SUBSET__DEFAULT;
 
 	/**
-	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
+	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__MULTIPL_OF = JSON_SCHEMA_SUBSET__MULTIPL_OF;
+	int SCHEMA__MULTIPLE_OF = JSON_SCHEMA_SUBSET__MULTIPLE_OF;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -704,22 +704,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_PROPERTY__DEFAULT = JSON_SCHEMA_SUBSET__DEFAULT;
 
 	/**
-	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
+	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY__MULTIPL_OF = JSON_SCHEMA_SUBSET__MULTIPL_OF;
-
-	/**
-	 * The feature id for the '<em><b>Xml</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_PROPERTY__XML = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
+	int API_PROPERTY__MULTIPLE_OF = JSON_SCHEMA_SUBSET__MULTIPLE_OF;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -728,7 +719,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY__BASE_PROPERTY = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
+	int API_PROPERTY__BASE_PROPERTY = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>API Property</em>' class.
@@ -737,7 +728,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 2;
+	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>API Property</em>' class.
@@ -976,13 +967,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_PARAMETER__DEFAULT = JSON_SCHEMA_SUBSET__DEFAULT;
 
 	/**
-	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
+	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PARAMETER__MULTIPL_OF = JSON_SCHEMA_SUBSET__MULTIPL_OF;
+	int API_PARAMETER__MULTIPLE_OF = JSON_SCHEMA_SUBSET__MULTIPLE_OF;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
@@ -2500,15 +2491,15 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getJSONSchemaSubset_Default();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultiplOf <em>Multipl Of</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultipleOf <em>Multiple Of</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Multipl Of</em>'.
-	 * @see edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultiplOf()
+	 * @return the meta object for the attribute '<em>Multiple Of</em>'.
+	 * @see edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultipleOf()
 	 * @see #getJSONSchemaSubset()
 	 * @generated
 	 */
-	EAttribute getJSONSchemaSubset_MultiplOf();
+	EAttribute getJSONSchemaSubset_MultipleOf();
 
 	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.XMLElement <em>XML Element</em>}'.
@@ -2584,17 +2575,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAPIProperty();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Xml</em>'.
-	 * @see edu.som.uoc.openapiprofile.APIProperty#getXml()
-	 * @see #getAPIProperty()
-	 * @generated
-	 */
-	EReference getAPIProperty_Xml();
 
 	/**
 	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.APIProperty#getBase_Property <em>Base Property</em>}'.
@@ -4041,12 +4021,12 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute JSON_SCHEMA_SUBSET__DEFAULT = eINSTANCE.getJSONSchemaSubset_Default();
 
 		/**
-		 * The meta object literal for the '<em><b>Multipl Of</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Multiple Of</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute JSON_SCHEMA_SUBSET__MULTIPL_OF = eINSTANCE.getJSONSchemaSubset_MultiplOf();
+		EAttribute JSON_SCHEMA_SUBSET__MULTIPLE_OF = eINSTANCE.getJSONSchemaSubset_MultipleOf();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.XMLElementImpl <em>XML Element</em>}' class.
@@ -4107,14 +4087,6 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EClass API_PROPERTY = eINSTANCE.getAPIProperty();
-
-		/**
-		 * The meta object literal for the '<em><b>Xml</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference API_PROPERTY__XML = eINSTANCE.getAPIProperty_Xml();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Property</b></em>' reference feature.
