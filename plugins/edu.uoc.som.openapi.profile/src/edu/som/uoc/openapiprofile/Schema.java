@@ -2,6 +2,8 @@
  */
 package edu.som.uoc.openapiprofile;
 
+import org.eclipse.uml2.uml.Property;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +23,7 @@ package edu.som.uoc.openapiprofile;
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getExample <em>Example</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getXml <em>Xml</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Property <em>Base Property</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema()
@@ -261,5 +264,31 @@ public interface Schema extends JSONSchemaSubset {
 	 * @generated
 	 */
 	void setXml(XMLElement value);
+
+	/**
+	 * Returns the value of the '<em><b>Base Property</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Base Property</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Base Property</em>' reference.
+	 * @see #setBase_Property(Property)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Base_Property()
+	 * @model required="true" ordered="false"
+	 * @generated
+	 */
+	Property getBase_Property();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getBase_Property <em>Base Property</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Base Property</em>' reference.
+	 * @see #getBase_Property()
+	 * @generated
+	 */
+	void setBase_Property(Property value);
 
 } // Schema

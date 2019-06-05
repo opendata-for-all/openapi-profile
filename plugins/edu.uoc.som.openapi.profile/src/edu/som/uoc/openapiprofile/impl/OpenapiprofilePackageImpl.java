@@ -7,7 +7,6 @@ import edu.som.uoc.openapiprofile.APIInfo;
 import edu.som.uoc.openapiprofile.APIKeyLocation;
 import edu.som.uoc.openapiprofile.APIOperation;
 import edu.som.uoc.openapiprofile.APIParameter;
-import edu.som.uoc.openapiprofile.APIProperty;
 import edu.som.uoc.openapiprofile.APIResponse;
 import edu.som.uoc.openapiprofile.CollectionFormat;
 import edu.som.uoc.openapiprofile.Contact;
@@ -82,13 +81,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * @generated
 	 */
 	private EClass xmlElementEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass apiPropertyEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -510,6 +502,15 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getSchema_Base_Property() {
+		return (EReference)schemaEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getJSONSchemaSubset() {
 		return jsonSchemaSubsetEClass;
 	}
@@ -683,24 +684,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 */
 	public EAttribute getXMLElement_Wrapped() {
 		return (EAttribute)xmlElementEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAPIProperty() {
-		return apiPropertyEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAPIProperty_Base_Property() {
-		return (EReference)apiPropertyEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1721,6 +1704,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(schemaEClass, SCHEMA__EXAMPLE);
 		createEAttribute(schemaEClass, SCHEMA__READ_ONLY);
 		createEReference(schemaEClass, SCHEMA__XML);
+		createEReference(schemaEClass, SCHEMA__BASE_PROPERTY);
 
 		jsonSchemaSubsetEClass = createEClass(JSON_SCHEMA_SUBSET);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_LENGTH);
@@ -1743,9 +1727,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(xmlElementEClass, XML_ELEMENT__PREFIX);
 		createEAttribute(xmlElementEClass, XML_ELEMENT__ATTRIBUTE);
 		createEAttribute(xmlElementEClass, XML_ELEMENT__WRAPPED);
-
-		apiPropertyEClass = createEClass(API_PROPERTY);
-		createEReference(apiPropertyEClass, API_PROPERTY__BASE_PROPERTY);
 
 		apiOperationEClass = createEClass(API_OPERATION);
 		createEAttribute(apiOperationEClass, API_OPERATION__RELATIVE_PATH);
@@ -1910,7 +1891,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		// Add supertypes to classes
 		schemaEClass.getESuperTypes().add(this.getJSONSchemaSubset());
-		apiPropertyEClass.getESuperTypes().add(this.getJSONSchemaSubset());
 		apiParameterEClass.getESuperTypes().add(this.getJSONSchemaSubset());
 
 		// Initialize classes, features, and operations; add parameters
@@ -1932,6 +1912,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getSchema_Example(), theTypesPackage.getString(), "example", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_ReadOnly(), this.getBoolean(), "readOnly", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSchema_Xml(), this.getXMLElement(), null, "xml", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSchema_Base_Property(), theUMLPackage.getProperty(), null, "base_Property", null, 1, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(jsonSchemaSubsetEClass, JSONSchemaSubset.class, "JSONSchemaSubset", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getJSONSchemaSubset_MinLength(), this.getInteger(), "minLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1954,9 +1935,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getXMLElement_Prefix(), theTypesPackage.getString(), "prefix", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getXMLElement_Attribute(), this.getBoolean(), "attribute", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getXMLElement_Wrapped(), this.getBoolean(), "wrapped", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(apiPropertyEClass, APIProperty.class, "APIProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAPIProperty_Base_Property(), theUMLPackage.getProperty(), null, "base_Property", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiOperationEClass, APIOperation.class, "APIOperation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIOperation_RelativePath(), theTypesPackage.getString(), "relativePath", null, 0, 1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

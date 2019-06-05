@@ -60,7 +60,6 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 			case OpenapiprofilePackage.API: return createAPI();
 			case OpenapiprofilePackage.SCHEMA: return createSchema();
 			case OpenapiprofilePackage.XML_ELEMENT: return createXMLElement();
-			case OpenapiprofilePackage.API_PROPERTY: return createAPIProperty();
 			case OpenapiprofilePackage.API_OPERATION: return createAPIOperation();
 			case OpenapiprofilePackage.API_PARAMETER: return createAPIParameter();
 			case OpenapiprofilePackage.API_RESPONSE: return createAPIResponse();
@@ -181,16 +180,6 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	public XMLElement createXMLElement() {
 		XMLElementImpl xmlElement = new XMLElementImpl();
 		return xmlElement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public APIProperty createAPIProperty() {
-		APIPropertyImpl apiProperty = new APIPropertyImpl();
-		return apiProperty;
 	}
 
 	/**

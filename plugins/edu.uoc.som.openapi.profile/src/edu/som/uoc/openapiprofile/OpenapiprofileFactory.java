@@ -49,15 +49,6 @@ public interface OpenapiprofileFactory extends EFactory {
 	XMLElement createXMLElement();
 
 	/**
-	 * Returns a new object of class '<em>API Property</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>API Property</em>'.
-	 * @generated
-	 */
-	APIProperty createAPIProperty();
-
-	/**
 	 * Returns a new object of class '<em>API Operation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -84,10 +84,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 				return createXMLElementAdapter();
 			}
 			@Override
-			public Adapter caseAPIProperty(APIProperty object) {
-				return createAPIPropertyAdapter();
-			}
-			@Override
 			public Adapter caseAPIOperation(APIOperation object) {
 				return createAPIOperationAdapter();
 			}
@@ -228,20 +224,6 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createXMLElementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.APIProperty <em>API Property</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see edu.som.uoc.openapiprofile.APIProperty
-	 * @generated
-	 */
-	public Adapter createAPIPropertyAdapter() {
 		return null;
 	}
 

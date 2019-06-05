@@ -91,13 +91,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case OpenapiprofilePackage.API_PROPERTY: {
-				APIProperty apiProperty = (APIProperty)theEObject;
-				T result = caseAPIProperty(apiProperty);
-				if (result == null) result = caseJSONSchemaSubset(apiProperty);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case OpenapiprofilePackage.API_OPERATION: {
 				APIOperation apiOperation = (APIOperation)theEObject;
 				T result = caseAPIOperation(apiOperation);
@@ -262,21 +255,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseXMLElement(XMLElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>API Property</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>API Property</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAPIProperty(APIProperty object) {
 		return null;
 	}
 

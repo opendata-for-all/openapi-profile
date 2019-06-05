@@ -44,6 +44,8 @@
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="xml" ordered="false" eType="#//XMLElement"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Property" ordered="false"
+        lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JSONSchemaSubset" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="minLength" ordered="false"
@@ -90,10 +92,6 @@
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="wrapped" ordered="false"
         eType="#//Boolean"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="APIProperty" eSuperTypes="#//JSONSchemaSubset">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Property" ordered="false"
-        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="APIOperation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="relativePath" ordered="false"
