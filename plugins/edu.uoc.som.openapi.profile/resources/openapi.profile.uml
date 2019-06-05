@@ -438,10 +438,6 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_r8uw8H1IEemCU627TT0glQ" name="format">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_tRXBkH1IEemCU627TT0glQ" name="array" type="_YOStgIa2EemJAf1U_0U40g">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vb0uAH1IEemCU627TT0glQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vb8p0H1IEemCU627TT0glQ" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_wzbaIH1IEemCU627TT0glQ" name="collectionFormat" type="_iknAcH1HEemCU627TT0glQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wzbaIX1IEemCU627TT0glQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wzbaIn1IEemCU627TT0glQ" value="1"/>

@@ -1004,22 +1004,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int HEADER__FORMAT = 3;
 
 	/**
-	 * The feature id for the '<em><b>Array</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEADER__ARRAY = 4;
-
-	/**
 	 * The feature id for the '<em><b>Collection Format</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__COLLECTION_FORMAT = 5;
+	int HEADER__COLLECTION_FORMAT = 4;
 
 	/**
 	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
@@ -1028,7 +1019,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__MIN_ITEMS = 6;
+	int HEADER__MIN_ITEMS = 5;
 
 	/**
 	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
@@ -1037,7 +1028,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__PATTERN = 7;
+	int HEADER__PATTERN = 6;
 
 	/**
 	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
@@ -1046,7 +1037,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__EXCLUSIVE_MINIMUM = 8;
+	int HEADER__EXCLUSIVE_MINIMUM = 7;
 
 	/**
 	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
@@ -1055,7 +1046,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__MINIMUM = 9;
+	int HEADER__MINIMUM = 8;
 
 	/**
 	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
@@ -1064,7 +1055,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__MIN_LENGTH = 10;
+	int HEADER__MIN_LENGTH = 9;
 
 	/**
 	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
@@ -1073,7 +1064,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__MAX_LENGTH = 11;
+	int HEADER__MAX_LENGTH = 10;
 
 	/**
 	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
@@ -1082,7 +1073,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__MAXIMUM = 12;
+	int HEADER__MAXIMUM = 11;
 
 	/**
 	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
@@ -1091,7 +1082,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__MAX_ITEMS = 13;
+	int HEADER__MAX_ITEMS = 12;
 
 	/**
 	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
@@ -1100,7 +1091,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER__EXCLUSIVE_MAXIMUM = 14;
+	int HEADER__EXCLUSIVE_MAXIMUM = 13;
 
 	/**
 	 * The number of structural features of the '<em>Header</em>' class.
@@ -1109,7 +1100,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER_FEATURE_COUNT = 15;
+	int HEADER_FEATURE_COUNT = 14;
 
 	/**
 	 * The number of operations of the '<em>Header</em>' class.
@@ -2715,17 +2706,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getHeader_Format();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Header#getArray <em>Array</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Array</em>'.
-	 * @see edu.som.uoc.openapiprofile.Header#getArray()
-	 * @see #getHeader()
-	 * @generated
-	 */
-	EAttribute getHeader_Array();
-
-	/**
 	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Header#getCollectionFormat <em>Collection Format</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4146,14 +4126,6 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute HEADER__FORMAT = eINSTANCE.getHeader_Format();
-
-		/**
-		 * The meta object literal for the '<em><b>Array</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEADER__ARRAY = eINSTANCE.getHeader_Array();
 
 		/**
 		 * The meta object literal for the '<em><b>Collection Format</b></em>' attribute feature.

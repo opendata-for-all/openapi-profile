@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getType <em>Type</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getFormat <em>Format</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Header#getArray <em>Array</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getMinItems <em>Min Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getPattern <em>Pattern</em>}</li>
@@ -141,32 +140,6 @@ public interface Header extends EObject {
 	 * @generated
 	 */
 	void setFormat(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Array</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Array</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Array</em>' attribute.
-	 * @see #setArray(Boolean)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Array()
-	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
-	 * @generated
-	 */
-	Boolean getArray();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getArray <em>Array</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Array</em>' attribute.
-	 * @see #getArray()
-	 * @generated
-	 */
-	void setArray(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Collection Format</b></em>' attribute.

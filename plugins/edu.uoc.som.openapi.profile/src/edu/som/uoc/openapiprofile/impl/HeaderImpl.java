@@ -26,7 +26,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getType <em>Type</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getFormat <em>Format</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getArray <em>Array</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getMinItems <em>Min Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getPattern <em>Pattern</em>}</li>
@@ -121,26 +120,6 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * @ordered
 	 */
 	protected String format = FORMAT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getArray() <em>Array</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getArray()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final Boolean ARRAY_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getArray() <em>Array</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getArray()
-	 * @generated
-	 * @ordered
-	 */
-	protected Boolean array = ARRAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.
@@ -450,27 +429,6 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Boolean getArray() {
-		return array;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setArray(Boolean newArray) {
-		Boolean oldArray = array;
-		array = newArray;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__ARRAY, oldArray, array));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public CollectionFormat getCollectionFormat() {
 		return collectionFormat;
 	}
@@ -692,8 +650,6 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return getType();
 			case OpenapiprofilePackage.HEADER__FORMAT:
 				return getFormat();
-			case OpenapiprofilePackage.HEADER__ARRAY:
-				return getArray();
 			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				return getCollectionFormat();
 			case OpenapiprofilePackage.HEADER__MIN_ITEMS:
@@ -737,9 +693,6 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return;
 			case OpenapiprofilePackage.HEADER__FORMAT:
 				setFormat((String)newValue);
-				return;
-			case OpenapiprofilePackage.HEADER__ARRAY:
-				setArray((Boolean)newValue);
 				return;
 			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				setCollectionFormat((CollectionFormat)newValue);
@@ -795,9 +748,6 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 			case OpenapiprofilePackage.HEADER__FORMAT:
 				setFormat(FORMAT_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.HEADER__ARRAY:
-				setArray(ARRAY_EDEFAULT);
-				return;
 			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				setCollectionFormat(COLLECTION_FORMAT_EDEFAULT);
 				return;
@@ -848,8 +798,6 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return type != TYPE_EDEFAULT;
 			case OpenapiprofilePackage.HEADER__FORMAT:
 				return FORMAT_EDEFAULT == null ? format != null : !FORMAT_EDEFAULT.equals(format);
-			case OpenapiprofilePackage.HEADER__ARRAY:
-				return ARRAY_EDEFAULT == null ? array != null : !ARRAY_EDEFAULT.equals(array);
 			case OpenapiprofilePackage.HEADER__COLLECTION_FORMAT:
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
 			case OpenapiprofilePackage.HEADER__MIN_ITEMS:
@@ -892,8 +840,6 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		result.append(type);
 		result.append(", format: ");
 		result.append(format);
-		result.append(", array: ");
-		result.append(array);
 		result.append(", collectionFormat: ");
 		result.append(collectionFormat);
 		result.append(", minItems: ");

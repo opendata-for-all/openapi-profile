@@ -168,8 +168,6 @@
         eType="#//JSONDataType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" ordered="false"
         lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="array" ordered="false"
-        eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="collectionFormat" ordered="false"
         eType="#//CollectionFormat"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="minItems" ordered="false"

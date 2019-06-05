@@ -925,7 +925,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_Array() {
+	public EAttribute getHeader_CollectionFormat() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -934,7 +934,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_CollectionFormat() {
+	public EAttribute getHeader_MinItems() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -943,7 +943,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_MinItems() {
+	public EAttribute getHeader_Pattern() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -952,7 +952,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_Pattern() {
+	public EAttribute getHeader_ExclusiveMinimum() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -961,7 +961,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_ExclusiveMinimum() {
+	public EAttribute getHeader_Minimum() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -970,7 +970,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_Minimum() {
+	public EAttribute getHeader_MinLength() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -979,7 +979,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_MinLength() {
+	public EAttribute getHeader_MaxLength() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -988,7 +988,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_MaxLength() {
+	public EAttribute getHeader_Maximum() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -997,7 +997,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_Maximum() {
+	public EAttribute getHeader_MaxItems() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -1006,17 +1006,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_MaxItems() {
-		return (EAttribute)headerEClass.getEStructuralFeatures().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getHeader_ExclusiveMaximum() {
-		return (EAttribute)headerEClass.getEStructuralFeatures().get(14);
+		return (EAttribute)headerEClass.getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -1757,7 +1748,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(headerEClass, HEADER__DESCRIPTION);
 		createEAttribute(headerEClass, HEADER__TYPE);
 		createEAttribute(headerEClass, HEADER__FORMAT);
-		createEAttribute(headerEClass, HEADER__ARRAY);
 		createEAttribute(headerEClass, HEADER__COLLECTION_FORMAT);
 		createEAttribute(headerEClass, HEADER__MIN_ITEMS);
 		createEAttribute(headerEClass, HEADER__PATTERN);
@@ -1965,7 +1955,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getHeader_Description(), theTypesPackage.getString(), "description", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_Type(), this.getJSONDataType(), "type", null, 1, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_Format(), theTypesPackage.getString(), "format", null, 1, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getHeader_Array(), this.getBoolean(), "array", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_CollectionFormat(), this.getCollectionFormat(), "collectionFormat", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_MinItems(), this.getInteger(), "minItems", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_Pattern(), theTypesPackage.getString(), "pattern", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
