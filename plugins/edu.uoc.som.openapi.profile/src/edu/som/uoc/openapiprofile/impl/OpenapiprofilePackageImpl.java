@@ -1464,7 +1464,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSecurityRequirement_Scope() {
+	public EAttribute getSecurityRequirement_Scopes() {
 		return (EAttribute)securityRequirementEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1853,7 +1853,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		securityRequirementEClass = createEClass(SECURITY_REQUIREMENT);
 		createEAttribute(securityRequirementEClass, SECURITY_REQUIREMENT__NAME);
-		createEAttribute(securityRequirementEClass, SECURITY_REQUIREMENT__SCOPE);
+		createEAttribute(securityRequirementEClass, SECURITY_REQUIREMENT__SCOPES);
 
 		tagsEClass = createEClass(TAGS);
 		createEReference(tagsEClass, TAGS__TAGS);
@@ -2065,7 +2065,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		initEClass(securityRequirementEClass, SecurityRequirement.class, "SecurityRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSecurityRequirement_Name(), theTypesPackage.getString(), "name", null, 0, 1, SecurityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSecurityRequirement_Scope(), theTypesPackage.getString(), "scope", null, 0, 1, SecurityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSecurityRequirement_Scopes(), theTypesPackage.getString(), "scopes", null, 0, -1, SecurityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(tagsEClass, Tags.class, "Tags", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTags_Tags(), this.getTag(), null, "tags", null, 1, -1, Tags.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

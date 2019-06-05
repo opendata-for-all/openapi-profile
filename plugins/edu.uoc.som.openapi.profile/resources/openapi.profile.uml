@@ -561,10 +561,10 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_--kwkX1QEemCU627TT0glQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_--kwkn1QEemCU627TT0glQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__zZfwH1QEemCU627TT0glQ" name="scope">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__zZfwH1QEemCU627TT0glQ" name="scopes">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__zZfwX1QEemCU627TT0glQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__zZfwn1QEemCU627TT0glQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__zZfwn1QEemCU627TT0glQ" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:DataType" xmi:id="_ASku8IFKEemLrq4HRK9GAg" name="Tag">

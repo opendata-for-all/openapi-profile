@@ -1861,13 +1861,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int SECURITY_REQUIREMENT__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Scope</b></em>' attribute.
+	 * The feature id for the '<em><b>Scopes</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENT__SCOPE = 1;
+	int SECURITY_REQUIREMENT__SCOPES = 1;
 
 	/**
 	 * The number of structural features of the '<em>Security Requirement</em>' class.
@@ -3507,15 +3507,15 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getSecurityRequirement_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.SecurityRequirement#getScope <em>Scope</em>}'.
+	 * Returns the meta object for the attribute list '{@link edu.som.uoc.openapiprofile.SecurityRequirement#getScopes <em>Scopes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Scope</em>'.
-	 * @see edu.som.uoc.openapiprofile.SecurityRequirement#getScope()
+	 * @return the meta object for the attribute list '<em>Scopes</em>'.
+	 * @see edu.som.uoc.openapiprofile.SecurityRequirement#getScopes()
 	 * @see #getSecurityRequirement()
 	 * @generated
 	 */
-	EAttribute getSecurityRequirement_Scope();
+	EAttribute getSecurityRequirement_Scopes();
 
 	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.Tags <em>Tags</em>}'.
@@ -4817,12 +4817,12 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute SECURITY_REQUIREMENT__NAME = eINSTANCE.getSecurityRequirement_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Scope</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Scopes</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SECURITY_REQUIREMENT__SCOPE = eINSTANCE.getSecurityRequirement_Scope();
+		EAttribute SECURITY_REQUIREMENT__SCOPES = eINSTANCE.getSecurityRequirement_Scopes();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.TagsImpl <em>Tags</em>}' class.
