@@ -22,8 +22,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getPattern <em>Pattern</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMaxItems <em>Max Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getFormat <em>Format</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getType <em>Type</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDefault <em>Default</em>}</li>
@@ -268,61 +266,6 @@ public interface JSONSchemaSubset extends EObject {
 	 * @generated
 	 */
 	void setMaxItems(Integer value);
-
-	/**
-	 * Returns the value of the '<em><b>Format</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Format</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Format</em>' attribute.
-	 * @see #setFormat(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_Format()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getFormat();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getFormat <em>Format</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Format</em>' attribute.
-	 * @see #getFormat()
-	 * @generated
-	 */
-	void setFormat(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.JSONDataType}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.JSONDataType
-	 * @see #setType(JSONDataType)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_Type()
-	 * @model ordered="false"
-	 * @generated
-	 */
-	JSONDataType getType();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see edu.som.uoc.openapiprofile.JSONDataType
-	 * @see #getType()
-	 * @generated
-	 */
-	void setType(JSONDataType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.

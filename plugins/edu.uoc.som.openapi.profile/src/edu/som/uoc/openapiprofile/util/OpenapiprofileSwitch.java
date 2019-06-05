@@ -4,23 +4,10 @@ package edu.som.uoc.openapiprofile.util;
 
 import edu.som.uoc.openapiprofile.*;
 
-import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
-
-import org.eclipse.uml2.uml.Classifier;
-import org.eclipse.uml2.uml.DataType;
-import org.eclipse.uml2.uml.Element;
-import org.eclipse.uml2.uml.NamedElement;
-import org.eclipse.uml2.uml.Namespace;
-import org.eclipse.uml2.uml.PackageableElement;
-import org.eclipse.uml2.uml.ParameterableElement;
-import org.eclipse.uml2.uml.PrimitiveType;
-import org.eclipse.uml2.uml.RedefinableElement;
-import org.eclipse.uml2.uml.TemplateableElement;
-import org.eclipse.uml2.uml.Type;
 
 /**
  * <!-- begin-user-doc -->
@@ -88,19 +75,7 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 			case OpenapiprofilePackage.SCHEMA: {
 				Schema schema = (Schema)theEObject;
 				T result = caseSchema(schema);
-				if (result == null) result = casePrimitiveType(schema);
 				if (result == null) result = caseJSONSchemaSubset(schema);
-				if (result == null) result = caseDataType(schema);
-				if (result == null) result = caseClassifier(schema);
-				if (result == null) result = caseNamespace(schema);
-				if (result == null) result = caseRedefinableElement(schema);
-				if (result == null) result = caseType(schema);
-				if (result == null) result = caseTemplateableElement(schema);
-				if (result == null) result = casePackageableElement(schema);
-				if (result == null) result = caseNamedElement(schema);
-				if (result == null) result = caseParameterableElement(schema);
-				if (result == null) result = caseElement(schema);
-				if (result == null) result = caseEModelElement(schema);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -119,6 +94,7 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 			case OpenapiprofilePackage.API_PROPERTY: {
 				APIProperty apiProperty = (APIProperty)theEObject;
 				T result = caseAPIProperty(apiProperty);
+				if (result == null) result = caseJSONSchemaSubset(apiProperty);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -216,6 +192,12 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 			case OpenapiprofilePackage.TAG: {
 				Tag tag = (Tag)theEObject;
 				T result = caseTag(tag);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case OpenapiprofilePackage.API_DATA_TYPE: {
+				APIDataType apiDataType = (APIDataType)theEObject;
+				T result = caseAPIDataType(apiDataType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -539,182 +521,17 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>EModel Element</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>API Data Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EModel Element</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>API Data Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEModelElement(EModelElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseElement(Element object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Named Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Named Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseNamedElement(NamedElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Namespace</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Namespace</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseNamespace(Namespace object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Redefinable Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Redefinable Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRedefinableElement(RedefinableElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Parameterable Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Parameterable Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseParameterableElement(ParameterableElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Packageable Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Packageable Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePackageableElement(PackageableElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseType(Type object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Templateable Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Templateable Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTemplateableElement(TemplateableElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Classifier</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Classifier</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseClassifier(Classifier object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Data Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Data Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDataType(DataType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Primitive Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Primitive Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePrimitiveType(PrimitiveType object) {
+	public T caseAPIDataType(APIDataType object) {
 		return null;
 	}
 

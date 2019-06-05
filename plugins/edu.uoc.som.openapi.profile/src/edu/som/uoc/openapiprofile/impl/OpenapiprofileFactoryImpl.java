@@ -77,6 +77,7 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 			case OpenapiprofilePackage.SECURITY_REQUIREMENT: return createSecurityRequirement();
 			case OpenapiprofilePackage.TAGS: return createTags();
 			case OpenapiprofilePackage.TAG: return createTag();
+			case OpenapiprofilePackage.API_DATA_TYPE: return createAPIDataType();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -92,14 +93,14 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 		switch (eDataType.getClassifierID()) {
 			case OpenapiprofilePackage.SCHEME_TYPE:
 				return createSchemeTypeFromString(eDataType, initialValue);
-			case OpenapiprofilePackage.JSON_DATA_TYPE:
-				return createJSONDataTypeFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.HTTP_METHOD:
 				return createHTTPMethodFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.PARAMETER_LOCATION:
 				return createParameterLocationFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.COLLECTION_FORMAT:
 				return createCollectionFormatFromString(eDataType, initialValue);
+			case OpenapiprofilePackage.JSON_DATA_TYPE:
+				return createJSONDataTypeFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.SECURITY_SCHEME_TYPE:
 				return createSecuritySchemeTypeFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.API_KEY_LOCATION:
@@ -127,14 +128,14 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 		switch (eDataType.getClassifierID()) {
 			case OpenapiprofilePackage.SCHEME_TYPE:
 				return convertSchemeTypeToString(eDataType, instanceValue);
-			case OpenapiprofilePackage.JSON_DATA_TYPE:
-				return convertJSONDataTypeToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.HTTP_METHOD:
 				return convertHTTPMethodToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.PARAMETER_LOCATION:
 				return convertParameterLocationToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.COLLECTION_FORMAT:
 				return convertCollectionFormatToString(eDataType, instanceValue);
+			case OpenapiprofilePackage.JSON_DATA_TYPE:
+				return convertJSONDataTypeToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.SECURITY_SCHEME_TYPE:
 				return convertSecuritySchemeTypeToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.API_KEY_LOCATION:
@@ -357,6 +358,16 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public APIDataType createAPIDataType() {
+		APIDataTypeImpl apiDataType = new APIDataTypeImpl();
+		return apiDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SchemeType createSchemeTypeFromString(EDataType eDataType, String initialValue) {
 		SchemeType result = SchemeType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
@@ -369,26 +380,6 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * @generated
 	 */
 	public String convertSchemeTypeToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public JSONDataType createJSONDataTypeFromString(EDataType eDataType, String initialValue) {
-		JSONDataType result = JSONDataType.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertJSONDataTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -449,6 +440,26 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	 * @generated
 	 */
 	public String convertCollectionFormatToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public JSONDataType createJSONDataTypeFromString(EDataType eDataType, String initialValue) {
+		JSONDataType result = JSONDataType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertJSONDataTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

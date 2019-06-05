@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.uml2.uml.Property;
 
 /**
@@ -23,7 +21,7 @@ import org.eclipse.uml2.uml.Property;
  * @model
  * @generated
  */
-public interface APIProperty extends EObject {
+public interface APIProperty extends JSONSchemaSubset {
 	/**
 	 * Returns the value of the '<em><b>Xml</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

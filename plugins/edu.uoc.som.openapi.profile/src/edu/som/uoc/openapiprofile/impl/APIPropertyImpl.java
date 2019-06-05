@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.uml2.uml.Property;
 
@@ -31,7 +30,7 @@ import org.eclipse.uml2.uml.Property;
  *
  * @generated
  */
-public class APIPropertyImpl extends MinimalEObjectImpl.Container implements APIProperty {
+public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty {
 	/**
 	 * The cached value of the '{@link #getXml() <em>Xml</em>}' containment reference.
 	 * <!-- begin-user-doc -->

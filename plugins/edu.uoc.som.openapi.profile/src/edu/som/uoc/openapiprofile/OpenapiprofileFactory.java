@@ -202,6 +202,15 @@ public interface OpenapiprofileFactory extends EFactory {
 	Tag createTag();
 
 	/**
+	 * Returns a new object of class '<em>API Data Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>API Data Type</em>'.
+	 * @generated
+	 */
+	APIDataType createAPIDataType();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

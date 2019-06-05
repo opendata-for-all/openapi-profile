@@ -2,8 +2,6 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import org.eclipse.uml2.uml.Enumeration;
-import org.eclipse.uml2.uml.PrimitiveType;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,14 +21,13 @@ import org.eclipse.uml2.uml.PrimitiveType;
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getExample <em>Example</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getXml <em>Xml</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Enumeration <em>Base Enumeration</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema()
  * @model
  * @generated
  */
-public interface Schema extends PrimitiveType, JSONSchemaSubset {
+public interface Schema extends JSONSchemaSubset {
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -264,31 +261,5 @@ public interface Schema extends PrimitiveType, JSONSchemaSubset {
 	 * @generated
 	 */
 	void setXml(XMLElement value);
-
-	/**
-	 * Returns the value of the '<em><b>Base Enumeration</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Base Enumeration</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Base Enumeration</em>' reference.
-	 * @see #setBase_Enumeration(Enumeration)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Base_Enumeration()
-	 * @model ordered="false"
-	 * @generated
-	 */
-	Enumeration getBase_Enumeration();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getBase_Enumeration <em>Base Enumeration</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Base Enumeration</em>' reference.
-	 * @see #getBase_Enumeration()
-	 * @generated
-	 */
-	void setBase_Enumeration(Enumeration value);
 
 } // Schema

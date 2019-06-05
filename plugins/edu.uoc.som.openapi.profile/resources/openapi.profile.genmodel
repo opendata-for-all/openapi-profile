@@ -39,13 +39,6 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/ws"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SchemeType/wss"/>
     </genEnums>
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//JSONDataType">
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/boolean"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/integer"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/number"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/string"/>
-      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/file"/>
-    </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//HTTPMethod">
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/get"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//HTTPMethod/post"/>
@@ -66,6 +59,13 @@
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/ssv"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/tsv"/>
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//CollectionFormat/pipes"/>
+    </genEnums>
+    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//JSONDataType">
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/boolean"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/integer"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/number"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/string"/>
+      <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//JSONDataType/file"/>
     </genEnums>
     <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="openapiprofile.ecore#//SecuritySchemeType">
       <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="openapiprofile.ecore#//SecuritySchemeType/undefined"/>
@@ -109,8 +109,6 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Schema/readOnly"/>
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
           createChild="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Schema/xml"/>
-      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//Schema/base_Enumeration"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="openapiprofile.ecore#//JSONSchemaSubset">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/minLength"/>
@@ -122,8 +120,6 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/pattern"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/exclusiveMinimum"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/maxItems"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/format"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/type"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/description"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/uniqueItems"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//JSONSchemaSubset/default"/>
@@ -267,6 +263,14 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Tag/externalDocsDescription"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Tag/name"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Tag/description"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//APIDataType">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIDataType/type"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIDataType/format"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIDataType/base_Enumeration"/>
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIDataType/base_PrimitiveType"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

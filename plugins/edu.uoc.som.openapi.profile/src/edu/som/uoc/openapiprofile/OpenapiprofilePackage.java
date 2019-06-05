@@ -9,8 +9,6 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
-import org.eclipse.uml2.uml.UMLPackage;
-
 /**
  * <!-- begin-user-doc -->
  * The <b>Package</b> for the model.
@@ -144,1573 +142,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.SchemaImpl <em>Schema</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see edu.som.uoc.openapiprofile.impl.SchemaImpl
-	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSchema()
-	 * @generated
-	 */
-	int SCHEMA = 1;
-
-	/**
-	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__EANNOTATIONS = UMLPackage.PRIMITIVE_TYPE__EANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_COMMENT = UMLPackage.PRIMITIVE_TYPE__OWNED_COMMENT;
-
-	/**
-	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_ELEMENT = UMLPackage.PRIMITIVE_TYPE__OWNED_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNER = UMLPackage.PRIMITIVE_TYPE__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__CLIENT_DEPENDENCY = UMLPackage.PRIMITIVE_TYPE__CLIENT_DEPENDENCY;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__NAME = UMLPackage.PRIMITIVE_TYPE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__NAME_EXPRESSION = UMLPackage.PRIMITIVE_TYPE__NAME_EXPRESSION;
-
-	/**
-	 * The feature id for the '<em><b>Namespace</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__NAMESPACE = UMLPackage.PRIMITIVE_TYPE__NAMESPACE;
-
-	/**
-	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__QUALIFIED_NAME = UMLPackage.PRIMITIVE_TYPE__QUALIFIED_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__VISIBILITY = UMLPackage.PRIMITIVE_TYPE__VISIBILITY;
-
-	/**
-	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_RULE = UMLPackage.PRIMITIVE_TYPE__OWNED_RULE;
-
-	/**
-	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__ELEMENT_IMPORT = UMLPackage.PRIMITIVE_TYPE__ELEMENT_IMPORT;
-
-	/**
-	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__PACKAGE_IMPORT = UMLPackage.PRIMITIVE_TYPE__PACKAGE_IMPORT;
-
-	/**
-	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_MEMBER = UMLPackage.PRIMITIVE_TYPE__OWNED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__IMPORTED_MEMBER = UMLPackage.PRIMITIVE_TYPE__IMPORTED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MEMBER = UMLPackage.PRIMITIVE_TYPE__MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__IS_LEAF = UMLPackage.PRIMITIVE_TYPE__IS_LEAF;
-
-	/**
-	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__REDEFINED_ELEMENT = UMLPackage.PRIMITIVE_TYPE__REDEFINED_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__REDEFINITION_CONTEXT = UMLPackage.PRIMITIVE_TYPE__REDEFINITION_CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNING_TEMPLATE_PARAMETER = UMLPackage.PRIMITIVE_TYPE__OWNING_TEMPLATE_PARAMETER;
-
-	/**
-	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__TEMPLATE_PARAMETER = UMLPackage.PRIMITIVE_TYPE__TEMPLATE_PARAMETER;
-
-	/**
-	 * The feature id for the '<em><b>Package</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__PACKAGE = UMLPackage.PRIMITIVE_TYPE__PACKAGE;
-
-	/**
-	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__TEMPLATE_BINDING = UMLPackage.PRIMITIVE_TYPE__TEMPLATE_BINDING;
-
-	/**
-	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_TEMPLATE_SIGNATURE = UMLPackage.PRIMITIVE_TYPE__OWNED_TEMPLATE_SIGNATURE;
-
-	/**
-	 * The feature id for the '<em><b>Feature</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__FEATURE = UMLPackage.PRIMITIVE_TYPE__FEATURE;
-
-	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__ATTRIBUTE = UMLPackage.PRIMITIVE_TYPE__ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__COLLABORATION_USE = UMLPackage.PRIMITIVE_TYPE__COLLABORATION_USE;
-
-	/**
-	 * The feature id for the '<em><b>General</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__GENERAL = UMLPackage.PRIMITIVE_TYPE__GENERAL;
-
-	/**
-	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__GENERALIZATION = UMLPackage.PRIMITIVE_TYPE__GENERALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__POWERTYPE_EXTENT = UMLPackage.PRIMITIVE_TYPE__POWERTYPE_EXTENT;
-
-	/**
-	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__INHERITED_MEMBER = UMLPackage.PRIMITIVE_TYPE__INHERITED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__IS_ABSTRACT = UMLPackage.PRIMITIVE_TYPE__IS_ABSTRACT;
-
-	/**
-	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__IS_FINAL_SPECIALIZATION = UMLPackage.PRIMITIVE_TYPE__IS_FINAL_SPECIALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_USE_CASE = UMLPackage.PRIMITIVE_TYPE__OWNED_USE_CASE;
-
-	/**
-	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__USE_CASE = UMLPackage.PRIMITIVE_TYPE__USE_CASE;
-
-	/**
-	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__REDEFINED_CLASSIFIER = UMLPackage.PRIMITIVE_TYPE__REDEFINED_CLASSIFIER;
-
-	/**
-	 * The feature id for the '<em><b>Representation</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__REPRESENTATION = UMLPackage.PRIMITIVE_TYPE__REPRESENTATION;
-
-	/**
-	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__SUBSTITUTION = UMLPackage.PRIMITIVE_TYPE__SUBSTITUTION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_ATTRIBUTE = UMLPackage.PRIMITIVE_TYPE__OWNED_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__OWNED_OPERATION = UMLPackage.PRIMITIVE_TYPE__OWNED_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MIN_LENGTH = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MAXIMUM = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__EXCLUSIVE_MAXIMUM = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MINIMUM = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MAX_LENGTH = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MIN_ITEMS = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__PATTERN = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__EXCLUSIVE_MINIMUM = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MAX_ITEMS = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 8;
-
-	/**
-	 * The feature id for the '<em><b>Format</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__FORMAT = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 9;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__TYPE = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 10;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__DESCRIPTION = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 11;
-
-	/**
-	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__UNIQUE_ITEMS = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 12;
-
-	/**
-	 * The feature id for the '<em><b>Default</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__DEFAULT = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 13;
-
-	/**
-	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MULTIPL_OF = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 14;
-
-	/**
-	 * The feature id for the '<em><b>Title</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__TITLE = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 15;
-
-	/**
-	 * The feature id for the '<em><b>Max Properties</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MAX_PROPERTIES = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 16;
-
-	/**
-	 * The feature id for the '<em><b>Min Properties</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MIN_PROPERTIES = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 17;
-
-	/**
-	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__DISCRIMINATOR = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 18;
-
-	/**
-	 * The feature id for the '<em><b>Additional Properties Allowed</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 19;
-
-	/**
-	 * The feature id for the '<em><b>Base Class</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__BASE_CLASS = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 20;
-
-	/**
-	 * The feature id for the '<em><b>Example</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__EXAMPLE = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 21;
-
-	/**
-	 * The feature id for the '<em><b>Read Only</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__READ_ONLY = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 22;
-
-	/**
-	 * The feature id for the '<em><b>Xml</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__XML = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 23;
-
-	/**
-	 * The feature id for the '<em><b>Base Enumeration</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__BASE_ENUMERATION = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 24;
-
-	/**
-	 * The number of structural features of the '<em>Schema</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA_FEATURE_COUNT = UMLPackage.PRIMITIVE_TYPE_FEATURE_COUNT + 25;
-
-	/**
-	 * The operation id for the '<em>Get EAnnotation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_EANNOTATION__STRING = UMLPackage.PRIMITIVE_TYPE___GET_EANNOTATION__STRING;
-
-	/**
-	 * The operation id for the '<em>Validate Has Owner</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Add Keyword</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ADD_KEYWORD__STRING = UMLPackage.PRIMITIVE_TYPE___ADD_KEYWORD__STRING;
-
-	/**
-	 * The operation id for the '<em>Apply Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___APPLY_STEREOTYPE__STEREOTYPE = UMLPackage.PRIMITIVE_TYPE___APPLY_STEREOTYPE__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Create EAnnotation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_EANNOTATION__STRING = UMLPackage.PRIMITIVE_TYPE___CREATE_EANNOTATION__STRING;
-
-	/**
-	 * The operation id for the '<em>Destroy</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___DESTROY = UMLPackage.PRIMITIVE_TYPE___DESTROY;
-
-	/**
-	 * The operation id for the '<em>Get Keywords</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_KEYWORDS = UMLPackage.PRIMITIVE_TYPE___GET_KEYWORDS;
-
-	/**
-	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_APPLICABLE_STEREOTYPE__STRING = UMLPackage.PRIMITIVE_TYPE___GET_APPLICABLE_STEREOTYPE__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_APPLICABLE_STEREOTYPES = UMLPackage.PRIMITIVE_TYPE___GET_APPLICABLE_STEREOTYPES;
-
-	/**
-	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_APPLIED_STEREOTYPE__STRING = UMLPackage.PRIMITIVE_TYPE___GET_APPLIED_STEREOTYPE__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_APPLIED_STEREOTYPES = UMLPackage.PRIMITIVE_TYPE___GET_APPLIED_STEREOTYPES;
-
-	/**
-	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = UMLPackage.PRIMITIVE_TYPE___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
-
-	/**
-	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = UMLPackage.PRIMITIVE_TYPE___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Get Model</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_MODEL = UMLPackage.PRIMITIVE_TYPE___GET_MODEL;
-
-	/**
-	 * The operation id for the '<em>Get Nearest Package</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_NEAREST_PACKAGE = UMLPackage.PRIMITIVE_TYPE___GET_NEAREST_PACKAGE;
-
-	/**
-	 * The operation id for the '<em>Get Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_RELATIONSHIPS = UMLPackage.PRIMITIVE_TYPE___GET_RELATIONSHIPS;
-
-	/**
-	 * The operation id for the '<em>Get Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_RELATIONSHIPS__ECLASS = UMLPackage.PRIMITIVE_TYPE___GET_RELATIONSHIPS__ECLASS;
-
-	/**
-	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_REQUIRED_STEREOTYPE__STRING = UMLPackage.PRIMITIVE_TYPE___GET_REQUIRED_STEREOTYPE__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_REQUIRED_STEREOTYPES = UMLPackage.PRIMITIVE_TYPE___GET_REQUIRED_STEREOTYPES;
-
-	/**
-	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_SOURCE_DIRECTED_RELATIONSHIPS = UMLPackage.PRIMITIVE_TYPE___GET_SOURCE_DIRECTED_RELATIONSHIPS;
-
-	/**
-	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.PRIMITIVE_TYPE___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
-
-	/**
-	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_STEREOTYPE_APPLICATION__STEREOTYPE = UMLPackage.PRIMITIVE_TYPE___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_STEREOTYPE_APPLICATIONS = UMLPackage.PRIMITIVE_TYPE___GET_STEREOTYPE_APPLICATIONS;
-
-	/**
-	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_TARGET_DIRECTED_RELATIONSHIPS = UMLPackage.PRIMITIVE_TYPE___GET_TARGET_DIRECTED_RELATIONSHIPS;
-
-	/**
-	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.PRIMITIVE_TYPE___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
-
-	/**
-	 * The operation id for the '<em>Get Value</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_VALUE__STEREOTYPE_STRING = UMLPackage.PRIMITIVE_TYPE___GET_VALUE__STEREOTYPE_STRING;
-
-	/**
-	 * The operation id for the '<em>Has Keyword</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___HAS_KEYWORD__STRING = UMLPackage.PRIMITIVE_TYPE___HAS_KEYWORD__STRING;
-
-	/**
-	 * The operation id for the '<em>Has Value</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___HAS_VALUE__STEREOTYPE_STRING = UMLPackage.PRIMITIVE_TYPE___HAS_VALUE__STEREOTYPE_STRING;
-
-	/**
-	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = UMLPackage.PRIMITIVE_TYPE___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_STEREOTYPE_APPLIED__STEREOTYPE = UMLPackage.PRIMITIVE_TYPE___IS_STEREOTYPE_APPLIED__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_STEREOTYPE_REQUIRED__STEREOTYPE = UMLPackage.PRIMITIVE_TYPE___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Remove Keyword</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___REMOVE_KEYWORD__STRING = UMLPackage.PRIMITIVE_TYPE___REMOVE_KEYWORD__STRING;
-
-	/**
-	 * The operation id for the '<em>Set Value</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___SET_VALUE__STEREOTYPE_STRING_OBJECT = UMLPackage.PRIMITIVE_TYPE___SET_VALUE__STEREOTYPE_STRING_OBJECT;
-
-	/**
-	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___UNAPPLY_STEREOTYPE__STEREOTYPE = UMLPackage.PRIMITIVE_TYPE___UNAPPLY_STEREOTYPE__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>All Owned Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_OWNED_ELEMENTS = UMLPackage.PRIMITIVE_TYPE___ALL_OWNED_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>Must Be Owned</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___MUST_BE_OWNED = UMLPackage.PRIMITIVE_TYPE___MUST_BE_OWNED;
-
-	/**
-	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Create Dependency</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_DEPENDENCY__NAMEDELEMENT = UMLPackage.PRIMITIVE_TYPE___CREATE_DEPENDENCY__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Create Usage</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_USAGE__NAMEDELEMENT = UMLPackage.PRIMITIVE_TYPE___CREATE_USAGE__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Get Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_LABEL = UMLPackage.PRIMITIVE_TYPE___GET_LABEL;
-
-	/**
-	 * The operation id for the '<em>Get Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_LABEL__BOOLEAN = UMLPackage.PRIMITIVE_TYPE___GET_LABEL__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Get Namespace</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_NAMESPACE = UMLPackage.PRIMITIVE_TYPE___GET_NAMESPACE;
-
-	/**
-	 * The operation id for the '<em>All Namespaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_NAMESPACES = UMLPackage.PRIMITIVE_TYPE___ALL_NAMESPACES;
-
-	/**
-	 * The operation id for the '<em>All Owning Packages</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_OWNING_PACKAGES = UMLPackage.PRIMITIVE_TYPE___ALL_OWNING_PACKAGES;
-
-	/**
-	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = UMLPackage.PRIMITIVE_TYPE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
-
-	/**
-	 * The operation id for the '<em>Get Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_QUALIFIED_NAME = UMLPackage.PRIMITIVE_TYPE___GET_QUALIFIED_NAME;
-
-	/**
-	 * The operation id for the '<em>Separator</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___SEPARATOR = UMLPackage.PRIMITIVE_TYPE___SEPARATOR;
-
-	/**
-	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_CLIENT_DEPENDENCIES = UMLPackage.PRIMITIVE_TYPE___GET_CLIENT_DEPENDENCIES;
-
-	/**
-	 * The operation id for the '<em>Validate Members Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Cannot Import Self</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Cannot Import Owned Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Create Element Import</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = UMLPackage.PRIMITIVE_TYPE___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
-
-	/**
-	 * The operation id for the '<em>Create Package Import</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = UMLPackage.PRIMITIVE_TYPE___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
-
-	/**
-	 * The operation id for the '<em>Get Imported Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_IMPORTED_ELEMENTS = UMLPackage.PRIMITIVE_TYPE___GET_IMPORTED_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>Get Imported Packages</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_IMPORTED_PACKAGES = UMLPackage.PRIMITIVE_TYPE___GET_IMPORTED_PACKAGES;
-
-	/**
-	 * The operation id for the '<em>Get Owned Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_OWNED_MEMBERS = UMLPackage.PRIMITIVE_TYPE___GET_OWNED_MEMBERS;
-
-	/**
-	 * The operation id for the '<em>Exclude Collisions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___EXCLUDE_COLLISIONS__ELIST = UMLPackage.PRIMITIVE_TYPE___EXCLUDE_COLLISIONS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Get Names Of Member</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_NAMES_OF_MEMBER__NAMEDELEMENT = UMLPackage.PRIMITIVE_TYPE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Import Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IMPORT_MEMBERS__ELIST = UMLPackage.PRIMITIVE_TYPE___IMPORT_MEMBERS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Get Imported Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_IMPORTED_MEMBERS = UMLPackage.PRIMITIVE_TYPE___GET_IMPORTED_MEMBERS;
-
-	/**
-	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___MEMBERS_ARE_DISTINGUISHABLE = UMLPackage.PRIMITIVE_TYPE___MEMBERS_ARE_DISTINGUISHABLE;
-
-	/**
-	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Is Consistent With</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = UMLPackage.PRIMITIVE_TYPE___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = UMLPackage.PRIMITIVE_TYPE___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Compatible With</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = UMLPackage.PRIMITIVE_TYPE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Template Parameter</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_TEMPLATE_PARAMETER = UMLPackage.PRIMITIVE_TYPE___IS_TEMPLATE_PARAMETER;
-
-	/**
-	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Create Association</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = UMLPackage.PRIMITIVE_TYPE___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
-
-	/**
-	 * The operation id for the '<em>Get Associations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_ASSOCIATIONS = UMLPackage.PRIMITIVE_TYPE___GET_ASSOCIATIONS;
-
-	/**
-	 * The operation id for the '<em>Conforms To</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CONFORMS_TO__TYPE = UMLPackage.PRIMITIVE_TYPE___CONFORMS_TO__TYPE;
-
-	/**
-	 * The operation id for the '<em>Is Template</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_TEMPLATE = UMLPackage.PRIMITIVE_TYPE___IS_TEMPLATE;
-
-	/**
-	 * The operation id for the '<em>Parameterable Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___PARAMETERABLE_ELEMENTS = UMLPackage.PRIMITIVE_TYPE___PARAMETERABLE_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>Validate Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Maps To Generalization Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Non Final Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate No Cycles In Generalization</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = UMLPackage.PRIMITIVE_TYPE___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Get All Attributes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_ALL_ATTRIBUTES = UMLPackage.PRIMITIVE_TYPE___GET_ALL_ATTRIBUTES;
-
-	/**
-	 * The operation id for the '<em>Get All Operations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_ALL_OPERATIONS = UMLPackage.PRIMITIVE_TYPE___GET_ALL_OPERATIONS;
-
-	/**
-	 * The operation id for the '<em>Get All Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_ALL_USED_INTERFACES = UMLPackage.PRIMITIVE_TYPE___GET_ALL_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Get Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_OPERATION__STRING_ELIST_ELIST = UMLPackage.PRIMITIVE_TYPE___GET_OPERATION__STRING_ELIST_ELIST;
-
-	/**
-	 * The operation id for the '<em>Get Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = UMLPackage.PRIMITIVE_TYPE___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Get Operations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_OPERATIONS = UMLPackage.PRIMITIVE_TYPE___GET_OPERATIONS;
-
-	/**
-	 * The operation id for the '<em>Get Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_USED_INTERFACES = UMLPackage.PRIMITIVE_TYPE___GET_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>All Features</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_FEATURES = UMLPackage.PRIMITIVE_TYPE___ALL_FEATURES;
-
-	/**
-	 * The operation id for the '<em>All Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_PARENTS = UMLPackage.PRIMITIVE_TYPE___ALL_PARENTS;
-
-	/**
-	 * The operation id for the '<em>Get Generals</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_GENERALS = UMLPackage.PRIMITIVE_TYPE___GET_GENERALS;
-
-	/**
-	 * The operation id for the '<em>Has Visibility Of</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___HAS_VISIBILITY_OF__NAMEDELEMENT = UMLPackage.PRIMITIVE_TYPE___HAS_VISIBILITY_OF__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Inherit</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___INHERIT__ELIST = UMLPackage.PRIMITIVE_TYPE___INHERIT__ELIST;
-
-	/**
-	 * The operation id for the '<em>Inheritable Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___INHERITABLE_MEMBERS__CLASSIFIER = UMLPackage.PRIMITIVE_TYPE___INHERITABLE_MEMBERS__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>Get Inherited Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___GET_INHERITED_MEMBERS = UMLPackage.PRIMITIVE_TYPE___GET_INHERITED_MEMBERS;
-
-	/**
-	 * The operation id for the '<em>May Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___MAY_SPECIALIZE_TYPE__CLASSIFIER = UMLPackage.PRIMITIVE_TYPE___MAY_SPECIALIZE_TYPE__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___PARENTS = UMLPackage.PRIMITIVE_TYPE___PARENTS;
-
-	/**
-	 * The operation id for the '<em>Directly Realized Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___DIRECTLY_REALIZED_INTERFACES = UMLPackage.PRIMITIVE_TYPE___DIRECTLY_REALIZED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Directly Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___DIRECTLY_USED_INTERFACES = UMLPackage.PRIMITIVE_TYPE___DIRECTLY_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>All Realized Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_REALIZED_INTERFACES = UMLPackage.PRIMITIVE_TYPE___ALL_REALIZED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>All Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_USED_INTERFACES = UMLPackage.PRIMITIVE_TYPE___ALL_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Is Substitutable For</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___IS_SUBSTITUTABLE_FOR__CLASSIFIER = UMLPackage.PRIMITIVE_TYPE___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>All Attributes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_ATTRIBUTES = UMLPackage.PRIMITIVE_TYPE___ALL_ATTRIBUTES;
-
-	/**
-	 * The operation id for the '<em>All Slottable Features</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___ALL_SLOTTABLE_FEATURES = UMLPackage.PRIMITIVE_TYPE___ALL_SLOTTABLE_FEATURES;
-
-	/**
-	 * The operation id for the '<em>Create Owned Attribute</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT = UMLPackage.PRIMITIVE_TYPE___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT;
-
-	/**
-	 * The operation id for the '<em>Create Owned Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE = UMLPackage.PRIMITIVE_TYPE___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE;
-
-	/**
-	 * The number of operations of the '<em>Schema</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA_OPERATION_COUNT = UMLPackage.PRIMITIVE_TYPE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl <em>JSON Schema Subset</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1802,31 +233,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int JSON_SCHEMA_SUBSET__MAX_ITEMS = 8;
 
 	/**
-	 * The feature id for the '<em><b>Format</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__FORMAT = 9;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__TYPE = 10;
-
-	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int JSON_SCHEMA_SUBSET__DESCRIPTION = 11;
+	int JSON_SCHEMA_SUBSET__DESCRIPTION = 9;
 
 	/**
 	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
@@ -1835,7 +248,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JSON_SCHEMA_SUBSET__UNIQUE_ITEMS = 12;
+	int JSON_SCHEMA_SUBSET__UNIQUE_ITEMS = 10;
 
 	/**
 	 * The feature id for the '<em><b>Default</b></em>' attribute.
@@ -1844,7 +257,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JSON_SCHEMA_SUBSET__DEFAULT = 13;
+	int JSON_SCHEMA_SUBSET__DEFAULT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
@@ -1853,7 +266,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JSON_SCHEMA_SUBSET__MULTIPL_OF = 14;
+	int JSON_SCHEMA_SUBSET__MULTIPL_OF = 12;
 
 	/**
 	 * The number of structural features of the '<em>JSON Schema Subset</em>' class.
@@ -1862,7 +275,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JSON_SCHEMA_SUBSET_FEATURE_COUNT = 15;
+	int JSON_SCHEMA_SUBSET_FEATURE_COUNT = 13;
 
 	/**
 	 * The number of operations of the '<em>JSON Schema Subset</em>' class.
@@ -1872,6 +285,232 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @ordered
 	 */
 	int JSON_SCHEMA_SUBSET_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.SchemaImpl <em>Schema</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.som.uoc.openapiprofile.impl.SchemaImpl
+	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSchema()
+	 * @generated
+	 */
+	int SCHEMA = 1;
+
+	/**
+	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MIN_LENGTH = JSON_SCHEMA_SUBSET__MIN_LENGTH;
+
+	/**
+	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MAXIMUM = JSON_SCHEMA_SUBSET__MAXIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__EXCLUSIVE_MAXIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MINIMUM = JSON_SCHEMA_SUBSET__MINIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MAX_LENGTH = JSON_SCHEMA_SUBSET__MAX_LENGTH;
+
+	/**
+	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MIN_ITEMS = JSON_SCHEMA_SUBSET__MIN_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__PATTERN = JSON_SCHEMA_SUBSET__PATTERN;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__EXCLUSIVE_MINIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MAX_ITEMS = JSON_SCHEMA_SUBSET__MAX_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__DESCRIPTION = JSON_SCHEMA_SUBSET__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__UNIQUE_ITEMS = JSON_SCHEMA_SUBSET__UNIQUE_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__DEFAULT = JSON_SCHEMA_SUBSET__DEFAULT;
+
+	/**
+	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MULTIPL_OF = JSON_SCHEMA_SUBSET__MULTIPL_OF;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__TITLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Max Properties</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MAX_PROPERTIES = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Min Properties</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__MIN_PROPERTIES = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__DISCRIMINATOR = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Properties Allowed</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__BASE_CLASS = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Example</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__EXAMPLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Read Only</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__READ_ONLY = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Xml</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__XML = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of structural features of the '<em>Schema</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of operations of the '<em>Schema</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA_OPERATION_COUNT = JSON_SCHEMA_SUBSET_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.XMLElementImpl <em>XML Element</em>}' class.
@@ -1957,13 +596,130 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_PROPERTY = 4;
 
 	/**
+	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MIN_LENGTH = JSON_SCHEMA_SUBSET__MIN_LENGTH;
+
+	/**
+	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MAXIMUM = JSON_SCHEMA_SUBSET__MAXIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__EXCLUSIVE_MAXIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MINIMUM = JSON_SCHEMA_SUBSET__MINIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MAX_LENGTH = JSON_SCHEMA_SUBSET__MAX_LENGTH;
+
+	/**
+	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MIN_ITEMS = JSON_SCHEMA_SUBSET__MIN_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__PATTERN = JSON_SCHEMA_SUBSET__PATTERN;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__EXCLUSIVE_MINIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MAX_ITEMS = JSON_SCHEMA_SUBSET__MAX_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__DESCRIPTION = JSON_SCHEMA_SUBSET__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__UNIQUE_ITEMS = JSON_SCHEMA_SUBSET__UNIQUE_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__DEFAULT = JSON_SCHEMA_SUBSET__DEFAULT;
+
+	/**
+	 * The feature id for the '<em><b>Multipl Of</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MULTIPL_OF = JSON_SCHEMA_SUBSET__MULTIPL_OF;
+
+	/**
 	 * The feature id for the '<em><b>Xml</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY__XML = 0;
+	int API_PROPERTY__XML = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -1972,7 +728,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY__BASE_PROPERTY = 1;
+	int API_PROPERTY__BASE_PROPERTY = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>API Property</em>' class.
@@ -1981,7 +737,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY_FEATURE_COUNT = 2;
+	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>API Property</em>' class.
@@ -1990,7 +746,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY_OPERATION_COUNT = 0;
+	int API_PROPERTY_OPERATION_COUNT = JSON_SCHEMA_SUBSET_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.APIOperationImpl <em>API Operation</em>}' class.
@@ -2191,24 +947,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @ordered
 	 */
 	int API_PARAMETER__MAX_ITEMS = JSON_SCHEMA_SUBSET__MAX_ITEMS;
-
-	/**
-	 * The feature id for the '<em><b>Format</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_PARAMETER__FORMAT = JSON_SCHEMA_SUBSET__FORMAT;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_PARAMETER__TYPE = JSON_SCHEMA_SUBSET__TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3251,6 +1989,70 @@ public interface OpenapiprofilePackage extends EPackage {
 	int TAG_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.APIDataTypeImpl <em>API Data Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.som.uoc.openapiprofile.impl.APIDataTypeImpl
+	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIDataType()
+	 * @generated
+	 */
+	int API_DATA_TYPE = 21;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_DATA_TYPE__TYPE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_DATA_TYPE__FORMAT = 1;
+
+	/**
+	 * The feature id for the '<em><b>Base Enumeration</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_DATA_TYPE__BASE_ENUMERATION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Base Primitive Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_DATA_TYPE__BASE_PRIMITIVE_TYPE = 3;
+
+	/**
+	 * The number of structural features of the '<em>API Data Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_DATA_TYPE_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>API Data Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_DATA_TYPE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3258,17 +2060,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSchemeType()
 	 * @generated
 	 */
-	int SCHEME_TYPE = 21;
-
-	/**
-	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.JSONDataType <em>JSON Data Type</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see edu.som.uoc.openapiprofile.JSONDataType
-	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getJSONDataType()
-	 * @generated
-	 */
-	int JSON_DATA_TYPE = 22;
+	int SCHEME_TYPE = 22;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.HTTPMethod <em>HTTP Method</em>}' enum.
@@ -3301,6 +2093,16 @@ public interface OpenapiprofilePackage extends EPackage {
 	int COLLECTION_FORMAT = 25;
 
 	/**
+	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.JSONDataType <em>JSON Data Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.som.uoc.openapiprofile.JSONDataType
+	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getJSONDataType()
+	 * @generated
+	 */
+	int JSON_DATA_TYPE = 26;
+
+	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.SecuritySchemeType <em>Security Scheme Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3308,7 +2110,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecuritySchemeType()
 	 * @generated
 	 */
-	int SECURITY_SCHEME_TYPE = 26;
+	int SECURITY_SCHEME_TYPE = 27;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.APIKeyLocation <em>API Key Location</em>}' enum.
@@ -3318,7 +2120,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIKeyLocation()
 	 * @generated
 	 */
-	int API_KEY_LOCATION = 27;
+	int API_KEY_LOCATION = 28;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.OAuth2FlowType <em>OAuth2 Flow Type</em>}' enum.
@@ -3328,7 +2130,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getOAuth2FlowType()
 	 * @generated
 	 */
-	int OAUTH2_FLOW_TYPE = 28;
+	int OAUTH2_FLOW_TYPE = 29;
 
 	/**
 	 * The meta object id for the '<em>Integer</em>' data type.
@@ -3338,7 +2140,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getInteger()
 	 * @generated
 	 */
-	int INTEGER = 29;
+	int INTEGER = 30;
 
 	/**
 	 * The meta object id for the '<em>Double</em>' data type.
@@ -3348,7 +2150,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getDouble()
 	 * @generated
 	 */
-	int DOUBLE = 30;
+	int DOUBLE = 31;
 
 	/**
 	 * The meta object id for the '<em>Boolean</em>' data type.
@@ -3358,7 +2160,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getBoolean()
 	 * @generated
 	 */
-	int BOOLEAN = 31;
+	int BOOLEAN = 32;
 
 
 	/**
@@ -3547,17 +2349,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	EReference getSchema_Xml();
 
 	/**
-	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.Schema#getBase_Enumeration <em>Base Enumeration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Base Enumeration</em>'.
-	 * @see edu.som.uoc.openapiprofile.Schema#getBase_Enumeration()
-	 * @see #getSchema()
-	 * @generated
-	 */
-	EReference getSchema_Base_Enumeration();
-
-	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset <em>JSON Schema Subset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3665,28 +2456,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getJSONSchemaSubset_MaxItems();
-
-	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getFormat <em>Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Format</em>'.
-	 * @see edu.som.uoc.openapiprofile.JSONSchemaSubset#getFormat()
-	 * @see #getJSONSchemaSubset()
-	 * @generated
-	 */
-	EAttribute getJSONSchemaSubset_Format();
-
-	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getType <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see edu.som.uoc.openapiprofile.JSONSchemaSubset#getType()
-	 * @see #getJSONSchemaSubset()
-	 * @generated
-	 */
-	EAttribute getJSONSchemaSubset_Type();
 
 	/**
 	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDescription <em>Description</em>}'.
@@ -4815,6 +3584,60 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getTag_Description();
 
 	/**
+	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.APIDataType <em>API Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>API Data Type</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIDataType
+	 * @generated
+	 */
+	EClass getAPIDataType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIDataType#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIDataType#getType()
+	 * @see #getAPIDataType()
+	 * @generated
+	 */
+	EAttribute getAPIDataType_Type();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIDataType#getFormat <em>Format</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Format</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIDataType#getFormat()
+	 * @see #getAPIDataType()
+	 * @generated
+	 */
+	EAttribute getAPIDataType_Format();
+
+	/**
+	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.APIDataType#getBase_Enumeration <em>Base Enumeration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Enumeration</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIDataType#getBase_Enumeration()
+	 * @see #getAPIDataType()
+	 * @generated
+	 */
+	EReference getAPIDataType_Base_Enumeration();
+
+	/**
+	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.APIDataType#getBase_PrimitiveType <em>Base Primitive Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Primitive Type</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIDataType#getBase_PrimitiveType()
+	 * @see #getAPIDataType()
+	 * @generated
+	 */
+	EReference getAPIDataType_Base_PrimitiveType();
+
+	/**
 	 * Returns the meta object for enum '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4823,16 +3646,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getSchemeType();
-
-	/**
-	 * Returns the meta object for enum '{@link edu.som.uoc.openapiprofile.JSONDataType <em>JSON Data Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>JSON Data Type</em>'.
-	 * @see edu.som.uoc.openapiprofile.JSONDataType
-	 * @generated
-	 */
-	EEnum getJSONDataType();
 
 	/**
 	 * Returns the meta object for enum '{@link edu.som.uoc.openapiprofile.HTTPMethod <em>HTTP Method</em>}'.
@@ -4863,6 +3676,16 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getCollectionFormat();
+
+	/**
+	 * Returns the meta object for enum '{@link edu.som.uoc.openapiprofile.JSONDataType <em>JSON Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>JSON Data Type</em>'.
+	 * @see edu.som.uoc.openapiprofile.JSONDataType
+	 * @generated
+	 */
+	EEnum getJSONDataType();
 
 	/**
 	 * Returns the meta object for enum '{@link edu.som.uoc.openapiprofile.SecuritySchemeType <em>Security Scheme Type</em>}'.
@@ -5092,14 +3915,6 @@ public interface OpenapiprofilePackage extends EPackage {
 		EReference SCHEMA__XML = eINSTANCE.getSchema_Xml();
 
 		/**
-		 * The meta object literal for the '<em><b>Base Enumeration</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SCHEMA__BASE_ENUMERATION = eINSTANCE.getSchema_Base_Enumeration();
-
-		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl <em>JSON Schema Subset</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5180,22 +3995,6 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute JSON_SCHEMA_SUBSET__MAX_ITEMS = eINSTANCE.getJSONSchemaSubset_MaxItems();
-
-		/**
-		 * The meta object literal for the '<em><b>Format</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute JSON_SCHEMA_SUBSET__FORMAT = eINSTANCE.getJSONSchemaSubset_Format();
-
-		/**
-		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute JSON_SCHEMA_SUBSET__TYPE = eINSTANCE.getJSONSchemaSubset_Type();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -6066,6 +4865,48 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute TAG__DESCRIPTION = eINSTANCE.getTag_Description();
 
 		/**
+		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.APIDataTypeImpl <em>API Data Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.som.uoc.openapiprofile.impl.APIDataTypeImpl
+		 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIDataType()
+		 * @generated
+		 */
+		EClass API_DATA_TYPE = eINSTANCE.getAPIDataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_DATA_TYPE__TYPE = eINSTANCE.getAPIDataType_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Format</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_DATA_TYPE__FORMAT = eINSTANCE.getAPIDataType_Format();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Enumeration</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference API_DATA_TYPE__BASE_ENUMERATION = eINSTANCE.getAPIDataType_Base_Enumeration();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Primitive Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference API_DATA_TYPE__BASE_PRIMITIVE_TYPE = eINSTANCE.getAPIDataType_Base_PrimitiveType();
+
+		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6074,16 +4915,6 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EEnum SCHEME_TYPE = eINSTANCE.getSchemeType();
-
-		/**
-		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.JSONDataType <em>JSON Data Type</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see edu.som.uoc.openapiprofile.JSONDataType
-		 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getJSONDataType()
-		 * @generated
-		 */
-		EEnum JSON_DATA_TYPE = eINSTANCE.getJSONDataType();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.HTTPMethod <em>HTTP Method</em>}' enum.
@@ -6114,6 +4945,16 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EEnum COLLECTION_FORMAT = eINSTANCE.getCollectionFormat();
+
+		/**
+		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.JSONDataType <em>JSON Data Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.som.uoc.openapiprofile.JSONDataType
+		 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getJSONDataType()
+		 * @generated
+		 */
+		EEnum JSON_DATA_TYPE = eINSTANCE.getJSONDataType();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.SecuritySchemeType <em>Security Scheme Type</em>}' enum.

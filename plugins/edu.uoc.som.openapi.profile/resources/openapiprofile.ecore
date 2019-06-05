@@ -25,7 +25,7 @@
     <eLiterals name="ws" value="2"/>
     <eLiterals name="wss" value="3"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Schema" eSuperTypes="../../org.eclipse.uml2.uml/model/UML.ecore#//PrimitiveType #//JSONSchemaSubset">
+  <eClassifiers xsi:type="ecore:EClass" name="Schema" eSuperTypes="#//JSONSchemaSubset">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxProperties" ordered="false"
@@ -44,8 +44,6 @@
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="xml" ordered="false" eType="#//XMLElement"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Enumeration" ordered="false"
-        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Enumeration"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JSONSchemaSubset" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="minLength" ordered="false"
@@ -66,9 +64,6 @@
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxItems" ordered="false"
         eType="#//Integer"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" ordered="false"
-        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" eType="#//JSONDataType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="uniqueItems" ordered="false"
@@ -85,13 +80,6 @@
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Boolean" instanceClassName="java.lang.Boolean"/>
-  <eClassifiers xsi:type="ecore:EEnum" name="JSONDataType">
-    <eLiterals name="boolean"/>
-    <eLiterals name="integer" value="1"/>
-    <eLiterals name="number" value="2"/>
-    <eLiterals name="string" value="3"/>
-    <eLiterals name="file" value="4"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XMLElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="namespace" ordered="false"
@@ -103,7 +91,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="wrapped" ordered="false"
         eType="#//Boolean"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="APIProperty">
+  <eClassifiers xsi:type="ecore:EClass" name="APIProperty" eSuperTypes="#//JSONSchemaSubset">
     <eStructuralFeatures xsi:type="ecore:EReference" name="xml" ordered="false" eType="#//XMLElement"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Property" ordered="false"
@@ -201,6 +189,13 @@
         eType="#//Integer"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclusiveMaximum" ordered="false"
         eType="#//Boolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="JSONDataType">
+    <eLiterals name="boolean"/>
+    <eLiterals name="integer" value="1"/>
+    <eLiterals name="number" value="2"/>
+    <eLiterals name="string" value="3"/>
+    <eLiterals name="file" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Example">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType" ordered="false"
@@ -317,5 +312,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="APIDataType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false" eType="#//JSONDataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Enumeration" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Enumeration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_PrimitiveType" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//PrimitiveType"/>
   </eClassifiers>
 </ecore:EPackage>

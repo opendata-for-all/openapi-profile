@@ -2,6 +2,7 @@
  */
 package edu.som.uoc.openapiprofile.impl;
 
+import edu.som.uoc.openapiprofile.APIDataType;
 import edu.som.uoc.openapiprofile.APIInfo;
 import edu.som.uoc.openapiprofile.APIKeyLocation;
 import edu.som.uoc.openapiprofile.APIOperation;
@@ -206,14 +207,14 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum schemeTypeEEnum = null;
+	private EClass apiDataTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum jsonDataTypeEEnum = null;
+	private EEnum schemeTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -235,6 +236,13 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * @generated
 	 */
 	private EEnum collectionFormatEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum jsonDataTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,15 +510,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSchema_Base_Enumeration() {
-		return (EReference)schemaEClass.getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getJSONSchemaSubset() {
 		return jsonSchemaSubsetEClass;
 	}
@@ -601,7 +600,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_Format() {
+	public EAttribute getJSONSchemaSubset_Description() {
 		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -610,7 +609,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_Type() {
+	public EAttribute getJSONSchemaSubset_UniqueItems() {
 		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -619,7 +618,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_Description() {
+	public EAttribute getJSONSchemaSubset_Default() {
 		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -628,26 +627,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_UniqueItems() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getJSONSchemaSubset_Default() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getJSONSchemaSubset_MultiplOf() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(14);
+		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -1555,8 +1536,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSchemeType() {
-		return schemeTypeEEnum;
+	public EClass getAPIDataType() {
+		return apiDataTypeEClass;
 	}
 
 	/**
@@ -1564,8 +1545,44 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getJSONDataType() {
-		return jsonDataTypeEEnum;
+	public EAttribute getAPIDataType_Type() {
+		return (EAttribute)apiDataTypeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAPIDataType_Format() {
+		return (EAttribute)apiDataTypeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAPIDataType_Base_Enumeration() {
+		return (EReference)apiDataTypeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAPIDataType_Base_PrimitiveType() {
+		return (EReference)apiDataTypeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getSchemeType() {
+		return schemeTypeEEnum;
 	}
 
 	/**
@@ -1593,6 +1610,15 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 */
 	public EEnum getCollectionFormat() {
 		return collectionFormatEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getJSONDataType() {
+		return jsonDataTypeEEnum;
 	}
 
 	/**
@@ -1695,7 +1721,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(schemaEClass, SCHEMA__EXAMPLE);
 		createEAttribute(schemaEClass, SCHEMA__READ_ONLY);
 		createEReference(schemaEClass, SCHEMA__XML);
-		createEReference(schemaEClass, SCHEMA__BASE_ENUMERATION);
 
 		jsonSchemaSubsetEClass = createEClass(JSON_SCHEMA_SUBSET);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_LENGTH);
@@ -1707,8 +1732,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__PATTERN);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAX_ITEMS);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__FORMAT);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__TYPE);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__DESCRIPTION);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__UNIQUE_ITEMS);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__DEFAULT);
@@ -1832,12 +1855,18 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(tagEClass, TAG__NAME);
 		createEAttribute(tagEClass, TAG__DESCRIPTION);
 
+		apiDataTypeEClass = createEClass(API_DATA_TYPE);
+		createEAttribute(apiDataTypeEClass, API_DATA_TYPE__TYPE);
+		createEAttribute(apiDataTypeEClass, API_DATA_TYPE__FORMAT);
+		createEReference(apiDataTypeEClass, API_DATA_TYPE__BASE_ENUMERATION);
+		createEReference(apiDataTypeEClass, API_DATA_TYPE__BASE_PRIMITIVE_TYPE);
+
 		// Create enums
 		schemeTypeEEnum = createEEnum(SCHEME_TYPE);
-		jsonDataTypeEEnum = createEEnum(JSON_DATA_TYPE);
 		httpMethodEEnum = createEEnum(HTTP_METHOD);
 		parameterLocationEEnum = createEEnum(PARAMETER_LOCATION);
 		collectionFormatEEnum = createEEnum(COLLECTION_FORMAT);
+		jsonDataTypeEEnum = createEEnum(JSON_DATA_TYPE);
 		securitySchemeTypeEEnum = createEEnum(SECURITY_SCHEME_TYPE);
 		apiKeyLocationEEnum = createEEnum(API_KEY_LOCATION);
 		oAuth2FlowTypeEEnum = createEEnum(OAUTH2_FLOW_TYPE);
@@ -1880,8 +1909,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		schemaEClass.getESuperTypes().add(theUMLPackage.getPrimitiveType());
 		schemaEClass.getESuperTypes().add(this.getJSONSchemaSubset());
+		apiPropertyEClass.getESuperTypes().add(this.getJSONSchemaSubset());
 		apiParameterEClass.getESuperTypes().add(this.getJSONSchemaSubset());
 
 		// Initialize classes, features, and operations; add parameters
@@ -1903,7 +1932,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getSchema_Example(), theTypesPackage.getString(), "example", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_ReadOnly(), this.getBoolean(), "readOnly", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSchema_Xml(), this.getXMLElement(), null, "xml", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getSchema_Base_Enumeration(), theUMLPackage.getEnumeration(), null, "base_Enumeration", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(jsonSchemaSubsetEClass, JSONSchemaSubset.class, "JSONSchemaSubset", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getJSONSchemaSubset_MinLength(), this.getInteger(), "minLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1915,8 +1943,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getJSONSchemaSubset_Pattern(), theTypesPackage.getString(), "pattern", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_ExclusiveMinimum(), this.getBoolean(), "exclusiveMinimum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_MaxItems(), this.getInteger(), "maxItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_Format(), theTypesPackage.getString(), "format", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_Type(), this.getJSONDataType(), "type", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_Description(), theTypesPackage.getString(), "description", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_UniqueItems(), this.getBoolean(), "uniqueItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_Default(), theTypesPackage.getString(), "default", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2040,19 +2066,18 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getTag_Name(), theTypesPackage.getString(), "name", null, 0, 1, Tag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getTag_Description(), theTypesPackage.getString(), "description", null, 0, 1, Tag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
+		initEClass(apiDataTypeEClass, APIDataType.class, "APIDataType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAPIDataType_Type(), this.getJSONDataType(), "type", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIDataType_Format(), theTypesPackage.getString(), "format", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getAPIDataType_Base_Enumeration(), theUMLPackage.getEnumeration(), null, "base_Enumeration", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getAPIDataType_Base_PrimitiveType(), theUMLPackage.getPrimitiveType(), null, "base_PrimitiveType", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
 		// Initialize enums and add enum literals
 		initEEnum(schemeTypeEEnum, SchemeType.class, "SchemeType");
 		addEEnumLiteral(schemeTypeEEnum, SchemeType.HTTP);
 		addEEnumLiteral(schemeTypeEEnum, SchemeType.HTTPS);
 		addEEnumLiteral(schemeTypeEEnum, SchemeType.WS);
 		addEEnumLiteral(schemeTypeEEnum, SchemeType.WSS);
-
-		initEEnum(jsonDataTypeEEnum, JSONDataType.class, "JSONDataType");
-		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.BOOLEAN);
-		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.INTEGER);
-		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.NUMBER);
-		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.STRING);
-		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.FILE);
 
 		initEEnum(httpMethodEEnum, HTTPMethod.class, "HTTPMethod");
 		addEEnumLiteral(httpMethodEEnum, HTTPMethod.GET);
@@ -2074,6 +2099,13 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.SSV);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.TSV);
 		addEEnumLiteral(collectionFormatEEnum, CollectionFormat.PIPES);
+
+		initEEnum(jsonDataTypeEEnum, JSONDataType.class, "JSONDataType");
+		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.BOOLEAN);
+		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.INTEGER);
+		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.NUMBER);
+		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.STRING);
+		addEEnumLiteral(jsonDataTypeEEnum, JSONDataType.FILE);
 
 		initEEnum(securitySchemeTypeEEnum, SecuritySchemeType.class, "SecuritySchemeType");
 		addEEnumLiteral(securitySchemeTypeEEnum, SecuritySchemeType.UNDEFINED);

@@ -2,7 +2,6 @@
  */
 package edu.som.uoc.openapiprofile.impl;
 
-import edu.som.uoc.openapiprofile.JSONDataType;
 import edu.som.uoc.openapiprofile.JSONSchemaSubset;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 
@@ -30,8 +29,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getPattern <em>Pattern</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMaxItems <em>Max Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getFormat <em>Format</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getType <em>Type</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getDefault <em>Default</em>}</li>
@@ -220,46 +217,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * @ordered
 	 */
 	protected Integer maxItems = MAX_ITEMS_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getFormat() <em>Format</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFormat()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String FORMAT_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getFormat() <em>Format</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFormat()
-	 * @generated
-	 * @ordered
-	 */
-	protected String format = FORMAT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getType()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final JSONDataType TYPE_EDEFAULT = JSONDataType.BOOLEAN;
-
-	/**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getType()
-	 * @generated
-	 * @ordered
-	 */
-	protected JSONDataType type = TYPE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
@@ -554,48 +511,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getFormat() {
-		return format;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setFormat(String newFormat) {
-		String oldFormat = format;
-		format = newFormat;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__FORMAT, oldFormat, format));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public JSONDataType getType() {
-		return type;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setType(JSONDataType newType) {
-		JSONDataType oldType = type;
-		type = newType == null ? TYPE_EDEFAULT : newType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__TYPE, oldType, type));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getDescription() {
 		return description;
 	}
@@ -701,10 +616,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return getExclusiveMinimum();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				return getMaxItems();
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__FORMAT:
-				return getFormat();
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__TYPE:
-				return getType();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
 				return getDescription();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
@@ -751,12 +662,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				setMaxItems((Integer)newValue);
-				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__FORMAT:
-				setFormat((String)newValue);
-				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__TYPE:
-				setType((JSONDataType)newValue);
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
 				setDescription((String)newValue);
@@ -809,12 +714,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				setMaxItems(MAX_ITEMS_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__FORMAT:
-				setFormat(FORMAT_EDEFAULT);
-				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__TYPE:
-				setType(TYPE_EDEFAULT);
-				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
@@ -857,10 +756,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return EXCLUSIVE_MINIMUM_EDEFAULT == null ? exclusiveMinimum != null : !EXCLUSIVE_MINIMUM_EDEFAULT.equals(exclusiveMinimum);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				return MAX_ITEMS_EDEFAULT == null ? maxItems != null : !MAX_ITEMS_EDEFAULT.equals(maxItems);
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__FORMAT:
-				return FORMAT_EDEFAULT == null ? format != null : !FORMAT_EDEFAULT.equals(format);
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__TYPE:
-				return type != TYPE_EDEFAULT;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
@@ -901,10 +796,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		result.append(exclusiveMinimum);
 		result.append(", maxItems: ");
 		result.append(maxItems);
-		result.append(", format: ");
-		result.append(format);
-		result.append(", type: ");
-		result.append(type);
 		result.append(", description: ");
 		result.append(description);
 		result.append(", uniqueItems: ");
