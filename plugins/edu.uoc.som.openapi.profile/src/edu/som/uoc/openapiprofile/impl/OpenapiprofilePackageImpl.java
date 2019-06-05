@@ -1015,6 +1015,33 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getHeader_Default() {
+		return (EAttribute)headerEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getHeader_UniqueItems() {
+		return (EAttribute)headerEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getHeader_MultipleOf() {
+		return (EAttribute)headerEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getExample() {
 		return exampleEClass;
 	}
@@ -1758,6 +1785,9 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(headerEClass, HEADER__MAXIMUM);
 		createEAttribute(headerEClass, HEADER__MAX_ITEMS);
 		createEAttribute(headerEClass, HEADER__EXCLUSIVE_MAXIMUM);
+		createEAttribute(headerEClass, HEADER__DEFAULT);
+		createEAttribute(headerEClass, HEADER__UNIQUE_ITEMS);
+		createEAttribute(headerEClass, HEADER__MULTIPLE_OF);
 
 		exampleEClass = createEClass(EXAMPLE);
 		createEAttribute(exampleEClass, EXAMPLE__MIME_TYPE);
@@ -1965,6 +1995,9 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getHeader_Maximum(), this.getDouble(), "maximum", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_MaxItems(), this.getInteger(), "maxItems", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_ExclusiveMaximum(), this.getBoolean(), "exclusiveMaximum", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getHeader_Default(), theTypesPackage.getString(), "default", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getHeader_UniqueItems(), this.getBoolean(), "uniqueItems", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getHeader_MultipleOf(), this.getDouble(), "multipleOf", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(exampleEClass, Example.class, "Example", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExample_MimeType(), theTypesPackage.getString(), "mimeType", null, 0, 1, Example.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

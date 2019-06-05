@@ -479,6 +479,19 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YretcX1uEemCU627TT0glQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yretcn1uEemCU627TT0glQ" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_h4Z6IIetEemjMNFdDGDGzg" name="default">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h4Z6IYetEemjMNFdDGDGzg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h4Z6IoetEemjMNFdDGDGzg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_h4qY0IetEemjMNFdDGDGzg" name="uniqueItems" type="_YOStgIa2EemJAf1U_0U40g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h4qY0YetEemjMNFdDGDGzg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h4qY0oetEemjMNFdDGDGzg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_h4y7sIetEemjMNFdDGDGzg" name="multipleOf" type="_depM0Ia2EemJAf1U_0U40g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h4y7sYetEemjMNFdDGDGzg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h4y7soetEemjMNFdDGDGzg" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:DataType" xmi:id="_Bd6acH1JEemCU627TT0glQ" name="Example">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_DLunIH1JEemCU627TT0glQ" name="mimeType">

@@ -188,6 +188,12 @@
         eType="#//Integer"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclusiveMaximum" ordered="false"
         eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="default" ordered="false"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uniqueItems" ordered="false"
+        eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multipleOf" ordered="false"
+        eType="#//Double"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="JSONDataType">
     <eLiterals name="undefined"/>

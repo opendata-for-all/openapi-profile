@@ -36,6 +36,9 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getMaximum <em>Maximum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getMaxItems <em>Max Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getDefault <em>Default</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getUniqueItems <em>Unique Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
  *
  * @generated
@@ -320,6 +323,66 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * @ordered
 	 */
 	protected Boolean exclusiveMaximum = EXCLUSIVE_MAXIMUM_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDefault() <em>Default</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefault()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DEFAULT_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDefault() <em>Default</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefault()
+	 * @generated
+	 * @ordered
+	 */
+	protected String default_ = DEFAULT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getUniqueItems() <em>Unique Items</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUniqueItems()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean UNIQUE_ITEMS_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUniqueItems() <em>Unique Items</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUniqueItems()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean uniqueItems = UNIQUE_ITEMS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getMultipleOf() <em>Multiple Of</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMultipleOf()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Double MULTIPLE_OF_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getMultipleOf() <em>Multiple Of</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMultipleOf()
+	 * @generated
+	 * @ordered
+	 */
+	protected Double multipleOf = MULTIPLE_OF_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -639,6 +702,69 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getDefault() {
+		return default_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDefault(String newDefault) {
+		String oldDefault = default_;
+		default_ = newDefault;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__DEFAULT, oldDefault, default_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getUniqueItems() {
+		return uniqueItems;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUniqueItems(Boolean newUniqueItems) {
+		Boolean oldUniqueItems = uniqueItems;
+		uniqueItems = newUniqueItems;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__UNIQUE_ITEMS, oldUniqueItems, uniqueItems));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Double getMultipleOf() {
+		return multipleOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMultipleOf(Double newMultipleOf) {
+		Double oldMultipleOf = multipleOf;
+		multipleOf = newMultipleOf;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.HEADER__MULTIPLE_OF, oldMultipleOf, multipleOf));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -670,6 +796,12 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return getMaxItems();
 			case OpenapiprofilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				return getExclusiveMaximum();
+			case OpenapiprofilePackage.HEADER__DEFAULT:
+				return getDefault();
+			case OpenapiprofilePackage.HEADER__UNIQUE_ITEMS:
+				return getUniqueItems();
+			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
+				return getMultipleOf();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -723,6 +855,15 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return;
 			case OpenapiprofilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum((Boolean)newValue);
+				return;
+			case OpenapiprofilePackage.HEADER__DEFAULT:
+				setDefault((String)newValue);
+				return;
+			case OpenapiprofilePackage.HEADER__UNIQUE_ITEMS:
+				setUniqueItems((Boolean)newValue);
+				return;
+			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
+				setMultipleOf((Double)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -778,6 +919,15 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 			case OpenapiprofilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum(EXCLUSIVE_MAXIMUM_EDEFAULT);
 				return;
+			case OpenapiprofilePackage.HEADER__DEFAULT:
+				setDefault(DEFAULT_EDEFAULT);
+				return;
+			case OpenapiprofilePackage.HEADER__UNIQUE_ITEMS:
+				setUniqueItems(UNIQUE_ITEMS_EDEFAULT);
+				return;
+			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
+				setMultipleOf(MULTIPLE_OF_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -818,6 +968,12 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return MAX_ITEMS_EDEFAULT == null ? maxItems != null : !MAX_ITEMS_EDEFAULT.equals(maxItems);
 			case OpenapiprofilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				return EXCLUSIVE_MAXIMUM_EDEFAULT == null ? exclusiveMaximum != null : !EXCLUSIVE_MAXIMUM_EDEFAULT.equals(exclusiveMaximum);
+			case OpenapiprofilePackage.HEADER__DEFAULT:
+				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
+			case OpenapiprofilePackage.HEADER__UNIQUE_ITEMS:
+				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
+			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
+				return MULTIPLE_OF_EDEFAULT == null ? multipleOf != null : !MULTIPLE_OF_EDEFAULT.equals(multipleOf);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -860,6 +1016,12 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		result.append(maxItems);
 		result.append(", exclusiveMaximum: ");
 		result.append(exclusiveMaximum);
+		result.append(", default: ");
+		result.append(default_);
+		result.append(", uniqueItems: ");
+		result.append(uniqueItems);
+		result.append(", multipleOf: ");
+		result.append(multipleOf);
 		result.append(')');
 		return result.toString();
 	}

@@ -27,6 +27,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getMaximum <em>Maximum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getMaxItems <em>Max Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getDefault <em>Default</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getUniqueItems <em>Unique Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader()
@@ -403,5 +406,83 @@ public interface Header extends EObject {
 	 * @generated
 	 */
 	void setExclusiveMaximum(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Default</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Default</em>' attribute.
+	 * @see #setDefault(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Default()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getDefault();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getDefault <em>Default</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Default</em>' attribute.
+	 * @see #getDefault()
+	 * @generated
+	 */
+	void setDefault(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Unique Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Unique Items</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Unique Items</em>' attribute.
+	 * @see #setUniqueItems(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_UniqueItems()
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getUniqueItems();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getUniqueItems <em>Unique Items</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Unique Items</em>' attribute.
+	 * @see #getUniqueItems()
+	 * @generated
+	 */
+	void setUniqueItems(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Multiple Of</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Multiple Of</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Multiple Of</em>' attribute.
+	 * @see #setMultipleOf(Double)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_MultipleOf()
+	 * @model dataType="edu.som.uoc.openapiprofile.Double" ordered="false"
+	 * @generated
+	 */
+	Double getMultipleOf();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Header#getMultipleOf <em>Multiple Of</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Multiple Of</em>' attribute.
+	 * @see #getMultipleOf()
+	 * @generated
+	 */
+	void setMultipleOf(Double value);
 
 } // Header

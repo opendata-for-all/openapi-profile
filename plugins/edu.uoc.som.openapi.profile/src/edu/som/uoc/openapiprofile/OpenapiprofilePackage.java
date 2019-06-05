@@ -1094,13 +1094,40 @@ public interface OpenapiprofilePackage extends EPackage {
 	int HEADER__EXCLUSIVE_MAXIMUM = 13;
 
 	/**
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__DEFAULT = 14;
+
+	/**
+	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__UNIQUE_ITEMS = 15;
+
+	/**
+	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__MULTIPLE_OF = 16;
+
+	/**
 	 * The number of structural features of the '<em>Header</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER_FEATURE_COUNT = 14;
+	int HEADER_FEATURE_COUNT = 17;
 
 	/**
 	 * The number of operations of the '<em>Header</em>' class.
@@ -2816,6 +2843,39 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getHeader_ExclusiveMaximum();
 
 	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Header#getDefault <em>Default</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default</em>'.
+	 * @see edu.som.uoc.openapiprofile.Header#getDefault()
+	 * @see #getHeader()
+	 * @generated
+	 */
+	EAttribute getHeader_Default();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Header#getUniqueItems <em>Unique Items</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unique Items</em>'.
+	 * @see edu.som.uoc.openapiprofile.Header#getUniqueItems()
+	 * @see #getHeader()
+	 * @generated
+	 */
+	EAttribute getHeader_UniqueItems();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Header#getMultipleOf <em>Multiple Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Multiple Of</em>'.
+	 * @see edu.som.uoc.openapiprofile.Header#getMultipleOf()
+	 * @see #getHeader()
+	 * @generated
+	 */
+	EAttribute getHeader_MultipleOf();
+
+	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.Example <em>Example</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4206,6 +4266,30 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute HEADER__EXCLUSIVE_MAXIMUM = eINSTANCE.getHeader_ExclusiveMaximum();
+
+		/**
+		 * The meta object literal for the '<em><b>Default</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HEADER__DEFAULT = eINSTANCE.getHeader_Default();
+
+		/**
+		 * The meta object literal for the '<em><b>Unique Items</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HEADER__UNIQUE_ITEMS = eINSTANCE.getHeader_UniqueItems();
+
+		/**
+		 * The meta object literal for the '<em><b>Multiple Of</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HEADER__MULTIPLE_OF = eINSTANCE.getHeader_MultipleOf();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.ExampleImpl <em>Example</em>}' class.
