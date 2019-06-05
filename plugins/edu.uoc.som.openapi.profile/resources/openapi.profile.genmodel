@@ -202,7 +202,7 @@
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//License">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//License/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//License/licenseURL"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//License/url"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//Contact">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Contact/url"/>

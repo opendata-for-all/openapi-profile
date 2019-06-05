@@ -221,8 +221,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="License">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="licenseURL" ordered="false"
-        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Contact">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>

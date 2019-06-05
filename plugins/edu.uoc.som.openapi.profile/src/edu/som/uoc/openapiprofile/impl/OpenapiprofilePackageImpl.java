@@ -1167,7 +1167,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLicense_LicenseURL() {
+	public EAttribute getLicense_Url() {
 		return (EAttribute)licenseEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1804,7 +1804,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		licenseEClass = createEClass(LICENSE);
 		createEAttribute(licenseEClass, LICENSE__NAME);
-		createEAttribute(licenseEClass, LICENSE__LICENSE_URL);
+		createEAttribute(licenseEClass, LICENSE__URL);
 
 		contactEClass = createEClass(CONTACT);
 		createEAttribute(contactEClass, CONTACT__URL);
@@ -2015,7 +2015,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		initEClass(licenseEClass, License.class, "License", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLicense_Name(), theTypesPackage.getString(), "name", null, 0, 1, License.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getLicense_LicenseURL(), theTypesPackage.getString(), "licenseURL", null, 0, 1, License.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getLicense_Url(), theTypesPackage.getString(), "url", null, 0, 1, License.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(contactEClass, Contact.class, "Contact", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContact_Url(), theTypesPackage.getString(), "url", null, 0, 1, Contact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

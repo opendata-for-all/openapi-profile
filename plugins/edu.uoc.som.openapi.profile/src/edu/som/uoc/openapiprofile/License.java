@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link edu.som.uoc.openapiprofile.License#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.License#getLicenseURL <em>License URL</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.License#getUrl <em>Url</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getLicense()
@@ -49,29 +49,29 @@ public interface License extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>License URL</b></em>' attribute.
+	 * Returns the value of the '<em><b>Url</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>License URL</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Url</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>License URL</em>' attribute.
-	 * @see #setLicenseURL(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getLicense_LicenseURL()
+	 * @return the value of the '<em>Url</em>' attribute.
+	 * @see #setUrl(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getLicense_Url()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
-	String getLicenseURL();
+	String getUrl();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.License#getLicenseURL <em>License URL</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.License#getUrl <em>Url</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>License URL</em>' attribute.
-	 * @see #getLicenseURL()
+	 * @param value the new value of the '<em>Url</em>' attribute.
+	 * @see #getUrl()
 	 * @generated
 	 */
-	void setLicenseURL(String value);
+	void setUrl(String value);
 
 } // License

@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * </p>
  * <ul>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.LicenseImpl#getName <em>Name</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.LicenseImpl#getLicenseURL <em>License URL</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.LicenseImpl#getUrl <em>Url</em>}</li>
  * </ul>
  *
  * @generated
@@ -48,24 +48,24 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getLicenseURL() <em>License URL</em>}' attribute.
+	 * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLicenseURL()
+	 * @see #getUrl()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String LICENSE_URL_EDEFAULT = null;
+	protected static final String URL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getLicenseURL() <em>License URL</em>}' attribute.
+	 * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLicenseURL()
+	 * @see #getUrl()
 	 * @generated
 	 * @ordered
 	 */
-	protected String licenseURL = LICENSE_URL_EDEFAULT;
+	protected String url = URL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -112,8 +112,8 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLicenseURL() {
-		return licenseURL;
+	public String getUrl() {
+		return url;
 	}
 
 	/**
@@ -121,11 +121,11 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLicenseURL(String newLicenseURL) {
-		String oldLicenseURL = licenseURL;
-		licenseURL = newLicenseURL;
+	public void setUrl(String newUrl) {
+		String oldUrl = url;
+		url = newUrl;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.LICENSE__LICENSE_URL, oldLicenseURL, licenseURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.LICENSE__URL, oldUrl, url));
 	}
 
 	/**
@@ -138,8 +138,8 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 		switch (featureID) {
 			case OpenapiprofilePackage.LICENSE__NAME:
 				return getName();
-			case OpenapiprofilePackage.LICENSE__LICENSE_URL:
-				return getLicenseURL();
+			case OpenapiprofilePackage.LICENSE__URL:
+				return getUrl();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -155,8 +155,8 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 			case OpenapiprofilePackage.LICENSE__NAME:
 				setName((String)newValue);
 				return;
-			case OpenapiprofilePackage.LICENSE__LICENSE_URL:
-				setLicenseURL((String)newValue);
+			case OpenapiprofilePackage.LICENSE__URL:
+				setUrl((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -173,8 +173,8 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 			case OpenapiprofilePackage.LICENSE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.LICENSE__LICENSE_URL:
-				setLicenseURL(LICENSE_URL_EDEFAULT);
+			case OpenapiprofilePackage.LICENSE__URL:
+				setUrl(URL_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -190,8 +190,8 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 		switch (featureID) {
 			case OpenapiprofilePackage.LICENSE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case OpenapiprofilePackage.LICENSE__LICENSE_URL:
-				return LICENSE_URL_EDEFAULT == null ? licenseURL != null : !LICENSE_URL_EDEFAULT.equals(licenseURL);
+			case OpenapiprofilePackage.LICENSE__URL:
+				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -208,8 +208,8 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (name: ");
 		result.append(name);
-		result.append(", licenseURL: ");
-		result.append(licenseURL);
+		result.append(", url: ");
+		result.append(url);
 		result.append(')');
 		return result.toString();
 	}

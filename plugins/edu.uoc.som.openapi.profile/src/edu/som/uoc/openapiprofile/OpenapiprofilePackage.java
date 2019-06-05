@@ -1431,13 +1431,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int LICENSE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>License URL</b></em>' attribute.
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LICENSE__LICENSE_URL = 1;
+	int LICENSE__URL = 1;
 
 	/**
 	 * The number of structural features of the '<em>License</em>' class.
@@ -3142,15 +3142,15 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getLicense_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.License#getLicenseURL <em>License URL</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.License#getUrl <em>Url</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>License URL</em>'.
-	 * @see edu.som.uoc.openapiprofile.License#getLicenseURL()
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see edu.som.uoc.openapiprofile.License#getUrl()
 	 * @see #getLicense()
 	 * @generated
 	 */
-	EAttribute getLicense_LicenseURL();
+	EAttribute getLicense_Url();
 
 	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.Contact <em>Contact</em>}'.
@@ -4519,12 +4519,12 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute LICENSE__NAME = eINSTANCE.getLicense_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>License URL</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute LICENSE__LICENSE_URL = eINSTANCE.getLicense_LicenseURL();
+		EAttribute LICENSE__URL = eINSTANCE.getLicense_Url();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.ContactImpl <em>Contact</em>}' class.
