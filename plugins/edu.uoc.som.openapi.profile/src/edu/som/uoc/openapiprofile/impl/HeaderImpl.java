@@ -42,7 +42,7 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getDefault <em>Default</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getMultipleOf <em>Multiple Of</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getItems <em>Items</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getEnum <em>Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -389,14 +389,14 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	protected Double multipleOf = MULTIPLE_OF_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getItems() <em>Items</em>}' attribute list.
+	 * The cached value of the '{@link #getEnum() <em>Enum</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getItems()
+	 * @see #getEnum()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> items;
+	protected EList<String> enum_;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -779,11 +779,11 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getItems() {
-		if (items == null) {
-			items = new EDataTypeUniqueEList<String>(String.class, this, OpenapiprofilePackage.HEADER__ITEMS);
+	public EList<String> getEnum() {
+		if (enum_ == null) {
+			enum_ = new EDataTypeUniqueEList<String>(String.class, this, OpenapiprofilePackage.HEADER__ENUM);
 		}
-		return items;
+		return enum_;
 	}
 
 	/**
@@ -828,8 +828,8 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return getUniqueItems();
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				return getMultipleOf();
-			case OpenapiprofilePackage.HEADER__ITEMS:
-				return getItems();
+			case OpenapiprofilePackage.HEADER__ENUM:
+				return getEnum();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -894,9 +894,9 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				setMultipleOf((Double)newValue);
 				return;
-			case OpenapiprofilePackage.HEADER__ITEMS:
-				getItems().clear();
-				getItems().addAll((Collection<? extends String>)newValue);
+			case OpenapiprofilePackage.HEADER__ENUM:
+				getEnum().clear();
+				getEnum().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -961,8 +961,8 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				setMultipleOf(MULTIPLE_OF_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.HEADER__ITEMS:
-				getItems().clear();
+			case OpenapiprofilePackage.HEADER__ENUM:
+				getEnum().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -1010,8 +1010,8 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				return MULTIPLE_OF_EDEFAULT == null ? multipleOf != null : !MULTIPLE_OF_EDEFAULT.equals(multipleOf);
-			case OpenapiprofilePackage.HEADER__ITEMS:
-				return items != null && !items.isEmpty();
+			case OpenapiprofilePackage.HEADER__ENUM:
+				return enum_ != null && !enum_.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -1060,8 +1060,8 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		result.append(uniqueItems);
 		result.append(", multipleOf: ");
 		result.append(multipleOf);
-		result.append(", items: ");
-		result.append(items);
+		result.append(", enum: ");
+		result.append(enum_);
 		result.append(')');
 		return result.toString();
 	}

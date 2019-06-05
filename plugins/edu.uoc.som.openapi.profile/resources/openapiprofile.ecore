@@ -194,8 +194,8 @@
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="multipleOf" ordered="false"
         eType="#//Double"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="items" ordered="false"
-        upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="enum" ordered="false" upperBound="-1"
+        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="JSONDataType">
     <eLiterals name="undefined"/>

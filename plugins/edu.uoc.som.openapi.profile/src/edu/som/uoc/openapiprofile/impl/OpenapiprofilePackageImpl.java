@@ -1042,7 +1042,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeader_Items() {
+	public EAttribute getHeader_Enum() {
 		return (EAttribute)headerEClass.getEStructuralFeatures().get(17);
 	}
 
@@ -1797,7 +1797,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(headerEClass, HEADER__DEFAULT);
 		createEAttribute(headerEClass, HEADER__UNIQUE_ITEMS);
 		createEAttribute(headerEClass, HEADER__MULTIPLE_OF);
-		createEAttribute(headerEClass, HEADER__ITEMS);
+		createEAttribute(headerEClass, HEADER__ENUM);
 
 		exampleEClass = createEClass(EXAMPLE);
 		createEAttribute(exampleEClass, EXAMPLE__MIME_TYPE);
@@ -2008,7 +2008,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getHeader_Default(), theTypesPackage.getString(), "default", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_UniqueItems(), this.getBoolean(), "uniqueItems", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getHeader_MultipleOf(), this.getDouble(), "multipleOf", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getHeader_Items(), theTypesPackage.getString(), "items", null, 0, -1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getHeader_Enum(), theTypesPackage.getString(), "enum", null, 0, -1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(exampleEClass, Example.class, "Example", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExample_MimeType(), theTypesPackage.getString(), "mimeType", null, 0, 1, Example.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
