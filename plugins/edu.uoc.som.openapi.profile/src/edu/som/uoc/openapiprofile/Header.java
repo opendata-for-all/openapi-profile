@@ -2,6 +2,7 @@
  */
 package edu.som.uoc.openapiprofile;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -30,6 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getDefault <em>Default</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Header#getMultipleOf <em>Multiple Of</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Header#getItems <em>Items</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader()
@@ -484,5 +486,21 @@ public interface Header extends EObject {
 	 * @generated
 	 */
 	void setMultipleOf(Double value);
+
+	/**
+	 * Returns the value of the '<em><b>Items</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Items</em>' attribute list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Items</em>' attribute list.
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getHeader_Items()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	EList<String> getItems();
 
 } // Header

@@ -7,12 +7,15 @@ import edu.som.uoc.openapiprofile.Header;
 import edu.som.uoc.openapiprofile.JSONDataType;
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,6 +42,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getDefault <em>Default</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getMultipleOf <em>Multiple Of</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.HeaderImpl#getItems <em>Items</em>}</li>
  * </ul>
  *
  * @generated
@@ -383,6 +387,16 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * @ordered
 	 */
 	protected Double multipleOf = MULTIPLE_OF_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getItems() <em>Items</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getItems()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> items;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -765,6 +779,18 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<String> getItems() {
+		if (items == null) {
+			items = new EDataTypeUniqueEList<String>(String.class, this, OpenapiprofilePackage.HEADER__ITEMS);
+		}
+		return items;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -802,6 +828,8 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return getUniqueItems();
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				return getMultipleOf();
+			case OpenapiprofilePackage.HEADER__ITEMS:
+				return getItems();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -811,6 +839,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -864,6 +893,10 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return;
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				setMultipleOf((Double)newValue);
+				return;
+			case OpenapiprofilePackage.HEADER__ITEMS:
+				getItems().clear();
+				getItems().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -928,6 +961,9 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				setMultipleOf(MULTIPLE_OF_EDEFAULT);
 				return;
+			case OpenapiprofilePackage.HEADER__ITEMS:
+				getItems().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -974,6 +1010,8 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
 			case OpenapiprofilePackage.HEADER__MULTIPLE_OF:
 				return MULTIPLE_OF_EDEFAULT == null ? multipleOf != null : !MULTIPLE_OF_EDEFAULT.equals(multipleOf);
+			case OpenapiprofilePackage.HEADER__ITEMS:
+				return items != null && !items.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -1022,6 +1060,8 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		result.append(uniqueItems);
 		result.append(", multipleOf: ");
 		result.append(multipleOf);
+		result.append(", items: ");
+		result.append(items);
 		result.append(')');
 		return result.toString();
 	}

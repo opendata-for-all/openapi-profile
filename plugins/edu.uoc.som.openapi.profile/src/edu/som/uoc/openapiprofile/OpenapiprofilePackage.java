@@ -1121,13 +1121,22 @@ public interface OpenapiprofilePackage extends EPackage {
 	int HEADER__MULTIPLE_OF = 16;
 
 	/**
+	 * The feature id for the '<em><b>Items</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__ITEMS = 17;
+
+	/**
 	 * The number of structural features of the '<em>Header</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HEADER_FEATURE_COUNT = 17;
+	int HEADER_FEATURE_COUNT = 18;
 
 	/**
 	 * The number of operations of the '<em>Header</em>' class.
@@ -2876,6 +2885,17 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getHeader_MultipleOf();
 
 	/**
+	 * Returns the meta object for the attribute list '{@link edu.som.uoc.openapiprofile.Header#getItems <em>Items</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Items</em>'.
+	 * @see edu.som.uoc.openapiprofile.Header#getItems()
+	 * @see #getHeader()
+	 * @generated
+	 */
+	EAttribute getHeader_Items();
+
+	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.Example <em>Example</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4290,6 +4310,14 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute HEADER__MULTIPLE_OF = eINSTANCE.getHeader_MultipleOf();
+
+		/**
+		 * The meta object literal for the '<em><b>Items</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HEADER__ITEMS = eINSTANCE.getHeader_Items();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.ExampleImpl <em>Example</em>}' class.
