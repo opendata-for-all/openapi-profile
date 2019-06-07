@@ -26,6 +26,7 @@ import org.eclipse.uml2.uml.Operation;
  *   <li>{@link edu.som.uoc.openapiprofile.APIOperation#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIOperation#getBase_Operation <em>Base Operation</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIOperation#getTags <em>Tags</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIOperation#getDeprecated <em>Deprecated</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIOperation()
@@ -231,5 +232,31 @@ public interface APIOperation extends EObject {
 	 * @generated
 	 */
 	EList<String> getTags();
+
+	/**
+	 * Returns the value of the '<em><b>Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Deprecated</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Deprecated</em>' attribute.
+	 * @see #setDeprecated(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIOperation_Deprecated()
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getDeprecated();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIOperation#getDeprecated <em>Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Deprecated</em>' attribute.
+	 * @see #getDeprecated()
+	 * @generated
+	 */
+	void setDeprecated(Boolean value);
 
 } // APIOperation

@@ -40,6 +40,7 @@ import org.eclipse.uml2.uml.Operation;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIOperationImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIOperationImpl#getBase_Operation <em>Base Operation</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIOperationImpl#getTags <em>Tags</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.APIOperationImpl#getDeprecated <em>Deprecated</em>}</li>
  * </ul>
  *
  * @generated
@@ -174,6 +175,26 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * @ordered
 	 */
 	protected EList<String> tags;
+
+	/**
+	 * The default value of the '{@link #getDeprecated() <em>Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDeprecated()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean DEPRECATED_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDeprecated() <em>Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDeprecated()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean deprecated = DEPRECATED_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -369,6 +390,27 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Boolean getDeprecated() {
+		return deprecated;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDeprecated(Boolean newDeprecated) {
+		Boolean oldDeprecated = deprecated;
+		deprecated = newDeprecated;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_OPERATION__DEPRECATED, oldDeprecated, deprecated));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -391,6 +433,8 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 				return basicGetBase_Operation();
 			case OpenapiprofilePackage.API_OPERATION__TAGS:
 				return getTags();
+			case OpenapiprofilePackage.API_OPERATION__DEPRECATED:
+				return getDeprecated();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -435,6 +479,9 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 				getTags().clear();
 				getTags().addAll((Collection<? extends String>)newValue);
 				return;
+			case OpenapiprofilePackage.API_OPERATION__DEPRECATED:
+				setDeprecated((Boolean)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -474,6 +521,9 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 			case OpenapiprofilePackage.API_OPERATION__TAGS:
 				getTags().clear();
 				return;
+			case OpenapiprofilePackage.API_OPERATION__DEPRECATED:
+				setDeprecated(DEPRECATED_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -504,6 +554,8 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 				return base_Operation != null;
 			case OpenapiprofilePackage.API_OPERATION__TAGS:
 				return tags != null && !tags.isEmpty();
+			case OpenapiprofilePackage.API_OPERATION__DEPRECATED:
+				return DEPRECATED_EDEFAULT == null ? deprecated != null : !DEPRECATED_EDEFAULT.equals(deprecated);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -534,6 +586,8 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 		result.append(description);
 		result.append(", tags: ");
 		result.append(tags);
+		result.append(", deprecated: ");
+		result.append(deprecated);
 		result.append(')');
 		return result.toString();
 	}

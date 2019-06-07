@@ -112,6 +112,8 @@
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" ordered="false" upperBound="-1"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deprecated" ordered="false"
+        eType="#//Boolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="HTTPMethod">
     <eLiterals name="undefined"/>

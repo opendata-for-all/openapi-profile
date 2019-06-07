@@ -151,6 +151,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIOperation/base_Operation"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIOperation/tags"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIOperation/deprecated"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//APIParameter">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIParameter/location"/>

@@ -781,6 +781,15 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAPIOperation_Deprecated() {
+		return (EAttribute)apiOperationEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAPIParameter() {
 		return apiParameterEClass;
 	}
@@ -1765,6 +1774,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(apiOperationEClass, API_OPERATION__DESCRIPTION);
 		createEReference(apiOperationEClass, API_OPERATION__BASE_OPERATION);
 		createEAttribute(apiOperationEClass, API_OPERATION__TAGS);
+		createEAttribute(apiOperationEClass, API_OPERATION__DEPRECATED);
 
 		apiParameterEClass = createEClass(API_PARAMETER);
 		createEAttribute(apiParameterEClass, API_PARAMETER__LOCATION);
@@ -1976,6 +1986,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getAPIOperation_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIOperation_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIOperation_Tags(), theTypesPackage.getString(), "tags", null, 0, -1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIOperation_Deprecated(), this.getBoolean(), "deprecated", null, 0, 1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiParameterEClass, APIParameter.class, "APIParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIParameter_Location(), this.getParameterLocation(), "location", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

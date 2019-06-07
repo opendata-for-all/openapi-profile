@@ -686,13 +686,22 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_OPERATION__TAGS = 8;
 
 	/**
+	 * The feature id for the '<em><b>Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_OPERATION__DEPRECATED = 9;
+
+	/**
 	 * The number of structural features of the '<em>API Operation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_OPERATION_FEATURE_COUNT = 9;
+	int API_OPERATION_FEATURE_COUNT = 10;
 
 	/**
 	 * The number of operations of the '<em>API Operation</em>' class.
@@ -2569,6 +2578,17 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getAPIOperation_Tags();
 
 	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIOperation#getDeprecated <em>Deprecated</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deprecated</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIOperation#getDeprecated()
+	 * @see #getAPIOperation()
+	 * @generated
+	 */
+	EAttribute getAPIOperation_Deprecated();
+
+	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.APIParameter <em>API Parameter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4072,6 +4092,14 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute API_OPERATION__TAGS = eINSTANCE.getAPIOperation_Tags();
+
+		/**
+		 * The meta object literal for the '<em><b>Deprecated</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_OPERATION__DEPRECATED = eINSTANCE.getAPIOperation_Deprecated();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl <em>API Parameter</em>}' class.
