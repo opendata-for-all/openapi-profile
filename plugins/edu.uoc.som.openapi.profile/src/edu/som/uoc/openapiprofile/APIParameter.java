@@ -14,7 +14,7 @@ import org.eclipse.uml2.uml.Parameter;
  * </p>
  * <ul>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getLocation <em>Location</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValues <em>Allow Empty Values</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValue <em>Allow Empty Value</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getBase_Parameter <em>Base Parameter</em>}</li>
  * </ul>
@@ -54,30 +54,30 @@ public interface APIParameter extends JSONSchemaSubset {
 	void setLocation(ParameterLocation value);
 
 	/**
-	 * Returns the value of the '<em><b>Allow Empty Values</b></em>' attribute.
+	 * Returns the value of the '<em><b>Allow Empty Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Allow Empty Values</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Allow Empty Value</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Allow Empty Values</em>' attribute.
-	 * @see #setAllowEmptyValues(Boolean)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_AllowEmptyValues()
+	 * @return the value of the '<em>Allow Empty Value</em>' attribute.
+	 * @see #setAllowEmptyValue(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_AllowEmptyValue()
 	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
 	 * @generated
 	 */
-	Boolean getAllowEmptyValues();
+	Boolean getAllowEmptyValue();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValues <em>Allow Empty Values</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValue <em>Allow Empty Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Allow Empty Values</em>' attribute.
-	 * @see #getAllowEmptyValues()
+	 * @param value the new value of the '<em>Allow Empty Value</em>' attribute.
+	 * @see #getAllowEmptyValue()
 	 * @generated
 	 */
-	void setAllowEmptyValues(Boolean value);
+	void setAllowEmptyValue(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Collection Format</b></em>' attribute.

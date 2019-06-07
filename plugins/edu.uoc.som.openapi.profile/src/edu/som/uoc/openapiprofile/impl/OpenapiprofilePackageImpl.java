@@ -808,7 +808,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAPIParameter_AllowEmptyValues() {
+	public EAttribute getAPIParameter_AllowEmptyValue() {
 		return (EAttribute)apiParameterEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1778,7 +1778,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		apiParameterEClass = createEClass(API_PARAMETER);
 		createEAttribute(apiParameterEClass, API_PARAMETER__LOCATION);
-		createEAttribute(apiParameterEClass, API_PARAMETER__ALLOW_EMPTY_VALUES);
+		createEAttribute(apiParameterEClass, API_PARAMETER__ALLOW_EMPTY_VALUE);
 		createEAttribute(apiParameterEClass, API_PARAMETER__COLLECTION_FORMAT);
 		createEReference(apiParameterEClass, API_PARAMETER__BASE_PARAMETER);
 
@@ -1990,7 +1990,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		initEClass(apiParameterEClass, APIParameter.class, "APIParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIParameter_Location(), this.getParameterLocation(), "location", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getAPIParameter_AllowEmptyValues(), this.getBoolean(), "allowEmptyValues", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIParameter_AllowEmptyValue(), this.getBoolean(), "allowEmptyValue", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIParameter_CollectionFormat(), this.getCollectionFormat(), "collectionFormat", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIParameter_Base_Parameter(), theUMLPackage.getParameter(), null, "base_Parameter", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 

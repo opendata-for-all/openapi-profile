@@ -25,7 +25,7 @@ import org.eclipse.uml2.uml.Parameter;
  * </p>
  * <ul>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getLocation <em>Location</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getAllowEmptyValues <em>Allow Empty Values</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getAllowEmptyValue <em>Allow Empty Value</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getBase_Parameter <em>Base Parameter</em>}</li>
  * </ul>
@@ -54,24 +54,24 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	protected ParameterLocation location = LOCATION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
+	 * The default value of the '{@link #getAllowEmptyValue() <em>Allow Empty Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllowEmptyValues()
+	 * @see #getAllowEmptyValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Boolean ALLOW_EMPTY_VALUES_EDEFAULT = null;
+	protected static final Boolean ALLOW_EMPTY_VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getAllowEmptyValues() <em>Allow Empty Values</em>}' attribute.
+	 * The cached value of the '{@link #getAllowEmptyValue() <em>Allow Empty Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllowEmptyValues()
+	 * @see #getAllowEmptyValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected Boolean allowEmptyValues = ALLOW_EMPTY_VALUES_EDEFAULT;
+	protected Boolean allowEmptyValue = ALLOW_EMPTY_VALUE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getCollectionFormat() <em>Collection Format</em>}' attribute.
@@ -148,8 +148,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Boolean getAllowEmptyValues() {
-		return allowEmptyValues;
+	public Boolean getAllowEmptyValue() {
+		return allowEmptyValue;
 	}
 
 	/**
@@ -157,11 +157,11 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAllowEmptyValues(Boolean newAllowEmptyValues) {
-		Boolean oldAllowEmptyValues = allowEmptyValues;
-		allowEmptyValues = newAllowEmptyValues;
+	public void setAllowEmptyValue(Boolean newAllowEmptyValue) {
+		Boolean oldAllowEmptyValue = allowEmptyValue;
+		allowEmptyValue = newAllowEmptyValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES, oldAllowEmptyValues, allowEmptyValues));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE, oldAllowEmptyValue, allowEmptyValue));
 	}
 
 	/**
@@ -233,8 +233,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		switch (featureID) {
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return getLocation();
-			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				return getAllowEmptyValues();
+			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+				return getAllowEmptyValue();
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				return getCollectionFormat();
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
@@ -255,8 +255,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				setLocation((ParameterLocation)newValue);
 				return;
-			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				setAllowEmptyValues((Boolean)newValue);
+			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+				setAllowEmptyValue((Boolean)newValue);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				setCollectionFormat((CollectionFormat)newValue);
@@ -279,8 +279,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				setLocation(LOCATION_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				setAllowEmptyValues(ALLOW_EMPTY_VALUES_EDEFAULT);
+			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+				setAllowEmptyValue(ALLOW_EMPTY_VALUE_EDEFAULT);
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				setCollectionFormat(COLLECTION_FORMAT_EDEFAULT);
@@ -302,8 +302,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		switch (featureID) {
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return location != LOCATION_EDEFAULT;
-			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUES:
-				return ALLOW_EMPTY_VALUES_EDEFAULT == null ? allowEmptyValues != null : !ALLOW_EMPTY_VALUES_EDEFAULT.equals(allowEmptyValues);
+			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+				return ALLOW_EMPTY_VALUE_EDEFAULT == null ? allowEmptyValue != null : !ALLOW_EMPTY_VALUE_EDEFAULT.equals(allowEmptyValue);
 			case OpenapiprofilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
@@ -324,8 +324,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (location: ");
 		result.append(location);
-		result.append(", allowEmptyValues: ");
-		result.append(allowEmptyValues);
+		result.append(", allowEmptyValue: ");
+		result.append(allowEmptyValue);
 		result.append(", collectionFormat: ");
 		result.append(collectionFormat);
 		result.append(')');

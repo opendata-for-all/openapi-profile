@@ -170,7 +170,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O8kp4H1HEemCU627TT0glQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O8rXkH1HEemCU627TT0glQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_SC9zEH1HEemCU627TT0glQ" name="allowEmptyValues" type="_YOStgIa2EemJAf1U_0U40g">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SC9zEH1HEemCU627TT0glQ" name="allowEmptyValue" type="_YOStgIa2EemJAf1U_0U40g">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eQT5sH1HEemCU627TT0glQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eQb1gH1HEemCU627TT0glQ" value="1"/>
       </ownedAttribute>

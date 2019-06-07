@@ -128,7 +128,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="APIParameter" eSuperTypes="#//JSONSchemaSubset">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
         eType="#//ParameterLocation"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowEmptyValues" ordered="false"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowEmptyValue" ordered="false"
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="collectionFormat" ordered="false"
         eType="#//CollectionFormat"/>

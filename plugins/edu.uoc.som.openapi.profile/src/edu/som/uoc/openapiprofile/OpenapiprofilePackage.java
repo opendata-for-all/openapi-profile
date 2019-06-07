@@ -849,13 +849,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_PARAMETER__LOCATION = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Allow Empty Values</b></em>' attribute.
+	 * The feature id for the '<em><b>Allow Empty Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PARAMETER__ALLOW_EMPTY_VALUES = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
+	int API_PARAMETER__ALLOW_EMPTY_VALUE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Collection Format</b></em>' attribute.
@@ -2610,15 +2610,15 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getAPIParameter_Location();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValues <em>Allow Empty Values</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValue <em>Allow Empty Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Allow Empty Values</em>'.
-	 * @see edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValues()
+	 * @return the meta object for the attribute '<em>Allow Empty Value</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValue()
 	 * @see #getAPIParameter()
 	 * @generated
 	 */
-	EAttribute getAPIParameter_AllowEmptyValues();
+	EAttribute getAPIParameter_AllowEmptyValue();
 
 	/**
 	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIParameter#getCollectionFormat <em>Collection Format</em>}'.
@@ -4120,12 +4120,12 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute API_PARAMETER__LOCATION = eINSTANCE.getAPIParameter_Location();
 
 		/**
-		 * The meta object literal for the '<em><b>Allow Empty Values</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Allow Empty Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute API_PARAMETER__ALLOW_EMPTY_VALUES = eINSTANCE.getAPIParameter_AllowEmptyValues();
+		EAttribute API_PARAMETER__ALLOW_EMPTY_VALUE = eINSTANCE.getAPIParameter_AllowEmptyValue();
 
 		/**
 		 * The meta object literal for the '<em><b>Collection Format</b></em>' attribute feature.

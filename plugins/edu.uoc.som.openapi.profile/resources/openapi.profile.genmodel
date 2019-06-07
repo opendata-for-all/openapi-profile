@@ -155,7 +155,7 @@
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//APIParameter">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIParameter/location"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIParameter/allowEmptyValues"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIParameter/allowEmptyValue"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIParameter/collectionFormat"/>
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference openapiprofile.ecore#//APIParameter/base_Parameter"/>
