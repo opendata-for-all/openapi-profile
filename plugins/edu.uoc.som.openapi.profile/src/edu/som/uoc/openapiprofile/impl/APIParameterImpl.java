@@ -24,6 +24,7 @@ import org.eclipse.uml2.uml.Parameter;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getLocation <em>Location</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getAllowEmptyValue <em>Allow Empty Value</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getCollectionFormat <em>Collection Format</em>}</li>
@@ -33,6 +34,26 @@ import org.eclipse.uml2.uml.Parameter;
  * @generated
  */
 public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParameter {
+	/**
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DESCRIPTION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected String description = DESCRIPTION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getLocation() <em>Location</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -120,6 +141,27 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	protected EClass eStaticClass() {
 		return OpenapiprofilePackage.Literals.API_PARAMETER;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDescription(String newDescription) {
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -231,6 +273,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
+				return getDescription();
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return getLocation();
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
@@ -252,6 +296,9 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				setLocation((ParameterLocation)newValue);
 				return;
@@ -276,6 +323,9 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				setLocation(LOCATION_EDEFAULT);
 				return;
@@ -300,6 +350,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case OpenapiprofilePackage.API_PARAMETER__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case OpenapiprofilePackage.API_PARAMETER__LOCATION:
 				return location != LOCATION_EDEFAULT;
 			case OpenapiprofilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
@@ -322,7 +374,9 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (location: ");
+		result.append(" (description: ");
+		result.append(description);
+		result.append(", location: ");
 		result.append(location);
 		result.append(", allowEmptyValue: ");
 		result.append(allowEmptyValue);

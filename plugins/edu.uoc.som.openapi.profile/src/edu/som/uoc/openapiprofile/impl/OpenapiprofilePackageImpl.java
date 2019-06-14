@@ -7,6 +7,7 @@ import edu.som.uoc.openapiprofile.APIInfo;
 import edu.som.uoc.openapiprofile.APIKeyLocation;
 import edu.som.uoc.openapiprofile.APIOperation;
 import edu.som.uoc.openapiprofile.APIParameter;
+import edu.som.uoc.openapiprofile.APIProperty;
 import edu.som.uoc.openapiprofile.APIResponse;
 import edu.som.uoc.openapiprofile.CollectionFormat;
 import edu.som.uoc.openapiprofile.Contact;
@@ -200,6 +201,13 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * @generated
 	 */
 	private EClass apiDataTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass apiPropertyEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -493,8 +501,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSchema_Xml() {
-		return (EReference)schemaEClass.getEStructuralFeatures().get(8);
+	public EAttribute getSchema_Default() {
+		return (EAttribute)schemaEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -502,8 +510,17 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSchema_Base_Property() {
-		return (EReference)schemaEClass.getEStructuralFeatures().get(9);
+	public EAttribute getSchema_Description() {
+		return (EAttribute)schemaEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSchema_AdditionalProperties() {
+		return (EAttribute)schemaEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -601,7 +618,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_Description() {
+	public EAttribute getJSONSchemaSubset_UniqueItems() {
 		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -610,26 +627,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_UniqueItems() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getJSONSchemaSubset_Default() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getJSONSchemaSubset_MultipleOf() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(12);
+		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -799,7 +798,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAPIParameter_Location() {
+	public EAttribute getAPIParameter_Description() {
 		return (EAttribute)apiParameterEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -808,7 +807,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAPIParameter_AllowEmptyValue() {
+	public EAttribute getAPIParameter_Location() {
 		return (EAttribute)apiParameterEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -817,7 +816,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAPIParameter_CollectionFormat() {
+	public EAttribute getAPIParameter_AllowEmptyValue() {
 		return (EAttribute)apiParameterEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -826,8 +825,17 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAPIParameter_CollectionFormat() {
+		return (EAttribute)apiParameterEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getAPIParameter_Base_Parameter() {
-		return (EReference)apiParameterEClass.getEStructuralFeatures().get(3);
+		return (EReference)apiParameterEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1600,6 +1608,60 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getAPIProperty() {
+		return apiPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAPIProperty_Required() {
+		return (EAttribute)apiPropertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAPIProperty_Base_Property() {
+		return (EReference)apiPropertyEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAPIProperty_Xml() {
+		return (EReference)apiPropertyEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAPIProperty_Example() {
+		return (EAttribute)apiPropertyEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAPIProperty_Description() {
+		return (EAttribute)apiPropertyEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getSchemeType() {
 		return schemeTypeEEnum;
 	}
@@ -1739,30 +1801,9 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEReference(schemaEClass, SCHEMA__BASE_CLASS);
 		createEAttribute(schemaEClass, SCHEMA__EXAMPLE);
 		createEAttribute(schemaEClass, SCHEMA__READ_ONLY);
-		createEReference(schemaEClass, SCHEMA__XML);
-		createEReference(schemaEClass, SCHEMA__BASE_PROPERTY);
-
-		jsonSchemaSubsetEClass = createEClass(JSON_SCHEMA_SUBSET);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_LENGTH);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAXIMUM);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MINIMUM);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAX_LENGTH);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_ITEMS);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__PATTERN);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAX_ITEMS);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__DESCRIPTION);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__UNIQUE_ITEMS);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__DEFAULT);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MULTIPLE_OF);
-
-		xmlElementEClass = createEClass(XML_ELEMENT);
-		createEAttribute(xmlElementEClass, XML_ELEMENT__NAME);
-		createEAttribute(xmlElementEClass, XML_ELEMENT__NAMESPACE);
-		createEAttribute(xmlElementEClass, XML_ELEMENT__PREFIX);
-		createEAttribute(xmlElementEClass, XML_ELEMENT__ATTRIBUTE);
-		createEAttribute(xmlElementEClass, XML_ELEMENT__WRAPPED);
+		createEAttribute(schemaEClass, SCHEMA__DEFAULT);
+		createEAttribute(schemaEClass, SCHEMA__DESCRIPTION);
+		createEAttribute(schemaEClass, SCHEMA__ADDITIONAL_PROPERTIES);
 
 		apiOperationEClass = createEClass(API_OPERATION);
 		createEAttribute(apiOperationEClass, API_OPERATION__RELATIVE_PATH);
@@ -1777,10 +1818,24 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(apiOperationEClass, API_OPERATION__DEPRECATED);
 
 		apiParameterEClass = createEClass(API_PARAMETER);
+		createEAttribute(apiParameterEClass, API_PARAMETER__DESCRIPTION);
 		createEAttribute(apiParameterEClass, API_PARAMETER__LOCATION);
 		createEAttribute(apiParameterEClass, API_PARAMETER__ALLOW_EMPTY_VALUE);
 		createEAttribute(apiParameterEClass, API_PARAMETER__COLLECTION_FORMAT);
 		createEReference(apiParameterEClass, API_PARAMETER__BASE_PARAMETER);
+
+		jsonSchemaSubsetEClass = createEClass(JSON_SCHEMA_SUBSET);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_LENGTH);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAXIMUM);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MINIMUM);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAX_LENGTH);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_ITEMS);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__PATTERN);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAX_ITEMS);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__UNIQUE_ITEMS);
+		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MULTIPLE_OF);
 
 		apiResponseEClass = createEClass(API_RESPONSE);
 		createEAttribute(apiResponseEClass, API_RESPONSE__DESCRIPTION);
@@ -1876,11 +1931,25 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(tagEClass, TAG__NAME);
 		createEAttribute(tagEClass, TAG__DESCRIPTION);
 
+		xmlElementEClass = createEClass(XML_ELEMENT);
+		createEAttribute(xmlElementEClass, XML_ELEMENT__NAME);
+		createEAttribute(xmlElementEClass, XML_ELEMENT__NAMESPACE);
+		createEAttribute(xmlElementEClass, XML_ELEMENT__PREFIX);
+		createEAttribute(xmlElementEClass, XML_ELEMENT__ATTRIBUTE);
+		createEAttribute(xmlElementEClass, XML_ELEMENT__WRAPPED);
+
 		apiDataTypeEClass = createEClass(API_DATA_TYPE);
 		createEAttribute(apiDataTypeEClass, API_DATA_TYPE__TYPE);
 		createEAttribute(apiDataTypeEClass, API_DATA_TYPE__FORMAT);
 		createEReference(apiDataTypeEClass, API_DATA_TYPE__BASE_ENUMERATION);
 		createEReference(apiDataTypeEClass, API_DATA_TYPE__BASE_PRIMITIVE_TYPE);
+
+		apiPropertyEClass = createEClass(API_PROPERTY);
+		createEAttribute(apiPropertyEClass, API_PROPERTY__REQUIRED);
+		createEReference(apiPropertyEClass, API_PROPERTY__BASE_PROPERTY);
+		createEReference(apiPropertyEClass, API_PROPERTY__XML);
+		createEAttribute(apiPropertyEClass, API_PROPERTY__EXAMPLE);
+		createEAttribute(apiPropertyEClass, API_PROPERTY__DESCRIPTION);
 
 		// Create enums
 		schemeTypeEEnum = createEEnum(SCHEME_TYPE);
@@ -1894,8 +1963,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		// Create data types
 		integerEDataType = createEDataType(INTEGER);
-		doubleEDataType = createEDataType(DOUBLE);
 		booleanEDataType = createEDataType(BOOLEAN);
+		doubleEDataType = createEDataType(DOUBLE);
 	}
 
 	/**
@@ -1930,8 +1999,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		schemaEClass.getESuperTypes().add(this.getJSONSchemaSubset());
 		apiParameterEClass.getESuperTypes().add(this.getJSONSchemaSubset());
+		apiPropertyEClass.getESuperTypes().add(this.getJSONSchemaSubset());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(apiEClass, edu.som.uoc.openapiprofile.API.class, "API", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1951,30 +2020,9 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEReference(getSchema_Base_Class(), theUMLPackage.getClass_(), null, "base_Class", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_Example(), theTypesPackage.getString(), "example", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_ReadOnly(), this.getBoolean(), "readOnly", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getSchema_Xml(), this.getXMLElement(), null, "xml", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getSchema_Base_Property(), theUMLPackage.getProperty(), null, "base_Property", null, 1, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(jsonSchemaSubsetEClass, JSONSchemaSubset.class, "JSONSchemaSubset", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getJSONSchemaSubset_MinLength(), this.getInteger(), "minLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_Maximum(), this.getDouble(), "maximum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_ExclusiveMaximum(), this.getBoolean(), "exclusiveMaximum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_Minimum(), this.getDouble(), "minimum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_MaxLength(), this.getInteger(), "maxLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_MinItems(), this.getInteger(), "minItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_Pattern(), theTypesPackage.getString(), "pattern", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_ExclusiveMinimum(), this.getBoolean(), "exclusiveMinimum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_MaxItems(), this.getInteger(), "maxItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_Description(), theTypesPackage.getString(), "description", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_UniqueItems(), this.getBoolean(), "uniqueItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_Default(), theTypesPackage.getString(), "default", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_MultipleOf(), this.getDouble(), "multipleOf", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(xmlElementEClass, XMLElement.class, "XMLElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getXMLElement_Name(), theTypesPackage.getString(), "name", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getXMLElement_Namespace(), theTypesPackage.getString(), "namespace", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getXMLElement_Prefix(), theTypesPackage.getString(), "prefix", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getXMLElement_Attribute(), this.getBoolean(), "attribute", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getXMLElement_Wrapped(), this.getBoolean(), "wrapped", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSchema_Default(), theTypesPackage.getString(), "default", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSchema_Description(), theTypesPackage.getString(), "description", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSchema_AdditionalProperties(), theTypesPackage.getString(), "additionalProperties", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiOperationEClass, APIOperation.class, "APIOperation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIOperation_RelativePath(), theTypesPackage.getString(), "relativePath", null, 0, 1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1989,10 +2037,24 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getAPIOperation_Deprecated(), this.getBoolean(), "deprecated", null, 0, 1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiParameterEClass, APIParameter.class, "APIParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAPIParameter_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIParameter_Location(), this.getParameterLocation(), "location", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIParameter_AllowEmptyValue(), this.getBoolean(), "allowEmptyValue", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIParameter_CollectionFormat(), this.getCollectionFormat(), "collectionFormat", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIParameter_Base_Parameter(), theUMLPackage.getParameter(), null, "base_Parameter", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(jsonSchemaSubsetEClass, JSONSchemaSubset.class, "JSONSchemaSubset", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getJSONSchemaSubset_MinLength(), this.getInteger(), "minLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_Maximum(), this.getDouble(), "maximum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_ExclusiveMaximum(), this.getBoolean(), "exclusiveMaximum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_Minimum(), this.getDouble(), "minimum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_MaxLength(), this.getInteger(), "maxLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_MinItems(), this.getInteger(), "minItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_Pattern(), theTypesPackage.getString(), "pattern", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_ExclusiveMinimum(), this.getBoolean(), "exclusiveMinimum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_MaxItems(), this.getInteger(), "maxItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_UniqueItems(), this.getBoolean(), "uniqueItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getJSONSchemaSubset_MultipleOf(), this.getDouble(), "multipleOf", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiResponseEClass, APIResponse.class, "APIResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIResponse_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2088,11 +2150,25 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getTag_Name(), theTypesPackage.getString(), "name", null, 0, 1, Tag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getTag_Description(), theTypesPackage.getString(), "description", null, 0, 1, Tag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
+		initEClass(xmlElementEClass, XMLElement.class, "XMLElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getXMLElement_Name(), theTypesPackage.getString(), "name", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getXMLElement_Namespace(), theTypesPackage.getString(), "namespace", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getXMLElement_Prefix(), theTypesPackage.getString(), "prefix", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getXMLElement_Attribute(), this.getBoolean(), "attribute", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getXMLElement_Wrapped(), this.getBoolean(), "wrapped", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
 		initEClass(apiDataTypeEClass, APIDataType.class, "APIDataType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIDataType_Type(), this.getJSONDataType(), "type", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIDataType_Format(), theTypesPackage.getString(), "format", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIDataType_Base_Enumeration(), theUMLPackage.getEnumeration(), null, "base_Enumeration", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIDataType_Base_PrimitiveType(), theUMLPackage.getPrimitiveType(), null, "base_PrimitiveType", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(apiPropertyEClass, APIProperty.class, "APIProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAPIProperty_Required(), this.getBoolean(), "required", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getAPIProperty_Base_Property(), theUMLPackage.getProperty(), null, "base_Property", null, 1, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getAPIProperty_Xml(), this.getXMLElement(), null, "xml", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIProperty_Example(), theTypesPackage.getString(), "example", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIProperty_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(schemeTypeEEnum, SchemeType.class, "SchemeType");
@@ -2155,8 +2231,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		// Initialize data types
 		initEDataType(integerEDataType, Integer.class, "Integer", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
-		initEDataType(doubleEDataType, Double.class, "Double", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(booleanEDataType, Boolean.class, "Boolean", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(doubleEDataType, Double.class, "Double", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

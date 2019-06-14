@@ -2,7 +2,7 @@
  */
 package edu.som.uoc.openapiprofile;
 
-import org.eclipse.uml2.uml.Property;
+import org.eclipse.emf.ecore.EObject;
 
 
 /**
@@ -22,15 +22,16 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Class <em>Base Class</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getExample <em>Example</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Schema#getXml <em>Xml</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Property <em>Base Property</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getDefault <em>Default</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema()
  * @model
  * @generated
  */
-public interface Schema extends JSONSchemaSubset {
+public interface Schema extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -240,55 +241,81 @@ public interface Schema extends JSONSchemaSubset {
 	void setReadOnly(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Xml</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Default</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Xml</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Default</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Xml</em>' containment reference.
-	 * @see #setXml(XMLElement)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Xml()
-	 * @model containment="true" ordered="false"
+	 * @return the value of the '<em>Default</em>' attribute.
+	 * @see #setDefault(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Default()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
-	XMLElement getXml();
+	String getDefault();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getXml <em>Xml</em>}' containment reference.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getDefault <em>Default</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Xml</em>' containment reference.
-	 * @see #getXml()
+	 * @param value the new value of the '<em>Default</em>' attribute.
+	 * @see #getDefault()
 	 * @generated
 	 */
-	void setXml(XMLElement value);
+	void setDefault(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Base Property</b></em>' reference.
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Base Property</em>' reference isn't clear,
+	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Base Property</em>' reference.
-	 * @see #setBase_Property(Property)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Base_Property()
-	 * @model required="true" ordered="false"
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_Description()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
-	Property getBase_Property();
+	String getDescription();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getBase_Property <em>Base Property</em>}' reference.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getDescription <em>Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Base Property</em>' reference.
-	 * @see #getBase_Property()
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
 	 * @generated
 	 */
-	void setBase_Property(Property value);
+	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Additional Properties</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Additional Properties</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Additional Properties</em>' attribute.
+	 * @see #setAdditionalProperties(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_AdditionalProperties()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getAdditionalProperties();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Additional Properties</em>' attribute.
+	 * @see #getAdditionalProperties()
+	 * @generated
+	 */
+	void setAdditionalProperties(String value);
 
 } // Schema

@@ -29,9 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getPattern <em>Pattern</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMaxItems <em>Max Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getUniqueItems <em>Unique Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getDefault <em>Default</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
  *
@@ -219,26 +217,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	protected Integer maxItems = MAX_ITEMS_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String DESCRIPTION_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
-	protected String description = DESCRIPTION_EDEFAULT;
-
-	/**
 	 * The default value of the '{@link #getUniqueItems() <em>Unique Items</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -257,26 +235,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * @ordered
 	 */
 	protected Boolean uniqueItems = UNIQUE_ITEMS_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getDefault() <em>Default</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDefault()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String DEFAULT_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getDefault() <em>Default</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDefault()
-	 * @generated
-	 * @ordered
-	 */
-	protected String default_ = DEFAULT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getMultipleOf() <em>Multiple Of</em>}' attribute.
@@ -511,27 +469,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDescription() {
-		return description;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION, oldDescription, description));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Boolean getUniqueItems() {
 		return uniqueItems;
 	}
@@ -546,27 +483,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		uniqueItems = newUniqueItems;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS, oldUniqueItems, uniqueItems));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getDefault() {
-		return default_;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setDefault(String newDefault) {
-		String oldDefault = default_;
-		default_ = newDefault;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT, oldDefault, default_));
 	}
 
 	/**
@@ -616,12 +532,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return getExclusiveMinimum();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				return getMaxItems();
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
-				return getDescription();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				return getUniqueItems();
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
-				return getDefault();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				return getMultipleOf();
 		}
@@ -663,14 +575,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				setMaxItems((Integer)newValue);
 				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				setUniqueItems((Boolean)newValue);
-				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
-				setDefault((String)newValue);
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				setMultipleOf((Double)newValue);
@@ -714,14 +620,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				setMaxItems(MAX_ITEMS_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				setUniqueItems(UNIQUE_ITEMS_EDEFAULT);
-				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
-				setDefault(DEFAULT_EDEFAULT);
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				setMultipleOf(MULTIPLE_OF_EDEFAULT);
@@ -756,12 +656,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return EXCLUSIVE_MINIMUM_EDEFAULT == null ? exclusiveMinimum != null : !EXCLUSIVE_MINIMUM_EDEFAULT.equals(exclusiveMinimum);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
 				return MAX_ITEMS_EDEFAULT == null ? maxItems != null : !MAX_ITEMS_EDEFAULT.equals(maxItems);
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__DEFAULT:
-				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				return MULTIPLE_OF_EDEFAULT == null ? multipleOf != null : !MULTIPLE_OF_EDEFAULT.equals(multipleOf);
 		}
@@ -796,12 +692,8 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		result.append(exclusiveMinimum);
 		result.append(", maxItems: ");
 		result.append(maxItems);
-		result.append(", description: ");
-		result.append(description);
 		result.append(", uniqueItems: ");
 		result.append(uniqueItems);
-		result.append(", default: ");
-		result.append(default_);
 		result.append(", multipleOf: ");
 		result.append(multipleOf);
 		result.append(')');

@@ -13,6 +13,7 @@ import org.eclipse.uml2.uml.Parameter;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getLocation <em>Location</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValue <em>Allow Empty Value</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getCollectionFormat <em>Collection Format</em>}</li>
@@ -24,6 +25,32 @@ import org.eclipse.uml2.uml.Parameter;
  * @generated
  */
 public interface APIParameter extends JSONSchemaSubset {
+	/**
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_Description()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getDescription();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getDescription <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
+	 * @generated
+	 */
+	void setDescription(String value);
+
 	/**
 	 * Returns the value of the '<em><b>Location</b></em>' attribute.
 	 * The literals are from the enumeration {@link edu.som.uoc.openapiprofile.ParameterLocation}.

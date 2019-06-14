@@ -22,9 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getPattern <em>Pattern</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMaxItems <em>Max Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getUniqueItems <em>Unique Items</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDefault <em>Default</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
  *
@@ -268,32 +266,6 @@ public interface JSONSchemaSubset extends EObject {
 	void setMaxItems(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' attribute.
-	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_Description()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getDescription();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDescription <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' attribute.
-	 * @see #getDescription()
-	 * @generated
-	 */
-	void setDescription(String value);
-
-	/**
 	 * Returns the value of the '<em><b>Unique Items</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -318,32 +290,6 @@ public interface JSONSchemaSubset extends EObject {
 	 * @generated
 	 */
 	void setUniqueItems(Boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Default</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default</em>' attribute.
-	 * @see #setDefault(String)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_Default()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getDefault();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDefault <em>Default</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default</em>' attribute.
-	 * @see #getDefault()
-	 * @generated
-	 */
-	void setDefault(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Multiple Of</b></em>' attribute.

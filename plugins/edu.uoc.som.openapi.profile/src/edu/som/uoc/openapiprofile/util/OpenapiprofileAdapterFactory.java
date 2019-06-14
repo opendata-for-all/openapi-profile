@@ -76,20 +76,16 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 				return createSchemaAdapter();
 			}
 			@Override
-			public Adapter caseJSONSchemaSubset(JSONSchemaSubset object) {
-				return createJSONSchemaSubsetAdapter();
-			}
-			@Override
-			public Adapter caseXMLElement(XMLElement object) {
-				return createXMLElementAdapter();
-			}
-			@Override
 			public Adapter caseAPIOperation(APIOperation object) {
 				return createAPIOperationAdapter();
 			}
 			@Override
 			public Adapter caseAPIParameter(APIParameter object) {
 				return createAPIParameterAdapter();
+			}
+			@Override
+			public Adapter caseJSONSchemaSubset(JSONSchemaSubset object) {
+				return createJSONSchemaSubsetAdapter();
 			}
 			@Override
 			public Adapter caseAPIResponse(APIResponse object) {
@@ -148,8 +144,16 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 				return createTagAdapter();
 			}
 			@Override
+			public Adapter caseXMLElement(XMLElement object) {
+				return createXMLElementAdapter();
+			}
+			@Override
 			public Adapter caseAPIDataType(APIDataType object) {
 				return createAPIDataTypeAdapter();
+			}
+			@Override
+			public Adapter caseAPIProperty(APIProperty object) {
+				return createAPIPropertyAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -462,6 +466,20 @@ public class OpenapiprofileAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAPIDataTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapiprofile.APIProperty <em>API Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see edu.som.uoc.openapiprofile.APIProperty
+	 * @generated
+	 */
+	public Adapter createAPIPropertyAdapter() {
 		return null;
 	}
 

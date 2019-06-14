@@ -4,16 +4,12 @@ package edu.som.uoc.openapiprofile.impl;
 
 import edu.som.uoc.openapiprofile.OpenapiprofilePackage;
 import edu.som.uoc.openapiprofile.Schema;
-import edu.som.uoc.openapiprofile.XMLElement;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.uml2.uml.Property;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,13 +27,14 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getBase_Class <em>Base Class</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getExample <em>Example</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getReadOnly <em>Read Only</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getXml <em>Xml</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getBase_Property <em>Base Property</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getDefault <em>Default</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getAdditionalProperties <em>Additional Properties</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
+public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	/**
 	 * The default value of the '{@link #getTitle() <em>Title</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -189,24 +186,64 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 	protected Boolean readOnly = READ_ONLY_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getXml() <em>Xml</em>}' containment reference.
+	 * The default value of the '{@link #getDefault() <em>Default</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getXml()
+	 * @see #getDefault()
 	 * @generated
 	 * @ordered
 	 */
-	protected XMLElement xml;
+	protected static final String DEFAULT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getBase_Property() <em>Base Property</em>}' reference.
+	 * The cached value of the '{@link #getDefault() <em>Default</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBase_Property()
+	 * @see #getDefault()
 	 * @generated
 	 * @ordered
 	 */
-	protected Property base_Property;
+	protected String default_ = DEFAULT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DESCRIPTION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected String description = DESCRIPTION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAdditionalProperties() <em>Additional Properties</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAdditionalProperties()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ADDITIONAL_PROPERTIES_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getAdditionalProperties() <em>Additional Properties</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAdditionalProperties()
+	 * @generated
+	 * @ordered
+	 */
+	protected String additionalProperties = ADDITIONAL_PROPERTIES_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -417,8 +454,8 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XMLElement getXml() {
-		return xml;
+	public String getDefault() {
+		return default_;
 	}
 
 	/**
@@ -426,71 +463,11 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetXml(XMLElement newXml, NotificationChain msgs) {
-		XMLElement oldXml = xml;
-		xml = newXml;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__XML, oldXml, newXml);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setXml(XMLElement newXml) {
-		if (newXml != xml) {
-			NotificationChain msgs = null;
-			if (xml != null)
-				msgs = ((InternalEObject)xml).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.SCHEMA__XML, null, msgs);
-			if (newXml != null)
-				msgs = ((InternalEObject)newXml).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenapiprofilePackage.SCHEMA__XML, null, msgs);
-			msgs = basicSetXml(newXml, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__XML, newXml, newXml));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Property getBase_Property() {
-		if (base_Property != null && base_Property.eIsProxy()) {
-			InternalEObject oldBase_Property = (InternalEObject)base_Property;
-			base_Property = (Property)eResolveProxy(oldBase_Property);
-			if (base_Property != oldBase_Property) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenapiprofilePackage.SCHEMA__BASE_PROPERTY, oldBase_Property, base_Property));
-			}
-		}
-		return base_Property;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Property basicGetBase_Property() {
-		return base_Property;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setBase_Property(Property newBase_Property) {
-		Property oldBase_Property = base_Property;
-		base_Property = newBase_Property;
+	public void setDefault(String newDefault) {
+		String oldDefault = default_;
+		default_ = newDefault;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__BASE_PROPERTY, oldBase_Property, base_Property));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__DEFAULT, oldDefault, default_));
 	}
 
 	/**
@@ -498,13 +475,41 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OpenapiprofilePackage.SCHEMA__XML:
-				return basicSetXml(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDescription(String newDescription) {
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__DESCRIPTION, oldDescription, description));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getAdditionalProperties() {
+		return additionalProperties;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAdditionalProperties(String newAdditionalProperties) {
+		String oldAdditionalProperties = additionalProperties;
+		additionalProperties = newAdditionalProperties;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES, oldAdditionalProperties, additionalProperties));
 	}
 
 	/**
@@ -532,11 +537,12 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 				return getExample();
 			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
 				return getReadOnly();
-			case OpenapiprofilePackage.SCHEMA__XML:
-				return getXml();
-			case OpenapiprofilePackage.SCHEMA__BASE_PROPERTY:
-				if (resolve) return getBase_Property();
-				return basicGetBase_Property();
+			case OpenapiprofilePackage.SCHEMA__DEFAULT:
+				return getDefault();
+			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
+				return getDescription();
+			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
+				return getAdditionalProperties();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -573,11 +579,14 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
 				setReadOnly((Boolean)newValue);
 				return;
-			case OpenapiprofilePackage.SCHEMA__XML:
-				setXml((XMLElement)newValue);
+			case OpenapiprofilePackage.SCHEMA__DEFAULT:
+				setDefault((String)newValue);
 				return;
-			case OpenapiprofilePackage.SCHEMA__BASE_PROPERTY:
-				setBase_Property((Property)newValue);
+			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
+			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
+				setAdditionalProperties((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -615,11 +624,14 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
 				setReadOnly(READ_ONLY_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.SCHEMA__XML:
-				setXml((XMLElement)null);
+			case OpenapiprofilePackage.SCHEMA__DEFAULT:
+				setDefault(DEFAULT_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.SCHEMA__BASE_PROPERTY:
-				setBase_Property((Property)null);
+			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
+			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
+				setAdditionalProperties(ADDITIONAL_PROPERTIES_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -649,10 +661,12 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 				return EXAMPLE_EDEFAULT == null ? example != null : !EXAMPLE_EDEFAULT.equals(example);
 			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
 				return READ_ONLY_EDEFAULT == null ? readOnly != null : !READ_ONLY_EDEFAULT.equals(readOnly);
-			case OpenapiprofilePackage.SCHEMA__XML:
-				return xml != null;
-			case OpenapiprofilePackage.SCHEMA__BASE_PROPERTY:
-				return base_Property != null;
+			case OpenapiprofilePackage.SCHEMA__DEFAULT:
+				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
+			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
+				return ADDITIONAL_PROPERTIES_EDEFAULT == null ? additionalProperties != null : !ADDITIONAL_PROPERTIES_EDEFAULT.equals(additionalProperties);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -681,6 +695,12 @@ public class SchemaImpl extends JSONSchemaSubsetImpl implements Schema {
 		result.append(example);
 		result.append(", readOnly: ");
 		result.append(readOnly);
+		result.append(", default: ");
+		result.append(default_);
+		result.append(", description: ");
+		result.append(description);
+		result.append(", additionalProperties: ");
+		result.append(additionalProperties);
 		result.append(')');
 		return result.toString();
 	}

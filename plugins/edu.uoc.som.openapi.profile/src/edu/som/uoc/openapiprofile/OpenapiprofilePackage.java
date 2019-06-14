@@ -149,142 +149,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getJSONSchemaSubset()
 	 * @generated
 	 */
-	int JSON_SCHEMA_SUBSET = 2;
-
-	/**
-	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__MIN_LENGTH = 0;
-
-	/**
-	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__MAXIMUM = 1;
-
-	/**
-	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM = 2;
-
-	/**
-	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__MINIMUM = 3;
-
-	/**
-	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__MAX_LENGTH = 4;
-
-	/**
-	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__MIN_ITEMS = 5;
-
-	/**
-	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__PATTERN = 6;
-
-	/**
-	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM = 7;
-
-	/**
-	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__MAX_ITEMS = 8;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__DESCRIPTION = 9;
-
-	/**
-	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__UNIQUE_ITEMS = 10;
-
-	/**
-	 * The feature id for the '<em><b>Default</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__DEFAULT = 11;
-
-	/**
-	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET__MULTIPLE_OF = 12;
-
-	/**
-	 * The number of structural features of the '<em>JSON Schema Subset</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET_FEATURE_COUNT = 13;
-
-	/**
-	 * The number of operations of the '<em>JSON Schema Subset</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_SUBSET_OPERATION_COUNT = 0;
+	int JSON_SCHEMA_SUBSET = 4;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.SchemaImpl <em>Schema</em>}' class.
@@ -297,130 +162,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int SCHEMA = 1;
 
 	/**
-	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MIN_LENGTH = JSON_SCHEMA_SUBSET__MIN_LENGTH;
-
-	/**
-	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MAXIMUM = JSON_SCHEMA_SUBSET__MAXIMUM;
-
-	/**
-	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__EXCLUSIVE_MAXIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM;
-
-	/**
-	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MINIMUM = JSON_SCHEMA_SUBSET__MINIMUM;
-
-	/**
-	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MAX_LENGTH = JSON_SCHEMA_SUBSET__MAX_LENGTH;
-
-	/**
-	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MIN_ITEMS = JSON_SCHEMA_SUBSET__MIN_ITEMS;
-
-	/**
-	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__PATTERN = JSON_SCHEMA_SUBSET__PATTERN;
-
-	/**
-	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__EXCLUSIVE_MINIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM;
-
-	/**
-	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MAX_ITEMS = JSON_SCHEMA_SUBSET__MAX_ITEMS;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__DESCRIPTION = JSON_SCHEMA_SUBSET__DESCRIPTION;
-
-	/**
-	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__UNIQUE_ITEMS = JSON_SCHEMA_SUBSET__UNIQUE_ITEMS;
-
-	/**
-	 * The feature id for the '<em><b>Default</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__DEFAULT = JSON_SCHEMA_SUBSET__DEFAULT;
-
-	/**
-	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__MULTIPLE_OF = JSON_SCHEMA_SUBSET__MULTIPLE_OF;
-
-	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__TITLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
+	int SCHEMA__TITLE = 0;
 
 	/**
 	 * The feature id for the '<em><b>Max Properties</b></em>' attribute.
@@ -429,7 +177,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__MAX_PROPERTIES = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
+	int SCHEMA__MAX_PROPERTIES = 1;
 
 	/**
 	 * The feature id for the '<em><b>Min Properties</b></em>' attribute.
@@ -438,7 +186,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__MIN_PROPERTIES = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 2;
+	int SCHEMA__MIN_PROPERTIES = 2;
 
 	/**
 	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
@@ -447,7 +195,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__DISCRIMINATOR = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 3;
+	int SCHEMA__DISCRIMINATOR = 3;
 
 	/**
 	 * The feature id for the '<em><b>Additional Properties Allowed</b></em>' attribute.
@@ -456,7 +204,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 4;
+	int SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED = 4;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -465,7 +213,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__BASE_CLASS = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
+	int SCHEMA__BASE_CLASS = 5;
 
 	/**
 	 * The feature id for the '<em><b>Example</b></em>' attribute.
@@ -474,7 +222,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__EXAMPLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 6;
+	int SCHEMA__EXAMPLE = 6;
 
 	/**
 	 * The feature id for the '<em><b>Read Only</b></em>' attribute.
@@ -483,25 +231,34 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__READ_ONLY = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 7;
+	int SCHEMA__READ_ONLY = 7;
 
 	/**
-	 * The feature id for the '<em><b>Xml</b></em>' containment reference.
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__XML = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 8;
+	int SCHEMA__DEFAULT = 8;
 
 	/**
-	 * The feature id for the '<em><b>Base Property</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__BASE_PROPERTY = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 9;
+	int SCHEMA__DESCRIPTION = 9;
+
+	/**
+	 * The feature id for the '<em><b>Additional Properties</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEMA__ADDITIONAL_PROPERTIES = 10;
 
 	/**
 	 * The number of structural features of the '<em>Schema</em>' class.
@@ -510,7 +267,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 10;
+	int SCHEMA_FEATURE_COUNT = 11;
 
 	/**
 	 * The number of operations of the '<em>Schema</em>' class.
@@ -519,7 +276,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA_OPERATION_COUNT = JSON_SCHEMA_SUBSET_OPERATION_COUNT + 0;
+	int SCHEMA_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.XMLElementImpl <em>XML Element</em>}' class.
@@ -529,70 +286,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getXMLElement()
 	 * @generated
 	 */
-	int XML_ELEMENT = 3;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XML_ELEMENT__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Namespace</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XML_ELEMENT__NAMESPACE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Prefix</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XML_ELEMENT__PREFIX = 2;
-
-	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XML_ELEMENT__ATTRIBUTE = 3;
-
-	/**
-	 * The feature id for the '<em><b>Wrapped</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XML_ELEMENT__WRAPPED = 4;
-
-	/**
-	 * The number of structural features of the '<em>XML Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XML_ELEMENT_FEATURE_COUNT = 5;
-
-	/**
-	 * The number of operations of the '<em>XML Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XML_ELEMENT_OPERATION_COUNT = 0;
+	int XML_ELEMENT = 19;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.APIOperationImpl <em>API Operation</em>}' class.
@@ -602,7 +296,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIOperation()
 	 * @generated
 	 */
-	int API_OPERATION = 4;
+	int API_OPERATION = 2;
 
 	/**
 	 * The feature id for the '<em><b>Relative Path</b></em>' attribute.
@@ -713,6 +407,123 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_OPERATION_OPERATION_COUNT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__MIN_LENGTH = 0;
+
+	/**
+	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__MAXIMUM = 1;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM = 2;
+
+	/**
+	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__MINIMUM = 3;
+
+	/**
+	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__MAX_LENGTH = 4;
+
+	/**
+	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__MIN_ITEMS = 5;
+
+	/**
+	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__PATTERN = 6;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM = 7;
+
+	/**
+	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__MAX_ITEMS = 8;
+
+	/**
+	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__UNIQUE_ITEMS = 9;
+
+	/**
+	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET__MULTIPLE_OF = 10;
+
+	/**
+	 * The number of structural features of the '<em>JSON Schema Subset</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET_FEATURE_COUNT = 11;
+
+	/**
+	 * The number of operations of the '<em>JSON Schema Subset</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_SUBSET_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl <em>API Parameter</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -720,7 +531,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIParameter()
 	 * @generated
 	 */
-	int API_PARAMETER = 5;
+	int API_PARAMETER = 3;
 
 	/**
 	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
@@ -804,15 +615,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_PARAMETER__MAX_ITEMS = JSON_SCHEMA_SUBSET__MAX_ITEMS;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_PARAMETER__DESCRIPTION = JSON_SCHEMA_SUBSET__DESCRIPTION;
-
-	/**
 	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -820,15 +622,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @ordered
 	 */
 	int API_PARAMETER__UNIQUE_ITEMS = JSON_SCHEMA_SUBSET__UNIQUE_ITEMS;
-
-	/**
-	 * The feature id for the '<em><b>Default</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_PARAMETER__DEFAULT = JSON_SCHEMA_SUBSET__DEFAULT;
 
 	/**
 	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
@@ -840,13 +633,22 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_PARAMETER__MULTIPLE_OF = JSON_SCHEMA_SUBSET__MULTIPLE_OF;
 
 	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PARAMETER__DESCRIPTION = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PARAMETER__LOCATION = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
+	int API_PARAMETER__LOCATION = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Allow Empty Value</b></em>' attribute.
@@ -855,7 +657,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PARAMETER__ALLOW_EMPTY_VALUE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
+	int API_PARAMETER__ALLOW_EMPTY_VALUE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Collection Format</b></em>' attribute.
@@ -864,7 +666,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PARAMETER__COLLECTION_FORMAT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 2;
+	int API_PARAMETER__COLLECTION_FORMAT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Base Parameter</b></em>' reference.
@@ -873,7 +675,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PARAMETER__BASE_PARAMETER = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 3;
+	int API_PARAMETER__BASE_PARAMETER = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>API Parameter</em>' class.
@@ -882,7 +684,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int API_PARAMETER_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 4;
+	int API_PARAMETER_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>API Parameter</em>' class.
@@ -901,7 +703,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIResponse()
 	 * @generated
 	 */
-	int API_RESPONSE = 6;
+	int API_RESPONSE = 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -974,7 +776,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getHeader()
 	 * @generated
 	 */
-	int HEADER = 7;
+	int HEADER = 6;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1164,7 +966,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getExample()
 	 * @generated
 	 */
-	int EXAMPLE = 8;
+	int EXAMPLE = 7;
 
 	/**
 	 * The feature id for the '<em><b>Mime Type</b></em>' attribute.
@@ -1210,7 +1012,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIInfo()
 	 * @generated
 	 */
-	int API_INFO = 9;
+	int API_INFO = 8;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -1301,7 +1103,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getLicense()
 	 * @generated
 	 */
-	int LICENSE = 10;
+	int LICENSE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1347,7 +1149,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getContact()
 	 * @generated
 	 */
-	int CONTACT = 11;
+	int CONTACT = 10;
 
 	/**
 	 * The feature id for the '<em><b>Url</b></em>' attribute.
@@ -1402,7 +1204,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getExternalDocs()
 	 * @generated
 	 */
-	int EXTERNAL_DOCS = 12;
+	int EXTERNAL_DOCS = 11;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1475,7 +1277,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurityDefinitions()
 	 * @generated
 	 */
-	int SECURITY_DEFINITIONS = 13;
+	int SECURITY_DEFINITIONS = 12;
 
 	/**
 	 * The feature id for the '<em><b>Security Schemes</b></em>' containment reference list.
@@ -1521,7 +1323,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurityScheme()
 	 * @generated
 	 */
-	int SECURITY_SCHEME = 14;
+	int SECURITY_SCHEME = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1630,7 +1432,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurityScope()
 	 * @generated
 	 */
-	int SECURITY_SCOPE = 15;
+	int SECURITY_SCOPE = 14;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1676,7 +1478,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurity()
 	 * @generated
 	 */
-	int SECURITY = 16;
+	int SECURITY = 15;
 
 	/**
 	 * The feature id for the '<em><b>Security Requirements</b></em>' containment reference list.
@@ -1731,7 +1533,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecurityRequirement()
 	 * @generated
 	 */
-	int SECURITY_REQUIREMENT = 17;
+	int SECURITY_REQUIREMENT = 16;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1777,7 +1579,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getTags()
 	 * @generated
 	 */
-	int TAGS = 18;
+	int TAGS = 17;
 
 	/**
 	 * The feature id for the '<em><b>Tags</b></em>' containment reference list.
@@ -1823,7 +1625,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getTag()
 	 * @generated
 	 */
-	int TAG = 19;
+	int TAG = 18;
 
 	/**
 	 * The feature id for the '<em><b>External Docs URL</b></em>' attribute.
@@ -1878,6 +1680,69 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @ordered
 	 */
 	int TAG_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XML_ELEMENT__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XML_ELEMENT__NAMESPACE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Prefix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XML_ELEMENT__PREFIX = 2;
+
+	/**
+	 * The feature id for the '<em><b>Attribute</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XML_ELEMENT__ATTRIBUTE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Wrapped</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XML_ELEMENT__WRAPPED = 4;
+
+	/**
+	 * The number of structural features of the '<em>XML Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XML_ELEMENT_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>XML Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XML_ELEMENT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.APIDataTypeImpl <em>API Data Type</em>}' class.
@@ -1944,6 +1809,178 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_DATA_TYPE_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.impl.APIPropertyImpl <em>API Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.som.uoc.openapiprofile.impl.APIPropertyImpl
+	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIProperty()
+	 * @generated
+	 */
+	int API_PROPERTY = 21;
+
+	/**
+	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MIN_LENGTH = JSON_SCHEMA_SUBSET__MIN_LENGTH;
+
+	/**
+	 * The feature id for the '<em><b>Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MAXIMUM = JSON_SCHEMA_SUBSET__MAXIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Maximum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__EXCLUSIVE_MAXIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MINIMUM = JSON_SCHEMA_SUBSET__MINIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Max Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MAX_LENGTH = JSON_SCHEMA_SUBSET__MAX_LENGTH;
+
+	/**
+	 * The feature id for the '<em><b>Min Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MIN_ITEMS = JSON_SCHEMA_SUBSET__MIN_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__PATTERN = JSON_SCHEMA_SUBSET__PATTERN;
+
+	/**
+	 * The feature id for the '<em><b>Exclusive Minimum</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__EXCLUSIVE_MINIMUM = JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM;
+
+	/**
+	 * The feature id for the '<em><b>Max Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MAX_ITEMS = JSON_SCHEMA_SUBSET__MAX_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Unique Items</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__UNIQUE_ITEMS = JSON_SCHEMA_SUBSET__UNIQUE_ITEMS;
+
+	/**
+	 * The feature id for the '<em><b>Multiple Of</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__MULTIPLE_OF = JSON_SCHEMA_SUBSET__MULTIPLE_OF;
+
+	/**
+	 * The feature id for the '<em><b>Required</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__REQUIRED = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Base Property</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__BASE_PROPERTY = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Xml</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__XML = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Example</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__EXAMPLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__DESCRIPTION = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>API Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>API Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY_OPERATION_COUNT = JSON_SCHEMA_SUBSET_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1951,7 +1988,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSchemeType()
 	 * @generated
 	 */
-	int SCHEME_TYPE = 21;
+	int SCHEME_TYPE = 22;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.HTTPMethod <em>HTTP Method</em>}' enum.
@@ -1961,7 +1998,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getHTTPMethod()
 	 * @generated
 	 */
-	int HTTP_METHOD = 22;
+	int HTTP_METHOD = 23;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.ParameterLocation <em>Parameter Location</em>}' enum.
@@ -1971,7 +2008,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getParameterLocation()
 	 * @generated
 	 */
-	int PARAMETER_LOCATION = 23;
+	int PARAMETER_LOCATION = 24;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.CollectionFormat <em>Collection Format</em>}' enum.
@@ -1981,7 +2018,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getCollectionFormat()
 	 * @generated
 	 */
-	int COLLECTION_FORMAT = 24;
+	int COLLECTION_FORMAT = 25;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.JSONDataType <em>JSON Data Type</em>}' enum.
@@ -1991,7 +2028,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getJSONDataType()
 	 * @generated
 	 */
-	int JSON_DATA_TYPE = 25;
+	int JSON_DATA_TYPE = 26;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.SecuritySchemeType <em>Security Scheme Type</em>}' enum.
@@ -2001,7 +2038,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getSecuritySchemeType()
 	 * @generated
 	 */
-	int SECURITY_SCHEME_TYPE = 26;
+	int SECURITY_SCHEME_TYPE = 27;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.APIKeyLocation <em>API Key Location</em>}' enum.
@@ -2011,7 +2048,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIKeyLocation()
 	 * @generated
 	 */
-	int API_KEY_LOCATION = 27;
+	int API_KEY_LOCATION = 28;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapiprofile.OAuth2FlowType <em>OAuth2 Flow Type</em>}' enum.
@@ -2021,7 +2058,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getOAuth2FlowType()
 	 * @generated
 	 */
-	int OAUTH2_FLOW_TYPE = 28;
+	int OAUTH2_FLOW_TYPE = 29;
 
 	/**
 	 * The meta object id for the '<em>Integer</em>' data type.
@@ -2031,7 +2068,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getInteger()
 	 * @generated
 	 */
-	int INTEGER = 29;
+	int INTEGER = 30;
 
 	/**
 	 * The meta object id for the '<em>Double</em>' data type.
@@ -2041,7 +2078,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getDouble()
 	 * @generated
 	 */
-	int DOUBLE = 30;
+	int DOUBLE = 32;
 
 	/**
 	 * The meta object id for the '<em>Boolean</em>' data type.
@@ -2229,26 +2266,37 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getSchema_ReadOnly();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link edu.som.uoc.openapiprofile.Schema#getXml <em>Xml</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Schema#getDefault <em>Default</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Xml</em>'.
-	 * @see edu.som.uoc.openapiprofile.Schema#getXml()
+	 * @return the meta object for the attribute '<em>Default</em>'.
+	 * @see edu.som.uoc.openapiprofile.Schema#getDefault()
 	 * @see #getSchema()
 	 * @generated
 	 */
-	EReference getSchema_Xml();
+	EAttribute getSchema_Default();
 
 	/**
-	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.Schema#getBase_Property <em>Base Property</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Schema#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Base Property</em>'.
-	 * @see edu.som.uoc.openapiprofile.Schema#getBase_Property()
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see edu.som.uoc.openapiprofile.Schema#getDescription()
 	 * @see #getSchema()
 	 * @generated
 	 */
-	EReference getSchema_Base_Property();
+	EAttribute getSchema_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Properties</em>'.
+	 * @see edu.som.uoc.openapiprofile.Schema#getAdditionalProperties()
+	 * @see #getSchema()
+	 * @generated
+	 */
+	EAttribute getSchema_AdditionalProperties();
 
 	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset <em>JSON Schema Subset</em>}'.
@@ -2360,17 +2408,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getJSONSchemaSubset_MaxItems();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDescription <em>Description</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Description</em>'.
-	 * @see edu.som.uoc.openapiprofile.JSONSchemaSubset#getDescription()
-	 * @see #getJSONSchemaSubset()
-	 * @generated
-	 */
-	EAttribute getJSONSchemaSubset_Description();
-
-	/**
 	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getUniqueItems <em>Unique Items</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2380,17 +2417,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getJSONSchemaSubset_UniqueItems();
-
-	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getDefault <em>Default</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Default</em>'.
-	 * @see edu.som.uoc.openapiprofile.JSONSchemaSubset#getDefault()
-	 * @see #getJSONSchemaSubset()
-	 * @generated
-	 */
-	EAttribute getJSONSchemaSubset_Default();
 
 	/**
 	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultipleOf <em>Multiple Of</em>}'.
@@ -2597,6 +2623,17 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAPIParameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIParameter#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIParameter#getDescription()
+	 * @see #getAPIParameter()
+	 * @generated
+	 */
+	EAttribute getAPIParameter_Description();
 
 	/**
 	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIParameter#getLocation <em>Location</em>}'.
@@ -3563,6 +3600,71 @@ public interface OpenapiprofilePackage extends EPackage {
 	EReference getAPIDataType_Base_PrimitiveType();
 
 	/**
+	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.APIProperty <em>API Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>API Property</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIProperty
+	 * @generated
+	 */
+	EClass getAPIProperty();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIProperty#getRequired <em>Required</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Required</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIProperty#getRequired()
+	 * @see #getAPIProperty()
+	 * @generated
+	 */
+	EAttribute getAPIProperty_Required();
+
+	/**
+	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.APIProperty#getBase_Property <em>Base Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Property</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIProperty#getBase_Property()
+	 * @see #getAPIProperty()
+	 * @generated
+	 */
+	EReference getAPIProperty_Base_Property();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Xml</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIProperty#getXml()
+	 * @see #getAPIProperty()
+	 * @generated
+	 */
+	EReference getAPIProperty_Xml();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIProperty#getExample <em>Example</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Example</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIProperty#getExample()
+	 * @see #getAPIProperty()
+	 * @generated
+	 */
+	EAttribute getAPIProperty_Example();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIProperty#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIProperty#getDescription()
+	 * @see #getAPIProperty()
+	 * @generated
+	 */
+	EAttribute getAPIProperty_Description();
+
+	/**
 	 * Returns the meta object for enum '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3832,20 +3934,28 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute SCHEMA__READ_ONLY = eINSTANCE.getSchema_ReadOnly();
 
 		/**
-		 * The meta object literal for the '<em><b>Xml</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Default</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SCHEMA__XML = eINSTANCE.getSchema_Xml();
+		EAttribute SCHEMA__DEFAULT = eINSTANCE.getSchema_Default();
 
 		/**
-		 * The meta object literal for the '<em><b>Base Property</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SCHEMA__BASE_PROPERTY = eINSTANCE.getSchema_Base_Property();
+		EAttribute SCHEMA__DESCRIPTION = eINSTANCE.getSchema_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Properties</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SCHEMA__ADDITIONAL_PROPERTIES = eINSTANCE.getSchema_AdditionalProperties();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl <em>JSON Schema Subset</em>}' class.
@@ -3930,28 +4040,12 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute JSON_SCHEMA_SUBSET__MAX_ITEMS = eINSTANCE.getJSONSchemaSubset_MaxItems();
 
 		/**
-		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute JSON_SCHEMA_SUBSET__DESCRIPTION = eINSTANCE.getJSONSchemaSubset_Description();
-
-		/**
 		 * The meta object literal for the '<em><b>Unique Items</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute JSON_SCHEMA_SUBSET__UNIQUE_ITEMS = eINSTANCE.getJSONSchemaSubset_UniqueItems();
-
-		/**
-		 * The meta object literal for the '<em><b>Default</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute JSON_SCHEMA_SUBSET__DEFAULT = eINSTANCE.getJSONSchemaSubset_Default();
 
 		/**
 		 * The meta object literal for the '<em><b>Multiple Of</b></em>' attribute feature.
@@ -4110,6 +4204,14 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EClass API_PARAMETER = eINSTANCE.getAPIParameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_PARAMETER__DESCRIPTION = eINSTANCE.getAPIParameter_Description();
 
 		/**
 		 * The meta object literal for the '<em><b>Location</b></em>' attribute feature.
@@ -4852,6 +4954,56 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EReference API_DATA_TYPE__BASE_PRIMITIVE_TYPE = eINSTANCE.getAPIDataType_Base_PrimitiveType();
+
+		/**
+		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.APIPropertyImpl <em>API Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.som.uoc.openapiprofile.impl.APIPropertyImpl
+		 * @see edu.som.uoc.openapiprofile.impl.OpenapiprofilePackageImpl#getAPIProperty()
+		 * @generated
+		 */
+		EClass API_PROPERTY = eINSTANCE.getAPIProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Required</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_PROPERTY__REQUIRED = eINSTANCE.getAPIProperty_Required();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Property</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference API_PROPERTY__BASE_PROPERTY = eINSTANCE.getAPIProperty_Base_Property();
+
+		/**
+		 * The meta object literal for the '<em><b>Xml</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference API_PROPERTY__XML = eINSTANCE.getAPIProperty_Xml();
+
+		/**
+		 * The meta object literal for the '<em><b>Example</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_PROPERTY__EXAMPLE = eINSTANCE.getAPIProperty_Example();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_PROPERTY__DESCRIPTION = eINSTANCE.getAPIProperty_Description();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}' enum.

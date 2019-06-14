@@ -59,7 +59,6 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 		switch (eClass.getClassifierID()) {
 			case OpenapiprofilePackage.API: return createAPI();
 			case OpenapiprofilePackage.SCHEMA: return createSchema();
-			case OpenapiprofilePackage.XML_ELEMENT: return createXMLElement();
 			case OpenapiprofilePackage.API_OPERATION: return createAPIOperation();
 			case OpenapiprofilePackage.API_PARAMETER: return createAPIParameter();
 			case OpenapiprofilePackage.API_RESPONSE: return createAPIResponse();
@@ -76,7 +75,9 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 			case OpenapiprofilePackage.SECURITY_REQUIREMENT: return createSecurityRequirement();
 			case OpenapiprofilePackage.TAGS: return createTags();
 			case OpenapiprofilePackage.TAG: return createTag();
+			case OpenapiprofilePackage.XML_ELEMENT: return createXMLElement();
 			case OpenapiprofilePackage.API_DATA_TYPE: return createAPIDataType();
+			case OpenapiprofilePackage.API_PROPERTY: return createAPIProperty();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -108,10 +109,10 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 				return createOAuth2FlowTypeFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.INTEGER:
 				return createIntegerFromString(eDataType, initialValue);
-			case OpenapiprofilePackage.DOUBLE:
-				return createDoubleFromString(eDataType, initialValue);
 			case OpenapiprofilePackage.BOOLEAN:
 				return createBooleanFromString(eDataType, initialValue);
+			case OpenapiprofilePackage.DOUBLE:
+				return createDoubleFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -143,10 +144,10 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 				return convertOAuth2FlowTypeToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.INTEGER:
 				return convertIntegerToString(eDataType, instanceValue);
-			case OpenapiprofilePackage.DOUBLE:
-				return convertDoubleToString(eDataType, instanceValue);
 			case OpenapiprofilePackage.BOOLEAN:
 				return convertBooleanToString(eDataType, instanceValue);
+			case OpenapiprofilePackage.DOUBLE:
+				return convertDoubleToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -350,6 +351,16 @@ public class OpenapiprofileFactoryImpl extends EFactoryImpl implements Openapipr
 	public APIDataType createAPIDataType() {
 		APIDataTypeImpl apiDataType = new APIDataTypeImpl();
 		return apiDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public APIProperty createAPIProperty() {
+		APIPropertyImpl apiProperty = new APIPropertyImpl();
+		return apiProperty;
 	}
 
 	/**

@@ -202,6 +202,15 @@ public interface OpenapiprofileFactory extends EFactory {
 	APIDataType createAPIDataType();
 
 	/**
+	 * Returns a new object of class '<em>API Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>API Property</em>'.
+	 * @generated
+	 */
+	APIProperty createAPIProperty();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -75,19 +75,6 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 			case OpenapiprofilePackage.SCHEMA: {
 				Schema schema = (Schema)theEObject;
 				T result = caseSchema(schema);
-				if (result == null) result = caseJSONSchemaSubset(schema);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET: {
-				JSONSchemaSubset jsonSchemaSubset = (JSONSchemaSubset)theEObject;
-				T result = caseJSONSchemaSubset(jsonSchemaSubset);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case OpenapiprofilePackage.XML_ELEMENT: {
-				XMLElement xmlElement = (XMLElement)theEObject;
-				T result = caseXMLElement(xmlElement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -101,6 +88,12 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 				APIParameter apiParameter = (APIParameter)theEObject;
 				T result = caseAPIParameter(apiParameter);
 				if (result == null) result = caseJSONSchemaSubset(apiParameter);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET: {
+				JSONSchemaSubset jsonSchemaSubset = (JSONSchemaSubset)theEObject;
+				T result = caseJSONSchemaSubset(jsonSchemaSubset);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -188,9 +181,22 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case OpenapiprofilePackage.XML_ELEMENT: {
+				XMLElement xmlElement = (XMLElement)theEObject;
+				T result = caseXMLElement(xmlElement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case OpenapiprofilePackage.API_DATA_TYPE: {
 				APIDataType apiDataType = (APIDataType)theEObject;
 				T result = caseAPIDataType(apiDataType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case OpenapiprofilePackage.API_PROPERTY: {
+				APIProperty apiProperty = (APIProperty)theEObject;
+				T result = caseAPIProperty(apiProperty);
+				if (result == null) result = caseJSONSchemaSubset(apiProperty);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -510,6 +516,21 @@ public class OpenapiprofileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAPIDataType(APIDataType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>API Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>API Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAPIProperty(APIProperty object) {
 		return null;
 	}
 
