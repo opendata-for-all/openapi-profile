@@ -510,8 +510,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSchema_AdditionalProperties() {
-		return (EAttribute)schemaEClass.getEStructuralFeatures().get(9);
+	public EReference getSchema_AdditionalProperties() {
+		return (EReference)schemaEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1802,7 +1802,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(schemaEClass, SCHEMA__EXAMPLE);
 		createEAttribute(schemaEClass, SCHEMA__DEFAULT);
 		createEAttribute(schemaEClass, SCHEMA__DESCRIPTION);
-		createEAttribute(schemaEClass, SCHEMA__ADDITIONAL_PROPERTIES);
+		createEReference(schemaEClass, SCHEMA__ADDITIONAL_PROPERTIES);
 
 		apiOperationEClass = createEClass(API_OPERATION);
 		createEAttribute(apiOperationEClass, API_OPERATION__RELATIVE_PATH);
@@ -2021,7 +2021,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getSchema_Example(), theTypesPackage.getString(), "example", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_Default(), theTypesPackage.getString(), "default", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_Description(), theTypesPackage.getString(), "description", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSchema_AdditionalProperties(), theTypesPackage.getString(), "additionalProperties", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSchema_AdditionalProperties(), theUMLPackage.getType(), null, "additionalProperties", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiOperationEClass, APIOperation.class, "APIOperation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIOperation_RelativePath(), theTypesPackage.getString(), "relativePath", null, 0, 1, APIOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

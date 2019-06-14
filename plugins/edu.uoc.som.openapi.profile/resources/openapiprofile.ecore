@@ -44,8 +44,8 @@
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalProperties" ordered="false"
-        eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="additionalProperties" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Type"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Integer" instanceClassName="java.lang.Integer"/>
   <eClassifiers xsi:type="ecore:EDataType" name="Boolean" instanceClassName="java.lang.Boolean"/>

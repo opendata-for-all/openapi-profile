@@ -3,6 +3,7 @@
 package edu.som.uoc.openapiprofile;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.uml2.uml.Type;
 
 
 /**
@@ -266,29 +267,29 @@ public interface Schema extends EObject {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Additional Properties</b></em>' attribute.
+	 * Returns the value of the '<em><b>Additional Properties</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Properties</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Additional Properties</em>' attribute.
-	 * @see #setAdditionalProperties(String)
+	 * @return the value of the '<em>Additional Properties</em>' reference.
+	 * @see #setAdditionalProperties(Type)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_AdditionalProperties()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model ordered="false"
 	 * @generated
 	 */
-	String getAdditionalProperties();
+	Type getAdditionalProperties();
 
 	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}' attribute.
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Additional Properties</em>' attribute.
+	 * @param value the new value of the '<em>Additional Properties</em>' reference.
 	 * @see #getAdditionalProperties()
 	 * @generated
 	 */
-	void setAdditionalProperties(String value);
+	void setAdditionalProperties(Type value);
 
 } // Schema

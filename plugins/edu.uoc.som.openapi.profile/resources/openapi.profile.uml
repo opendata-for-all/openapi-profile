@@ -109,7 +109,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zwqPYo6jEemxQ8NrvMtPtQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_a0DycI6kEemxQ8NrvMtPtQ" name="additionalProperties">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Type"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a0DycY6kEemxQ8NrvMtPtQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a0Dyco6kEemxQ8NrvMtPtQ" value="1"/>
       </ownedAttribute>

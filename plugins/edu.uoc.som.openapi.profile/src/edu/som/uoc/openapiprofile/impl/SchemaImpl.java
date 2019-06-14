@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.uml2.uml.Type;
 
 /**
  * <!-- begin-user-doc -->
@@ -205,24 +206,14 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	protected String description = DESCRIPTION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getAdditionalProperties() <em>Additional Properties</em>}' attribute.
+	 * The cached value of the '{@link #getAdditionalProperties() <em>Additional Properties</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAdditionalProperties()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ADDITIONAL_PROPERTIES_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getAdditionalProperties() <em>Additional Properties</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAdditionalProperties()
-	 * @generated
-	 * @ordered
-	 */
-	protected String additionalProperties = ADDITIONAL_PROPERTIES_EDEFAULT;
+	protected Type additionalProperties;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -454,7 +445,15 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getAdditionalProperties() {
+	public Type getAdditionalProperties() {
+		if (additionalProperties != null && additionalProperties.eIsProxy()) {
+			InternalEObject oldAdditionalProperties = (InternalEObject)additionalProperties;
+			additionalProperties = (Type)eResolveProxy(oldAdditionalProperties);
+			if (additionalProperties != oldAdditionalProperties) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES, oldAdditionalProperties, additionalProperties));
+			}
+		}
 		return additionalProperties;
 	}
 
@@ -463,8 +462,17 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAdditionalProperties(String newAdditionalProperties) {
-		String oldAdditionalProperties = additionalProperties;
+	public Type basicGetAdditionalProperties() {
+		return additionalProperties;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAdditionalProperties(Type newAdditionalProperties) {
+		Type oldAdditionalProperties = additionalProperties;
 		additionalProperties = newAdditionalProperties;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES, oldAdditionalProperties, additionalProperties));
@@ -498,7 +506,8 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
 				return getDescription();
 			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
-				return getAdditionalProperties();
+				if (resolve) return getAdditionalProperties();
+				return basicGetAdditionalProperties();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -539,7 +548,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 				setDescription((String)newValue);
 				return;
 			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
-				setAdditionalProperties((String)newValue);
+				setAdditionalProperties((Type)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -581,7 +590,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
-				setAdditionalProperties(ADDITIONAL_PROPERTIES_EDEFAULT);
+				setAdditionalProperties((Type)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -614,7 +623,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case OpenapiprofilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
-				return ADDITIONAL_PROPERTIES_EDEFAULT == null ? additionalProperties != null : !ADDITIONAL_PROPERTIES_EDEFAULT.equals(additionalProperties);
+				return additionalProperties != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -645,8 +654,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		result.append(default_);
 		result.append(", description: ");
 		result.append(description);
-		result.append(", additionalProperties: ");
-		result.append(additionalProperties);
 		result.append(')');
 		return result.toString();
 	}

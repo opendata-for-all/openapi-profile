@@ -114,7 +114,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Schema/example"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Schema/default"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Schema/description"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//Schema/additionalProperties"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EReference openapiprofile.ecore#//Schema/additionalProperties"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="openapiprofile.ecore#//APIOperation">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute openapiprofile.ecore#//APIOperation/relativePath"/>

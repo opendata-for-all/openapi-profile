@@ -243,7 +243,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	int SCHEMA__DESCRIPTION = 8;
 
 	/**
-	 * The feature id for the '<em><b>Additional Properties</b></em>' attribute.
+	 * The feature id for the '<em><b>Additional Properties</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2277,15 +2277,15 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getSchema_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}'.
+	 * Returns the meta object for the reference '{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Additional Properties</em>'.
+	 * @return the meta object for the reference '<em>Additional Properties</em>'.
 	 * @see edu.som.uoc.openapiprofile.Schema#getAdditionalProperties()
 	 * @see #getSchema()
 	 * @generated
 	 */
-	EAttribute getSchema_AdditionalProperties();
+	EReference getSchema_AdditionalProperties();
 
 	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset <em>JSON Schema Subset</em>}'.
@@ -3942,12 +3942,12 @@ public interface OpenapiprofilePackage extends EPackage {
 		EAttribute SCHEMA__DESCRIPTION = eINSTANCE.getSchema_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Additional Properties</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Additional Properties</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SCHEMA__ADDITIONAL_PROPERTIES = eINSTANCE.getSchema_AdditionalProperties();
+		EReference SCHEMA__ADDITIONAL_PROPERTIES = eINSTANCE.getSchema_AdditionalProperties();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl <em>JSON Schema Subset</em>}' class.
