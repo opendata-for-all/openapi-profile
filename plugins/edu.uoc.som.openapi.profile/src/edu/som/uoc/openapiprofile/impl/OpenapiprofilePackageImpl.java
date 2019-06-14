@@ -573,7 +573,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_MinItems() {
+	public EAttribute getJSONSchemaSubset_Pattern() {
 		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -582,7 +582,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_Pattern() {
+	public EAttribute getJSONSchemaSubset_ExclusiveMinimum() {
 		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -591,7 +591,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_ExclusiveMinimum() {
+	public EAttribute getJSONSchemaSubset_UniqueItems() {
 		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -600,26 +600,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJSONSchemaSubset_MaxItems() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getJSONSchemaSubset_UniqueItems() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getJSONSchemaSubset_MultipleOf() {
-		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(10);
+		return (EAttribute)jsonSchemaSubsetEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -827,6 +809,15 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 */
 	public EReference getAPIParameter_Base_Parameter() {
 		return (EReference)apiParameterEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAPIParameter_Required() {
+		return (EAttribute)apiParameterEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1822,6 +1813,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(apiParameterEClass, API_PARAMETER__ALLOW_EMPTY_VALUE);
 		createEAttribute(apiParameterEClass, API_PARAMETER__COLLECTION_FORMAT);
 		createEReference(apiParameterEClass, API_PARAMETER__BASE_PARAMETER);
+		createEAttribute(apiParameterEClass, API_PARAMETER__REQUIRED);
 
 		jsonSchemaSubsetEClass = createEClass(JSON_SCHEMA_SUBSET);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_LENGTH);
@@ -1829,10 +1821,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MINIMUM);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAX_LENGTH);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MIN_ITEMS);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__PATTERN);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM);
-		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MAX_ITEMS);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__UNIQUE_ITEMS);
 		createEAttribute(jsonSchemaSubsetEClass, JSON_SCHEMA_SUBSET__MULTIPLE_OF);
 
@@ -2041,6 +2031,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getAPIParameter_AllowEmptyValue(), this.getBoolean(), "allowEmptyValue", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIParameter_CollectionFormat(), this.getCollectionFormat(), "collectionFormat", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIParameter_Base_Parameter(), theUMLPackage.getParameter(), null, "base_Parameter", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIParameter_Required(), this.getBoolean(), "required", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(jsonSchemaSubsetEClass, JSONSchemaSubset.class, "JSONSchemaSubset", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getJSONSchemaSubset_MinLength(), this.getInteger(), "minLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2048,10 +2039,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getJSONSchemaSubset_ExclusiveMaximum(), this.getBoolean(), "exclusiveMaximum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_Minimum(), this.getDouble(), "minimum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_MaxLength(), this.getInteger(), "maxLength", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_MinItems(), this.getInteger(), "minItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_Pattern(), theTypesPackage.getString(), "pattern", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_ExclusiveMinimum(), this.getBoolean(), "exclusiveMinimum", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJSONSchemaSubset_MaxItems(), this.getInteger(), "maxItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_UniqueItems(), this.getBoolean(), "uniqueItems", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getJSONSchemaSubset_MultipleOf(), this.getDouble(), "multipleOf", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 

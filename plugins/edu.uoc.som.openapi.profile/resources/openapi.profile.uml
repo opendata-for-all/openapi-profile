@@ -185,6 +185,10 @@
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2gA-8X1HEemCU627TT0glQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kBLkII62EemxQ8NrvMtPtQ" name="required" type="_YOStgIa2EemJAf1U_0U40g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kBLkIY62EemxQ8NrvMtPtQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kBLkIo62EemxQ8NrvMtPtQ" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_69-YAH1HEemCU627TT0glQ" name="APIResponse">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8h0JUH1HEemCU627TT0glQ" name="description">
@@ -628,10 +632,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8l9SBIbVEemJAf1U_0U40g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8l9SBYbVEemJAf1U_0U40g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_8l9SBobVEemJAf1U_0U40g" name="minItems" type="_PuqOwIa2EemJAf1U_0U40g">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8l9SB4bVEemJAf1U_0U40g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8l9SCIbVEemJAf1U_0U40g" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8l9SCYbVEemJAf1U_0U40g" name="pattern">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8l9SCobVEemJAf1U_0U40g"/>
@@ -640,10 +640,6 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8l95EIbVEemJAf1U_0U40g" name="exclusiveMinimum" type="_YOStgIa2EemJAf1U_0U40g">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8l95EYbVEemJAf1U_0U40g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8l95EobVEemJAf1U_0U40g" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_8l95E4bVEemJAf1U_0U40g" name="maxItems" type="_PuqOwIa2EemJAf1U_0U40g">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8l95FIbVEemJAf1U_0U40g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8l95FYbVEemJAf1U_0U40g" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_i2_KsIbbEemJAf1U_0U40g" name="uniqueItems" type="_YOStgIa2EemJAf1U_0U40g">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngrSoIbbEemJAf1U_0U40g"/>

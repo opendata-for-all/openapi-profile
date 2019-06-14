@@ -92,6 +92,8 @@
         eType="#//CollectionFormat"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_Parameter" ordered="false"
         eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Parameter"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="required" ordered="false"
+        eType="#//Boolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JSONSchemaSubset" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="minLength" ordered="false"
@@ -104,14 +106,10 @@
         eType="#//Double"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxLength" ordered="false"
         eType="#//Integer"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minItems" ordered="false"
-        eType="#//Integer"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pattern" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclusiveMinimum" ordered="false"
         eType="#//Boolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxItems" ordered="false"
-        eType="#//Integer"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="uniqueItems" ordered="false"
         eType="#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="multipleOf" ordered="false"

@@ -18,6 +18,7 @@ import org.eclipse.uml2.uml.Parameter;
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getAllowEmptyValue <em>Allow Empty Value</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getBase_Parameter <em>Base Parameter</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIParameter#getRequired <em>Required</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter()
@@ -160,5 +161,31 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * @generated
 	 */
 	void setBase_Parameter(Parameter value);
+
+	/**
+	 * Returns the value of the '<em><b>Required</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Required</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Required</em>' attribute.
+	 * @see #setRequired(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIParameter_Required()
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getRequired();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIParameter#getRequired <em>Required</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Required</em>' attribute.
+	 * @see #getRequired()
+	 * @generated
+	 */
+	void setRequired(Boolean value);
 
 } // APIParameter

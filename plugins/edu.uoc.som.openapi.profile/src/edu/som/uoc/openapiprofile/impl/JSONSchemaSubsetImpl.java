@@ -25,10 +25,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMinimum <em>Minimum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMaxLength <em>Max Length</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMinItems <em>Min Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getPattern <em>Pattern</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMaxItems <em>Max Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.JSONSchemaSubsetImpl#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
@@ -137,26 +135,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	protected Integer maxLength = MAX_LENGTH_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getMinItems() <em>Min Items</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMinItems()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final Integer MIN_ITEMS_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getMinItems() <em>Min Items</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMinItems()
-	 * @generated
-	 * @ordered
-	 */
-	protected Integer minItems = MIN_ITEMS_EDEFAULT;
-
-	/**
 	 * The default value of the '{@link #getPattern() <em>Pattern</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -195,26 +173,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * @ordered
 	 */
 	protected Boolean exclusiveMinimum = EXCLUSIVE_MINIMUM_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getMaxItems() <em>Max Items</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMaxItems()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final Integer MAX_ITEMS_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getMaxItems() <em>Max Items</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMaxItems()
-	 * @generated
-	 * @ordered
-	 */
-	protected Integer maxItems = MAX_ITEMS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getUniqueItems() <em>Unique Items</em>}' attribute.
@@ -385,27 +343,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Integer getMinItems() {
-		return minItems;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setMinItems(Integer newMinItems) {
-		Integer oldMinItems = minItems;
-		minItems = newMinItems;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MIN_ITEMS, oldMinItems, minItems));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getPattern() {
 		return pattern;
 	}
@@ -441,27 +378,6 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		exclusiveMinimum = newExclusiveMinimum;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM, oldExclusiveMinimum, exclusiveMinimum));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Integer getMaxItems() {
-		return maxItems;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setMaxItems(Integer newMaxItems) {
-		Integer oldMaxItems = maxItems;
-		maxItems = newMaxItems;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS, oldMaxItems, maxItems));
 	}
 
 	/**
@@ -524,14 +440,10 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return getMinimum();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				return getMaxLength();
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MIN_ITEMS:
-				return getMinItems();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				return getPattern();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				return getExclusiveMinimum();
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
-				return getMaxItems();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				return getUniqueItems();
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
@@ -563,17 +475,11 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				setMaxLength((Integer)newValue);
 				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MIN_ITEMS:
-				setMinItems((Integer)newValue);
-				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				setPattern((String)newValue);
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum((Boolean)newValue);
-				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
-				setMaxItems((Integer)newValue);
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				setUniqueItems((Boolean)newValue);
@@ -608,17 +514,11 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				setMaxLength(MAX_LENGTH_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MIN_ITEMS:
-				setMinItems(MIN_ITEMS_EDEFAULT);
-				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				setPattern(PATTERN_EDEFAULT);
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum(EXCLUSIVE_MINIMUM_EDEFAULT);
-				return;
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
-				setMaxItems(MAX_ITEMS_EDEFAULT);
 				return;
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				setUniqueItems(UNIQUE_ITEMS_EDEFAULT);
@@ -648,14 +548,10 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 				return MINIMUM_EDEFAULT == null ? minimum != null : !MINIMUM_EDEFAULT.equals(minimum);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				return MAX_LENGTH_EDEFAULT == null ? maxLength != null : !MAX_LENGTH_EDEFAULT.equals(maxLength);
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MIN_ITEMS:
-				return MIN_ITEMS_EDEFAULT == null ? minItems != null : !MIN_ITEMS_EDEFAULT.equals(minItems);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				return PATTERN_EDEFAULT == null ? pattern != null : !PATTERN_EDEFAULT.equals(pattern);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				return EXCLUSIVE_MINIMUM_EDEFAULT == null ? exclusiveMinimum != null : !EXCLUSIVE_MINIMUM_EDEFAULT.equals(exclusiveMinimum);
-			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MAX_ITEMS:
-				return MAX_ITEMS_EDEFAULT == null ? maxItems != null : !MAX_ITEMS_EDEFAULT.equals(maxItems);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
 			case OpenapiprofilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
@@ -684,14 +580,10 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		result.append(minimum);
 		result.append(", maxLength: ");
 		result.append(maxLength);
-		result.append(", minItems: ");
-		result.append(minItems);
 		result.append(", pattern: ");
 		result.append(pattern);
 		result.append(", exclusiveMinimum: ");
 		result.append(exclusiveMinimum);
-		result.append(", maxItems: ");
-		result.append(maxItems);
 		result.append(", uniqueItems: ");
 		result.append(uniqueItems);
 		result.append(", multipleOf: ");

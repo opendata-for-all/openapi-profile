@@ -29,6 +29,7 @@ import org.eclipse.uml2.uml.Parameter;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getAllowEmptyValue <em>Allow Empty Value</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getCollectionFormat <em>Collection Format</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getBase_Parameter <em>Base Parameter</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.APIParameterImpl#getRequired <em>Required</em>}</li>
  * </ul>
  *
  * @generated
@@ -123,6 +124,26 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	 * @ordered
 	 */
 	protected Parameter base_Parameter;
+
+	/**
+	 * The default value of the '{@link #getRequired() <em>Required</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRequired()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean REQUIRED_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getRequired() <em>Required</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRequired()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean required = REQUIRED_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,6 +291,27 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Boolean getRequired() {
+		return required;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRequired(Boolean newRequired) {
+		Boolean oldRequired = required;
+		required = newRequired;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PARAMETER__REQUIRED, oldRequired, required));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -284,6 +326,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				if (resolve) return getBase_Parameter();
 				return basicGetBase_Parameter();
+			case OpenapiprofilePackage.API_PARAMETER__REQUIRED:
+				return getRequired();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -310,6 +354,9 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 				return;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
+				return;
+			case OpenapiprofilePackage.API_PARAMETER__REQUIRED:
+				setRequired((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -338,6 +385,9 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				setBase_Parameter((Parameter)null);
 				return;
+			case OpenapiprofilePackage.API_PARAMETER__REQUIRED:
+				setRequired(REQUIRED_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -360,6 +410,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
 			case OpenapiprofilePackage.API_PARAMETER__BASE_PARAMETER:
 				return base_Parameter != null;
+			case OpenapiprofilePackage.API_PARAMETER__REQUIRED:
+				return REQUIRED_EDEFAULT == null ? required != null : !REQUIRED_EDEFAULT.equals(required);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -382,6 +434,8 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		result.append(allowEmptyValue);
 		result.append(", collectionFormat: ");
 		result.append(collectionFormat);
+		result.append(", required: ");
+		result.append(required);
 		result.append(')');
 		return result.toString();
 	}

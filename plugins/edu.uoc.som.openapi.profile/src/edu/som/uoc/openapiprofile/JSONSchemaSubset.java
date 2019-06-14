@@ -18,10 +18,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getExclusiveMaximum <em>Exclusive Maximum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMinimum <em>Minimum</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMaxLength <em>Max Length</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMinItems <em>Min Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getPattern <em>Pattern</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getExclusiveMinimum <em>Exclusive Minimum</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMaxItems <em>Max Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getUniqueItems <em>Unique Items</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
@@ -162,32 +160,6 @@ public interface JSONSchemaSubset extends EObject {
 	void setMaxLength(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>Min Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Min Items</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Min Items</em>' attribute.
-	 * @see #setMinItems(Integer)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_MinItems()
-	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
-	 * @generated
-	 */
-	Integer getMinItems();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMinItems <em>Min Items</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Min Items</em>' attribute.
-	 * @see #getMinItems()
-	 * @generated
-	 */
-	void setMinItems(Integer value);
-
-	/**
 	 * Returns the value of the '<em><b>Pattern</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -238,32 +210,6 @@ public interface JSONSchemaSubset extends EObject {
 	 * @generated
 	 */
 	void setExclusiveMinimum(Boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Max Items</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Max Items</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Max Items</em>' attribute.
-	 * @see #setMaxItems(Integer)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getJSONSchemaSubset_MaxItems()
-	 * @model dataType="edu.som.uoc.openapiprofile.Integer" ordered="false"
-	 * @generated
-	 */
-	Integer getMaxItems();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.JSONSchemaSubset#getMaxItems <em>Max Items</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Max Items</em>' attribute.
-	 * @see #getMaxItems()
-	 * @generated
-	 */
-	void setMaxItems(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Unique Items</b></em>' attribute.
