@@ -26,7 +26,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getBase_Class <em>Base Class</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getExample <em>Example</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getReadOnly <em>Read Only</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getDefault <em>Default</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.SchemaImpl#getAdditionalProperties <em>Additional Properties</em>}</li>
@@ -164,26 +163,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * @ordered
 	 */
 	protected String example = EXAMPLE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getReadOnly() <em>Read Only</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getReadOnly()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final Boolean READ_ONLY_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getReadOnly() <em>Read Only</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getReadOnly()
-	 * @generated
-	 * @ordered
-	 */
-	protected Boolean readOnly = READ_ONLY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getDefault() <em>Default</em>}' attribute.
@@ -433,27 +412,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Boolean getReadOnly() {
-		return readOnly;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setReadOnly(Boolean newReadOnly) {
-		Boolean oldReadOnly = readOnly;
-		readOnly = newReadOnly;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.SCHEMA__READ_ONLY, oldReadOnly, readOnly));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getDefault() {
 		return default_;
 	}
@@ -535,8 +493,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 				return basicGetBase_Class();
 			case OpenapiprofilePackage.SCHEMA__EXAMPLE:
 				return getExample();
-			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
-				return getReadOnly();
 			case OpenapiprofilePackage.SCHEMA__DEFAULT:
 				return getDefault();
 			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
@@ -575,9 +531,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 				return;
 			case OpenapiprofilePackage.SCHEMA__EXAMPLE:
 				setExample((String)newValue);
-				return;
-			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
-				setReadOnly((Boolean)newValue);
 				return;
 			case OpenapiprofilePackage.SCHEMA__DEFAULT:
 				setDefault((String)newValue);
@@ -621,9 +574,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 			case OpenapiprofilePackage.SCHEMA__EXAMPLE:
 				setExample(EXAMPLE_EDEFAULT);
 				return;
-			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
-				setReadOnly(READ_ONLY_EDEFAULT);
-				return;
 			case OpenapiprofilePackage.SCHEMA__DEFAULT:
 				setDefault(DEFAULT_EDEFAULT);
 				return;
@@ -659,8 +609,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 				return base_Class != null;
 			case OpenapiprofilePackage.SCHEMA__EXAMPLE:
 				return EXAMPLE_EDEFAULT == null ? example != null : !EXAMPLE_EDEFAULT.equals(example);
-			case OpenapiprofilePackage.SCHEMA__READ_ONLY:
-				return READ_ONLY_EDEFAULT == null ? readOnly != null : !READ_ONLY_EDEFAULT.equals(readOnly);
 			case OpenapiprofilePackage.SCHEMA__DEFAULT:
 				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
 			case OpenapiprofilePackage.SCHEMA__DESCRIPTION:
@@ -693,8 +641,6 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		result.append(additionalPropertiesAllowed);
 		result.append(", example: ");
 		result.append(example);
-		result.append(", readOnly: ");
-		result.append(readOnly);
 		result.append(", default: ");
 		result.append(default_);
 		result.append(", description: ");

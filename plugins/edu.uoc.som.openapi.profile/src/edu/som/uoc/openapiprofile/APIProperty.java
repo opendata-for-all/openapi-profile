@@ -18,6 +18,7 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getXml <em>Xml</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getExample <em>Example</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIProperty#getTitle <em>Title</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty()
@@ -154,5 +155,31 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * @generated
 	 */
 	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Title</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Title</em>' attribute.
+	 * @see #setTitle(String)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIProperty_Title()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getTitle();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIProperty#getTitle <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Title</em>' attribute.
+	 * @see #getTitle()
+	 * @generated
+	 */
+	void setTitle(String value);
 
 } // APIProperty

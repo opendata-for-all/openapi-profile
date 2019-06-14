@@ -225,22 +225,13 @@ public interface OpenapiprofilePackage extends EPackage {
 	int SCHEMA__EXAMPLE = 6;
 
 	/**
-	 * The feature id for the '<em><b>Read Only</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEMA__READ_ONLY = 7;
-
-	/**
 	 * The feature id for the '<em><b>Default</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__DEFAULT = 8;
+	int SCHEMA__DEFAULT = 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -249,7 +240,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__DESCRIPTION = 9;
+	int SCHEMA__DESCRIPTION = 8;
 
 	/**
 	 * The feature id for the '<em><b>Additional Properties</b></em>' attribute.
@@ -258,7 +249,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA__ADDITIONAL_PROPERTIES = 10;
+	int SCHEMA__ADDITIONAL_PROPERTIES = 9;
 
 	/**
 	 * The number of structural features of the '<em>Schema</em>' class.
@@ -267,7 +258,7 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHEMA_FEATURE_COUNT = 11;
+	int SCHEMA_FEATURE_COUNT = 10;
 
 	/**
 	 * The number of operations of the '<em>Schema</em>' class.
@@ -1963,13 +1954,22 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_PROPERTY__DESCRIPTION = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__TITLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>API Property</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
+	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of operations of the '<em>API Property</em>' class.
@@ -2253,17 +2253,6 @@ public interface OpenapiprofilePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSchema_Example();
-
-	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Read Only</em>'.
-	 * @see edu.som.uoc.openapiprofile.Schema#getReadOnly()
-	 * @see #getSchema()
-	 * @generated
-	 */
-	EAttribute getSchema_ReadOnly();
 
 	/**
 	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.Schema#getDefault <em>Default</em>}'.
@@ -3665,6 +3654,17 @@ public interface OpenapiprofilePackage extends EPackage {
 	EAttribute getAPIProperty_Description();
 
 	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIProperty#getTitle <em>Title</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Title</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIProperty#getTitle()
+	 * @see #getAPIProperty()
+	 * @generated
+	 */
+	EAttribute getAPIProperty_Title();
+
+	/**
 	 * Returns the meta object for enum '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3924,14 +3924,6 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SCHEMA__EXAMPLE = eINSTANCE.getSchema_Example();
-
-		/**
-		 * The meta object literal for the '<em><b>Read Only</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SCHEMA__READ_ONLY = eINSTANCE.getSchema_ReadOnly();
 
 		/**
 		 * The meta object literal for the '<em><b>Default</b></em>' attribute feature.
@@ -5004,6 +4996,14 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute API_PROPERTY__DESCRIPTION = eINSTANCE.getAPIProperty_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Title</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_PROPERTY__TITLE = eINSTANCE.getAPIProperty_Title();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.SchemeType <em>Scheme Type</em>}' enum.

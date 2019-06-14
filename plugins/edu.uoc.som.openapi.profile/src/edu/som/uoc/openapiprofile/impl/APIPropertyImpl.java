@@ -29,6 +29,7 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIPropertyImpl#getXml <em>Xml</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIPropertyImpl#getExample <em>Example</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIPropertyImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.APIPropertyImpl#getTitle <em>Title</em>}</li>
  * </ul>
  *
  * @generated
@@ -113,6 +114,26 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	 * @ordered
 	 */
 	protected String description = DESCRIPTION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTitle() <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTitle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TITLE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTitle() <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTitle()
+	 * @generated
+	 * @ordered
+	 */
+	protected String title = TITLE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,6 +303,27 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTitle(String newTitle) {
+		String oldTitle = title;
+		title = newTitle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_PROPERTY__TITLE, oldTitle, title));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -310,6 +352,8 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 				return getExample();
 			case OpenapiprofilePackage.API_PROPERTY__DESCRIPTION:
 				return getDescription();
+			case OpenapiprofilePackage.API_PROPERTY__TITLE:
+				return getTitle();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -336,6 +380,9 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 				return;
 			case OpenapiprofilePackage.API_PROPERTY__DESCRIPTION:
 				setDescription((String)newValue);
+				return;
+			case OpenapiprofilePackage.API_PROPERTY__TITLE:
+				setTitle((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -364,6 +411,9 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 			case OpenapiprofilePackage.API_PROPERTY__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
+			case OpenapiprofilePackage.API_PROPERTY__TITLE:
+				setTitle(TITLE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -386,6 +436,8 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 				return EXAMPLE_EDEFAULT == null ? example != null : !EXAMPLE_EDEFAULT.equals(example);
 			case OpenapiprofilePackage.API_PROPERTY__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case OpenapiprofilePackage.API_PROPERTY__TITLE:
+				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -406,6 +458,8 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		result.append(example);
 		result.append(", description: ");
 		result.append(description);
+		result.append(", title: ");
+		result.append(title);
 		result.append(')');
 		return result.toString();
 	}

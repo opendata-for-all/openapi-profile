@@ -21,7 +21,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getAdditionalPropertiesAllowed <em>Additional Properties Allowed</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getBase_Class <em>Base Class</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getExample <em>Example</em>}</li>
- *   <li>{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getDefault <em>Default</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.Schema#getAdditionalProperties <em>Additional Properties</em>}</li>
@@ -213,32 +212,6 @@ public interface Schema extends EObject {
 	 * @generated
 	 */
 	void setExample(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Read Only</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Read Only</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Read Only</em>' attribute.
-	 * @see #setReadOnly(Boolean)
-	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getSchema_ReadOnly()
-	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
-	 * @generated
-	 */
-	Boolean getReadOnly();
-
-	/**
-	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.Schema#getReadOnly <em>Read Only</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Read Only</em>' attribute.
-	 * @see #getReadOnly()
-	 * @generated
-	 */
-	void setReadOnly(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Default</b></em>' attribute.

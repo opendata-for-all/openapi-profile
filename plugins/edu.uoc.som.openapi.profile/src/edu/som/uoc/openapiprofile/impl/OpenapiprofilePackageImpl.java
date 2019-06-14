@@ -492,7 +492,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSchema_ReadOnly() {
+	public EAttribute getSchema_Default() {
 		return (EAttribute)schemaEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -501,7 +501,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSchema_Default() {
+	public EAttribute getSchema_Description() {
 		return (EAttribute)schemaEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -510,17 +510,8 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSchema_Description() {
-		return (EAttribute)schemaEClass.getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getSchema_AdditionalProperties() {
-		return (EAttribute)schemaEClass.getEStructuralFeatures().get(10);
+		return (EAttribute)schemaEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1662,6 +1653,15 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAPIProperty_Title() {
+		return (EAttribute)apiPropertyEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getSchemeType() {
 		return schemeTypeEEnum;
 	}
@@ -1800,7 +1800,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEAttribute(schemaEClass, SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED);
 		createEReference(schemaEClass, SCHEMA__BASE_CLASS);
 		createEAttribute(schemaEClass, SCHEMA__EXAMPLE);
-		createEAttribute(schemaEClass, SCHEMA__READ_ONLY);
 		createEAttribute(schemaEClass, SCHEMA__DEFAULT);
 		createEAttribute(schemaEClass, SCHEMA__DESCRIPTION);
 		createEAttribute(schemaEClass, SCHEMA__ADDITIONAL_PROPERTIES);
@@ -1950,6 +1949,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEReference(apiPropertyEClass, API_PROPERTY__XML);
 		createEAttribute(apiPropertyEClass, API_PROPERTY__EXAMPLE);
 		createEAttribute(apiPropertyEClass, API_PROPERTY__DESCRIPTION);
+		createEAttribute(apiPropertyEClass, API_PROPERTY__TITLE);
 
 		// Create enums
 		schemeTypeEEnum = createEEnum(SCHEME_TYPE);
@@ -2019,7 +2019,6 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEAttribute(getSchema_AdditionalPropertiesAllowed(), this.getBoolean(), "additionalPropertiesAllowed", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSchema_Base_Class(), theUMLPackage.getClass_(), null, "base_Class", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_Example(), theTypesPackage.getString(), "example", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSchema_ReadOnly(), this.getBoolean(), "readOnly", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_Default(), theTypesPackage.getString(), "default", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_Description(), theTypesPackage.getString(), "description", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSchema_AdditionalProperties(), theTypesPackage.getString(), "additionalProperties", null, 0, 1, Schema.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2169,6 +2168,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		initEReference(getAPIProperty_Xml(), this.getXMLElement(), null, "xml", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Example(), theTypesPackage.getString(), "example", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIProperty_Title(), theTypesPackage.getString(), "title", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(schemeTypeEEnum, SchemeType.class, "SchemeType");
