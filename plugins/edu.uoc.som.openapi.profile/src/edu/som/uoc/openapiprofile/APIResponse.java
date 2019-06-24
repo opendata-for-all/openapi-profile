@@ -22,6 +22,7 @@ import org.eclipse.uml2.uml.Parameter;
  *   <li>{@link edu.som.uoc.openapiprofile.APIResponse#getHeaders <em>Headers</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIResponse#getExamples <em>Examples</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.APIResponse#getBase_Parameter <em>Base Parameter</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.APIResponse#getDefault <em>Default</em>}</li>
  * </ul>
  *
  * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIResponse()
@@ -64,12 +65,12 @@ public interface APIResponse extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code</em>' attribute.
-	 * @see #setCode(String)
+	 * @see #setCode(int)
 	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIResponse_Code()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
-	String getCode();
+	int getCode();
 
 	/**
 	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIResponse#getCode <em>Code</em>}' attribute.
@@ -79,7 +80,7 @@ public interface APIResponse extends EObject {
 	 * @see #getCode()
 	 * @generated
 	 */
-	void setCode(String value);
+	void setCode(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Headers</b></em>' containment reference list.
@@ -138,5 +139,31 @@ public interface APIResponse extends EObject {
 	 * @generated
 	 */
 	void setBase_Parameter(Parameter value);
+
+	/**
+	 * Returns the value of the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Default</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Default</em>' attribute.
+	 * @see #setDefault(Boolean)
+	 * @see edu.som.uoc.openapiprofile.OpenapiprofilePackage#getAPIResponse_Default()
+	 * @model dataType="edu.som.uoc.openapiprofile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getDefault();
+
+	/**
+	 * Sets the value of the '{@link edu.som.uoc.openapiprofile.APIResponse#getDefault <em>Default</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Default</em>' attribute.
+	 * @see #getDefault()
+	 * @generated
+	 */
+	void setDefault(Boolean value);
 
 } // APIResponse

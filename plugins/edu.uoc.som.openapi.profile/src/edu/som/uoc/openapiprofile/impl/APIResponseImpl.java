@@ -38,6 +38,7 @@ import org.eclipse.uml2.uml.Parameter;
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIResponseImpl#getHeaders <em>Headers</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIResponseImpl#getExamples <em>Examples</em>}</li>
  *   <li>{@link edu.som.uoc.openapiprofile.impl.APIResponseImpl#getBase_Parameter <em>Base Parameter</em>}</li>
+ *   <li>{@link edu.som.uoc.openapiprofile.impl.APIResponseImpl#getDefault <em>Default</em>}</li>
  * </ul>
  *
  * @generated
@@ -71,7 +72,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String CODE_EDEFAULT = null;
+	protected static final int CODE_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getCode() <em>Code</em>}' attribute.
@@ -81,7 +82,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * @generated
 	 * @ordered
 	 */
-	protected String code = CODE_EDEFAULT;
+	protected int code = CODE_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getHeaders() <em>Headers</em>}' containment reference list.
@@ -112,6 +113,26 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * @ordered
 	 */
 	protected Parameter base_Parameter;
+
+	/**
+	 * The default value of the '{@link #getDefault() <em>Default</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefault()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean DEFAULT_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDefault() <em>Default</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefault()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean default_ = DEFAULT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,7 +179,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCode() {
+	public int getCode() {
 		return code;
 	}
 
@@ -167,8 +188,8 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCode(String newCode) {
-		String oldCode = code;
+	public void setCode(int newCode) {
+		int oldCode = code;
 		code = newCode;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_RESPONSE__CODE, oldCode, code));
@@ -241,6 +262,27 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Boolean getDefault() {
+		return default_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDefault(Boolean newDefault) {
+		Boolean oldDefault = default_;
+		default_ = newDefault;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenapiprofilePackage.API_RESPONSE__DEFAULT, oldDefault, default_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -271,6 +313,8 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				if (resolve) return getBase_Parameter();
 				return basicGetBase_Parameter();
+			case OpenapiprofilePackage.API_RESPONSE__DEFAULT:
+				return getDefault();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -288,7 +332,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 				setDescription((String)newValue);
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__CODE:
-				setCode((String)newValue);
+				setCode((Integer)newValue);
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__HEADERS:
 				getHeaders().clear();
@@ -300,6 +344,9 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 				return;
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
+				return;
+			case OpenapiprofilePackage.API_RESPONSE__DEFAULT:
+				setDefault((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -328,6 +375,9 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)null);
 				return;
+			case OpenapiprofilePackage.API_RESPONSE__DEFAULT:
+				setDefault(DEFAULT_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -343,13 +393,15 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 			case OpenapiprofilePackage.API_RESPONSE__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case OpenapiprofilePackage.API_RESPONSE__CODE:
-				return CODE_EDEFAULT == null ? code != null : !CODE_EDEFAULT.equals(code);
+				return code != CODE_EDEFAULT;
 			case OpenapiprofilePackage.API_RESPONSE__HEADERS:
 				return headers != null && !headers.isEmpty();
 			case OpenapiprofilePackage.API_RESPONSE__EXAMPLES:
 				return examples != null && !examples.isEmpty();
 			case OpenapiprofilePackage.API_RESPONSE__BASE_PARAMETER:
 				return base_Parameter != null;
+			case OpenapiprofilePackage.API_RESPONSE__DEFAULT:
+				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -368,6 +420,8 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 		result.append(description);
 		result.append(", code: ");
 		result.append(code);
+		result.append(", default: ");
+		result.append(default_);
 		result.append(')');
 		return result.toString();
 	}

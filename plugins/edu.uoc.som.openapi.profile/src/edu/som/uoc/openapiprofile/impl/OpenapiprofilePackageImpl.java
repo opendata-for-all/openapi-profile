@@ -879,6 +879,15 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAPIResponse_Default() {
+		return (EAttribute)apiResponseEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHeader() {
 		return headerEClass;
 	}
@@ -1832,6 +1841,7 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 		createEReference(apiResponseEClass, API_RESPONSE__HEADERS);
 		createEReference(apiResponseEClass, API_RESPONSE__EXAMPLES);
 		createEReference(apiResponseEClass, API_RESPONSE__BASE_PARAMETER);
+		createEAttribute(apiResponseEClass, API_RESPONSE__DEFAULT);
 
 		headerEClass = createEClass(HEADER);
 		createEAttribute(headerEClass, HEADER__NAME);
@@ -2046,10 +2056,11 @@ public class OpenapiprofilePackageImpl extends EPackageImpl implements Openapipr
 
 		initEClass(apiResponseEClass, APIResponse.class, "APIResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIResponse_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getAPIResponse_Code(), theTypesPackage.getString(), "code", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIResponse_Code(), theTypesPackage.getInteger(), "code", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIResponse_Headers(), this.getHeader(), null, "headers", null, 0, -1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIResponse_Examples(), this.getExample(), null, "examples", null, 0, -1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIResponse_Base_Parameter(), theUMLPackage.getParameter(), null, "base_Parameter", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIResponse_Default(), this.getBoolean(), "default", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(headerEClass, Header.class, "Header", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getHeader_Name(), theTypesPackage.getString(), "name", null, 0, 1, Header.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

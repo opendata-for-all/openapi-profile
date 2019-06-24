@@ -715,13 +715,22 @@ public interface OpenapiprofilePackage extends EPackage {
 	int API_RESPONSE__BASE_PARAMETER = 4;
 
 	/**
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_RESPONSE__DEFAULT = 5;
+
+	/**
 	 * The number of structural features of the '<em>API Response</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_RESPONSE_FEATURE_COUNT = 5;
+	int API_RESPONSE_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>API Response</em>' class.
@@ -2678,6 +2687,17 @@ public interface OpenapiprofilePackage extends EPackage {
 	EReference getAPIResponse_Base_Parameter();
 
 	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapiprofile.APIResponse#getDefault <em>Default</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default</em>'.
+	 * @see edu.som.uoc.openapiprofile.APIResponse#getDefault()
+	 * @see #getAPIResponse()
+	 * @generated
+	 */
+	EAttribute getAPIResponse_Default();
+
+	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapiprofile.Header <em>Header</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4222,6 +4242,14 @@ public interface OpenapiprofilePackage extends EPackage {
 		 * @generated
 		 */
 		EReference API_RESPONSE__BASE_PARAMETER = eINSTANCE.getAPIResponse_Base_Parameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Default</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_RESPONSE__DEFAULT = eINSTANCE.getAPIResponse_Default();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapiprofile.impl.HeaderImpl <em>Header</em>}' class.
