@@ -4,7 +4,7 @@
    <description name="OpenAPI profile">
       
    </description>
-   <feature url="features/edu.uoc.som.openapi.profile.feature_2.0.0.201907031512.jar" id="edu.uoc.som.openapi.profile.feature" version="2.0.0.201907031512">
+   <feature url="features/edu.uoc.som.openapi.profile.feature_2.0.0.201907031611.jar" id="edu.uoc.som.openapi.profile.feature" version="2.0.0.201907031611">
       <category name="OpenAPI Profile"/>
    </feature>
    <category-def name="OpenAPI Profile" label="OpenAPI Profile"/>
