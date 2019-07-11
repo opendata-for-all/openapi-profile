@@ -2,8 +2,8 @@
  */
 package edu.som.uoc.openapi2.profile.impl;
 
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.SecurityScope;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -83,7 +83,7 @@ public class SecurityScopeImpl extends MinimalEObjectImpl.Container implements S
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.SECURITY_SCOPE;
+		return OpenAPIProfilePackage.Literals.SECURITY_SCOPE;
 	}
 
 	/**
@@ -106,7 +106,7 @@ public class SecurityScopeImpl extends MinimalEObjectImpl.Container implements S
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCOPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCOPE__NAME, oldName, name));
 	}
 
 	/**
@@ -129,7 +129,7 @@ public class SecurityScopeImpl extends MinimalEObjectImpl.Container implements S
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCOPE__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCOPE__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class SecurityScopeImpl extends MinimalEObjectImpl.Container implements S
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCOPE__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__NAME:
 				return getName();
-			case openapiPackage.SECURITY_SCOPE__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__DESCRIPTION:
 				return getDescription();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -156,10 +156,10 @@ public class SecurityScopeImpl extends MinimalEObjectImpl.Container implements S
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCOPE__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__NAME:
 				setName((String)newValue);
 				return;
-			case openapiPackage.SECURITY_SCOPE__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
 		}
@@ -174,10 +174,10 @@ public class SecurityScopeImpl extends MinimalEObjectImpl.Container implements S
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCOPE__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCOPE__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 		}
@@ -192,9 +192,9 @@ public class SecurityScopeImpl extends MinimalEObjectImpl.Container implements S
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCOPE__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case openapiPackage.SECURITY_SCOPE__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCOPE__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 		}
 		return super.eIsSet(featureID);

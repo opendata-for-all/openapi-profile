@@ -5,7 +5,7 @@ package edu.som.uoc.openapi2.profile.impl;
 import edu.som.uoc.openapi2.profile.APIResponse;
 import edu.som.uoc.openapi2.profile.Example;
 import edu.som.uoc.openapi2.profile.Header;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import java.util.Collection;
 
@@ -150,7 +150,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.API_RESPONSE;
+		return OpenAPIProfilePackage.Literals.API_RESPONSE;
 	}
 
 	/**
@@ -173,7 +173,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_RESPONSE__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_RESPONSE__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -196,7 +196,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 		int oldCode = code;
 		code = newCode;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_RESPONSE__CODE, oldCode, code));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_RESPONSE__CODE, oldCode, code));
 	}
 
 	/**
@@ -207,7 +207,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public EList<Header> getHeaders() {
 		if (headers == null) {
-			headers = new EObjectContainmentEList<Header>(Header.class, this, openapiPackage.API_RESPONSE__HEADERS);
+			headers = new EObjectContainmentEList<Header>(Header.class, this, OpenAPIProfilePackage.API_RESPONSE__HEADERS);
 		}
 		return headers;
 	}
@@ -220,7 +220,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public EList<Example> getExamples() {
 		if (examples == null) {
-			examples = new EObjectContainmentEList<Example>(Example.class, this, openapiPackage.API_RESPONSE__EXAMPLES);
+			examples = new EObjectContainmentEList<Example>(Example.class, this, OpenAPIProfilePackage.API_RESPONSE__EXAMPLES);
 		}
 		return examples;
 	}
@@ -237,7 +237,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 			base_Parameter = (Parameter)eResolveProxy(oldBase_Parameter);
 			if (base_Parameter != oldBase_Parameter) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API_RESPONSE__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API_RESPONSE__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
 			}
 		}
 		return base_Parameter;
@@ -262,7 +262,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 		Parameter oldBase_Parameter = base_Parameter;
 		base_Parameter = newBase_Parameter;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_RESPONSE__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_RESPONSE__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
 	}
 
 	/**
@@ -285,7 +285,7 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 		Boolean oldDefault = default_;
 		default_ = newDefault;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_RESPONSE__DEFAULT, oldDefault, default_));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_RESPONSE__DEFAULT, oldDefault, default_));
 	}
 
 	/**
@@ -296,9 +296,9 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case openapiPackage.API_RESPONSE__HEADERS:
+			case OpenAPIProfilePackage.API_RESPONSE__HEADERS:
 				return ((InternalEList<?>)getHeaders()).basicRemove(otherEnd, msgs);
-			case openapiPackage.API_RESPONSE__EXAMPLES:
+			case OpenAPIProfilePackage.API_RESPONSE__EXAMPLES:
 				return ((InternalEList<?>)getExamples()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -312,18 +312,18 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.API_RESPONSE__DESCRIPTION:
+			case OpenAPIProfilePackage.API_RESPONSE__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.API_RESPONSE__CODE:
+			case OpenAPIProfilePackage.API_RESPONSE__CODE:
 				return getCode();
-			case openapiPackage.API_RESPONSE__HEADERS:
+			case OpenAPIProfilePackage.API_RESPONSE__HEADERS:
 				return getHeaders();
-			case openapiPackage.API_RESPONSE__EXAMPLES:
+			case OpenAPIProfilePackage.API_RESPONSE__EXAMPLES:
 				return getExamples();
-			case openapiPackage.API_RESPONSE__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_RESPONSE__BASE_PARAMETER:
 				if (resolve) return getBase_Parameter();
 				return basicGetBase_Parameter();
-			case openapiPackage.API_RESPONSE__DEFAULT:
+			case OpenAPIProfilePackage.API_RESPONSE__DEFAULT:
 				return getDefault();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -338,24 +338,24 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.API_RESPONSE__DESCRIPTION:
+			case OpenAPIProfilePackage.API_RESPONSE__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.API_RESPONSE__CODE:
+			case OpenAPIProfilePackage.API_RESPONSE__CODE:
 				setCode((Integer)newValue);
 				return;
-			case openapiPackage.API_RESPONSE__HEADERS:
+			case OpenAPIProfilePackage.API_RESPONSE__HEADERS:
 				getHeaders().clear();
 				getHeaders().addAll((Collection<? extends Header>)newValue);
 				return;
-			case openapiPackage.API_RESPONSE__EXAMPLES:
+			case OpenAPIProfilePackage.API_RESPONSE__EXAMPLES:
 				getExamples().clear();
 				getExamples().addAll((Collection<? extends Example>)newValue);
 				return;
-			case openapiPackage.API_RESPONSE__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
 				return;
-			case openapiPackage.API_RESPONSE__DEFAULT:
+			case OpenAPIProfilePackage.API_RESPONSE__DEFAULT:
 				setDefault((Boolean)newValue);
 				return;
 		}
@@ -370,22 +370,22 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_RESPONSE__DESCRIPTION:
+			case OpenAPIProfilePackage.API_RESPONSE__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.API_RESPONSE__CODE:
+			case OpenAPIProfilePackage.API_RESPONSE__CODE:
 				setCode(CODE_EDEFAULT);
 				return;
-			case openapiPackage.API_RESPONSE__HEADERS:
+			case OpenAPIProfilePackage.API_RESPONSE__HEADERS:
 				getHeaders().clear();
 				return;
-			case openapiPackage.API_RESPONSE__EXAMPLES:
+			case OpenAPIProfilePackage.API_RESPONSE__EXAMPLES:
 				getExamples().clear();
 				return;
-			case openapiPackage.API_RESPONSE__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_RESPONSE__BASE_PARAMETER:
 				setBase_Parameter((Parameter)null);
 				return;
-			case openapiPackage.API_RESPONSE__DEFAULT:
+			case OpenAPIProfilePackage.API_RESPONSE__DEFAULT:
 				setDefault(DEFAULT_EDEFAULT);
 				return;
 		}
@@ -400,17 +400,17 @@ public class APIResponseImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_RESPONSE__DESCRIPTION:
+			case OpenAPIProfilePackage.API_RESPONSE__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.API_RESPONSE__CODE:
+			case OpenAPIProfilePackage.API_RESPONSE__CODE:
 				return code != CODE_EDEFAULT;
-			case openapiPackage.API_RESPONSE__HEADERS:
+			case OpenAPIProfilePackage.API_RESPONSE__HEADERS:
 				return headers != null && !headers.isEmpty();
-			case openapiPackage.API_RESPONSE__EXAMPLES:
+			case OpenAPIProfilePackage.API_RESPONSE__EXAMPLES:
 				return examples != null && !examples.isEmpty();
-			case openapiPackage.API_RESPONSE__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_RESPONSE__BASE_PARAMETER:
 				return base_Parameter != null;
-			case openapiPackage.API_RESPONSE__DEFAULT:
+			case OpenAPIProfilePackage.API_RESPONSE__DEFAULT:
 				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
 		}
 		return super.eIsSet(featureID);

@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.License#getUrl <em>Url</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getLicense()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getLicense()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface License extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getLicense_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getLicense_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface License extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Url</em>' attribute.
 	 * @see #setUrl(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getLicense_Url()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getLicense_Url()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */

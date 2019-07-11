@@ -3,8 +3,8 @@
 package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.API;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.SchemeType;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import java.util.Collection;
 
@@ -137,7 +137,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.API;
+		return OpenAPIProfilePackage.Literals.API;
 	}
 
 	/**
@@ -160,7 +160,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 		String oldHost = host;
 		host = newHost;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API__HOST, oldHost, host));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API__HOST, oldHost, host));
 	}
 
 	/**
@@ -183,7 +183,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 		String oldBasePath = basePath;
 		basePath = newBasePath;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API__BASE_PATH, oldBasePath, basePath));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API__BASE_PATH, oldBasePath, basePath));
 	}
 
 	/**
@@ -194,7 +194,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	@Override
 	public EList<SchemeType> getSchemes() {
 		if (schemes == null) {
-			schemes = new EDataTypeUniqueEList<SchemeType>(SchemeType.class, this, openapiPackage.API__SCHEMES);
+			schemes = new EDataTypeUniqueEList<SchemeType>(SchemeType.class, this, OpenAPIProfilePackage.API__SCHEMES);
 		}
 		return schemes;
 	}
@@ -207,7 +207,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	@Override
 	public EList<String> getConsumes() {
 		if (consumes == null) {
-			consumes = new EDataTypeUniqueEList<String>(String.class, this, openapiPackage.API__CONSUMES);
+			consumes = new EDataTypeUniqueEList<String>(String.class, this, OpenAPIProfilePackage.API__CONSUMES);
 		}
 		return consumes;
 	}
@@ -220,7 +220,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	@Override
 	public EList<String> getProduces() {
 		if (produces == null) {
-			produces = new EDataTypeUniqueEList<String>(String.class, this, openapiPackage.API__PRODUCES);
+			produces = new EDataTypeUniqueEList<String>(String.class, this, OpenAPIProfilePackage.API__PRODUCES);
 		}
 		return produces;
 	}
@@ -237,7 +237,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 			base_Model = (Model)eResolveProxy(oldBase_Model);
 			if (base_Model != oldBase_Model) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API__BASE_MODEL, oldBase_Model, base_Model));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API__BASE_MODEL, oldBase_Model, base_Model));
 			}
 		}
 		return base_Model;
@@ -262,7 +262,7 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 		Model oldBase_Model = base_Model;
 		base_Model = newBase_Model;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API__BASE_MODEL, oldBase_Model, base_Model));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API__BASE_MODEL, oldBase_Model, base_Model));
 	}
 
 	/**
@@ -273,17 +273,17 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.API__HOST:
+			case OpenAPIProfilePackage.API__HOST:
 				return getHost();
-			case openapiPackage.API__BASE_PATH:
+			case OpenAPIProfilePackage.API__BASE_PATH:
 				return getBasePath();
-			case openapiPackage.API__SCHEMES:
+			case OpenAPIProfilePackage.API__SCHEMES:
 				return getSchemes();
-			case openapiPackage.API__CONSUMES:
+			case OpenAPIProfilePackage.API__CONSUMES:
 				return getConsumes();
-			case openapiPackage.API__PRODUCES:
+			case OpenAPIProfilePackage.API__PRODUCES:
 				return getProduces();
-			case openapiPackage.API__BASE_MODEL:
+			case OpenAPIProfilePackage.API__BASE_MODEL:
 				if (resolve) return getBase_Model();
 				return basicGetBase_Model();
 		}
@@ -299,25 +299,25 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.API__HOST:
+			case OpenAPIProfilePackage.API__HOST:
 				setHost((String)newValue);
 				return;
-			case openapiPackage.API__BASE_PATH:
+			case OpenAPIProfilePackage.API__BASE_PATH:
 				setBasePath((String)newValue);
 				return;
-			case openapiPackage.API__SCHEMES:
+			case OpenAPIProfilePackage.API__SCHEMES:
 				getSchemes().clear();
 				getSchemes().addAll((Collection<? extends SchemeType>)newValue);
 				return;
-			case openapiPackage.API__CONSUMES:
+			case OpenAPIProfilePackage.API__CONSUMES:
 				getConsumes().clear();
 				getConsumes().addAll((Collection<? extends String>)newValue);
 				return;
-			case openapiPackage.API__PRODUCES:
+			case OpenAPIProfilePackage.API__PRODUCES:
 				getProduces().clear();
 				getProduces().addAll((Collection<? extends String>)newValue);
 				return;
-			case openapiPackage.API__BASE_MODEL:
+			case OpenAPIProfilePackage.API__BASE_MODEL:
 				setBase_Model((Model)newValue);
 				return;
 		}
@@ -332,22 +332,22 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API__HOST:
+			case OpenAPIProfilePackage.API__HOST:
 				setHost(HOST_EDEFAULT);
 				return;
-			case openapiPackage.API__BASE_PATH:
+			case OpenAPIProfilePackage.API__BASE_PATH:
 				setBasePath(BASE_PATH_EDEFAULT);
 				return;
-			case openapiPackage.API__SCHEMES:
+			case OpenAPIProfilePackage.API__SCHEMES:
 				getSchemes().clear();
 				return;
-			case openapiPackage.API__CONSUMES:
+			case OpenAPIProfilePackage.API__CONSUMES:
 				getConsumes().clear();
 				return;
-			case openapiPackage.API__PRODUCES:
+			case OpenAPIProfilePackage.API__PRODUCES:
 				getProduces().clear();
 				return;
-			case openapiPackage.API__BASE_MODEL:
+			case OpenAPIProfilePackage.API__BASE_MODEL:
 				setBase_Model((Model)null);
 				return;
 		}
@@ -362,17 +362,17 @@ public class APIImpl extends MinimalEObjectImpl.Container implements API {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API__HOST:
+			case OpenAPIProfilePackage.API__HOST:
 				return HOST_EDEFAULT == null ? host != null : !HOST_EDEFAULT.equals(host);
-			case openapiPackage.API__BASE_PATH:
+			case OpenAPIProfilePackage.API__BASE_PATH:
 				return BASE_PATH_EDEFAULT == null ? basePath != null : !BASE_PATH_EDEFAULT.equals(basePath);
-			case openapiPackage.API__SCHEMES:
+			case OpenAPIProfilePackage.API__SCHEMES:
 				return schemes != null && !schemes.isEmpty();
-			case openapiPackage.API__CONSUMES:
+			case OpenAPIProfilePackage.API__CONSUMES:
 				return consumes != null && !consumes.isEmpty();
-			case openapiPackage.API__PRODUCES:
+			case OpenAPIProfilePackage.API__PRODUCES:
 				return produces != null && !produces.isEmpty();
-			case openapiPackage.API__BASE_MODEL:
+			case OpenAPIProfilePackage.API__BASE_MODEL:
 				return base_Model != null;
 		}
 		return super.eIsSet(featureID);

@@ -5,7 +5,7 @@ package edu.som.uoc.openapi2.profile.impl;
 import edu.som.uoc.openapi2.profile.CollectionFormat;
 import edu.som.uoc.openapi2.profile.Header;
 import edu.som.uoc.openapi2.profile.JSONDataType;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import java.util.Collection;
 
@@ -417,7 +417,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.HEADER;
+		return OpenAPIProfilePackage.Literals.HEADER;
 	}
 
 	/**
@@ -440,7 +440,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__NAME, oldName, name));
 	}
 
 	/**
@@ -463,7 +463,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -486,7 +486,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		JSONDataType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__TYPE, oldType, type));
 	}
 
 	/**
@@ -509,7 +509,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldFormat = format;
 		format = newFormat;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__FORMAT, oldFormat, format));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__FORMAT, oldFormat, format));
 	}
 
 	/**
@@ -532,7 +532,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		CollectionFormat oldCollectionFormat = collectionFormat;
 		collectionFormat = newCollectionFormat == null ? COLLECTION_FORMAT_EDEFAULT : newCollectionFormat;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
 	}
 
 	/**
@@ -555,7 +555,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Integer oldMinItems = minItems;
 		minItems = newMinItems;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__MIN_ITEMS, oldMinItems, minItems));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__MIN_ITEMS, oldMinItems, minItems));
 	}
 
 	/**
@@ -578,7 +578,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldPattern = pattern;
 		pattern = newPattern;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__PATTERN, oldPattern, pattern));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__PATTERN, oldPattern, pattern));
 	}
 
 	/**
@@ -601,7 +601,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Boolean oldExclusiveMinimum = exclusiveMinimum;
 		exclusiveMinimum = newExclusiveMinimum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__EXCLUSIVE_MINIMUM, oldExclusiveMinimum, exclusiveMinimum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__EXCLUSIVE_MINIMUM, oldExclusiveMinimum, exclusiveMinimum));
 	}
 
 	/**
@@ -624,7 +624,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Double oldMinimum = minimum;
 		minimum = newMinimum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__MINIMUM, oldMinimum, minimum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__MINIMUM, oldMinimum, minimum));
 	}
 
 	/**
@@ -647,7 +647,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Integer oldMinLength = minLength;
 		minLength = newMinLength;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__MIN_LENGTH, oldMinLength, minLength));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__MIN_LENGTH, oldMinLength, minLength));
 	}
 
 	/**
@@ -670,7 +670,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Integer oldMaxLength = maxLength;
 		maxLength = newMaxLength;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__MAX_LENGTH, oldMaxLength, maxLength));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__MAX_LENGTH, oldMaxLength, maxLength));
 	}
 
 	/**
@@ -693,7 +693,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Double oldMaximum = maximum;
 		maximum = newMaximum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__MAXIMUM, oldMaximum, maximum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__MAXIMUM, oldMaximum, maximum));
 	}
 
 	/**
@@ -716,7 +716,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Integer oldMaxItems = maxItems;
 		maxItems = newMaxItems;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__MAX_ITEMS, oldMaxItems, maxItems));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__MAX_ITEMS, oldMaxItems, maxItems));
 	}
 
 	/**
@@ -739,7 +739,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Boolean oldExclusiveMaximum = exclusiveMaximum;
 		exclusiveMaximum = newExclusiveMaximum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__EXCLUSIVE_MAXIMUM, oldExclusiveMaximum, exclusiveMaximum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__EXCLUSIVE_MAXIMUM, oldExclusiveMaximum, exclusiveMaximum));
 	}
 
 	/**
@@ -762,7 +762,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		String oldDefault = default_;
 		default_ = newDefault;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__DEFAULT, oldDefault, default_));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__DEFAULT, oldDefault, default_));
 	}
 
 	/**
@@ -785,7 +785,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Boolean oldUniqueItems = uniqueItems;
 		uniqueItems = newUniqueItems;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__UNIQUE_ITEMS, oldUniqueItems, uniqueItems));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__UNIQUE_ITEMS, oldUniqueItems, uniqueItems));
 	}
 
 	/**
@@ -808,7 +808,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 		Double oldMultipleOf = multipleOf;
 		multipleOf = newMultipleOf;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.HEADER__MULTIPLE_OF, oldMultipleOf, multipleOf));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.HEADER__MULTIPLE_OF, oldMultipleOf, multipleOf));
 	}
 
 	/**
@@ -819,7 +819,7 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public EList<String> getEnum() {
 		if (enum_ == null) {
-			enum_ = new EDataTypeUniqueEList<String>(String.class, this, openapiPackage.HEADER__ENUM);
+			enum_ = new EDataTypeUniqueEList<String>(String.class, this, OpenAPIProfilePackage.HEADER__ENUM);
 		}
 		return enum_;
 	}
@@ -832,41 +832,41 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.HEADER__NAME:
+			case OpenAPIProfilePackage.HEADER__NAME:
 				return getName();
-			case openapiPackage.HEADER__DESCRIPTION:
+			case OpenAPIProfilePackage.HEADER__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.HEADER__TYPE:
+			case OpenAPIProfilePackage.HEADER__TYPE:
 				return getType();
-			case openapiPackage.HEADER__FORMAT:
+			case OpenAPIProfilePackage.HEADER__FORMAT:
 				return getFormat();
-			case openapiPackage.HEADER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.HEADER__COLLECTION_FORMAT:
 				return getCollectionFormat();
-			case openapiPackage.HEADER__MIN_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MIN_ITEMS:
 				return getMinItems();
-			case openapiPackage.HEADER__PATTERN:
+			case OpenAPIProfilePackage.HEADER__PATTERN:
 				return getPattern();
-			case openapiPackage.HEADER__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MINIMUM:
 				return getExclusiveMinimum();
-			case openapiPackage.HEADER__MINIMUM:
+			case OpenAPIProfilePackage.HEADER__MINIMUM:
 				return getMinimum();
-			case openapiPackage.HEADER__MIN_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MIN_LENGTH:
 				return getMinLength();
-			case openapiPackage.HEADER__MAX_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MAX_LENGTH:
 				return getMaxLength();
-			case openapiPackage.HEADER__MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__MAXIMUM:
 				return getMaximum();
-			case openapiPackage.HEADER__MAX_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MAX_ITEMS:
 				return getMaxItems();
-			case openapiPackage.HEADER__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				return getExclusiveMaximum();
-			case openapiPackage.HEADER__DEFAULT:
+			case OpenAPIProfilePackage.HEADER__DEFAULT:
 				return getDefault();
-			case openapiPackage.HEADER__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.HEADER__UNIQUE_ITEMS:
 				return getUniqueItems();
-			case openapiPackage.HEADER__MULTIPLE_OF:
+			case OpenAPIProfilePackage.HEADER__MULTIPLE_OF:
 				return getMultipleOf();
-			case openapiPackage.HEADER__ENUM:
+			case OpenAPIProfilePackage.HEADER__ENUM:
 				return getEnum();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -881,58 +881,58 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.HEADER__NAME:
+			case OpenAPIProfilePackage.HEADER__NAME:
 				setName((String)newValue);
 				return;
-			case openapiPackage.HEADER__DESCRIPTION:
+			case OpenAPIProfilePackage.HEADER__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.HEADER__TYPE:
+			case OpenAPIProfilePackage.HEADER__TYPE:
 				setType((JSONDataType)newValue);
 				return;
-			case openapiPackage.HEADER__FORMAT:
+			case OpenAPIProfilePackage.HEADER__FORMAT:
 				setFormat((String)newValue);
 				return;
-			case openapiPackage.HEADER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.HEADER__COLLECTION_FORMAT:
 				setCollectionFormat((CollectionFormat)newValue);
 				return;
-			case openapiPackage.HEADER__MIN_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MIN_ITEMS:
 				setMinItems((Integer)newValue);
 				return;
-			case openapiPackage.HEADER__PATTERN:
+			case OpenAPIProfilePackage.HEADER__PATTERN:
 				setPattern((String)newValue);
 				return;
-			case openapiPackage.HEADER__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum((Boolean)newValue);
 				return;
-			case openapiPackage.HEADER__MINIMUM:
+			case OpenAPIProfilePackage.HEADER__MINIMUM:
 				setMinimum((Double)newValue);
 				return;
-			case openapiPackage.HEADER__MIN_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MIN_LENGTH:
 				setMinLength((Integer)newValue);
 				return;
-			case openapiPackage.HEADER__MAX_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MAX_LENGTH:
 				setMaxLength((Integer)newValue);
 				return;
-			case openapiPackage.HEADER__MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__MAXIMUM:
 				setMaximum((Double)newValue);
 				return;
-			case openapiPackage.HEADER__MAX_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MAX_ITEMS:
 				setMaxItems((Integer)newValue);
 				return;
-			case openapiPackage.HEADER__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum((Boolean)newValue);
 				return;
-			case openapiPackage.HEADER__DEFAULT:
+			case OpenAPIProfilePackage.HEADER__DEFAULT:
 				setDefault((String)newValue);
 				return;
-			case openapiPackage.HEADER__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.HEADER__UNIQUE_ITEMS:
 				setUniqueItems((Boolean)newValue);
 				return;
-			case openapiPackage.HEADER__MULTIPLE_OF:
+			case OpenAPIProfilePackage.HEADER__MULTIPLE_OF:
 				setMultipleOf((Double)newValue);
 				return;
-			case openapiPackage.HEADER__ENUM:
+			case OpenAPIProfilePackage.HEADER__ENUM:
 				getEnum().clear();
 				getEnum().addAll((Collection<? extends String>)newValue);
 				return;
@@ -948,58 +948,58 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.HEADER__NAME:
+			case OpenAPIProfilePackage.HEADER__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__DESCRIPTION:
+			case OpenAPIProfilePackage.HEADER__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__TYPE:
+			case OpenAPIProfilePackage.HEADER__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__FORMAT:
+			case OpenAPIProfilePackage.HEADER__FORMAT:
 				setFormat(FORMAT_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.HEADER__COLLECTION_FORMAT:
 				setCollectionFormat(COLLECTION_FORMAT_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__MIN_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MIN_ITEMS:
 				setMinItems(MIN_ITEMS_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__PATTERN:
+			case OpenAPIProfilePackage.HEADER__PATTERN:
 				setPattern(PATTERN_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum(EXCLUSIVE_MINIMUM_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__MINIMUM:
+			case OpenAPIProfilePackage.HEADER__MINIMUM:
 				setMinimum(MINIMUM_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__MIN_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MIN_LENGTH:
 				setMinLength(MIN_LENGTH_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__MAX_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MAX_LENGTH:
 				setMaxLength(MAX_LENGTH_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__MAXIMUM:
 				setMaximum(MAXIMUM_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__MAX_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MAX_ITEMS:
 				setMaxItems(MAX_ITEMS_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum(EXCLUSIVE_MAXIMUM_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__DEFAULT:
+			case OpenAPIProfilePackage.HEADER__DEFAULT:
 				setDefault(DEFAULT_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.HEADER__UNIQUE_ITEMS:
 				setUniqueItems(UNIQUE_ITEMS_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__MULTIPLE_OF:
+			case OpenAPIProfilePackage.HEADER__MULTIPLE_OF:
 				setMultipleOf(MULTIPLE_OF_EDEFAULT);
 				return;
-			case openapiPackage.HEADER__ENUM:
+			case OpenAPIProfilePackage.HEADER__ENUM:
 				getEnum().clear();
 				return;
 		}
@@ -1014,41 +1014,41 @@ public class HeaderImpl extends MinimalEObjectImpl.Container implements Header {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.HEADER__NAME:
+			case OpenAPIProfilePackage.HEADER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case openapiPackage.HEADER__DESCRIPTION:
+			case OpenAPIProfilePackage.HEADER__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.HEADER__TYPE:
+			case OpenAPIProfilePackage.HEADER__TYPE:
 				return type != TYPE_EDEFAULT;
-			case openapiPackage.HEADER__FORMAT:
+			case OpenAPIProfilePackage.HEADER__FORMAT:
 				return FORMAT_EDEFAULT == null ? format != null : !FORMAT_EDEFAULT.equals(format);
-			case openapiPackage.HEADER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.HEADER__COLLECTION_FORMAT:
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
-			case openapiPackage.HEADER__MIN_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MIN_ITEMS:
 				return MIN_ITEMS_EDEFAULT == null ? minItems != null : !MIN_ITEMS_EDEFAULT.equals(minItems);
-			case openapiPackage.HEADER__PATTERN:
+			case OpenAPIProfilePackage.HEADER__PATTERN:
 				return PATTERN_EDEFAULT == null ? pattern != null : !PATTERN_EDEFAULT.equals(pattern);
-			case openapiPackage.HEADER__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MINIMUM:
 				return EXCLUSIVE_MINIMUM_EDEFAULT == null ? exclusiveMinimum != null : !EXCLUSIVE_MINIMUM_EDEFAULT.equals(exclusiveMinimum);
-			case openapiPackage.HEADER__MINIMUM:
+			case OpenAPIProfilePackage.HEADER__MINIMUM:
 				return MINIMUM_EDEFAULT == null ? minimum != null : !MINIMUM_EDEFAULT.equals(minimum);
-			case openapiPackage.HEADER__MIN_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MIN_LENGTH:
 				return MIN_LENGTH_EDEFAULT == null ? minLength != null : !MIN_LENGTH_EDEFAULT.equals(minLength);
-			case openapiPackage.HEADER__MAX_LENGTH:
+			case OpenAPIProfilePackage.HEADER__MAX_LENGTH:
 				return MAX_LENGTH_EDEFAULT == null ? maxLength != null : !MAX_LENGTH_EDEFAULT.equals(maxLength);
-			case openapiPackage.HEADER__MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__MAXIMUM:
 				return MAXIMUM_EDEFAULT == null ? maximum != null : !MAXIMUM_EDEFAULT.equals(maximum);
-			case openapiPackage.HEADER__MAX_ITEMS:
+			case OpenAPIProfilePackage.HEADER__MAX_ITEMS:
 				return MAX_ITEMS_EDEFAULT == null ? maxItems != null : !MAX_ITEMS_EDEFAULT.equals(maxItems);
-			case openapiPackage.HEADER__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.HEADER__EXCLUSIVE_MAXIMUM:
 				return EXCLUSIVE_MAXIMUM_EDEFAULT == null ? exclusiveMaximum != null : !EXCLUSIVE_MAXIMUM_EDEFAULT.equals(exclusiveMaximum);
-			case openapiPackage.HEADER__DEFAULT:
+			case OpenAPIProfilePackage.HEADER__DEFAULT:
 				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
-			case openapiPackage.HEADER__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.HEADER__UNIQUE_ITEMS:
 				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
-			case openapiPackage.HEADER__MULTIPLE_OF:
+			case OpenAPIProfilePackage.HEADER__MULTIPLE_OF:
 				return MULTIPLE_OF_EDEFAULT == null ? multipleOf != null : !MULTIPLE_OF_EDEFAULT.equals(multipleOf);
-			case openapiPackage.HEADER__ENUM:
+			case OpenAPIProfilePackage.HEADER__ENUM:
 				return enum_ != null && !enum_.isEmpty();
 		}
 		return super.eIsSet(featureID);

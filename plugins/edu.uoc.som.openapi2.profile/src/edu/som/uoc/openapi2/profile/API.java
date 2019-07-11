@@ -25,7 +25,7 @@ import org.eclipse.uml2.uml.Model;
  *   <li>{@link edu.som.uoc.openapi2.profile.API#getBase_Model <em>Base Model</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPI()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPI()
  * @model
  * @generated
  */
@@ -40,7 +40,7 @@ public interface API extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Host</em>' attribute.
 	 * @see #setHost(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPI_Host()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPI_Host()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface API extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Path</em>' attribute.
 	 * @see #setBasePath(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPI_BasePath()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPI_BasePath()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
@@ -94,7 +94,7 @@ public interface API extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Schemes</em>' attribute list.
 	 * @see edu.som.uoc.openapi2.profile.SchemeType
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPI_Schemes()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPI_Schemes()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -110,7 +110,7 @@ public interface API extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Consumes</em>' attribute list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPI_Consumes()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPI_Consumes()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -126,7 +126,7 @@ public interface API extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Produces</em>' attribute list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPI_Produces()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPI_Produces()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -142,7 +142,7 @@ public interface API extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Model</em>' reference.
 	 * @see #setBase_Model(Model)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPI_Base_Model()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPI_Base_Model()
 	 * @model ordered="false"
 	 * @generated
 	 */

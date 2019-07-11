@@ -2,9 +2,9 @@
  */
 package edu.som.uoc.openapi2.profile.impl;
 
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.Tag;
 import edu.som.uoc.openapi2.profile.Tags;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import java.util.Collection;
 
@@ -75,7 +75,7 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.TAGS;
+		return OpenAPIProfilePackage.Literals.TAGS;
 	}
 
 	/**
@@ -86,7 +86,7 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	@Override
 	public EList<Tag> getTags() {
 		if (tags == null) {
-			tags = new EObjectContainmentEList<Tag>(Tag.class, this, openapiPackage.TAGS__TAGS);
+			tags = new EObjectContainmentEList<Tag>(Tag.class, this, OpenAPIProfilePackage.TAGS__TAGS);
 		}
 		return tags;
 	}
@@ -103,7 +103,7 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 			base_Model = (Model)eResolveProxy(oldBase_Model);
 			if (base_Model != oldBase_Model) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.TAGS__BASE_MODEL, oldBase_Model, base_Model));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.TAGS__BASE_MODEL, oldBase_Model, base_Model));
 			}
 		}
 		return base_Model;
@@ -128,7 +128,7 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 		Model oldBase_Model = base_Model;
 		base_Model = newBase_Model;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.TAGS__BASE_MODEL, oldBase_Model, base_Model));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.TAGS__BASE_MODEL, oldBase_Model, base_Model));
 	}
 
 	/**
@@ -139,7 +139,7 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case openapiPackage.TAGS__TAGS:
+			case OpenAPIProfilePackage.TAGS__TAGS:
 				return ((InternalEList<?>)getTags()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -153,9 +153,9 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.TAGS__TAGS:
+			case OpenAPIProfilePackage.TAGS__TAGS:
 				return getTags();
-			case openapiPackage.TAGS__BASE_MODEL:
+			case OpenAPIProfilePackage.TAGS__BASE_MODEL:
 				if (resolve) return getBase_Model();
 				return basicGetBase_Model();
 		}
@@ -171,11 +171,11 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.TAGS__TAGS:
+			case OpenAPIProfilePackage.TAGS__TAGS:
 				getTags().clear();
 				getTags().addAll((Collection<? extends Tag>)newValue);
 				return;
-			case openapiPackage.TAGS__BASE_MODEL:
+			case OpenAPIProfilePackage.TAGS__BASE_MODEL:
 				setBase_Model((Model)newValue);
 				return;
 		}
@@ -190,10 +190,10 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.TAGS__TAGS:
+			case OpenAPIProfilePackage.TAGS__TAGS:
 				getTags().clear();
 				return;
-			case openapiPackage.TAGS__BASE_MODEL:
+			case OpenAPIProfilePackage.TAGS__BASE_MODEL:
 				setBase_Model((Model)null);
 				return;
 		}
@@ -208,9 +208,9 @@ public class TagsImpl extends MinimalEObjectImpl.Container implements Tags {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.TAGS__TAGS:
+			case OpenAPIProfilePackage.TAGS__TAGS:
 				return tags != null && !tags.isEmpty();
-			case openapiPackage.TAGS__BASE_MODEL:
+			case OpenAPIProfilePackage.TAGS__BASE_MODEL:
 				return base_Model != null;
 		}
 		return super.eIsSet(featureID);

@@ -23,7 +23,7 @@ import org.eclipse.uml2.uml.Operation;
  *   <li>{@link edu.som.uoc.openapi2.profile.ExternalDocs#getBase_Operation <em>Base Operation</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getExternalDocs()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExternalDocs()
  * @model
  * @generated
  */
@@ -38,7 +38,7 @@ public interface ExternalDocs extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getExternalDocs_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExternalDocs_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface ExternalDocs extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Url</em>' attribute.
 	 * @see #setUrl(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getExternalDocs_Url()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExternalDocs_Url()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -90,7 +90,7 @@ public interface ExternalDocs extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Model</em>' reference.
 	 * @see #setBase_Model(Model)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getExternalDocs_Base_Model()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExternalDocs_Base_Model()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -116,7 +116,7 @@ public interface ExternalDocs extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Class</em>' reference.
 	 * @see #setBase_Class(org.eclipse.uml2.uml.Class)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getExternalDocs_Base_Class()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExternalDocs_Base_Class()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -142,7 +142,7 @@ public interface ExternalDocs extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Operation</em>' reference.
 	 * @see #setBase_Operation(Operation)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getExternalDocs_Base_Operation()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExternalDocs_Base_Operation()
 	 * @model ordered="false"
 	 * @generated
 	 */

@@ -19,17 +19,17 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapi2.profile.openapiPackage
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage
  * @generated
  */
-public class openapiSwitch<T> extends Switch<T> {
+public class OpenAPIProfileSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static openapiPackage modelPackage;
+	protected static OpenAPIProfilePackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -37,9 +37,9 @@ public class openapiSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public openapiSwitch() {
+	public OpenAPIProfileSwitch() {
 		if (modelPackage == null) {
-			modelPackage = openapiPackage.eINSTANCE;
+			modelPackage = OpenAPIProfilePackage.eINSTANCE;
 		}
 	}
 
@@ -66,134 +66,134 @@ public class openapiSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case openapiPackage.API: {
+			case OpenAPIProfilePackage.API: {
 				API api = (API)theEObject;
 				T result = caseAPI(api);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.SCHEMA: {
+			case OpenAPIProfilePackage.SCHEMA: {
 				Schema schema = (Schema)theEObject;
 				T result = caseSchema(schema);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.API_OPERATION: {
+			case OpenAPIProfilePackage.API_OPERATION: {
 				APIOperation apiOperation = (APIOperation)theEObject;
 				T result = caseAPIOperation(apiOperation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.API_PARAMETER: {
+			case OpenAPIProfilePackage.API_PARAMETER: {
 				APIParameter apiParameter = (APIParameter)theEObject;
 				T result = caseAPIParameter(apiParameter);
 				if (result == null) result = caseJSONSchemaSubset(apiParameter);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.JSON_SCHEMA_SUBSET: {
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET: {
 				JSONSchemaSubset jsonSchemaSubset = (JSONSchemaSubset)theEObject;
 				T result = caseJSONSchemaSubset(jsonSchemaSubset);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.API_RESPONSE: {
+			case OpenAPIProfilePackage.API_RESPONSE: {
 				APIResponse apiResponse = (APIResponse)theEObject;
 				T result = caseAPIResponse(apiResponse);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.HEADER: {
+			case OpenAPIProfilePackage.HEADER: {
 				Header header = (Header)theEObject;
 				T result = caseHeader(header);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.EXAMPLE: {
+			case OpenAPIProfilePackage.EXAMPLE: {
 				Example example = (Example)theEObject;
 				T result = caseExample(example);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.API_INFO: {
+			case OpenAPIProfilePackage.API_INFO: {
 				APIInfo apiInfo = (APIInfo)theEObject;
 				T result = caseAPIInfo(apiInfo);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.LICENSE: {
+			case OpenAPIProfilePackage.LICENSE: {
 				License license = (License)theEObject;
 				T result = caseLicense(license);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.CONTACT: {
+			case OpenAPIProfilePackage.CONTACT: {
 				Contact contact = (Contact)theEObject;
 				T result = caseContact(contact);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.EXTERNAL_DOCS: {
+			case OpenAPIProfilePackage.EXTERNAL_DOCS: {
 				ExternalDocs externalDocs = (ExternalDocs)theEObject;
 				T result = caseExternalDocs(externalDocs);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.SECURITY_DEFINITIONS: {
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS: {
 				SecurityDefinitions securityDefinitions = (SecurityDefinitions)theEObject;
 				T result = caseSecurityDefinitions(securityDefinitions);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.SECURITY_SCHEME: {
+			case OpenAPIProfilePackage.SECURITY_SCHEME: {
 				SecurityScheme securityScheme = (SecurityScheme)theEObject;
 				T result = caseSecurityScheme(securityScheme);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.SECURITY_SCOPE: {
+			case OpenAPIProfilePackage.SECURITY_SCOPE: {
 				SecurityScope securityScope = (SecurityScope)theEObject;
 				T result = caseSecurityScope(securityScope);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.SECURITY: {
+			case OpenAPIProfilePackage.SECURITY: {
 				Security security = (Security)theEObject;
 				T result = caseSecurity(security);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.SECURITY_REQUIREMENT: {
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT: {
 				SecurityRequirement securityRequirement = (SecurityRequirement)theEObject;
 				T result = caseSecurityRequirement(securityRequirement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.TAGS: {
+			case OpenAPIProfilePackage.TAGS: {
 				Tags tags = (Tags)theEObject;
 				T result = caseTags(tags);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.TAG: {
+			case OpenAPIProfilePackage.TAG: {
 				Tag tag = (Tag)theEObject;
 				T result = caseTag(tag);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.XML_ELEMENT: {
+			case OpenAPIProfilePackage.XML_ELEMENT: {
 				XMLElement xmlElement = (XMLElement)theEObject;
 				T result = caseXMLElement(xmlElement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.API_DATA_TYPE: {
+			case OpenAPIProfilePackage.API_DATA_TYPE: {
 				APIDataType apiDataType = (APIDataType)theEObject;
 				T result = caseAPIDataType(apiDataType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case openapiPackage.API_PROPERTY: {
+			case OpenAPIProfilePackage.API_PROPERTY: {
 				APIProperty apiProperty = (APIProperty)theEObject;
 				T result = caseAPIProperty(apiProperty);
 				if (result == null) result = caseJSONSchemaSubset(apiProperty);
@@ -550,4 +550,4 @@ public class openapiSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //openapiSwitch
+} //OpenAPIProfileSwitch

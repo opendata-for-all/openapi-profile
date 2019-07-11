@@ -2,8 +2,8 @@
  */
 package edu.som.uoc.openapi2.profile.impl;
 
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.Tag;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -125,7 +125,7 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.TAG;
+		return OpenAPIProfilePackage.Literals.TAG;
 	}
 
 	/**
@@ -148,7 +148,7 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 		String oldExternalDocsURL = externalDocsURL;
 		externalDocsURL = newExternalDocsURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.TAG__EXTERNAL_DOCS_URL, oldExternalDocsURL, externalDocsURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_URL, oldExternalDocsURL, externalDocsURL));
 	}
 
 	/**
@@ -171,7 +171,7 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 		String oldExternalDocsDescription = externalDocsDescription;
 		externalDocsDescription = newExternalDocsDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.TAG__EXTERNAL_DOCS_DESCRIPTION, oldExternalDocsDescription, externalDocsDescription));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_DESCRIPTION, oldExternalDocsDescription, externalDocsDescription));
 	}
 
 	/**
@@ -194,7 +194,7 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.TAG__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.TAG__NAME, oldName, name));
 	}
 
 	/**
@@ -217,7 +217,7 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.TAG__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.TAG__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -228,13 +228,13 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.TAG__EXTERNAL_DOCS_URL:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_URL:
 				return getExternalDocsURL();
-			case openapiPackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
 				return getExternalDocsDescription();
-			case openapiPackage.TAG__NAME:
+			case OpenAPIProfilePackage.TAG__NAME:
 				return getName();
-			case openapiPackage.TAG__DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__DESCRIPTION:
 				return getDescription();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -248,16 +248,16 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.TAG__EXTERNAL_DOCS_URL:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_URL:
 				setExternalDocsURL((String)newValue);
 				return;
-			case openapiPackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
 				setExternalDocsDescription((String)newValue);
 				return;
-			case openapiPackage.TAG__NAME:
+			case OpenAPIProfilePackage.TAG__NAME:
 				setName((String)newValue);
 				return;
-			case openapiPackage.TAG__DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
 		}
@@ -272,16 +272,16 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.TAG__EXTERNAL_DOCS_URL:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_URL:
 				setExternalDocsURL(EXTERNAL_DOCS_URL_EDEFAULT);
 				return;
-			case openapiPackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
 				setExternalDocsDescription(EXTERNAL_DOCS_DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.TAG__NAME:
+			case OpenAPIProfilePackage.TAG__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case openapiPackage.TAG__DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 		}
@@ -296,13 +296,13 @@ public class TagImpl extends MinimalEObjectImpl.Container implements Tag {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.TAG__EXTERNAL_DOCS_URL:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_URL:
 				return EXTERNAL_DOCS_URL_EDEFAULT == null ? externalDocsURL != null : !EXTERNAL_DOCS_URL_EDEFAULT.equals(externalDocsURL);
-			case openapiPackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__EXTERNAL_DOCS_DESCRIPTION:
 				return EXTERNAL_DOCS_DESCRIPTION_EDEFAULT == null ? externalDocsDescription != null : !EXTERNAL_DOCS_DESCRIPTION_EDEFAULT.equals(externalDocsDescription);
-			case openapiPackage.TAG__NAME:
+			case OpenAPIProfilePackage.TAG__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case openapiPackage.TAG__DESCRIPTION:
+			case OpenAPIProfilePackage.TAG__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 		}
 		return super.eIsSet(featureID);

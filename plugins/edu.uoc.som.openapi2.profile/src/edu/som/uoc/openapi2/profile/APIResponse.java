@@ -25,7 +25,7 @@ import org.eclipse.uml2.uml.Parameter;
  *   <li>{@link edu.som.uoc.openapi2.profile.APIResponse#getDefault <em>Default</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIResponse()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIResponse()
  * @model
  * @generated
  */
@@ -40,7 +40,7 @@ public interface APIResponse extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIResponse_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIResponse_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface APIResponse extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code</em>' attribute.
 	 * @see #setCode(int)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIResponse_Code()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIResponse_Code()
 	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface APIResponse extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Headers</em>' containment reference list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIResponse_Headers()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIResponse_Headers()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -108,7 +108,7 @@ public interface APIResponse extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Examples</em>' containment reference list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIResponse_Examples()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIResponse_Examples()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -124,7 +124,7 @@ public interface APIResponse extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Parameter</em>' reference.
 	 * @see #setBase_Parameter(Parameter)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIResponse_Base_Parameter()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIResponse_Base_Parameter()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -150,7 +150,7 @@ public interface APIResponse extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Default</em>' attribute.
 	 * @see #setDefault(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIResponse_Default()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIResponse_Default()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */

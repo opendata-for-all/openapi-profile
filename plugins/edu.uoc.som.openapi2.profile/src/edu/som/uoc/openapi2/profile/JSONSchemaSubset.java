@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.JSONSchemaSubset#getMultipleOf <em>Multiple Of</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset()
  * @model abstract="true"
  * @generated
  */
@@ -39,7 +39,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Length</em>' attribute.
 	 * @see #setMinLength(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_MinLength()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_MinLength()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maximum</em>' attribute.
 	 * @see #setMaximum(Double)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_Maximum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_Maximum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Double" ordered="false"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Exclusive Maximum</em>' attribute.
 	 * @see #setExclusiveMaximum(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_ExclusiveMaximum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_ExclusiveMaximum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -117,7 +117,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minimum</em>' attribute.
 	 * @see #setMinimum(Double)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_Minimum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_Minimum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Double" ordered="false"
 	 * @generated
 	 */
@@ -143,7 +143,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Length</em>' attribute.
 	 * @see #setMaxLength(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_MaxLength()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_MaxLength()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -169,7 +169,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pattern</em>' attribute.
 	 * @see #setPattern(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_Pattern()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_Pattern()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -195,7 +195,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Exclusive Minimum</em>' attribute.
 	 * @see #setExclusiveMinimum(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_ExclusiveMinimum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_ExclusiveMinimum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -221,7 +221,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Unique Items</em>' attribute.
 	 * @see #setUniqueItems(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_UniqueItems()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_UniqueItems()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -247,7 +247,7 @@ public interface JSONSchemaSubset extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multiple Of</em>' attribute.
 	 * @see #setMultipleOf(Double)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONSchemaSubset_MultipleOf()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONSchemaSubset_MultipleOf()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Double" ordered="false"
 	 * @generated
 	 */

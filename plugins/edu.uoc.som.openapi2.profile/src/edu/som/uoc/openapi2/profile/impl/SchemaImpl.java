@@ -2,8 +2,8 @@
  */
 package edu.som.uoc.openapi2.profile.impl;
 
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.Schema;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -234,7 +234,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.SCHEMA;
+		return OpenAPIProfilePackage.Literals.SCHEMA;
 	}
 
 	/**
@@ -257,7 +257,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__TITLE, oldTitle, title));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__TITLE, oldTitle, title));
 	}
 
 	/**
@@ -280,7 +280,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		Integer oldMaxProperties = maxProperties;
 		maxProperties = newMaxProperties;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__MAX_PROPERTIES, oldMaxProperties, maxProperties));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__MAX_PROPERTIES, oldMaxProperties, maxProperties));
 	}
 
 	/**
@@ -303,7 +303,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		Integer oldMinProperties = minProperties;
 		minProperties = newMinProperties;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__MIN_PROPERTIES, oldMinProperties, minProperties));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__MIN_PROPERTIES, oldMinProperties, minProperties));
 	}
 
 	/**
@@ -326,7 +326,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		String oldDiscriminator = discriminator;
 		discriminator = newDiscriminator;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__DISCRIMINATOR, oldDiscriminator, discriminator));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__DISCRIMINATOR, oldDiscriminator, discriminator));
 	}
 
 	/**
@@ -349,7 +349,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		Boolean oldAdditionalPropertiesAllowed = additionalPropertiesAllowed;
 		additionalPropertiesAllowed = newAdditionalPropertiesAllowed;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED, oldAdditionalPropertiesAllowed, additionalPropertiesAllowed));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED, oldAdditionalPropertiesAllowed, additionalPropertiesAllowed));
 	}
 
 	/**
@@ -364,7 +364,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 			base_Class = (org.eclipse.uml2.uml.Class)eResolveProxy(oldBase_Class);
 			if (base_Class != oldBase_Class) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.SCHEMA__BASE_CLASS, oldBase_Class, base_Class));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.SCHEMA__BASE_CLASS, oldBase_Class, base_Class));
 			}
 		}
 		return base_Class;
@@ -389,7 +389,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		org.eclipse.uml2.uml.Class oldBase_Class = base_Class;
 		base_Class = newBase_Class;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__BASE_CLASS, oldBase_Class, base_Class));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__BASE_CLASS, oldBase_Class, base_Class));
 	}
 
 	/**
@@ -412,7 +412,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		String oldExample = example;
 		example = newExample;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__EXAMPLE, oldExample, example));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__EXAMPLE, oldExample, example));
 	}
 
 	/**
@@ -435,7 +435,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		String oldDefault = default_;
 		default_ = newDefault;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__DEFAULT, oldDefault, default_));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__DEFAULT, oldDefault, default_));
 	}
 
 	/**
@@ -458,7 +458,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -473,7 +473,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 			additionalProperties = (Type)eResolveProxy(oldAdditionalProperties);
 			if (additionalProperties != oldAdditionalProperties) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES, oldAdditionalProperties, additionalProperties));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES, oldAdditionalProperties, additionalProperties));
 			}
 		}
 		return additionalProperties;
@@ -498,7 +498,7 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 		Type oldAdditionalProperties = additionalProperties;
 		additionalProperties = newAdditionalProperties;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES, oldAdditionalProperties, additionalProperties));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES, oldAdditionalProperties, additionalProperties));
 	}
 
 	/**
@@ -509,26 +509,26 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.SCHEMA__TITLE:
+			case OpenAPIProfilePackage.SCHEMA__TITLE:
 				return getTitle();
-			case openapiPackage.SCHEMA__MAX_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MAX_PROPERTIES:
 				return getMaxProperties();
-			case openapiPackage.SCHEMA__MIN_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MIN_PROPERTIES:
 				return getMinProperties();
-			case openapiPackage.SCHEMA__DISCRIMINATOR:
+			case OpenAPIProfilePackage.SCHEMA__DISCRIMINATOR:
 				return getDiscriminator();
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
 				return getAdditionalPropertiesAllowed();
-			case openapiPackage.SCHEMA__BASE_CLASS:
+			case OpenAPIProfilePackage.SCHEMA__BASE_CLASS:
 				if (resolve) return getBase_Class();
 				return basicGetBase_Class();
-			case openapiPackage.SCHEMA__EXAMPLE:
+			case OpenAPIProfilePackage.SCHEMA__EXAMPLE:
 				return getExample();
-			case openapiPackage.SCHEMA__DEFAULT:
+			case OpenAPIProfilePackage.SCHEMA__DEFAULT:
 				return getDefault();
-			case openapiPackage.SCHEMA__DESCRIPTION:
+			case OpenAPIProfilePackage.SCHEMA__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
 				if (resolve) return getAdditionalProperties();
 				return basicGetAdditionalProperties();
 		}
@@ -543,34 +543,34 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.SCHEMA__TITLE:
+			case OpenAPIProfilePackage.SCHEMA__TITLE:
 				setTitle((String)newValue);
 				return;
-			case openapiPackage.SCHEMA__MAX_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MAX_PROPERTIES:
 				setMaxProperties((Integer)newValue);
 				return;
-			case openapiPackage.SCHEMA__MIN_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MIN_PROPERTIES:
 				setMinProperties((Integer)newValue);
 				return;
-			case openapiPackage.SCHEMA__DISCRIMINATOR:
+			case OpenAPIProfilePackage.SCHEMA__DISCRIMINATOR:
 				setDiscriminator((String)newValue);
 				return;
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
 				setAdditionalPropertiesAllowed((Boolean)newValue);
 				return;
-			case openapiPackage.SCHEMA__BASE_CLASS:
+			case OpenAPIProfilePackage.SCHEMA__BASE_CLASS:
 				setBase_Class((org.eclipse.uml2.uml.Class)newValue);
 				return;
-			case openapiPackage.SCHEMA__EXAMPLE:
+			case OpenAPIProfilePackage.SCHEMA__EXAMPLE:
 				setExample((String)newValue);
 				return;
-			case openapiPackage.SCHEMA__DEFAULT:
+			case OpenAPIProfilePackage.SCHEMA__DEFAULT:
 				setDefault((String)newValue);
 				return;
-			case openapiPackage.SCHEMA__DESCRIPTION:
+			case OpenAPIProfilePackage.SCHEMA__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
 				setAdditionalProperties((Type)newValue);
 				return;
 		}
@@ -585,34 +585,34 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SCHEMA__TITLE:
+			case OpenAPIProfilePackage.SCHEMA__TITLE:
 				setTitle(TITLE_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__MAX_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MAX_PROPERTIES:
 				setMaxProperties(MAX_PROPERTIES_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__MIN_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MIN_PROPERTIES:
 				setMinProperties(MIN_PROPERTIES_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__DISCRIMINATOR:
+			case OpenAPIProfilePackage.SCHEMA__DISCRIMINATOR:
 				setDiscriminator(DISCRIMINATOR_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
 				setAdditionalPropertiesAllowed(ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__BASE_CLASS:
+			case OpenAPIProfilePackage.SCHEMA__BASE_CLASS:
 				setBase_Class((org.eclipse.uml2.uml.Class)null);
 				return;
-			case openapiPackage.SCHEMA__EXAMPLE:
+			case OpenAPIProfilePackage.SCHEMA__EXAMPLE:
 				setExample(EXAMPLE_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__DEFAULT:
+			case OpenAPIProfilePackage.SCHEMA__DEFAULT:
 				setDefault(DEFAULT_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__DESCRIPTION:
+			case OpenAPIProfilePackage.SCHEMA__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
 				setAdditionalProperties((Type)null);
 				return;
 		}
@@ -627,25 +627,25 @@ public class SchemaImpl extends MinimalEObjectImpl.Container implements Schema {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SCHEMA__TITLE:
+			case OpenAPIProfilePackage.SCHEMA__TITLE:
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
-			case openapiPackage.SCHEMA__MAX_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MAX_PROPERTIES:
 				return MAX_PROPERTIES_EDEFAULT == null ? maxProperties != null : !MAX_PROPERTIES_EDEFAULT.equals(maxProperties);
-			case openapiPackage.SCHEMA__MIN_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__MIN_PROPERTIES:
 				return MIN_PROPERTIES_EDEFAULT == null ? minProperties != null : !MIN_PROPERTIES_EDEFAULT.equals(minProperties);
-			case openapiPackage.SCHEMA__DISCRIMINATOR:
+			case OpenAPIProfilePackage.SCHEMA__DISCRIMINATOR:
 				return DISCRIMINATOR_EDEFAULT == null ? discriminator != null : !DISCRIMINATOR_EDEFAULT.equals(discriminator);
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES_ALLOWED:
 				return ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT == null ? additionalPropertiesAllowed != null : !ADDITIONAL_PROPERTIES_ALLOWED_EDEFAULT.equals(additionalPropertiesAllowed);
-			case openapiPackage.SCHEMA__BASE_CLASS:
+			case OpenAPIProfilePackage.SCHEMA__BASE_CLASS:
 				return base_Class != null;
-			case openapiPackage.SCHEMA__EXAMPLE:
+			case OpenAPIProfilePackage.SCHEMA__EXAMPLE:
 				return EXAMPLE_EDEFAULT == null ? example != null : !EXAMPLE_EDEFAULT.equals(example);
-			case openapiPackage.SCHEMA__DEFAULT:
+			case OpenAPIProfilePackage.SCHEMA__DEFAULT:
 				return DEFAULT_EDEFAULT == null ? default_ != null : !DEFAULT_EDEFAULT.equals(default_);
-			case openapiPackage.SCHEMA__DESCRIPTION:
+			case OpenAPIProfilePackage.SCHEMA__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.SCHEMA__ADDITIONAL_PROPERTIES:
+			case OpenAPIProfilePackage.SCHEMA__ADDITIONAL_PROPERTIES:
 				return additionalProperties != null;
 		}
 		return super.eIsSet(featureID);

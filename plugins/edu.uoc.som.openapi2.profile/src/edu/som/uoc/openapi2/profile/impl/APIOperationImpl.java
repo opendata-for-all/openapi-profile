@@ -4,8 +4,8 @@ package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.APIOperation;
 import edu.som.uoc.openapi2.profile.HTTPMethod;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.SchemeType;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import java.util.Collection;
 
@@ -212,7 +212,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.API_OPERATION;
+		return OpenAPIProfilePackage.Literals.API_OPERATION;
 	}
 
 	/**
@@ -235,7 +235,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 		String oldRelativePath = relativePath;
 		relativePath = newRelativePath;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_OPERATION__RELATIVE_PATH, oldRelativePath, relativePath));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_OPERATION__RELATIVE_PATH, oldRelativePath, relativePath));
 	}
 
 	/**
@@ -258,7 +258,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 		HTTPMethod oldMethod = method;
 		method = newMethod == null ? METHOD_EDEFAULT : newMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_OPERATION__METHOD, oldMethod, method));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_OPERATION__METHOD, oldMethod, method));
 	}
 
 	/**
@@ -269,7 +269,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public EList<String> getProduces() {
 		if (produces == null) {
-			produces = new EDataTypeUniqueEList<String>(String.class, this, openapiPackage.API_OPERATION__PRODUCES);
+			produces = new EDataTypeUniqueEList<String>(String.class, this, OpenAPIProfilePackage.API_OPERATION__PRODUCES);
 		}
 		return produces;
 	}
@@ -282,7 +282,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public EList<String> getConsumes() {
 		if (consumes == null) {
-			consumes = new EDataTypeUniqueEList<String>(String.class, this, openapiPackage.API_OPERATION__CONSUMES);
+			consumes = new EDataTypeUniqueEList<String>(String.class, this, OpenAPIProfilePackage.API_OPERATION__CONSUMES);
 		}
 		return consumes;
 	}
@@ -295,7 +295,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public EList<SchemeType> getSchemes() {
 		if (schemes == null) {
-			schemes = new EDataTypeUniqueEList<SchemeType>(SchemeType.class, this, openapiPackage.API_OPERATION__SCHEMES);
+			schemes = new EDataTypeUniqueEList<SchemeType>(SchemeType.class, this, OpenAPIProfilePackage.API_OPERATION__SCHEMES);
 		}
 		return schemes;
 	}
@@ -320,7 +320,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 		String oldSummary = summary;
 		summary = newSummary;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_OPERATION__SUMMARY, oldSummary, summary));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_OPERATION__SUMMARY, oldSummary, summary));
 	}
 
 	/**
@@ -343,7 +343,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_OPERATION__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_OPERATION__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -358,7 +358,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 			base_Operation = (Operation)eResolveProxy(oldBase_Operation);
 			if (base_Operation != oldBase_Operation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API_OPERATION__BASE_OPERATION, oldBase_Operation, base_Operation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API_OPERATION__BASE_OPERATION, oldBase_Operation, base_Operation));
 			}
 		}
 		return base_Operation;
@@ -383,7 +383,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 		Operation oldBase_Operation = base_Operation;
 		base_Operation = newBase_Operation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_OPERATION__BASE_OPERATION, oldBase_Operation, base_Operation));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_OPERATION__BASE_OPERATION, oldBase_Operation, base_Operation));
 	}
 
 	/**
@@ -394,7 +394,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public EList<String> getTags() {
 		if (tags == null) {
-			tags = new EDataTypeUniqueEList<String>(String.class, this, openapiPackage.API_OPERATION__TAGS);
+			tags = new EDataTypeUniqueEList<String>(String.class, this, OpenAPIProfilePackage.API_OPERATION__TAGS);
 		}
 		return tags;
 	}
@@ -419,7 +419,7 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 		Boolean oldDeprecated = deprecated;
 		deprecated = newDeprecated;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_OPERATION__DEPRECATED, oldDeprecated, deprecated));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_OPERATION__DEPRECATED, oldDeprecated, deprecated));
 	}
 
 	/**
@@ -430,26 +430,26 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.API_OPERATION__RELATIVE_PATH:
+			case OpenAPIProfilePackage.API_OPERATION__RELATIVE_PATH:
 				return getRelativePath();
-			case openapiPackage.API_OPERATION__METHOD:
+			case OpenAPIProfilePackage.API_OPERATION__METHOD:
 				return getMethod();
-			case openapiPackage.API_OPERATION__PRODUCES:
+			case OpenAPIProfilePackage.API_OPERATION__PRODUCES:
 				return getProduces();
-			case openapiPackage.API_OPERATION__CONSUMES:
+			case OpenAPIProfilePackage.API_OPERATION__CONSUMES:
 				return getConsumes();
-			case openapiPackage.API_OPERATION__SCHEMES:
+			case OpenAPIProfilePackage.API_OPERATION__SCHEMES:
 				return getSchemes();
-			case openapiPackage.API_OPERATION__SUMMARY:
+			case OpenAPIProfilePackage.API_OPERATION__SUMMARY:
 				return getSummary();
-			case openapiPackage.API_OPERATION__DESCRIPTION:
+			case OpenAPIProfilePackage.API_OPERATION__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.API_OPERATION__BASE_OPERATION:
+			case OpenAPIProfilePackage.API_OPERATION__BASE_OPERATION:
 				if (resolve) return getBase_Operation();
 				return basicGetBase_Operation();
-			case openapiPackage.API_OPERATION__TAGS:
+			case OpenAPIProfilePackage.API_OPERATION__TAGS:
 				return getTags();
-			case openapiPackage.API_OPERATION__DEPRECATED:
+			case OpenAPIProfilePackage.API_OPERATION__DEPRECATED:
 				return getDeprecated();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -464,38 +464,38 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.API_OPERATION__RELATIVE_PATH:
+			case OpenAPIProfilePackage.API_OPERATION__RELATIVE_PATH:
 				setRelativePath((String)newValue);
 				return;
-			case openapiPackage.API_OPERATION__METHOD:
+			case OpenAPIProfilePackage.API_OPERATION__METHOD:
 				setMethod((HTTPMethod)newValue);
 				return;
-			case openapiPackage.API_OPERATION__PRODUCES:
+			case OpenAPIProfilePackage.API_OPERATION__PRODUCES:
 				getProduces().clear();
 				getProduces().addAll((Collection<? extends String>)newValue);
 				return;
-			case openapiPackage.API_OPERATION__CONSUMES:
+			case OpenAPIProfilePackage.API_OPERATION__CONSUMES:
 				getConsumes().clear();
 				getConsumes().addAll((Collection<? extends String>)newValue);
 				return;
-			case openapiPackage.API_OPERATION__SCHEMES:
+			case OpenAPIProfilePackage.API_OPERATION__SCHEMES:
 				getSchemes().clear();
 				getSchemes().addAll((Collection<? extends SchemeType>)newValue);
 				return;
-			case openapiPackage.API_OPERATION__SUMMARY:
+			case OpenAPIProfilePackage.API_OPERATION__SUMMARY:
 				setSummary((String)newValue);
 				return;
-			case openapiPackage.API_OPERATION__DESCRIPTION:
+			case OpenAPIProfilePackage.API_OPERATION__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.API_OPERATION__BASE_OPERATION:
+			case OpenAPIProfilePackage.API_OPERATION__BASE_OPERATION:
 				setBase_Operation((Operation)newValue);
 				return;
-			case openapiPackage.API_OPERATION__TAGS:
+			case OpenAPIProfilePackage.API_OPERATION__TAGS:
 				getTags().clear();
 				getTags().addAll((Collection<? extends String>)newValue);
 				return;
-			case openapiPackage.API_OPERATION__DEPRECATED:
+			case OpenAPIProfilePackage.API_OPERATION__DEPRECATED:
 				setDeprecated((Boolean)newValue);
 				return;
 		}
@@ -510,34 +510,34 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_OPERATION__RELATIVE_PATH:
+			case OpenAPIProfilePackage.API_OPERATION__RELATIVE_PATH:
 				setRelativePath(RELATIVE_PATH_EDEFAULT);
 				return;
-			case openapiPackage.API_OPERATION__METHOD:
+			case OpenAPIProfilePackage.API_OPERATION__METHOD:
 				setMethod(METHOD_EDEFAULT);
 				return;
-			case openapiPackage.API_OPERATION__PRODUCES:
+			case OpenAPIProfilePackage.API_OPERATION__PRODUCES:
 				getProduces().clear();
 				return;
-			case openapiPackage.API_OPERATION__CONSUMES:
+			case OpenAPIProfilePackage.API_OPERATION__CONSUMES:
 				getConsumes().clear();
 				return;
-			case openapiPackage.API_OPERATION__SCHEMES:
+			case OpenAPIProfilePackage.API_OPERATION__SCHEMES:
 				getSchemes().clear();
 				return;
-			case openapiPackage.API_OPERATION__SUMMARY:
+			case OpenAPIProfilePackage.API_OPERATION__SUMMARY:
 				setSummary(SUMMARY_EDEFAULT);
 				return;
-			case openapiPackage.API_OPERATION__DESCRIPTION:
+			case OpenAPIProfilePackage.API_OPERATION__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.API_OPERATION__BASE_OPERATION:
+			case OpenAPIProfilePackage.API_OPERATION__BASE_OPERATION:
 				setBase_Operation((Operation)null);
 				return;
-			case openapiPackage.API_OPERATION__TAGS:
+			case OpenAPIProfilePackage.API_OPERATION__TAGS:
 				getTags().clear();
 				return;
-			case openapiPackage.API_OPERATION__DEPRECATED:
+			case OpenAPIProfilePackage.API_OPERATION__DEPRECATED:
 				setDeprecated(DEPRECATED_EDEFAULT);
 				return;
 		}
@@ -552,25 +552,25 @@ public class APIOperationImpl extends MinimalEObjectImpl.Container implements AP
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_OPERATION__RELATIVE_PATH:
+			case OpenAPIProfilePackage.API_OPERATION__RELATIVE_PATH:
 				return RELATIVE_PATH_EDEFAULT == null ? relativePath != null : !RELATIVE_PATH_EDEFAULT.equals(relativePath);
-			case openapiPackage.API_OPERATION__METHOD:
+			case OpenAPIProfilePackage.API_OPERATION__METHOD:
 				return method != METHOD_EDEFAULT;
-			case openapiPackage.API_OPERATION__PRODUCES:
+			case OpenAPIProfilePackage.API_OPERATION__PRODUCES:
 				return produces != null && !produces.isEmpty();
-			case openapiPackage.API_OPERATION__CONSUMES:
+			case OpenAPIProfilePackage.API_OPERATION__CONSUMES:
 				return consumes != null && !consumes.isEmpty();
-			case openapiPackage.API_OPERATION__SCHEMES:
+			case OpenAPIProfilePackage.API_OPERATION__SCHEMES:
 				return schemes != null && !schemes.isEmpty();
-			case openapiPackage.API_OPERATION__SUMMARY:
+			case OpenAPIProfilePackage.API_OPERATION__SUMMARY:
 				return SUMMARY_EDEFAULT == null ? summary != null : !SUMMARY_EDEFAULT.equals(summary);
-			case openapiPackage.API_OPERATION__DESCRIPTION:
+			case OpenAPIProfilePackage.API_OPERATION__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.API_OPERATION__BASE_OPERATION:
+			case OpenAPIProfilePackage.API_OPERATION__BASE_OPERATION:
 				return base_Operation != null;
-			case openapiPackage.API_OPERATION__TAGS:
+			case OpenAPIProfilePackage.API_OPERATION__TAGS:
 				return tags != null && !tags.isEmpty();
-			case openapiPackage.API_OPERATION__DEPRECATED:
+			case OpenAPIProfilePackage.API_OPERATION__DEPRECATED:
 				return DEPRECATED_EDEFAULT == null ? deprecated != null : !DEPRECATED_EDEFAULT.equals(deprecated);
 		}
 		return super.eIsSet(featureID);

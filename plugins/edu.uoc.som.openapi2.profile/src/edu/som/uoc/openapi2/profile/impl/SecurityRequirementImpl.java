@@ -2,8 +2,8 @@
  */
 package edu.som.uoc.openapi2.profile.impl;
 
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.SecurityRequirement;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import java.util.Collection;
 
@@ -79,7 +79,7 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.SECURITY_REQUIREMENT;
+		return OpenAPIProfilePackage.Literals.SECURITY_REQUIREMENT;
 	}
 
 	/**
@@ -102,7 +102,7 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_REQUIREMENT__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_REQUIREMENT__NAME, oldName, name));
 	}
 
 	/**
@@ -113,7 +113,7 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public EList<String> getScopes() {
 		if (scopes == null) {
-			scopes = new EDataTypeUniqueEList<String>(String.class, this, openapiPackage.SECURITY_REQUIREMENT__SCOPES);
+			scopes = new EDataTypeUniqueEList<String>(String.class, this, OpenAPIProfilePackage.SECURITY_REQUIREMENT__SCOPES);
 		}
 		return scopes;
 	}
@@ -126,9 +126,9 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__NAME:
 				return getName();
-			case openapiPackage.SECURITY_REQUIREMENT__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__SCOPES:
 				return getScopes();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -143,10 +143,10 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__NAME:
 				setName((String)newValue);
 				return;
-			case openapiPackage.SECURITY_REQUIREMENT__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__SCOPES:
 				getScopes().clear();
 				getScopes().addAll((Collection<? extends String>)newValue);
 				return;
@@ -162,10 +162,10 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_REQUIREMENT__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__SCOPES:
 				getScopes().clear();
 				return;
 		}
@@ -180,9 +180,9 @@ public class SecurityRequirementImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_REQUIREMENT__NAME:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case openapiPackage.SECURITY_REQUIREMENT__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT__SCOPES:
 				return scopes != null && !scopes.isEmpty();
 		}
 		return super.eIsSet(featureID);

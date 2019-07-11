@@ -5,7 +5,7 @@ package edu.som.uoc.openapi2.profile.impl;
 import edu.som.uoc.openapi2.profile.APIInfo;
 import edu.som.uoc.openapi2.profile.Contact;
 import edu.som.uoc.openapi2.profile.License;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -164,7 +164,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.API_INFO;
+		return OpenAPIProfilePackage.Literals.API_INFO;
 	}
 
 	/**
@@ -187,7 +187,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__TITLE, oldTitle, title));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__TITLE, oldTitle, title));
 	}
 
 	/**
@@ -210,7 +210,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -233,7 +233,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		String oldTermsOfService = termsOfService;
 		termsOfService = newTermsOfService;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__TERMS_OF_SERVICE, oldTermsOfService, termsOfService));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__TERMS_OF_SERVICE, oldTermsOfService, termsOfService));
 	}
 
 	/**
@@ -256,7 +256,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		String oldVersion = version;
 		version = newVersion;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__VERSION, oldVersion, version));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__VERSION, oldVersion, version));
 	}
 
 	/**
@@ -278,7 +278,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		License oldLicense = license;
 		license = newLicense;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__LICENSE, oldLicense, newLicense);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__LICENSE, oldLicense, newLicense);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -294,14 +294,14 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		if (newLicense != license) {
 			NotificationChain msgs = null;
 			if (license != null)
-				msgs = ((InternalEObject)license).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - openapiPackage.API_INFO__LICENSE, null, msgs);
+				msgs = ((InternalEObject)license).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenAPIProfilePackage.API_INFO__LICENSE, null, msgs);
 			if (newLicense != null)
-				msgs = ((InternalEObject)newLicense).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - openapiPackage.API_INFO__LICENSE, null, msgs);
+				msgs = ((InternalEObject)newLicense).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenAPIProfilePackage.API_INFO__LICENSE, null, msgs);
 			msgs = basicSetLicense(newLicense, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__LICENSE, newLicense, newLicense));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__LICENSE, newLicense, newLicense));
 	}
 
 	/**
@@ -323,7 +323,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		Contact oldContact = contact;
 		contact = newContact;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__CONTACT, oldContact, newContact);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__CONTACT, oldContact, newContact);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -339,14 +339,14 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		if (newContact != contact) {
 			NotificationChain msgs = null;
 			if (contact != null)
-				msgs = ((InternalEObject)contact).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - openapiPackage.API_INFO__CONTACT, null, msgs);
+				msgs = ((InternalEObject)contact).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenAPIProfilePackage.API_INFO__CONTACT, null, msgs);
 			if (newContact != null)
-				msgs = ((InternalEObject)newContact).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - openapiPackage.API_INFO__CONTACT, null, msgs);
+				msgs = ((InternalEObject)newContact).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenAPIProfilePackage.API_INFO__CONTACT, null, msgs);
 			msgs = basicSetContact(newContact, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__CONTACT, newContact, newContact));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__CONTACT, newContact, newContact));
 	}
 
 	/**
@@ -361,7 +361,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 			base_Model = (Model)eResolveProxy(oldBase_Model);
 			if (base_Model != oldBase_Model) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API_INFO__BASE_MODEL, oldBase_Model, base_Model));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API_INFO__BASE_MODEL, oldBase_Model, base_Model));
 			}
 		}
 		return base_Model;
@@ -386,7 +386,7 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 		Model oldBase_Model = base_Model;
 		base_Model = newBase_Model;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_INFO__BASE_MODEL, oldBase_Model, base_Model));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_INFO__BASE_MODEL, oldBase_Model, base_Model));
 	}
 
 	/**
@@ -397,9 +397,9 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case openapiPackage.API_INFO__LICENSE:
+			case OpenAPIProfilePackage.API_INFO__LICENSE:
 				return basicSetLicense(null, msgs);
-			case openapiPackage.API_INFO__CONTACT:
+			case OpenAPIProfilePackage.API_INFO__CONTACT:
 				return basicSetContact(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -413,19 +413,19 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.API_INFO__TITLE:
+			case OpenAPIProfilePackage.API_INFO__TITLE:
 				return getTitle();
-			case openapiPackage.API_INFO__DESCRIPTION:
+			case OpenAPIProfilePackage.API_INFO__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.API_INFO__TERMS_OF_SERVICE:
+			case OpenAPIProfilePackage.API_INFO__TERMS_OF_SERVICE:
 				return getTermsOfService();
-			case openapiPackage.API_INFO__VERSION:
+			case OpenAPIProfilePackage.API_INFO__VERSION:
 				return getVersion();
-			case openapiPackage.API_INFO__LICENSE:
+			case OpenAPIProfilePackage.API_INFO__LICENSE:
 				return getLicense();
-			case openapiPackage.API_INFO__CONTACT:
+			case OpenAPIProfilePackage.API_INFO__CONTACT:
 				return getContact();
-			case openapiPackage.API_INFO__BASE_MODEL:
+			case OpenAPIProfilePackage.API_INFO__BASE_MODEL:
 				if (resolve) return getBase_Model();
 				return basicGetBase_Model();
 		}
@@ -440,25 +440,25 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.API_INFO__TITLE:
+			case OpenAPIProfilePackage.API_INFO__TITLE:
 				setTitle((String)newValue);
 				return;
-			case openapiPackage.API_INFO__DESCRIPTION:
+			case OpenAPIProfilePackage.API_INFO__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.API_INFO__TERMS_OF_SERVICE:
+			case OpenAPIProfilePackage.API_INFO__TERMS_OF_SERVICE:
 				setTermsOfService((String)newValue);
 				return;
-			case openapiPackage.API_INFO__VERSION:
+			case OpenAPIProfilePackage.API_INFO__VERSION:
 				setVersion((String)newValue);
 				return;
-			case openapiPackage.API_INFO__LICENSE:
+			case OpenAPIProfilePackage.API_INFO__LICENSE:
 				setLicense((License)newValue);
 				return;
-			case openapiPackage.API_INFO__CONTACT:
+			case OpenAPIProfilePackage.API_INFO__CONTACT:
 				setContact((Contact)newValue);
 				return;
-			case openapiPackage.API_INFO__BASE_MODEL:
+			case OpenAPIProfilePackage.API_INFO__BASE_MODEL:
 				setBase_Model((Model)newValue);
 				return;
 		}
@@ -473,25 +473,25 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_INFO__TITLE:
+			case OpenAPIProfilePackage.API_INFO__TITLE:
 				setTitle(TITLE_EDEFAULT);
 				return;
-			case openapiPackage.API_INFO__DESCRIPTION:
+			case OpenAPIProfilePackage.API_INFO__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.API_INFO__TERMS_OF_SERVICE:
+			case OpenAPIProfilePackage.API_INFO__TERMS_OF_SERVICE:
 				setTermsOfService(TERMS_OF_SERVICE_EDEFAULT);
 				return;
-			case openapiPackage.API_INFO__VERSION:
+			case OpenAPIProfilePackage.API_INFO__VERSION:
 				setVersion(VERSION_EDEFAULT);
 				return;
-			case openapiPackage.API_INFO__LICENSE:
+			case OpenAPIProfilePackage.API_INFO__LICENSE:
 				setLicense((License)null);
 				return;
-			case openapiPackage.API_INFO__CONTACT:
+			case OpenAPIProfilePackage.API_INFO__CONTACT:
 				setContact((Contact)null);
 				return;
-			case openapiPackage.API_INFO__BASE_MODEL:
+			case OpenAPIProfilePackage.API_INFO__BASE_MODEL:
 				setBase_Model((Model)null);
 				return;
 		}
@@ -506,19 +506,19 @@ public class APIInfoImpl extends MinimalEObjectImpl.Container implements APIInfo
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_INFO__TITLE:
+			case OpenAPIProfilePackage.API_INFO__TITLE:
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
-			case openapiPackage.API_INFO__DESCRIPTION:
+			case OpenAPIProfilePackage.API_INFO__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.API_INFO__TERMS_OF_SERVICE:
+			case OpenAPIProfilePackage.API_INFO__TERMS_OF_SERVICE:
 				return TERMS_OF_SERVICE_EDEFAULT == null ? termsOfService != null : !TERMS_OF_SERVICE_EDEFAULT.equals(termsOfService);
-			case openapiPackage.API_INFO__VERSION:
+			case OpenAPIProfilePackage.API_INFO__VERSION:
 				return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
-			case openapiPackage.API_INFO__LICENSE:
+			case OpenAPIProfilePackage.API_INFO__LICENSE:
 				return license != null;
-			case openapiPackage.API_INFO__CONTACT:
+			case OpenAPIProfilePackage.API_INFO__CONTACT:
 				return contact != null;
-			case openapiPackage.API_INFO__BASE_MODEL:
+			case OpenAPIProfilePackage.API_INFO__BASE_MODEL:
 				return base_Model != null;
 		}
 		return super.eIsSet(featureID);

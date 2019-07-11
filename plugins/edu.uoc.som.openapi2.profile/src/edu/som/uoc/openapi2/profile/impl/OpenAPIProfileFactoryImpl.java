@@ -19,24 +19,24 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class openapiFactoryImpl extends EFactoryImpl implements openapiFactory {
+public class OpenAPIProfileFactoryImpl extends EFactoryImpl implements OpenAPIProfileFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static openapiFactory init() {
+	public static OpenAPIProfileFactory init() {
 		try {
-			openapiFactory theopenapiFactory = (openapiFactory)EPackage.Registry.INSTANCE.getEFactory(openapiPackage.eNS_URI);
-			if (theopenapiFactory != null) {
-				return theopenapiFactory;
+			OpenAPIProfileFactory theOpenAPIProfileFactory = (OpenAPIProfileFactory)EPackage.Registry.INSTANCE.getEFactory(OpenAPIProfilePackage.eNS_URI);
+			if (theOpenAPIProfileFactory != null) {
+				return theOpenAPIProfileFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new openapiFactoryImpl();
+		return new OpenAPIProfileFactoryImpl();
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class openapiFactoryImpl extends EFactoryImpl implements openapiFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public openapiFactoryImpl() {
+	public OpenAPIProfileFactoryImpl() {
 		super();
 	}
 
@@ -57,27 +57,27 @@ public class openapiFactoryImpl extends EFactoryImpl implements openapiFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case openapiPackage.API: return createAPI();
-			case openapiPackage.SCHEMA: return createSchema();
-			case openapiPackage.API_OPERATION: return createAPIOperation();
-			case openapiPackage.API_PARAMETER: return createAPIParameter();
-			case openapiPackage.API_RESPONSE: return createAPIResponse();
-			case openapiPackage.HEADER: return createHeader();
-			case openapiPackage.EXAMPLE: return createExample();
-			case openapiPackage.API_INFO: return createAPIInfo();
-			case openapiPackage.LICENSE: return createLicense();
-			case openapiPackage.CONTACT: return createContact();
-			case openapiPackage.EXTERNAL_DOCS: return createExternalDocs();
-			case openapiPackage.SECURITY_DEFINITIONS: return createSecurityDefinitions();
-			case openapiPackage.SECURITY_SCHEME: return createSecurityScheme();
-			case openapiPackage.SECURITY_SCOPE: return createSecurityScope();
-			case openapiPackage.SECURITY: return createSecurity();
-			case openapiPackage.SECURITY_REQUIREMENT: return createSecurityRequirement();
-			case openapiPackage.TAGS: return createTags();
-			case openapiPackage.TAG: return createTag();
-			case openapiPackage.XML_ELEMENT: return createXMLElement();
-			case openapiPackage.API_DATA_TYPE: return createAPIDataType();
-			case openapiPackage.API_PROPERTY: return createAPIProperty();
+			case OpenAPIProfilePackage.API: return createAPI();
+			case OpenAPIProfilePackage.SCHEMA: return createSchema();
+			case OpenAPIProfilePackage.API_OPERATION: return createAPIOperation();
+			case OpenAPIProfilePackage.API_PARAMETER: return createAPIParameter();
+			case OpenAPIProfilePackage.API_RESPONSE: return createAPIResponse();
+			case OpenAPIProfilePackage.HEADER: return createHeader();
+			case OpenAPIProfilePackage.EXAMPLE: return createExample();
+			case OpenAPIProfilePackage.API_INFO: return createAPIInfo();
+			case OpenAPIProfilePackage.LICENSE: return createLicense();
+			case OpenAPIProfilePackage.CONTACT: return createContact();
+			case OpenAPIProfilePackage.EXTERNAL_DOCS: return createExternalDocs();
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS: return createSecurityDefinitions();
+			case OpenAPIProfilePackage.SECURITY_SCHEME: return createSecurityScheme();
+			case OpenAPIProfilePackage.SECURITY_SCOPE: return createSecurityScope();
+			case OpenAPIProfilePackage.SECURITY: return createSecurity();
+			case OpenAPIProfilePackage.SECURITY_REQUIREMENT: return createSecurityRequirement();
+			case OpenAPIProfilePackage.TAGS: return createTags();
+			case OpenAPIProfilePackage.TAG: return createTag();
+			case OpenAPIProfilePackage.XML_ELEMENT: return createXMLElement();
+			case OpenAPIProfilePackage.API_DATA_TYPE: return createAPIDataType();
+			case OpenAPIProfilePackage.API_PROPERTY: return createAPIProperty();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -91,27 +91,27 @@ public class openapiFactoryImpl extends EFactoryImpl implements openapiFactory {
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
-			case openapiPackage.SCHEME_TYPE:
+			case OpenAPIProfilePackage.SCHEME_TYPE:
 				return createSchemeTypeFromString(eDataType, initialValue);
-			case openapiPackage.HTTP_METHOD:
+			case OpenAPIProfilePackage.HTTP_METHOD:
 				return createHTTPMethodFromString(eDataType, initialValue);
-			case openapiPackage.PARAMETER_LOCATION:
+			case OpenAPIProfilePackage.PARAMETER_LOCATION:
 				return createParameterLocationFromString(eDataType, initialValue);
-			case openapiPackage.COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.COLLECTION_FORMAT:
 				return createCollectionFormatFromString(eDataType, initialValue);
-			case openapiPackage.JSON_DATA_TYPE:
+			case OpenAPIProfilePackage.JSON_DATA_TYPE:
 				return createJSONDataTypeFromString(eDataType, initialValue);
-			case openapiPackage.SECURITY_SCHEME_TYPE:
+			case OpenAPIProfilePackage.SECURITY_SCHEME_TYPE:
 				return createSecuritySchemeTypeFromString(eDataType, initialValue);
-			case openapiPackage.API_KEY_LOCATION:
+			case OpenAPIProfilePackage.API_KEY_LOCATION:
 				return createAPIKeyLocationFromString(eDataType, initialValue);
-			case openapiPackage.OAUTH2_FLOW_TYPE:
+			case OpenAPIProfilePackage.OAUTH2_FLOW_TYPE:
 				return createOAuth2FlowTypeFromString(eDataType, initialValue);
-			case openapiPackage.INTEGER:
+			case OpenAPIProfilePackage.INTEGER:
 				return createIntegerFromString(eDataType, initialValue);
-			case openapiPackage.BOOLEAN:
+			case OpenAPIProfilePackage.BOOLEAN:
 				return createBooleanFromString(eDataType, initialValue);
-			case openapiPackage.DOUBLE:
+			case OpenAPIProfilePackage.DOUBLE:
 				return createDoubleFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
@@ -126,27 +126,27 @@ public class openapiFactoryImpl extends EFactoryImpl implements openapiFactory {
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
-			case openapiPackage.SCHEME_TYPE:
+			case OpenAPIProfilePackage.SCHEME_TYPE:
 				return convertSchemeTypeToString(eDataType, instanceValue);
-			case openapiPackage.HTTP_METHOD:
+			case OpenAPIProfilePackage.HTTP_METHOD:
 				return convertHTTPMethodToString(eDataType, instanceValue);
-			case openapiPackage.PARAMETER_LOCATION:
+			case OpenAPIProfilePackage.PARAMETER_LOCATION:
 				return convertParameterLocationToString(eDataType, instanceValue);
-			case openapiPackage.COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.COLLECTION_FORMAT:
 				return convertCollectionFormatToString(eDataType, instanceValue);
-			case openapiPackage.JSON_DATA_TYPE:
+			case OpenAPIProfilePackage.JSON_DATA_TYPE:
 				return convertJSONDataTypeToString(eDataType, instanceValue);
-			case openapiPackage.SECURITY_SCHEME_TYPE:
+			case OpenAPIProfilePackage.SECURITY_SCHEME_TYPE:
 				return convertSecuritySchemeTypeToString(eDataType, instanceValue);
-			case openapiPackage.API_KEY_LOCATION:
+			case OpenAPIProfilePackage.API_KEY_LOCATION:
 				return convertAPIKeyLocationToString(eDataType, instanceValue);
-			case openapiPackage.OAUTH2_FLOW_TYPE:
+			case OpenAPIProfilePackage.OAUTH2_FLOW_TYPE:
 				return convertOAuth2FlowTypeToString(eDataType, instanceValue);
-			case openapiPackage.INTEGER:
+			case OpenAPIProfilePackage.INTEGER:
 				return convertIntegerToString(eDataType, instanceValue);
-			case openapiPackage.BOOLEAN:
+			case OpenAPIProfilePackage.BOOLEAN:
 				return convertBooleanToString(eDataType, instanceValue);
-			case openapiPackage.DOUBLE:
+			case OpenAPIProfilePackage.DOUBLE:
 				return convertDoubleToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
@@ -604,8 +604,8 @@ public class openapiFactoryImpl extends EFactoryImpl implements openapiFactory {
 	 * @generated
 	 */
 	@Override
-	public openapiPackage getopenapiPackage() {
-		return (openapiPackage)getEPackage();
+	public OpenAPIProfilePackage getOpenAPIProfilePackage() {
+		return (OpenAPIProfilePackage)getEPackage();
 	}
 
 	/**
@@ -615,8 +615,8 @@ public class openapiFactoryImpl extends EFactoryImpl implements openapiFactory {
 	 * @generated
 	 */
 	@Deprecated
-	public static openapiPackage getPackage() {
-		return openapiPackage.eINSTANCE;
+	public static OpenAPIProfilePackage getPackage() {
+		return OpenAPIProfilePackage.eINSTANCE;
 	}
 
-} //openapiFactoryImpl
+} //OpenAPIProfileFactoryImpl

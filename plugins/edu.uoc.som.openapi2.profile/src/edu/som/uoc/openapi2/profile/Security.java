@@ -23,7 +23,7 @@ import org.eclipse.uml2.uml.Operation;
  *   <li>{@link edu.som.uoc.openapi2.profile.Security#getBase_Operation <em>Base Operation</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurity()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurity()
  * @model
  * @generated
  */
@@ -38,7 +38,7 @@ public interface Security extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Security Requirements</em>' containment reference list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurity_SecurityRequirements()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurity_SecurityRequirements()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -54,7 +54,7 @@ public interface Security extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Model</em>' reference.
 	 * @see #setBase_Model(Model)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurity_Base_Model()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurity_Base_Model()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -80,7 +80,7 @@ public interface Security extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Operation</em>' reference.
 	 * @see #setBase_Operation(Operation)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurity_Base_Operation()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurity_Base_Operation()
 	 * @model ordered="false"
 	 * @generated
 	 */

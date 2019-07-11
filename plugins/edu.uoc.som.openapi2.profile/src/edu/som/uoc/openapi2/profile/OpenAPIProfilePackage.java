@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapi2.profile.openapiFactory
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfileFactory
  * @model kind="package"
  *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='OpenAPIProfile'"
  * @generated
  */
-public interface openapiPackage extends EPackage {
+public interface OpenAPIProfilePackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -57,14 +57,14 @@ public interface openapiPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	openapiPackage eINSTANCE = edu.som.uoc.openapi2.profile.impl.openapiPackageImpl.init();
+	OpenAPIProfilePackage eINSTANCE = edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.impl.APIImpl <em>API</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.APIImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPI()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPI()
 	 * @generated
 	 */
 	int API = 0;
@@ -146,7 +146,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.SchemaImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSchema()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSchema()
 	 * @generated
 	 */
 	int SCHEMA = 1;
@@ -264,7 +264,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.APIOperationImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIOperation()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIOperation()
 	 * @generated
 	 */
 	int API_OPERATION = 2;
@@ -382,7 +382,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.JSONSchemaSubsetImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getJSONSchemaSubset()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getJSONSchemaSubset()
 	 * @generated
 	 */
 	int JSON_SCHEMA_SUBSET = 4;
@@ -491,7 +491,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.APIParameterImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIParameter()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIParameter()
 	 * @generated
 	 */
 	int API_PARAMETER = 3;
@@ -654,7 +654,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.APIResponseImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIResponse()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIResponse()
 	 * @generated
 	 */
 	int API_RESPONSE = 5;
@@ -736,7 +736,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.HeaderImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getHeader()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getHeader()
 	 * @generated
 	 */
 	int HEADER = 6;
@@ -926,7 +926,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.ExampleImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getExample()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getExample()
 	 * @generated
 	 */
 	int EXAMPLE = 7;
@@ -972,7 +972,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.APIInfoImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIInfo()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIInfo()
 	 * @generated
 	 */
 	int API_INFO = 8;
@@ -1063,7 +1063,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.LicenseImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getLicense()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getLicense()
 	 * @generated
 	 */
 	int LICENSE = 9;
@@ -1109,7 +1109,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.ContactImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getContact()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getContact()
 	 * @generated
 	 */
 	int CONTACT = 10;
@@ -1164,7 +1164,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.ExternalDocsImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getExternalDocs()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getExternalDocs()
 	 * @generated
 	 */
 	int EXTERNAL_DOCS = 11;
@@ -1237,7 +1237,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.SecurityDefinitionsImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityDefinitions()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityDefinitions()
 	 * @generated
 	 */
 	int SECURITY_DEFINITIONS = 12;
@@ -1283,7 +1283,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.SecuritySchemeImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityScheme()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityScheme()
 	 * @generated
 	 */
 	int SECURITY_SCHEME = 13;
@@ -1392,7 +1392,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.SecurityScopeImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityScope()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityScope()
 	 * @generated
 	 */
 	int SECURITY_SCOPE = 14;
@@ -1438,7 +1438,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.SecurityImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurity()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurity()
 	 * @generated
 	 */
 	int SECURITY = 15;
@@ -1493,7 +1493,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.SecurityRequirementImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityRequirement()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityRequirement()
 	 * @generated
 	 */
 	int SECURITY_REQUIREMENT = 16;
@@ -1539,7 +1539,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.TagsImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getTags()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getTags()
 	 * @generated
 	 */
 	int TAGS = 17;
@@ -1585,7 +1585,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.TagImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getTag()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getTag()
 	 * @generated
 	 */
 	int TAG = 18;
@@ -1649,7 +1649,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.XMLElementImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getXMLElement()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getXMLElement()
 	 * @generated
 	 */
 	int XML_ELEMENT = 19;
@@ -1722,7 +1722,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.APIDataTypeImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIDataType()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIDataType()
 	 * @generated
 	 */
 	int API_DATA_TYPE = 20;
@@ -1786,7 +1786,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.impl.APIPropertyImpl
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIProperty()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIProperty()
 	 * @generated
 	 */
 	int API_PROPERTY = 21;
@@ -1949,7 +1949,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.SchemeType
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSchemeType()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSchemeType()
 	 * @generated
 	 */
 	int SCHEME_TYPE = 22;
@@ -1959,7 +1959,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.HTTPMethod
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getHTTPMethod()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getHTTPMethod()
 	 * @generated
 	 */
 	int HTTP_METHOD = 23;
@@ -1969,7 +1969,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.ParameterLocation
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getParameterLocation()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getParameterLocation()
 	 * @generated
 	 */
 	int PARAMETER_LOCATION = 24;
@@ -1979,7 +1979,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.CollectionFormat
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getCollectionFormat()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getCollectionFormat()
 	 * @generated
 	 */
 	int COLLECTION_FORMAT = 25;
@@ -1989,7 +1989,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.JSONDataType
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getJSONDataType()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getJSONDataType()
 	 * @generated
 	 */
 	int JSON_DATA_TYPE = 26;
@@ -1999,7 +1999,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.SecuritySchemeType
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecuritySchemeType()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecuritySchemeType()
 	 * @generated
 	 */
 	int SECURITY_SCHEME_TYPE = 27;
@@ -2009,7 +2009,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.APIKeyLocation
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIKeyLocation()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIKeyLocation()
 	 * @generated
 	 */
 	int API_KEY_LOCATION = 28;
@@ -2019,7 +2019,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see edu.som.uoc.openapi2.profile.OAuth2FlowType
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getOAuth2FlowType()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getOAuth2FlowType()
 	 * @generated
 	 */
 	int OAUTH2_FLOW_TYPE = 29;
@@ -2029,7 +2029,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see java.lang.Integer
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getInteger()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getInteger()
 	 * @generated
 	 */
 	int INTEGER = 30;
@@ -2039,7 +2039,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see java.lang.Boolean
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getBoolean()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getBoolean()
 	 * @generated
 	 */
 	int BOOLEAN = 31;
@@ -2049,7 +2049,7 @@ public interface openapiPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see java.lang.Double
-	 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getDouble()
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getDouble()
 	 * @generated
 	 */
 	int DOUBLE = 32;
@@ -3749,7 +3749,7 @@ public interface openapiPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	openapiFactory getopenapiFactory();
+	OpenAPIProfileFactory getOpenAPIProfileFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3770,7 +3770,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.APIImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPI()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPI()
 		 * @generated
 		 */
 		EClass API = eINSTANCE.getAPI();
@@ -3828,7 +3828,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.SchemaImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSchema()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSchema()
 		 * @generated
 		 */
 		EClass SCHEMA = eINSTANCE.getSchema();
@@ -3918,7 +3918,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.APIOperationImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIOperation()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIOperation()
 		 * @generated
 		 */
 		EClass API_OPERATION = eINSTANCE.getAPIOperation();
@@ -4008,7 +4008,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.APIParameterImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIParameter()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIParameter()
 		 * @generated
 		 */
 		EClass API_PARAMETER = eINSTANCE.getAPIParameter();
@@ -4066,7 +4066,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.JSONSchemaSubsetImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getJSONSchemaSubset()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getJSONSchemaSubset()
 		 * @generated
 		 */
 		EClass JSON_SCHEMA_SUBSET = eINSTANCE.getJSONSchemaSubset();
@@ -4148,7 +4148,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.APIResponseImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIResponse()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIResponse()
 		 * @generated
 		 */
 		EClass API_RESPONSE = eINSTANCE.getAPIResponse();
@@ -4206,7 +4206,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.HeaderImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getHeader()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getHeader()
 		 * @generated
 		 */
 		EClass HEADER = eINSTANCE.getHeader();
@@ -4360,7 +4360,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.ExampleImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getExample()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getExample()
 		 * @generated
 		 */
 		EClass EXAMPLE = eINSTANCE.getExample();
@@ -4386,7 +4386,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.APIInfoImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIInfo()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIInfo()
 		 * @generated
 		 */
 		EClass API_INFO = eINSTANCE.getAPIInfo();
@@ -4452,7 +4452,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.LicenseImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getLicense()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getLicense()
 		 * @generated
 		 */
 		EClass LICENSE = eINSTANCE.getLicense();
@@ -4478,7 +4478,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.ContactImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getContact()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getContact()
 		 * @generated
 		 */
 		EClass CONTACT = eINSTANCE.getContact();
@@ -4512,7 +4512,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.ExternalDocsImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getExternalDocs()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getExternalDocs()
 		 * @generated
 		 */
 		EClass EXTERNAL_DOCS = eINSTANCE.getExternalDocs();
@@ -4562,7 +4562,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.SecurityDefinitionsImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityDefinitions()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityDefinitions()
 		 * @generated
 		 */
 		EClass SECURITY_DEFINITIONS = eINSTANCE.getSecurityDefinitions();
@@ -4588,7 +4588,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.SecuritySchemeImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityScheme()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityScheme()
 		 * @generated
 		 */
 		EClass SECURITY_SCHEME = eINSTANCE.getSecurityScheme();
@@ -4670,7 +4670,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.SecurityScopeImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityScope()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityScope()
 		 * @generated
 		 */
 		EClass SECURITY_SCOPE = eINSTANCE.getSecurityScope();
@@ -4696,7 +4696,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.SecurityImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurity()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurity()
 		 * @generated
 		 */
 		EClass SECURITY = eINSTANCE.getSecurity();
@@ -4730,7 +4730,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.SecurityRequirementImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecurityRequirement()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecurityRequirement()
 		 * @generated
 		 */
 		EClass SECURITY_REQUIREMENT = eINSTANCE.getSecurityRequirement();
@@ -4756,7 +4756,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.TagsImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getTags()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getTags()
 		 * @generated
 		 */
 		EClass TAGS = eINSTANCE.getTags();
@@ -4782,7 +4782,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.TagImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getTag()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getTag()
 		 * @generated
 		 */
 		EClass TAG = eINSTANCE.getTag();
@@ -4824,7 +4824,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.XMLElementImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getXMLElement()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getXMLElement()
 		 * @generated
 		 */
 		EClass XML_ELEMENT = eINSTANCE.getXMLElement();
@@ -4874,7 +4874,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.APIDataTypeImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIDataType()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIDataType()
 		 * @generated
 		 */
 		EClass API_DATA_TYPE = eINSTANCE.getAPIDataType();
@@ -4916,7 +4916,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.impl.APIPropertyImpl
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIProperty()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIProperty()
 		 * @generated
 		 */
 		EClass API_PROPERTY = eINSTANCE.getAPIProperty();
@@ -4974,7 +4974,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.SchemeType
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSchemeType()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSchemeType()
 		 * @generated
 		 */
 		EEnum SCHEME_TYPE = eINSTANCE.getSchemeType();
@@ -4984,7 +4984,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.HTTPMethod
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getHTTPMethod()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getHTTPMethod()
 		 * @generated
 		 */
 		EEnum HTTP_METHOD = eINSTANCE.getHTTPMethod();
@@ -4994,7 +4994,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.ParameterLocation
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getParameterLocation()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getParameterLocation()
 		 * @generated
 		 */
 		EEnum PARAMETER_LOCATION = eINSTANCE.getParameterLocation();
@@ -5004,7 +5004,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.CollectionFormat
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getCollectionFormat()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getCollectionFormat()
 		 * @generated
 		 */
 		EEnum COLLECTION_FORMAT = eINSTANCE.getCollectionFormat();
@@ -5014,7 +5014,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.JSONDataType
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getJSONDataType()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getJSONDataType()
 		 * @generated
 		 */
 		EEnum JSON_DATA_TYPE = eINSTANCE.getJSONDataType();
@@ -5024,7 +5024,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.SecuritySchemeType
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getSecuritySchemeType()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecuritySchemeType()
 		 * @generated
 		 */
 		EEnum SECURITY_SCHEME_TYPE = eINSTANCE.getSecuritySchemeType();
@@ -5034,7 +5034,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.APIKeyLocation
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getAPIKeyLocation()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIKeyLocation()
 		 * @generated
 		 */
 		EEnum API_KEY_LOCATION = eINSTANCE.getAPIKeyLocation();
@@ -5044,7 +5044,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see edu.som.uoc.openapi2.profile.OAuth2FlowType
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getOAuth2FlowType()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getOAuth2FlowType()
 		 * @generated
 		 */
 		EEnum OAUTH2_FLOW_TYPE = eINSTANCE.getOAuth2FlowType();
@@ -5054,7 +5054,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see java.lang.Integer
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getInteger()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getInteger()
 		 * @generated
 		 */
 		EDataType INTEGER = eINSTANCE.getInteger();
@@ -5064,7 +5064,7 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see java.lang.Boolean
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getBoolean()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getBoolean()
 		 * @generated
 		 */
 		EDataType BOOLEAN = eINSTANCE.getBoolean();
@@ -5074,11 +5074,11 @@ public interface openapiPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see java.lang.Double
-		 * @see edu.som.uoc.openapi2.profile.impl.openapiPackageImpl#getDouble()
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getDouble()
 		 * @generated
 		 */
 		EDataType DOUBLE = eINSTANCE.getDouble();
 
 	}
 
-} //openapiPackage
+} //OpenAPIProfilePackage

@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.SecurityScheme#getReferenceName <em>Reference Name</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme()
  * @model
  * @generated
  */
@@ -41,7 +41,7 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -69,7 +69,7 @@ public interface SecurityScheme extends EObject {
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.SecuritySchemeType
 	 * @see #setType(SecuritySchemeType)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_Type()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_Type()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -96,7 +96,7 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -124,7 +124,7 @@ public interface SecurityScheme extends EObject {
 	 * @return the value of the '<em>Location</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.APIKeyLocation
 	 * @see #setLocation(APIKeyLocation)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_Location()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_Location()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -153,7 +153,7 @@ public interface SecurityScheme extends EObject {
 	 * @return the value of the '<em>Flow</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.OAuth2FlowType
 	 * @see #setFlow(OAuth2FlowType)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_Flow()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_Flow()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -180,7 +180,7 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Authorization URL</em>' attribute.
 	 * @see #setAuthorizationURL(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_AuthorizationURL()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_AuthorizationURL()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -206,7 +206,7 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Token URL</em>' attribute.
 	 * @see #setTokenURL(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_TokenURL()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_TokenURL()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -232,7 +232,7 @@ public interface SecurityScheme extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scopes</em>' containment reference list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_Scopes()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_Scopes()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -248,7 +248,7 @@ public interface SecurityScheme extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Reference Name</em>' attribute.
 	 * @see #setReferenceName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScheme_ReferenceName()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_ReferenceName()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */

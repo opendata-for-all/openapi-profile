@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.Tag#getDescription <em>Description</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getTag()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTag()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Docs URL</em>' attribute.
 	 * @see #setExternalDocsURL(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getTag_ExternalDocsURL()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTag_ExternalDocsURL()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Docs Description</em>' attribute.
 	 * @see #setExternalDocsDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getTag_ExternalDocsDescription()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTag_ExternalDocsDescription()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getTag_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTag_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -112,7 +112,7 @@ public interface Tag extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getTag_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTag_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */

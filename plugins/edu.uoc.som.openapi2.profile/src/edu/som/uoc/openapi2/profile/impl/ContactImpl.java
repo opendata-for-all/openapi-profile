@@ -3,7 +3,7 @@
 package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.Contact;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -104,7 +104,7 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.CONTACT;
+		return OpenAPIProfilePackage.Literals.CONTACT;
 	}
 
 	/**
@@ -127,7 +127,7 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 		String oldUrl = url;
 		url = newUrl;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.CONTACT__URL, oldUrl, url));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.CONTACT__URL, oldUrl, url));
 	}
 
 	/**
@@ -150,7 +150,7 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.CONTACT__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.CONTACT__NAME, oldName, name));
 	}
 
 	/**
@@ -173,7 +173,7 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 		String oldEmail = email;
 		email = newEmail;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.CONTACT__EMAIL, oldEmail, email));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.CONTACT__EMAIL, oldEmail, email));
 	}
 
 	/**
@@ -184,11 +184,11 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.CONTACT__URL:
+			case OpenAPIProfilePackage.CONTACT__URL:
 				return getUrl();
-			case openapiPackage.CONTACT__NAME:
+			case OpenAPIProfilePackage.CONTACT__NAME:
 				return getName();
-			case openapiPackage.CONTACT__EMAIL:
+			case OpenAPIProfilePackage.CONTACT__EMAIL:
 				return getEmail();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -202,13 +202,13 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.CONTACT__URL:
+			case OpenAPIProfilePackage.CONTACT__URL:
 				setUrl((String)newValue);
 				return;
-			case openapiPackage.CONTACT__NAME:
+			case OpenAPIProfilePackage.CONTACT__NAME:
 				setName((String)newValue);
 				return;
-			case openapiPackage.CONTACT__EMAIL:
+			case OpenAPIProfilePackage.CONTACT__EMAIL:
 				setEmail((String)newValue);
 				return;
 		}
@@ -223,13 +223,13 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.CONTACT__URL:
+			case OpenAPIProfilePackage.CONTACT__URL:
 				setUrl(URL_EDEFAULT);
 				return;
-			case openapiPackage.CONTACT__NAME:
+			case OpenAPIProfilePackage.CONTACT__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case openapiPackage.CONTACT__EMAIL:
+			case OpenAPIProfilePackage.CONTACT__EMAIL:
 				setEmail(EMAIL_EDEFAULT);
 				return;
 		}
@@ -244,11 +244,11 @@ public class ContactImpl extends MinimalEObjectImpl.Container implements Contact
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.CONTACT__URL:
+			case OpenAPIProfilePackage.CONTACT__URL:
 				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
-			case openapiPackage.CONTACT__NAME:
+			case OpenAPIProfilePackage.CONTACT__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case openapiPackage.CONTACT__EMAIL:
+			case OpenAPIProfilePackage.CONTACT__EMAIL:
 				return EMAIL_EDEFAULT == null ? email != null : !EMAIL_EDEFAULT.equals(email);
 		}
 		return super.eIsSet(featureID);

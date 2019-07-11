@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.Example#getValue <em>Value</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getExample()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExample()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface Example extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mime Type</em>' attribute.
 	 * @see #setMimeType(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getExample_MimeType()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExample_MimeType()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface Example extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getExample_Value()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getExample_Value()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */

@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.SecurityScope#getDescription <em>Description</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScope()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScope()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface SecurityScope extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScope_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScope_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface SecurityScope extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityScope_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityScope_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */

@@ -21,7 +21,7 @@ import org.eclipse.uml2.uml.Model;
  *   <li>{@link edu.som.uoc.openapi2.profile.SecurityDefinitions#getBase_Model <em>Base Model</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityDefinitions()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityDefinitions()
  * @model
  * @generated
  */
@@ -36,7 +36,7 @@ public interface SecurityDefinitions extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Security Schemes</em>' containment reference list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityDefinitions_SecuritySchemes()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityDefinitions_SecuritySchemes()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -52,7 +52,7 @@ public interface SecurityDefinitions extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Model</em>' reference.
 	 * @see #setBase_Model(Model)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityDefinitions_Base_Model()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityDefinitions_Base_Model()
 	 * @model ordered="false"
 	 * @generated
 	 */

@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.Contact#getEmail <em>Email</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getContact()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getContact()
  * @model
  * @generated
  */
@@ -33,7 +33,7 @@ public interface Contact extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Url</em>' attribute.
 	 * @see #setUrl(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getContact_Url()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getContact_Url()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface Contact extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getContact_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getContact_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -85,7 +85,7 @@ public interface Contact extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Email</em>' attribute.
 	 * @see #setEmail(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getContact_Email()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getContact_Email()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */

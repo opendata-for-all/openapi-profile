@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>OAuth2 Flow Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getOAuth2FlowType()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getOAuth2FlowType()
  * @model
  * @generated
  */

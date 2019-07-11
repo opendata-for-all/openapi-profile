@@ -29,7 +29,7 @@ import org.eclipse.uml2.uml.Operation;
  *   <li>{@link edu.som.uoc.openapi2.profile.APIOperation#getDeprecated <em>Deprecated</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation()
  * @model
  * @generated
  */
@@ -44,7 +44,7 @@ public interface APIOperation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Relative Path</em>' attribute.
 	 * @see #setRelativePath(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_RelativePath()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_RelativePath()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -72,7 +72,7 @@ public interface APIOperation extends EObject {
 	 * @return the value of the '<em>Method</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.HTTPMethod
 	 * @see #setMethod(HTTPMethod)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Method()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Method()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -99,7 +99,7 @@ public interface APIOperation extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Produces</em>' attribute list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Produces()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Produces()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -115,7 +115,7 @@ public interface APIOperation extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Consumes</em>' attribute list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Consumes()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Consumes()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -133,7 +133,7 @@ public interface APIOperation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Schemes</em>' attribute list.
 	 * @see edu.som.uoc.openapi2.profile.SchemeType
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Schemes()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Schemes()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -149,7 +149,7 @@ public interface APIOperation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Summary</em>' attribute.
 	 * @see #setSummary(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Summary()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Summary()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -175,7 +175,7 @@ public interface APIOperation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -201,7 +201,7 @@ public interface APIOperation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Operation</em>' reference.
 	 * @see #setBase_Operation(Operation)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Base_Operation()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Base_Operation()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -227,7 +227,7 @@ public interface APIOperation extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tags</em>' attribute list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Tags()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Tags()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -243,7 +243,7 @@ public interface APIOperation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Deprecated</em>' attribute.
 	 * @see #setDeprecated(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIOperation_Deprecated()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIOperation_Deprecated()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
