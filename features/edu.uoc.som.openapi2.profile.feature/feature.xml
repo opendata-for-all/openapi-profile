@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="edu.uoc.som.openapi.profile.feature"
+      id="edu.uoc.som.openapi2.profile.feature"
       label="OpenAPI Profile Feature"
       version="2.0.0.qualifier"
       provider-name="Som Research Lab">
@@ -109,7 +109,7 @@ You may add additional accurate notices of copyright ownership.
    </requires>
 
    <plugin
-         id="edu.uoc.som.openapi.profile"
+         id="edu.uoc.som.openapi2.profile"
          download-size="0"
          install-size="0"
          version="0.0.0"
