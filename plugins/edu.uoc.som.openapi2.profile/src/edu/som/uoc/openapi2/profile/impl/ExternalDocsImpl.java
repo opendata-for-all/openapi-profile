@@ -3,7 +3,7 @@
 package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.ExternalDocs;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -120,7 +120,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.EXTERNAL_DOCS;
+		return OpenAPIProfilePackage.Literals.EXTERNAL_DOCS;
 	}
 
 	/**
@@ -143,7 +143,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.EXTERNAL_DOCS__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.EXTERNAL_DOCS__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -166,7 +166,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 		String oldUrl = url;
 		url = newUrl;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.EXTERNAL_DOCS__URL, oldUrl, url));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.EXTERNAL_DOCS__URL, oldUrl, url));
 	}
 
 	/**
@@ -181,7 +181,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 			base_Model = (Model)eResolveProxy(oldBase_Model);
 			if (base_Model != oldBase_Model) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.EXTERNAL_DOCS__BASE_MODEL, oldBase_Model, base_Model));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_MODEL, oldBase_Model, base_Model));
 			}
 		}
 		return base_Model;
@@ -206,7 +206,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 		Model oldBase_Model = base_Model;
 		base_Model = newBase_Model;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.EXTERNAL_DOCS__BASE_MODEL, oldBase_Model, base_Model));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_MODEL, oldBase_Model, base_Model));
 	}
 
 	/**
@@ -221,7 +221,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 			base_Class = (org.eclipse.uml2.uml.Class)eResolveProxy(oldBase_Class);
 			if (base_Class != oldBase_Class) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.EXTERNAL_DOCS__BASE_CLASS, oldBase_Class, base_Class));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_CLASS, oldBase_Class, base_Class));
 			}
 		}
 		return base_Class;
@@ -246,7 +246,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 		org.eclipse.uml2.uml.Class oldBase_Class = base_Class;
 		base_Class = newBase_Class;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.EXTERNAL_DOCS__BASE_CLASS, oldBase_Class, base_Class));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_CLASS, oldBase_Class, base_Class));
 	}
 
 	/**
@@ -261,7 +261,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 			base_Operation = (Operation)eResolveProxy(oldBase_Operation);
 			if (base_Operation != oldBase_Operation) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.EXTERNAL_DOCS__BASE_OPERATION, oldBase_Operation, base_Operation));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_OPERATION, oldBase_Operation, base_Operation));
 			}
 		}
 		return base_Operation;
@@ -286,7 +286,7 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 		Operation oldBase_Operation = base_Operation;
 		base_Operation = newBase_Operation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.EXTERNAL_DOCS__BASE_OPERATION, oldBase_Operation, base_Operation));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_OPERATION, oldBase_Operation, base_Operation));
 	}
 
 	/**
@@ -297,17 +297,17 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.EXTERNAL_DOCS__DESCRIPTION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.EXTERNAL_DOCS__URL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__URL:
 				return getUrl();
-			case openapiPackage.EXTERNAL_DOCS__BASE_MODEL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_MODEL:
 				if (resolve) return getBase_Model();
 				return basicGetBase_Model();
-			case openapiPackage.EXTERNAL_DOCS__BASE_CLASS:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_CLASS:
 				if (resolve) return getBase_Class();
 				return basicGetBase_Class();
-			case openapiPackage.EXTERNAL_DOCS__BASE_OPERATION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_OPERATION:
 				if (resolve) return getBase_Operation();
 				return basicGetBase_Operation();
 		}
@@ -322,19 +322,19 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.EXTERNAL_DOCS__DESCRIPTION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__URL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__URL:
 				setUrl((String)newValue);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__BASE_MODEL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_MODEL:
 				setBase_Model((Model)newValue);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__BASE_CLASS:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_CLASS:
 				setBase_Class((org.eclipse.uml2.uml.Class)newValue);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__BASE_OPERATION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_OPERATION:
 				setBase_Operation((Operation)newValue);
 				return;
 		}
@@ -349,19 +349,19 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.EXTERNAL_DOCS__DESCRIPTION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__URL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__URL:
 				setUrl(URL_EDEFAULT);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__BASE_MODEL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_MODEL:
 				setBase_Model((Model)null);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__BASE_CLASS:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_CLASS:
 				setBase_Class((org.eclipse.uml2.uml.Class)null);
 				return;
-			case openapiPackage.EXTERNAL_DOCS__BASE_OPERATION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_OPERATION:
 				setBase_Operation((Operation)null);
 				return;
 		}
@@ -376,15 +376,15 @@ public class ExternalDocsImpl extends MinimalEObjectImpl.Container implements Ex
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.EXTERNAL_DOCS__DESCRIPTION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.EXTERNAL_DOCS__URL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__URL:
 				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
-			case openapiPackage.EXTERNAL_DOCS__BASE_MODEL:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_MODEL:
 				return base_Model != null;
-			case openapiPackage.EXTERNAL_DOCS__BASE_CLASS:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_CLASS:
 				return base_Class != null;
-			case openapiPackage.EXTERNAL_DOCS__BASE_OPERATION:
+			case OpenAPIProfilePackage.EXTERNAL_DOCS__BASE_OPERATION:
 				return base_Operation != null;
 		}
 		return super.eIsSet(featureID);

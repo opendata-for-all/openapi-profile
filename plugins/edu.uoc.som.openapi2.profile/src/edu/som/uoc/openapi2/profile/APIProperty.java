@@ -21,7 +21,7 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.som.uoc.openapi2.profile.APIProperty#getTitle <em>Title</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIProperty()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIProperty()
  * @model
  * @generated
  */
@@ -36,7 +36,7 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Required</em>' attribute.
 	 * @see #setRequired(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIProperty_Required()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Required()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Property</em>' reference.
 	 * @see #setBase_Property(Property)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIProperty_Base_Property()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Base_Property()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Xml</em>' containment reference.
 	 * @see #setXml(XMLElement)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIProperty_Xml()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Xml()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -114,7 +114,7 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Example</em>' attribute.
 	 * @see #setExample(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIProperty_Example()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Example()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -140,7 +140,7 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIProperty_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -166,7 +166,7 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIProperty_Title()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Title()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */

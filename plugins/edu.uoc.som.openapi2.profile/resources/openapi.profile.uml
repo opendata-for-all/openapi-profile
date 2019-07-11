@@ -744,7 +744,7 @@
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
     </profileApplication>
   </uml:Profile>
-  <Ecore:EPackage xmi:id="_Wl9VoIO0EemwsPbmDx6KRQ" base_Package="_8zK3wHyGEemaV87q0fd26g" packageName="profile" nsPrefix="openapi_profile" nsURI="http://edu.uoc.som/openapi/profile/2.0" basePackage="edu.som.uoc.openapi2" prefix="openapi"/>
+  <Ecore:EPackage xmi:id="_Wl9VoIO0EemwsPbmDx6KRQ" base_Package="_8zK3wHyGEemaV87q0fd26g" packageName="profile" nsPrefix="openapi_profile" nsURI="http://edu.uoc.som/openapi/profile/2.0" basePackage="edu.som.uoc.openapi2" prefix="OpenAPIProfile"/>
   <Ecore:EDataType xmi:id="_Tyc0UIa2EemJAf1U_0U40g" instanceClassName="java.lang.Integer" base_PrimitiveType="_PuqOwIa2EemJAf1U_0U40g" dataTypeName="Integer"/>
   <Ecore:EDataType xmi:id="_YOTUkIa2EemJAf1U_0U40g" instanceClassName="java.lang.Boolean" base_PrimitiveType="_YOStgIa2EemJAf1U_0U40g" dataTypeName="Boolean"/>
   <Ecore:EDataType xmi:id="_depz4Ia2EemJAf1U_0U40g" instanceClassName="java.lang.Double" base_PrimitiveType="_depM0Ia2EemJAf1U_0U40g" dataTypeName="Double"/>

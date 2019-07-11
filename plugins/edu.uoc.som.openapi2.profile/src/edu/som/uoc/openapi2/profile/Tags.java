@@ -21,7 +21,7 @@ import org.eclipse.uml2.uml.Model;
  *   <li>{@link edu.som.uoc.openapi2.profile.Tags#getBase_Model <em>Base Model</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getTags()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTags()
  * @model
  * @generated
  */
@@ -36,7 +36,7 @@ public interface Tags extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tags</em>' containment reference list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getTags_Tags()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTags_Tags()
 	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
@@ -52,7 +52,7 @@ public interface Tags extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Model</em>' reference.
 	 * @see #setBase_Model(Model)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getTags_Base_Model()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getTags_Base_Model()
 	 * @model ordered="false"
 	 * @generated
 	 */

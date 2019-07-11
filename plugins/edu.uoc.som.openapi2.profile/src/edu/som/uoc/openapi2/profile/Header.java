@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.Header#getEnum <em>Enum</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader()
  * @model
  * @generated
  */
@@ -50,7 +50,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -76,7 +76,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -104,7 +104,7 @@ public interface Header extends EObject {
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.JSONDataType
 	 * @see #setType(JSONDataType)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Type()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Type()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
@@ -131,7 +131,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Format</em>' attribute.
 	 * @see #setFormat(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Format()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Format()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
@@ -159,7 +159,7 @@ public interface Header extends EObject {
 	 * @return the value of the '<em>Collection Format</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.CollectionFormat
 	 * @see #setCollectionFormat(CollectionFormat)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_CollectionFormat()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_CollectionFormat()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -186,7 +186,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Items</em>' attribute.
 	 * @see #setMinItems(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_MinItems()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_MinItems()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -212,7 +212,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pattern</em>' attribute.
 	 * @see #setPattern(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Pattern()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Pattern()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -238,7 +238,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Exclusive Minimum</em>' attribute.
 	 * @see #setExclusiveMinimum(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_ExclusiveMinimum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_ExclusiveMinimum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -264,7 +264,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minimum</em>' attribute.
 	 * @see #setMinimum(Double)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Minimum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Minimum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Double" ordered="false"
 	 * @generated
 	 */
@@ -290,7 +290,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Length</em>' attribute.
 	 * @see #setMinLength(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_MinLength()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_MinLength()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -316,7 +316,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Length</em>' attribute.
 	 * @see #setMaxLength(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_MaxLength()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_MaxLength()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -342,7 +342,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maximum</em>' attribute.
 	 * @see #setMaximum(Double)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Maximum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Maximum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Double" ordered="false"
 	 * @generated
 	 */
@@ -368,7 +368,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Items</em>' attribute.
 	 * @see #setMaxItems(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_MaxItems()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_MaxItems()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -394,7 +394,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Exclusive Maximum</em>' attribute.
 	 * @see #setExclusiveMaximum(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_ExclusiveMaximum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_ExclusiveMaximum()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -420,7 +420,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Default</em>' attribute.
 	 * @see #setDefault(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Default()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Default()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -446,7 +446,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Unique Items</em>' attribute.
 	 * @see #setUniqueItems(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_UniqueItems()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_UniqueItems()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -472,7 +472,7 @@ public interface Header extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Multiple Of</em>' attribute.
 	 * @see #setMultipleOf(Double)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_MultipleOf()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_MultipleOf()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Double" ordered="false"
 	 * @generated
 	 */
@@ -498,7 +498,7 @@ public interface Header extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Enum</em>' attribute list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getHeader_Enum()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getHeader_Enum()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */

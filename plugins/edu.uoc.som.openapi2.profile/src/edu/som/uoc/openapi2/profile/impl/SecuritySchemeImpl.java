@@ -4,10 +4,10 @@ package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.APIKeyLocation;
 import edu.som.uoc.openapi2.profile.OAuth2FlowType;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.SecurityScheme;
 import edu.som.uoc.openapi2.profile.SecuritySchemeType;
 import edu.som.uoc.openapi2.profile.SecurityScope;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import java.util.Collection;
 
@@ -233,7 +233,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.SECURITY_SCHEME;
+		return OpenAPIProfilePackage.Literals.SECURITY_SCHEME;
 	}
 
 	/**
@@ -256,7 +256,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__NAME, oldName, name));
 	}
 
 	/**
@@ -279,7 +279,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		SecuritySchemeType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__TYPE, oldType, type));
 	}
 
 	/**
@@ -302,7 +302,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -325,7 +325,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		APIKeyLocation oldLocation = location;
 		location = newLocation == null ? LOCATION_EDEFAULT : newLocation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__LOCATION, oldLocation, location));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__LOCATION, oldLocation, location));
 	}
 
 	/**
@@ -348,7 +348,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		OAuth2FlowType oldFlow = flow;
 		flow = newFlow == null ? FLOW_EDEFAULT : newFlow;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__FLOW, oldFlow, flow));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__FLOW, oldFlow, flow));
 	}
 
 	/**
@@ -371,7 +371,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		String oldAuthorizationURL = authorizationURL;
 		authorizationURL = newAuthorizationURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__AUTHORIZATION_URL, oldAuthorizationURL, authorizationURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__AUTHORIZATION_URL, oldAuthorizationURL, authorizationURL));
 	}
 
 	/**
@@ -394,7 +394,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		String oldTokenURL = tokenURL;
 		tokenURL = newTokenURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__TOKEN_URL, oldTokenURL, tokenURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__TOKEN_URL, oldTokenURL, tokenURL));
 	}
 
 	/**
@@ -405,7 +405,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public EList<SecurityScope> getScopes() {
 		if (scopes == null) {
-			scopes = new EObjectContainmentEList<SecurityScope>(SecurityScope.class, this, openapiPackage.SECURITY_SCHEME__SCOPES);
+			scopes = new EObjectContainmentEList<SecurityScope>(SecurityScope.class, this, OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES);
 		}
 		return scopes;
 	}
@@ -430,7 +430,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		String oldReferenceName = referenceName;
 		referenceName = newReferenceName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_SCHEME__REFERENCE_NAME, oldReferenceName, referenceName));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME, oldReferenceName, referenceName));
 	}
 
 	/**
@@ -441,7 +441,7 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCHEME__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				return ((InternalEList<?>)getScopes()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -455,23 +455,23 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCHEME__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__NAME:
 				return getName();
-			case openapiPackage.SECURITY_SCHEME__TYPE:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TYPE:
 				return getType();
-			case openapiPackage.SECURITY_SCHEME__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.SECURITY_SCHEME__LOCATION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__LOCATION:
 				return getLocation();
-			case openapiPackage.SECURITY_SCHEME__FLOW:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__FLOW:
 				return getFlow();
-			case openapiPackage.SECURITY_SCHEME__AUTHORIZATION_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__AUTHORIZATION_URL:
 				return getAuthorizationURL();
-			case openapiPackage.SECURITY_SCHEME__TOKEN_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TOKEN_URL:
 				return getTokenURL();
-			case openapiPackage.SECURITY_SCHEME__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				return getScopes();
-			case openapiPackage.SECURITY_SCHEME__REFERENCE_NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
 				return getReferenceName();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -486,32 +486,32 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCHEME__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__NAME:
 				setName((String)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__TYPE:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TYPE:
 				setType((SecuritySchemeType)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__LOCATION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__LOCATION:
 				setLocation((APIKeyLocation)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__FLOW:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__FLOW:
 				setFlow((OAuth2FlowType)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__AUTHORIZATION_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__AUTHORIZATION_URL:
 				setAuthorizationURL((String)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__TOKEN_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TOKEN_URL:
 				setTokenURL((String)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				getScopes().clear();
 				getScopes().addAll((Collection<? extends SecurityScope>)newValue);
 				return;
-			case openapiPackage.SECURITY_SCHEME__REFERENCE_NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
 				setReferenceName((String)newValue);
 				return;
 		}
@@ -526,31 +526,31 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCHEME__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCHEME__TYPE:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCHEME__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCHEME__LOCATION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__LOCATION:
 				setLocation(LOCATION_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCHEME__FLOW:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__FLOW:
 				setFlow(FLOW_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCHEME__AUTHORIZATION_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__AUTHORIZATION_URL:
 				setAuthorizationURL(AUTHORIZATION_URL_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCHEME__TOKEN_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TOKEN_URL:
 				setTokenURL(TOKEN_URL_EDEFAULT);
 				return;
-			case openapiPackage.SECURITY_SCHEME__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				getScopes().clear();
 				return;
-			case openapiPackage.SECURITY_SCHEME__REFERENCE_NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
 				setReferenceName(REFERENCE_NAME_EDEFAULT);
 				return;
 		}
@@ -565,23 +565,23 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_SCHEME__NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case openapiPackage.SECURITY_SCHEME__TYPE:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TYPE:
 				return type != TYPE_EDEFAULT;
-			case openapiPackage.SECURITY_SCHEME__DESCRIPTION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.SECURITY_SCHEME__LOCATION:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__LOCATION:
 				return location != LOCATION_EDEFAULT;
-			case openapiPackage.SECURITY_SCHEME__FLOW:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__FLOW:
 				return flow != FLOW_EDEFAULT;
-			case openapiPackage.SECURITY_SCHEME__AUTHORIZATION_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__AUTHORIZATION_URL:
 				return AUTHORIZATION_URL_EDEFAULT == null ? authorizationURL != null : !AUTHORIZATION_URL_EDEFAULT.equals(authorizationURL);
-			case openapiPackage.SECURITY_SCHEME__TOKEN_URL:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__TOKEN_URL:
 				return TOKEN_URL_EDEFAULT == null ? tokenURL != null : !TOKEN_URL_EDEFAULT.equals(tokenURL);
-			case openapiPackage.SECURITY_SCHEME__SCOPES:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				return scopes != null && !scopes.isEmpty();
-			case openapiPackage.SECURITY_SCHEME__REFERENCE_NAME:
+			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
 				return REFERENCE_NAME_EDEFAULT == null ? referenceName != null : !REFERENCE_NAME_EDEFAULT.equals(referenceName);
 		}
 		return super.eIsSet(featureID);

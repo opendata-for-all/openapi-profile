@@ -4,8 +4,8 @@ package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.APIParameter;
 import edu.som.uoc.openapi2.profile.CollectionFormat;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.ParameterLocation;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -161,7 +161,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.API_PARAMETER;
+		return OpenAPIProfilePackage.Literals.API_PARAMETER;
 	}
 
 	/**
@@ -184,7 +184,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PARAMETER__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PARAMETER__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -207,7 +207,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		ParameterLocation oldLocation = location;
 		location = newLocation == null ? LOCATION_EDEFAULT : newLocation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PARAMETER__LOCATION, oldLocation, location));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PARAMETER__LOCATION, oldLocation, location));
 	}
 
 	/**
@@ -230,7 +230,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		Boolean oldAllowEmptyValue = allowEmptyValue;
 		allowEmptyValue = newAllowEmptyValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PARAMETER__ALLOW_EMPTY_VALUE, oldAllowEmptyValue, allowEmptyValue));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE, oldAllowEmptyValue, allowEmptyValue));
 	}
 
 	/**
@@ -253,7 +253,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		CollectionFormat oldCollectionFormat = collectionFormat;
 		collectionFormat = newCollectionFormat == null ? COLLECTION_FORMAT_EDEFAULT : newCollectionFormat;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PARAMETER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PARAMETER__COLLECTION_FORMAT, oldCollectionFormat, collectionFormat));
 	}
 
 	/**
@@ -268,7 +268,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 			base_Parameter = (Parameter)eResolveProxy(oldBase_Parameter);
 			if (base_Parameter != oldBase_Parameter) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API_PARAMETER__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API_PARAMETER__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
 			}
 		}
 		return base_Parameter;
@@ -293,7 +293,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		Parameter oldBase_Parameter = base_Parameter;
 		base_Parameter = newBase_Parameter;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PARAMETER__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PARAMETER__BASE_PARAMETER, oldBase_Parameter, base_Parameter));
 	}
 
 	/**
@@ -316,7 +316,7 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 		Boolean oldRequired = required;
 		required = newRequired;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PARAMETER__REQUIRED, oldRequired, required));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PARAMETER__REQUIRED, oldRequired, required));
 	}
 
 	/**
@@ -327,18 +327,18 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.API_PARAMETER__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PARAMETER__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.API_PARAMETER__LOCATION:
+			case OpenAPIProfilePackage.API_PARAMETER__LOCATION:
 				return getLocation();
-			case openapiPackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+			case OpenAPIProfilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
 				return getAllowEmptyValue();
-			case openapiPackage.API_PARAMETER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				return getCollectionFormat();
-			case openapiPackage.API_PARAMETER__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_PARAMETER__BASE_PARAMETER:
 				if (resolve) return getBase_Parameter();
 				return basicGetBase_Parameter();
-			case openapiPackage.API_PARAMETER__REQUIRED:
+			case OpenAPIProfilePackage.API_PARAMETER__REQUIRED:
 				return getRequired();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -352,22 +352,22 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.API_PARAMETER__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PARAMETER__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.API_PARAMETER__LOCATION:
+			case OpenAPIProfilePackage.API_PARAMETER__LOCATION:
 				setLocation((ParameterLocation)newValue);
 				return;
-			case openapiPackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+			case OpenAPIProfilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
 				setAllowEmptyValue((Boolean)newValue);
 				return;
-			case openapiPackage.API_PARAMETER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				setCollectionFormat((CollectionFormat)newValue);
 				return;
-			case openapiPackage.API_PARAMETER__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_PARAMETER__BASE_PARAMETER:
 				setBase_Parameter((Parameter)newValue);
 				return;
-			case openapiPackage.API_PARAMETER__REQUIRED:
+			case OpenAPIProfilePackage.API_PARAMETER__REQUIRED:
 				setRequired((Boolean)newValue);
 				return;
 		}
@@ -382,22 +382,22 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_PARAMETER__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PARAMETER__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.API_PARAMETER__LOCATION:
+			case OpenAPIProfilePackage.API_PARAMETER__LOCATION:
 				setLocation(LOCATION_EDEFAULT);
 				return;
-			case openapiPackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+			case OpenAPIProfilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
 				setAllowEmptyValue(ALLOW_EMPTY_VALUE_EDEFAULT);
 				return;
-			case openapiPackage.API_PARAMETER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				setCollectionFormat(COLLECTION_FORMAT_EDEFAULT);
 				return;
-			case openapiPackage.API_PARAMETER__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_PARAMETER__BASE_PARAMETER:
 				setBase_Parameter((Parameter)null);
 				return;
-			case openapiPackage.API_PARAMETER__REQUIRED:
+			case OpenAPIProfilePackage.API_PARAMETER__REQUIRED:
 				setRequired(REQUIRED_EDEFAULT);
 				return;
 		}
@@ -412,17 +412,17 @@ public class APIParameterImpl extends JSONSchemaSubsetImpl implements APIParamet
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_PARAMETER__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PARAMETER__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.API_PARAMETER__LOCATION:
+			case OpenAPIProfilePackage.API_PARAMETER__LOCATION:
 				return location != LOCATION_EDEFAULT;
-			case openapiPackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
+			case OpenAPIProfilePackage.API_PARAMETER__ALLOW_EMPTY_VALUE:
 				return ALLOW_EMPTY_VALUE_EDEFAULT == null ? allowEmptyValue != null : !ALLOW_EMPTY_VALUE_EDEFAULT.equals(allowEmptyValue);
-			case openapiPackage.API_PARAMETER__COLLECTION_FORMAT:
+			case OpenAPIProfilePackage.API_PARAMETER__COLLECTION_FORMAT:
 				return collectionFormat != COLLECTION_FORMAT_EDEFAULT;
-			case openapiPackage.API_PARAMETER__BASE_PARAMETER:
+			case OpenAPIProfilePackage.API_PARAMETER__BASE_PARAMETER:
 				return base_Parameter != null;
-			case openapiPackage.API_PARAMETER__REQUIRED:
+			case OpenAPIProfilePackage.API_PARAMETER__REQUIRED:
 				return REQUIRED_EDEFAULT == null ? required != null : !REQUIRED_EDEFAULT.equals(required);
 		}
 		return super.eIsSet(featureID);

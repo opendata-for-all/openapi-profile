@@ -27,7 +27,7 @@ import org.eclipse.uml2.uml.Type;
  *   <li>{@link edu.som.uoc.openapi2.profile.Schema#getAdditionalProperties <em>Additional Properties</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema()
  * @model
  * @generated
  */
@@ -42,7 +42,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_Title()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_Title()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Properties</em>' attribute.
 	 * @see #setMaxProperties(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_MaxProperties()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_MaxProperties()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -94,7 +94,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Min Properties</em>' attribute.
 	 * @see #setMinProperties(Integer)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_MinProperties()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_MinProperties()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Integer" ordered="false"
 	 * @generated
 	 */
@@ -120,7 +120,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Discriminator</em>' attribute.
 	 * @see #setDiscriminator(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_Discriminator()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_Discriminator()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -146,7 +146,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Additional Properties Allowed</em>' attribute.
 	 * @see #setAdditionalPropertiesAllowed(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_AdditionalPropertiesAllowed()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_AdditionalPropertiesAllowed()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -172,7 +172,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Class</em>' reference.
 	 * @see #setBase_Class(org.eclipse.uml2.uml.Class)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_Base_Class()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_Base_Class()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -198,7 +198,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Example</em>' attribute.
 	 * @see #setExample(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_Example()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_Example()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -224,7 +224,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Default</em>' attribute.
 	 * @see #setDefault(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_Default()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_Default()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -250,7 +250,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -276,7 +276,7 @@ public interface Schema extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Additional Properties</em>' reference.
 	 * @see #setAdditionalProperties(Type)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSchema_AdditionalProperties()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSchema_AdditionalProperties()
 	 * @model ordered="false"
 	 * @generated
 	 */

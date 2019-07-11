@@ -3,7 +3,7 @@
 package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.JSONSchemaSubset;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -230,7 +230,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.JSON_SCHEMA_SUBSET;
+		return OpenAPIProfilePackage.Literals.JSON_SCHEMA_SUBSET;
 	}
 
 	/**
@@ -253,7 +253,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Integer oldMinLength = minLength;
 		minLength = newMinLength;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__MIN_LENGTH, oldMinLength, minLength));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MIN_LENGTH, oldMinLength, minLength));
 	}
 
 	/**
@@ -276,7 +276,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Double oldMaximum = maximum;
 		maximum = newMaximum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__MAXIMUM, oldMaximum, maximum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAXIMUM, oldMaximum, maximum));
 	}
 
 	/**
@@ -299,7 +299,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Boolean oldExclusiveMaximum = exclusiveMaximum;
 		exclusiveMaximum = newExclusiveMaximum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM, oldExclusiveMaximum, exclusiveMaximum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM, oldExclusiveMaximum, exclusiveMaximum));
 	}
 
 	/**
@@ -322,7 +322,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Double oldMinimum = minimum;
 		minimum = newMinimum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__MINIMUM, oldMinimum, minimum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MINIMUM, oldMinimum, minimum));
 	}
 
 	/**
@@ -345,7 +345,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Integer oldMaxLength = maxLength;
 		maxLength = newMaxLength;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__MAX_LENGTH, oldMaxLength, maxLength));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH, oldMaxLength, maxLength));
 	}
 
 	/**
@@ -368,7 +368,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		String oldPattern = pattern;
 		pattern = newPattern;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__PATTERN, oldPattern, pattern));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__PATTERN, oldPattern, pattern));
 	}
 
 	/**
@@ -391,7 +391,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Boolean oldExclusiveMinimum = exclusiveMinimum;
 		exclusiveMinimum = newExclusiveMinimum;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM, oldExclusiveMinimum, exclusiveMinimum));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM, oldExclusiveMinimum, exclusiveMinimum));
 	}
 
 	/**
@@ -414,7 +414,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Boolean oldUniqueItems = uniqueItems;
 		uniqueItems = newUniqueItems;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS, oldUniqueItems, uniqueItems));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS, oldUniqueItems, uniqueItems));
 	}
 
 	/**
@@ -437,7 +437,7 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 		Double oldMultipleOf = multipleOf;
 		multipleOf = newMultipleOf;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF, oldMultipleOf, multipleOf));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF, oldMultipleOf, multipleOf));
 	}
 
 	/**
@@ -448,23 +448,23 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
 				return getMinLength();
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAXIMUM:
 				return getMaximum();
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
 				return getExclusiveMaximum();
-			case openapiPackage.JSON_SCHEMA_SUBSET__MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MINIMUM:
 				return getMinimum();
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				return getMaxLength();
-			case openapiPackage.JSON_SCHEMA_SUBSET__PATTERN:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				return getPattern();
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				return getExclusiveMinimum();
-			case openapiPackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				return getUniqueItems();
-			case openapiPackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				return getMultipleOf();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -478,31 +478,31 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
 				setMinLength((Integer)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAXIMUM:
 				setMaximum((Double)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum((Boolean)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MINIMUM:
 				setMinimum((Double)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				setMaxLength((Integer)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__PATTERN:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				setPattern((String)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum((Boolean)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				setUniqueItems((Boolean)newValue);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				setMultipleOf((Double)newValue);
 				return;
 		}
@@ -517,31 +517,31 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
 				setMinLength(MIN_LENGTH_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAXIMUM:
 				setMaximum(MAXIMUM_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
 				setExclusiveMaximum(EXCLUSIVE_MAXIMUM_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MINIMUM:
 				setMinimum(MINIMUM_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				setMaxLength(MAX_LENGTH_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__PATTERN:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				setPattern(PATTERN_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				setExclusiveMinimum(EXCLUSIVE_MINIMUM_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				setUniqueItems(UNIQUE_ITEMS_EDEFAULT);
 				return;
-			case openapiPackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				setMultipleOf(MULTIPLE_OF_EDEFAULT);
 				return;
 		}
@@ -556,23 +556,23 @@ public abstract class JSONSchemaSubsetImpl extends MinimalEObjectImpl.Container 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MIN_LENGTH:
 				return MIN_LENGTH_EDEFAULT == null ? minLength != null : !MIN_LENGTH_EDEFAULT.equals(minLength);
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAXIMUM:
 				return MAXIMUM_EDEFAULT == null ? maximum != null : !MAXIMUM_EDEFAULT.equals(maximum);
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MAXIMUM:
 				return EXCLUSIVE_MAXIMUM_EDEFAULT == null ? exclusiveMaximum != null : !EXCLUSIVE_MAXIMUM_EDEFAULT.equals(exclusiveMaximum);
-			case openapiPackage.JSON_SCHEMA_SUBSET__MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MINIMUM:
 				return MINIMUM_EDEFAULT == null ? minimum != null : !MINIMUM_EDEFAULT.equals(minimum);
-			case openapiPackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MAX_LENGTH:
 				return MAX_LENGTH_EDEFAULT == null ? maxLength != null : !MAX_LENGTH_EDEFAULT.equals(maxLength);
-			case openapiPackage.JSON_SCHEMA_SUBSET__PATTERN:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__PATTERN:
 				return PATTERN_EDEFAULT == null ? pattern != null : !PATTERN_EDEFAULT.equals(pattern);
-			case openapiPackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__EXCLUSIVE_MINIMUM:
 				return EXCLUSIVE_MINIMUM_EDEFAULT == null ? exclusiveMinimum != null : !EXCLUSIVE_MINIMUM_EDEFAULT.equals(exclusiveMinimum);
-			case openapiPackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__UNIQUE_ITEMS:
 				return UNIQUE_ITEMS_EDEFAULT == null ? uniqueItems != null : !UNIQUE_ITEMS_EDEFAULT.equals(uniqueItems);
-			case openapiPackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
+			case OpenAPIProfilePackage.JSON_SCHEMA_SUBSET__MULTIPLE_OF:
 				return MULTIPLE_OF_EDEFAULT == null ? multipleOf != null : !MULTIPLE_OF_EDEFAULT.equals(multipleOf);
 		}
 		return super.eIsSet(featureID);

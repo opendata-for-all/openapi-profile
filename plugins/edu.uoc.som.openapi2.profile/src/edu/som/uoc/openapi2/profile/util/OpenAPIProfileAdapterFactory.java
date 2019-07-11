@@ -16,17 +16,17 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapi2.profile.openapiPackage
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage
  * @generated
  */
-public class openapiAdapterFactory extends AdapterFactoryImpl {
+public class OpenAPIProfileAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static openapiPackage modelPackage;
+	protected static OpenAPIProfilePackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -34,9 +34,9 @@ public class openapiAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public openapiAdapterFactory() {
+	public OpenAPIProfileAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = openapiPackage.eINSTANCE;
+			modelPackage = OpenAPIProfilePackage.eINSTANCE;
 		}
 	}
 
@@ -65,8 +65,8 @@ public class openapiAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected openapiSwitch<Adapter> modelSwitch =
-		new openapiSwitch<Adapter>() {
+	protected OpenAPIProfileSwitch<Adapter> modelSwitch =
+		new OpenAPIProfileSwitch<Adapter>() {
 			@Override
 			public Adapter caseAPI(API object) {
 				return createAPIAdapter();
@@ -495,4 +495,4 @@ public class openapiAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //openapiAdapterFactory
+} //OpenAPIProfileAdapterFactory

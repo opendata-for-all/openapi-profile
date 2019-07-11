@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.XMLElement#getWrapped <em>Wrapped</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getXMLElement()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getXMLElement()
  * @model
  * @generated
  */
@@ -35,7 +35,7 @@ public interface XMLElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getXMLElement_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getXMLElement_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface XMLElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Namespace</em>' attribute.
 	 * @see #setNamespace(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getXMLElement_Namespace()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getXMLElement_Namespace()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface XMLElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Prefix</em>' attribute.
 	 * @see #setPrefix(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getXMLElement_Prefix()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getXMLElement_Prefix()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -113,7 +113,7 @@ public interface XMLElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attribute</em>' attribute.
 	 * @see #setAttribute(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getXMLElement_Attribute()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getXMLElement_Attribute()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -139,7 +139,7 @@ public interface XMLElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Wrapped</em>' attribute.
 	 * @see #setWrapped(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getXMLElement_Wrapped()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getXMLElement_Wrapped()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */

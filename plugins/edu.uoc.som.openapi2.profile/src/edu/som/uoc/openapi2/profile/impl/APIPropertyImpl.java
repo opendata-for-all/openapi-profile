@@ -3,8 +3,8 @@
 package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.APIProperty;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.XMLElement;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -151,7 +151,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.API_PROPERTY;
+		return OpenAPIProfilePackage.Literals.API_PROPERTY;
 	}
 
 	/**
@@ -174,7 +174,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		Boolean oldRequired = required;
 		required = newRequired;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PROPERTY__REQUIRED, oldRequired, required));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__REQUIRED, oldRequired, required));
 	}
 
 	/**
@@ -189,7 +189,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 			base_Property = (Property)eResolveProxy(oldBase_Property);
 			if (base_Property != oldBase_Property) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API_PROPERTY__BASE_PROPERTY, oldBase_Property, base_Property));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API_PROPERTY__BASE_PROPERTY, oldBase_Property, base_Property));
 			}
 		}
 		return base_Property;
@@ -214,7 +214,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		Property oldBase_Property = base_Property;
 		base_Property = newBase_Property;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PROPERTY__BASE_PROPERTY, oldBase_Property, base_Property));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__BASE_PROPERTY, oldBase_Property, base_Property));
 	}
 
 	/**
@@ -236,7 +236,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		XMLElement oldXml = xml;
 		xml = newXml;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, openapiPackage.API_PROPERTY__XML, oldXml, newXml);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__XML, oldXml, newXml);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -252,14 +252,14 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		if (newXml != xml) {
 			NotificationChain msgs = null;
 			if (xml != null)
-				msgs = ((InternalEObject)xml).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - openapiPackage.API_PROPERTY__XML, null, msgs);
+				msgs = ((InternalEObject)xml).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OpenAPIProfilePackage.API_PROPERTY__XML, null, msgs);
 			if (newXml != null)
-				msgs = ((InternalEObject)newXml).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - openapiPackage.API_PROPERTY__XML, null, msgs);
+				msgs = ((InternalEObject)newXml).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OpenAPIProfilePackage.API_PROPERTY__XML, null, msgs);
 			msgs = basicSetXml(newXml, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PROPERTY__XML, newXml, newXml));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__XML, newXml, newXml));
 	}
 
 	/**
@@ -282,7 +282,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		String oldExample = example;
 		example = newExample;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PROPERTY__EXAMPLE, oldExample, example));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__EXAMPLE, oldExample, example));
 	}
 
 	/**
@@ -305,7 +305,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PROPERTY__DESCRIPTION, oldDescription, description));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__DESCRIPTION, oldDescription, description));
 	}
 
 	/**
@@ -328,7 +328,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		String oldTitle = title;
 		title = newTitle;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_PROPERTY__TITLE, oldTitle, title));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__TITLE, oldTitle, title));
 	}
 
 	/**
@@ -339,7 +339,7 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case openapiPackage.API_PROPERTY__XML:
+			case OpenAPIProfilePackage.API_PROPERTY__XML:
 				return basicSetXml(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -353,18 +353,18 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.API_PROPERTY__REQUIRED:
+			case OpenAPIProfilePackage.API_PROPERTY__REQUIRED:
 				return getRequired();
-			case openapiPackage.API_PROPERTY__BASE_PROPERTY:
+			case OpenAPIProfilePackage.API_PROPERTY__BASE_PROPERTY:
 				if (resolve) return getBase_Property();
 				return basicGetBase_Property();
-			case openapiPackage.API_PROPERTY__XML:
+			case OpenAPIProfilePackage.API_PROPERTY__XML:
 				return getXml();
-			case openapiPackage.API_PROPERTY__EXAMPLE:
+			case OpenAPIProfilePackage.API_PROPERTY__EXAMPLE:
 				return getExample();
-			case openapiPackage.API_PROPERTY__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PROPERTY__DESCRIPTION:
 				return getDescription();
-			case openapiPackage.API_PROPERTY__TITLE:
+			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				return getTitle();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -378,22 +378,22 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.API_PROPERTY__REQUIRED:
+			case OpenAPIProfilePackage.API_PROPERTY__REQUIRED:
 				setRequired((Boolean)newValue);
 				return;
-			case openapiPackage.API_PROPERTY__BASE_PROPERTY:
+			case OpenAPIProfilePackage.API_PROPERTY__BASE_PROPERTY:
 				setBase_Property((Property)newValue);
 				return;
-			case openapiPackage.API_PROPERTY__XML:
+			case OpenAPIProfilePackage.API_PROPERTY__XML:
 				setXml((XMLElement)newValue);
 				return;
-			case openapiPackage.API_PROPERTY__EXAMPLE:
+			case OpenAPIProfilePackage.API_PROPERTY__EXAMPLE:
 				setExample((String)newValue);
 				return;
-			case openapiPackage.API_PROPERTY__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PROPERTY__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case openapiPackage.API_PROPERTY__TITLE:
+			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				setTitle((String)newValue);
 				return;
 		}
@@ -408,22 +408,22 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_PROPERTY__REQUIRED:
+			case OpenAPIProfilePackage.API_PROPERTY__REQUIRED:
 				setRequired(REQUIRED_EDEFAULT);
 				return;
-			case openapiPackage.API_PROPERTY__BASE_PROPERTY:
+			case OpenAPIProfilePackage.API_PROPERTY__BASE_PROPERTY:
 				setBase_Property((Property)null);
 				return;
-			case openapiPackage.API_PROPERTY__XML:
+			case OpenAPIProfilePackage.API_PROPERTY__XML:
 				setXml((XMLElement)null);
 				return;
-			case openapiPackage.API_PROPERTY__EXAMPLE:
+			case OpenAPIProfilePackage.API_PROPERTY__EXAMPLE:
 				setExample(EXAMPLE_EDEFAULT);
 				return;
-			case openapiPackage.API_PROPERTY__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PROPERTY__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case openapiPackage.API_PROPERTY__TITLE:
+			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				setTitle(TITLE_EDEFAULT);
 				return;
 		}
@@ -438,17 +438,17 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_PROPERTY__REQUIRED:
+			case OpenAPIProfilePackage.API_PROPERTY__REQUIRED:
 				return REQUIRED_EDEFAULT == null ? required != null : !REQUIRED_EDEFAULT.equals(required);
-			case openapiPackage.API_PROPERTY__BASE_PROPERTY:
+			case OpenAPIProfilePackage.API_PROPERTY__BASE_PROPERTY:
 				return base_Property != null;
-			case openapiPackage.API_PROPERTY__XML:
+			case OpenAPIProfilePackage.API_PROPERTY__XML:
 				return xml != null;
-			case openapiPackage.API_PROPERTY__EXAMPLE:
+			case OpenAPIProfilePackage.API_PROPERTY__EXAMPLE:
 				return EXAMPLE_EDEFAULT == null ? example != null : !EXAMPLE_EDEFAULT.equals(example);
-			case openapiPackage.API_PROPERTY__DESCRIPTION:
+			case OpenAPIProfilePackage.API_PROPERTY__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case openapiPackage.API_PROPERTY__TITLE:
+			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 		}
 		return super.eIsSet(featureID);

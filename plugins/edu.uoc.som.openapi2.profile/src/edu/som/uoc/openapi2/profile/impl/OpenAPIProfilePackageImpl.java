@@ -19,6 +19,8 @@ import edu.som.uoc.openapi2.profile.JSONDataType;
 import edu.som.uoc.openapi2.profile.JSONSchemaSubset;
 import edu.som.uoc.openapi2.profile.License;
 import edu.som.uoc.openapi2.profile.OAuth2FlowType;
+import edu.som.uoc.openapi2.profile.OpenAPIProfileFactory;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.ParameterLocation;
 import edu.som.uoc.openapi2.profile.Schema;
 import edu.som.uoc.openapi2.profile.SchemeType;
@@ -31,8 +33,6 @@ import edu.som.uoc.openapi2.profile.SecurityScope;
 import edu.som.uoc.openapi2.profile.Tag;
 import edu.som.uoc.openapi2.profile.Tags;
 import edu.som.uoc.openapi2.profile.XMLElement;
-import edu.som.uoc.openapi2.profile.openapiFactory;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -54,7 +54,7 @@ import org.eclipse.uml2.uml.UMLPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class openapiPackageImpl extends EPackageImpl implements openapiPackage {
+public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIProfilePackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -297,12 +297,12 @@ public class openapiPackageImpl extends EPackageImpl implements openapiPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#eNS_URI
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private openapiPackageImpl() {
-		super(eNS_URI, openapiFactory.eINSTANCE);
+	private OpenAPIProfilePackageImpl() {
+		super(eNS_URI, OpenAPIProfileFactory.eINSTANCE);
 	}
 
 	/**
@@ -315,7 +315,7 @@ public class openapiPackageImpl extends EPackageImpl implements openapiPackage {
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link openapiPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link OpenAPIProfilePackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -324,12 +324,12 @@ public class openapiPackageImpl extends EPackageImpl implements openapiPackage {
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static openapiPackage init() {
-		if (isInited) return (openapiPackage)EPackage.Registry.INSTANCE.getEPackage(openapiPackage.eNS_URI);
+	public static OpenAPIProfilePackage init() {
+		if (isInited) return (OpenAPIProfilePackage)EPackage.Registry.INSTANCE.getEPackage(OpenAPIProfilePackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredopenapiPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		openapiPackageImpl theopenapiPackage = registeredopenapiPackage instanceof openapiPackageImpl ? (openapiPackageImpl)registeredopenapiPackage : new openapiPackageImpl();
+		Object registeredOpenAPIProfilePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		OpenAPIProfilePackageImpl theOpenAPIProfilePackage = registeredOpenAPIProfilePackage instanceof OpenAPIProfilePackageImpl ? (OpenAPIProfilePackageImpl)registeredOpenAPIProfilePackage : new OpenAPIProfilePackageImpl();
 
 		isInited = true;
 
@@ -339,17 +339,17 @@ public class openapiPackageImpl extends EPackageImpl implements openapiPackage {
 		UMLPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
-		theopenapiPackage.createPackageContents();
+		theOpenAPIProfilePackage.createPackageContents();
 
 		// Initialize created meta-data
-		theopenapiPackage.initializePackageContents();
+		theOpenAPIProfilePackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theopenapiPackage.freeze();
+		theOpenAPIProfilePackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(openapiPackage.eNS_URI, theopenapiPackage);
-		return theopenapiPackage;
+		EPackage.Registry.INSTANCE.put(OpenAPIProfilePackage.eNS_URI, theOpenAPIProfilePackage);
+		return theOpenAPIProfilePackage;
 	}
 
 	/**
@@ -1918,8 +1918,8 @@ public class openapiPackageImpl extends EPackageImpl implements openapiPackage {
 	 * @generated
 	 */
 	@Override
-	public openapiFactory getopenapiFactory() {
-		return (openapiFactory)getEFactoryInstance();
+	public OpenAPIProfileFactory getOpenAPIProfileFactory() {
+		return (OpenAPIProfileFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -2421,4 +2421,4 @@ public class openapiPackageImpl extends EPackageImpl implements openapiPackage {
 		   });
 	}
 
-} //openapiPackageImpl
+} //OpenAPIProfilePackageImpl

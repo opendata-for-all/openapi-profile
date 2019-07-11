@@ -3,7 +3,7 @@
 package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.License;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -83,7 +83,7 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.LICENSE;
+		return OpenAPIProfilePackage.Literals.LICENSE;
 	}
 
 	/**
@@ -106,7 +106,7 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.LICENSE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.LICENSE__NAME, oldName, name));
 	}
 
 	/**
@@ -129,7 +129,7 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 		String oldUrl = url;
 		url = newUrl;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.LICENSE__URL, oldUrl, url));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.LICENSE__URL, oldUrl, url));
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.LICENSE__NAME:
+			case OpenAPIProfilePackage.LICENSE__NAME:
 				return getName();
-			case openapiPackage.LICENSE__URL:
+			case OpenAPIProfilePackage.LICENSE__URL:
 				return getUrl();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -156,10 +156,10 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.LICENSE__NAME:
+			case OpenAPIProfilePackage.LICENSE__NAME:
 				setName((String)newValue);
 				return;
-			case openapiPackage.LICENSE__URL:
+			case OpenAPIProfilePackage.LICENSE__URL:
 				setUrl((String)newValue);
 				return;
 		}
@@ -174,10 +174,10 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.LICENSE__NAME:
+			case OpenAPIProfilePackage.LICENSE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case openapiPackage.LICENSE__URL:
+			case OpenAPIProfilePackage.LICENSE__URL:
 				setUrl(URL_EDEFAULT);
 				return;
 		}
@@ -192,9 +192,9 @@ public class LicenseImpl extends MinimalEObjectImpl.Container implements License
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.LICENSE__NAME:
+			case OpenAPIProfilePackage.LICENSE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case openapiPackage.LICENSE__URL:
+			case OpenAPIProfilePackage.LICENSE__URL:
 				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
 		}
 		return super.eIsSet(featureID);

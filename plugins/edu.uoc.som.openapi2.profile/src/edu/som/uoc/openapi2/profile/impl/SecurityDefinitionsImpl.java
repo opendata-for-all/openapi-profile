@@ -2,9 +2,9 @@
  */
 package edu.som.uoc.openapi2.profile.impl;
 
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.SecurityDefinitions;
 import edu.som.uoc.openapi2.profile.SecurityScheme;
-import edu.som.uoc.openapi2.profile.openapiPackage;
 
 import java.util.Collection;
 
@@ -75,7 +75,7 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.SECURITY_DEFINITIONS;
+		return OpenAPIProfilePackage.Literals.SECURITY_DEFINITIONS;
 	}
 
 	/**
@@ -86,7 +86,7 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public EList<SecurityScheme> getSecuritySchemes() {
 		if (securitySchemes == null) {
-			securitySchemes = new EObjectContainmentEList<SecurityScheme>(SecurityScheme.class, this, openapiPackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES);
+			securitySchemes = new EObjectContainmentEList<SecurityScheme>(SecurityScheme.class, this, OpenAPIProfilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES);
 		}
 		return securitySchemes;
 	}
@@ -103,7 +103,7 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 			base_Model = (Model)eResolveProxy(oldBase_Model);
 			if (base_Model != oldBase_Model) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.SECURITY_DEFINITIONS__BASE_MODEL, oldBase_Model, base_Model));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.SECURITY_DEFINITIONS__BASE_MODEL, oldBase_Model, base_Model));
 			}
 		}
 		return base_Model;
@@ -128,7 +128,7 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 		Model oldBase_Model = base_Model;
 		base_Model = newBase_Model;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.SECURITY_DEFINITIONS__BASE_MODEL, oldBase_Model, base_Model));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_DEFINITIONS__BASE_MODEL, oldBase_Model, base_Model));
 	}
 
 	/**
@@ -139,7 +139,7 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
 				return ((InternalEList<?>)getSecuritySchemes()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -153,9 +153,9 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
 				return getSecuritySchemes();
-			case openapiPackage.SECURITY_DEFINITIONS__BASE_MODEL:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__BASE_MODEL:
 				if (resolve) return getBase_Model();
 				return basicGetBase_Model();
 		}
@@ -171,11 +171,11 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
 				getSecuritySchemes().clear();
 				getSecuritySchemes().addAll((Collection<? extends SecurityScheme>)newValue);
 				return;
-			case openapiPackage.SECURITY_DEFINITIONS__BASE_MODEL:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__BASE_MODEL:
 				setBase_Model((Model)newValue);
 				return;
 		}
@@ -190,10 +190,10 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
 				getSecuritySchemes().clear();
 				return;
-			case openapiPackage.SECURITY_DEFINITIONS__BASE_MODEL:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__BASE_MODEL:
 				setBase_Model((Model)null);
 				return;
 		}
@@ -208,9 +208,9 @@ public class SecurityDefinitionsImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__SECURITY_SCHEMES:
 				return securitySchemes != null && !securitySchemes.isEmpty();
-			case openapiPackage.SECURITY_DEFINITIONS__BASE_MODEL:
+			case OpenAPIProfilePackage.SECURITY_DEFINITIONS__BASE_MODEL:
 				return base_Model != null;
 		}
 		return super.eIsSet(featureID);

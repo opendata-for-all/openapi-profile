@@ -4,7 +4,7 @@ package edu.som.uoc.openapi2.profile.impl;
 
 import edu.som.uoc.openapi2.profile.APIDataType;
 import edu.som.uoc.openapi2.profile.JSONDataType;
-import edu.som.uoc.openapi2.profile.openapiPackage;
+import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -110,7 +110,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return openapiPackage.Literals.API_DATA_TYPE;
+		return OpenAPIProfilePackage.Literals.API_DATA_TYPE;
 	}
 
 	/**
@@ -133,7 +133,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 		JSONDataType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_DATA_TYPE__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_DATA_TYPE__TYPE, oldType, type));
 	}
 
 	/**
@@ -156,7 +156,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 		String oldFormat = format;
 		format = newFormat;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_DATA_TYPE__FORMAT, oldFormat, format));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_DATA_TYPE__FORMAT, oldFormat, format));
 	}
 
 	/**
@@ -171,7 +171,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 			base_Enumeration = (Enumeration)eResolveProxy(oldBase_Enumeration);
 			if (base_Enumeration != oldBase_Enumeration) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API_DATA_TYPE__BASE_ENUMERATION, oldBase_Enumeration, base_Enumeration));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API_DATA_TYPE__BASE_ENUMERATION, oldBase_Enumeration, base_Enumeration));
 			}
 		}
 		return base_Enumeration;
@@ -196,7 +196,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 		Enumeration oldBase_Enumeration = base_Enumeration;
 		base_Enumeration = newBase_Enumeration;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_DATA_TYPE__BASE_ENUMERATION, oldBase_Enumeration, base_Enumeration));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_DATA_TYPE__BASE_ENUMERATION, oldBase_Enumeration, base_Enumeration));
 	}
 
 	/**
@@ -211,7 +211,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 			base_PrimitiveType = (PrimitiveType)eResolveProxy(oldBase_PrimitiveType);
 			if (base_PrimitiveType != oldBase_PrimitiveType) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, openapiPackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE, oldBase_PrimitiveType, base_PrimitiveType));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, OpenAPIProfilePackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE, oldBase_PrimitiveType, base_PrimitiveType));
 			}
 		}
 		return base_PrimitiveType;
@@ -236,7 +236,7 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 		PrimitiveType oldBase_PrimitiveType = base_PrimitiveType;
 		base_PrimitiveType = newBase_PrimitiveType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, openapiPackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE, oldBase_PrimitiveType, base_PrimitiveType));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE, oldBase_PrimitiveType, base_PrimitiveType));
 	}
 
 	/**
@@ -247,14 +247,14 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case openapiPackage.API_DATA_TYPE__TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__TYPE:
 				return getType();
-			case openapiPackage.API_DATA_TYPE__FORMAT:
+			case OpenAPIProfilePackage.API_DATA_TYPE__FORMAT:
 				return getFormat();
-			case openapiPackage.API_DATA_TYPE__BASE_ENUMERATION:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_ENUMERATION:
 				if (resolve) return getBase_Enumeration();
 				return basicGetBase_Enumeration();
-			case openapiPackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
 				if (resolve) return getBase_PrimitiveType();
 				return basicGetBase_PrimitiveType();
 		}
@@ -269,16 +269,16 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case openapiPackage.API_DATA_TYPE__TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__TYPE:
 				setType((JSONDataType)newValue);
 				return;
-			case openapiPackage.API_DATA_TYPE__FORMAT:
+			case OpenAPIProfilePackage.API_DATA_TYPE__FORMAT:
 				setFormat((String)newValue);
 				return;
-			case openapiPackage.API_DATA_TYPE__BASE_ENUMERATION:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_ENUMERATION:
 				setBase_Enumeration((Enumeration)newValue);
 				return;
-			case openapiPackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
 				setBase_PrimitiveType((PrimitiveType)newValue);
 				return;
 		}
@@ -293,16 +293,16 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_DATA_TYPE__TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
-			case openapiPackage.API_DATA_TYPE__FORMAT:
+			case OpenAPIProfilePackage.API_DATA_TYPE__FORMAT:
 				setFormat(FORMAT_EDEFAULT);
 				return;
-			case openapiPackage.API_DATA_TYPE__BASE_ENUMERATION:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_ENUMERATION:
 				setBase_Enumeration((Enumeration)null);
 				return;
-			case openapiPackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
 				setBase_PrimitiveType((PrimitiveType)null);
 				return;
 		}
@@ -317,13 +317,13 @@ public class APIDataTypeImpl extends MinimalEObjectImpl.Container implements API
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case openapiPackage.API_DATA_TYPE__TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__TYPE:
 				return type != TYPE_EDEFAULT;
-			case openapiPackage.API_DATA_TYPE__FORMAT:
+			case OpenAPIProfilePackage.API_DATA_TYPE__FORMAT:
 				return FORMAT_EDEFAULT == null ? format != null : !FORMAT_EDEFAULT.equals(format);
-			case openapiPackage.API_DATA_TYPE__BASE_ENUMERATION:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_ENUMERATION:
 				return base_Enumeration != null;
-			case openapiPackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
+			case OpenAPIProfilePackage.API_DATA_TYPE__BASE_PRIMITIVE_TYPE:
 				return base_PrimitiveType != null;
 		}
 		return super.eIsSet(featureID);

@@ -24,7 +24,7 @@ import org.eclipse.uml2.uml.Model;
  *   <li>{@link edu.som.uoc.openapi2.profile.APIInfo#getBase_Model <em>Base Model</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo()
  * @model
  * @generated
  */
@@ -39,7 +39,7 @@ public interface APIInfo extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo_Title()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_Title()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface APIInfo extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface APIInfo extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Terms Of Service</em>' attribute.
 	 * @see #setTermsOfService(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo_TermsOfService()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_TermsOfService()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -117,7 +117,7 @@ public interface APIInfo extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Version</em>' attribute.
 	 * @see #setVersion(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo_Version()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_Version()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -143,7 +143,7 @@ public interface APIInfo extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>License</em>' containment reference.
 	 * @see #setLicense(License)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo_License()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_License()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -169,7 +169,7 @@ public interface APIInfo extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contact</em>' containment reference.
 	 * @see #setContact(Contact)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo_Contact()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_Contact()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
@@ -195,7 +195,7 @@ public interface APIInfo extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Model</em>' reference.
 	 * @see #setBase_Model(Model)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIInfo_Base_Model()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_Base_Model()
 	 * @model ordered="false"
 	 * @generated
 	 */

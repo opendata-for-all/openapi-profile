@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>JSON Data Type</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getJSONDataType()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getJSONDataType()
  * @model
  * @generated
  */

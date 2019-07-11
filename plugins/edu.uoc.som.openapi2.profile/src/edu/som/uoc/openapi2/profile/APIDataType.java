@@ -22,7 +22,7 @@ import org.eclipse.uml2.uml.PrimitiveType;
  *   <li>{@link edu.som.uoc.openapi2.profile.APIDataType#getBase_PrimitiveType <em>Base Primitive Type</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIDataType()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIDataType()
  * @model
  * @generated
  */
@@ -39,7 +39,7 @@ public interface APIDataType extends EObject {
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.JSONDataType
 	 * @see #setType(JSONDataType)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIDataType_Type()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIDataType_Type()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface APIDataType extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Format</em>' attribute.
 	 * @see #setFormat(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIDataType_Format()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIDataType_Format()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface APIDataType extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Enumeration</em>' reference.
 	 * @see #setBase_Enumeration(Enumeration)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIDataType_Base_Enumeration()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIDataType_Base_Enumeration()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -118,7 +118,7 @@ public interface APIDataType extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Primitive Type</em>' reference.
 	 * @see #setBase_PrimitiveType(PrimitiveType)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIDataType_Base_PrimitiveType()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIDataType_Base_PrimitiveType()
 	 * @model ordered="false"
 	 * @generated
 	 */

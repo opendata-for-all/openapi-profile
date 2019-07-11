@@ -21,7 +21,7 @@ import org.eclipse.uml2.uml.Parameter;
  *   <li>{@link edu.som.uoc.openapi2.profile.APIParameter#getRequired <em>Required</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIParameter()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIParameter()
  * @model
  * @generated
  */
@@ -36,7 +36,7 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIParameter_Description()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIParameter_Description()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * @return the value of the '<em>Location</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.ParameterLocation
 	 * @see #setLocation(ParameterLocation)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIParameter_Location()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIParameter_Location()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Allow Empty Value</em>' attribute.
 	 * @see #setAllowEmptyValue(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIParameter_AllowEmptyValue()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIParameter_AllowEmptyValue()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
@@ -119,7 +119,7 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * @return the value of the '<em>Collection Format</em>' attribute.
 	 * @see edu.som.uoc.openapi2.profile.CollectionFormat
 	 * @see #setCollectionFormat(CollectionFormat)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIParameter_CollectionFormat()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIParameter_CollectionFormat()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -146,7 +146,7 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Parameter</em>' reference.
 	 * @see #setBase_Parameter(Parameter)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIParameter_Base_Parameter()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIParameter_Base_Parameter()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -172,7 +172,7 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Required</em>' attribute.
 	 * @see #setRequired(Boolean)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getAPIParameter_Required()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getAPIParameter_Required()
 	 * @model dataType="edu.som.uoc.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */

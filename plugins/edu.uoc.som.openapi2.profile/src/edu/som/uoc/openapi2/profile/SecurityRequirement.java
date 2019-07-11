@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.som.uoc.openapi2.profile.SecurityRequirement#getScopes <em>Scopes</em>}</li>
  * </ul>
  *
- * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityRequirement()
+ * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityRequirement()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface SecurityRequirement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityRequirement_Name()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityRequirement_Name()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface SecurityRequirement extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Scopes</em>' attribute list.
-	 * @see edu.som.uoc.openapi2.profile.openapiPackage#getSecurityRequirement_Scopes()
+	 * @see edu.som.uoc.openapi2.profile.OpenAPIProfilePackage#getSecurityRequirement_Scopes()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
