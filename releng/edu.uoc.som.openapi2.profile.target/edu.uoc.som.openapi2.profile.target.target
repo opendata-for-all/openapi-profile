@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="edu.uoc.som.openapi2.profile.target.target" sequenceNumber="15">
+	<locations>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://download.eclipse.org/releases/2019-06"/>
+			<unit id="org.eclipse.emf.sdk.feature.group" version="2.18.0.v20190528-0845"/>
+			<unit id="org.eclipse.papyrus.sdk.feature.feature.group" version="4.4.0.201906122339"/>
+			<unit id="org.eclipse.uml2.sdk.feature.group" version="5.5.0.v20181203-1331"/>
+		</location>
+	</locations>
+</target>
