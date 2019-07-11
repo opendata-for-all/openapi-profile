@@ -11,5 +11,6 @@
 
 	<modules>
 		<module>edu.uoc.som.openapi2.profile.target</module>
+		<module>edu.uoc.som.openapi2.profile.update</module>
 	</modules>
 </project>
