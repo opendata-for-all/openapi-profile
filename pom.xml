@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.uoc.som.openapi2</groupId>
+  <artifactId>edu.uoc.som.openapi2.profile.root</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>OpenAPI 2 UML profile</name>
+   <developers>
+        <developer>
+            <name>Hamza Ed-douibi</name>
+            <id>hamzaed</id>
+            <email>hamza.eddouibi@gmail.com</email>
+            <roles>
+                <role>admin</role>
+                <role>developer</role>
+            </roles>
+            <timezone>+2</timezone>
+        </developer>
+    </developers>
+	
+	<modules>
+		<module>plugins</module>
+		<module>features</module>
+	</modules>
+</project>
