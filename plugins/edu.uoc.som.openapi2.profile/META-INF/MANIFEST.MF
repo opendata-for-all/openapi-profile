@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OpenAPI profile
-Bundle-SymbolicName: edu.uoc.som.openapi.profile;singleton:=true
+Bundle-SymbolicName: edu.uoc.som.openapi2.profile;singleton:=true
 Bundle-Version: 2.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: Som Research Lab
