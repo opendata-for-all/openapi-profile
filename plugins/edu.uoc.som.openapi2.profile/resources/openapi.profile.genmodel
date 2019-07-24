@@ -247,8 +247,12 @@
           propertySortChoices="true" ecoreFeature="ecore:EReference profile.ecore#//Security/base_Operation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="profile.ecore#//SecurityRequirement">
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//SecurityRequirement/name"/>
-      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//SecurityRequirement/scopes"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference profile.ecore#//SecurityRequirement/securitySchemes"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="profile.ecore#//RequiredSecurityScheme">
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//RequiredSecurityScheme/name"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//RequiredSecurityScheme/scopes"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="profile.ecore#//Tags">
       <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"

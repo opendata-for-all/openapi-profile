@@ -73,6 +73,7 @@ public class OpenAPIProfileFactoryImpl extends EFactoryImpl implements OpenAPIPr
 			case OpenAPIProfilePackage.SECURITY_SCOPE: return createSecurityScope();
 			case OpenAPIProfilePackage.SECURITY: return createSecurity();
 			case OpenAPIProfilePackage.SECURITY_REQUIREMENT: return createSecurityRequirement();
+			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME: return createRequiredSecurityScheme();
 			case OpenAPIProfilePackage.TAGS: return createTags();
 			case OpenAPIProfilePackage.TAG: return createTag();
 			case OpenAPIProfilePackage.XML_ELEMENT: return createXMLElement();
@@ -327,6 +328,17 @@ public class OpenAPIProfileFactoryImpl extends EFactoryImpl implements OpenAPIPr
 	public SecurityRequirement createSecurityRequirement() {
 		SecurityRequirementImpl securityRequirement = new SecurityRequirementImpl();
 		return securityRequirement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RequiredSecurityScheme createRequiredSecurityScheme() {
+		RequiredSecuritySchemeImpl requiredSecurityScheme = new RequiredSecuritySchemeImpl();
+		return requiredSecurityScheme;
 	}
 
 	/**

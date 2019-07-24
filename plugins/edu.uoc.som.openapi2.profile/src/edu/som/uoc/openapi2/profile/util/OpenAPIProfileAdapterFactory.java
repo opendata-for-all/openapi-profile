@@ -136,6 +136,10 @@ public class OpenAPIProfileAdapterFactory extends AdapterFactoryImpl {
 				return createSecurityRequirementAdapter();
 			}
 			@Override
+			public Adapter caseRequiredSecurityScheme(RequiredSecurityScheme object) {
+				return createRequiredSecuritySchemeAdapter();
+			}
+			@Override
 			public Adapter caseTags(Tags object) {
 				return createTagsAdapter();
 			}
@@ -410,6 +414,20 @@ public class OpenAPIProfileAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSecurityRequirementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link edu.som.uoc.openapi2.profile.RequiredSecurityScheme <em>Required Security Scheme</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see edu.som.uoc.openapi2.profile.RequiredSecurityScheme
+	 * @generated
+	 */
+	public Adapter createRequiredSecuritySchemeAdapter() {
 		return null;
 	}
 

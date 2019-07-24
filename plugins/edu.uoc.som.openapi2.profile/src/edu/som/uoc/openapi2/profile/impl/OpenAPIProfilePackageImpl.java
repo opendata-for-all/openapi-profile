@@ -22,6 +22,7 @@ import edu.som.uoc.openapi2.profile.OAuth2FlowType;
 import edu.som.uoc.openapi2.profile.OpenAPIProfileFactory;
 import edu.som.uoc.openapi2.profile.OpenAPIProfilePackage;
 import edu.som.uoc.openapi2.profile.ParameterLocation;
+import edu.som.uoc.openapi2.profile.RequiredSecurityScheme;
 import edu.som.uoc.openapi2.profile.Schema;
 import edu.som.uoc.openapi2.profile.SchemeType;
 import edu.som.uoc.openapi2.profile.Security;
@@ -173,6 +174,13 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	private EClass securityRequirementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass requiredSecuritySchemeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1528,8 +1536,8 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	@Override
-	public EAttribute getSecurityRequirement_Name() {
-		return (EAttribute)securityRequirementEClass.getEStructuralFeatures().get(0);
+	public EReference getSecurityRequirement_SecuritySchemes() {
+		return (EReference)securityRequirementEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1538,8 +1546,28 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	@Override
-	public EAttribute getSecurityRequirement_Scopes() {
-		return (EAttribute)securityRequirementEClass.getEStructuralFeatures().get(1);
+	public EClass getRequiredSecurityScheme() {
+		return requiredSecuritySchemeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredSecurityScheme_Name() {
+		return (EAttribute)requiredSecuritySchemeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredSecurityScheme_Scopes() {
+		return (EAttribute)requiredSecuritySchemeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2074,8 +2102,11 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		createEReference(securityEClass, SECURITY__BASE_OPERATION);
 
 		securityRequirementEClass = createEClass(SECURITY_REQUIREMENT);
-		createEAttribute(securityRequirementEClass, SECURITY_REQUIREMENT__NAME);
-		createEAttribute(securityRequirementEClass, SECURITY_REQUIREMENT__SCOPES);
+		createEReference(securityRequirementEClass, SECURITY_REQUIREMENT__SECURITY_SCHEMES);
+
+		requiredSecuritySchemeEClass = createEClass(REQUIRED_SECURITY_SCHEME);
+		createEAttribute(requiredSecuritySchemeEClass, REQUIRED_SECURITY_SCHEME__NAME);
+		createEAttribute(requiredSecuritySchemeEClass, REQUIRED_SECURITY_SCHEME__SCOPES);
 
 		tagsEClass = createEClass(TAGS);
 		createEReference(tagsEClass, TAGS__TAGS);
@@ -2293,8 +2324,11 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEReference(getSecurity_Base_Operation(), theUMLPackage.getOperation(), null, "base_Operation", null, 0, 1, Security.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(securityRequirementEClass, SecurityRequirement.class, "SecurityRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSecurityRequirement_Name(), theTypesPackage.getString(), "name", null, 0, 1, SecurityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSecurityRequirement_Scopes(), theTypesPackage.getString(), "scopes", null, 0, -1, SecurityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSecurityRequirement_SecuritySchemes(), this.getRequiredSecurityScheme(), null, "securitySchemes", null, 0, -1, SecurityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(requiredSecuritySchemeEClass, RequiredSecurityScheme.class, "RequiredSecurityScheme", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRequiredSecurityScheme_Name(), theTypesPackage.getString(), "name", null, 0, 1, RequiredSecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getRequiredSecurityScheme_Scopes(), theTypesPackage.getString(), "scopes", null, 0, -1, RequiredSecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(tagsEClass, Tags.class, "Tags", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTags_Tags(), this.getTag(), null, "tags", null, 1, -1, Tags.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

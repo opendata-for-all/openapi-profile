@@ -1499,22 +1499,13 @@ public interface OpenAPIProfilePackage extends EPackage {
 	int SECURITY_REQUIREMENT = 16;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Security Schemes</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENT__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Scopes</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SECURITY_REQUIREMENT__SCOPES = 1;
+	int SECURITY_REQUIREMENT__SECURITY_SCHEMES = 0;
 
 	/**
 	 * The number of structural features of the '<em>Security Requirement</em>' class.
@@ -1523,7 +1514,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_REQUIREMENT_FEATURE_COUNT = 2;
+	int SECURITY_REQUIREMENT_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Security Requirement</em>' class.
@@ -1535,6 +1526,52 @@ public interface OpenAPIProfilePackage extends EPackage {
 	int SECURITY_REQUIREMENT_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.impl.RequiredSecuritySchemeImpl <em>Required Security Scheme</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.som.uoc.openapi2.profile.impl.RequiredSecuritySchemeImpl
+	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getRequiredSecurityScheme()
+	 * @generated
+	 */
+	int REQUIRED_SECURITY_SCHEME = 17;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_SECURITY_SCHEME__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Scopes</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_SECURITY_SCHEME__SCOPES = 1;
+
+	/**
+	 * The number of structural features of the '<em>Required Security Scheme</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_SECURITY_SCHEME_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Required Security Scheme</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_SECURITY_SCHEME_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.impl.TagsImpl <em>Tags</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1542,7 +1579,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getTags()
 	 * @generated
 	 */
-	int TAGS = 17;
+	int TAGS = 18;
 
 	/**
 	 * The feature id for the '<em><b>Tags</b></em>' containment reference list.
@@ -1588,7 +1625,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getTag()
 	 * @generated
 	 */
-	int TAG = 18;
+	int TAG = 19;
 
 	/**
 	 * The feature id for the '<em><b>External Docs URL</b></em>' attribute.
@@ -1652,7 +1689,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getXMLElement()
 	 * @generated
 	 */
-	int XML_ELEMENT = 19;
+	int XML_ELEMENT = 20;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1725,7 +1762,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIDataType()
 	 * @generated
 	 */
-	int API_DATA_TYPE = 20;
+	int API_DATA_TYPE = 21;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1789,7 +1826,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIProperty()
 	 * @generated
 	 */
-	int API_PROPERTY = 21;
+	int API_PROPERTY = 22;
 
 	/**
 	 * The feature id for the '<em><b>Min Length</b></em>' attribute.
@@ -1952,7 +1989,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSchemeType()
 	 * @generated
 	 */
-	int SCHEME_TYPE = 22;
+	int SCHEME_TYPE = 23;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.HTTPMethod <em>HTTP Method</em>}' enum.
@@ -1962,7 +1999,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getHTTPMethod()
 	 * @generated
 	 */
-	int HTTP_METHOD = 23;
+	int HTTP_METHOD = 24;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.ParameterLocation <em>Parameter Location</em>}' enum.
@@ -1972,7 +2009,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getParameterLocation()
 	 * @generated
 	 */
-	int PARAMETER_LOCATION = 24;
+	int PARAMETER_LOCATION = 25;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.CollectionFormat <em>Collection Format</em>}' enum.
@@ -1982,7 +2019,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getCollectionFormat()
 	 * @generated
 	 */
-	int COLLECTION_FORMAT = 25;
+	int COLLECTION_FORMAT = 26;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.JSONDataType <em>JSON Data Type</em>}' enum.
@@ -1992,7 +2029,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getJSONDataType()
 	 * @generated
 	 */
-	int JSON_DATA_TYPE = 26;
+	int JSON_DATA_TYPE = 27;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.SecuritySchemeType <em>Security Scheme Type</em>}' enum.
@@ -2002,7 +2039,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecuritySchemeType()
 	 * @generated
 	 */
-	int SECURITY_SCHEME_TYPE = 27;
+	int SECURITY_SCHEME_TYPE = 28;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.APIKeyLocation <em>API Key Location</em>}' enum.
@@ -2012,7 +2049,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIKeyLocation()
 	 * @generated
 	 */
-	int API_KEY_LOCATION = 28;
+	int API_KEY_LOCATION = 29;
 
 	/**
 	 * The meta object id for the '{@link edu.som.uoc.openapi2.profile.OAuth2FlowType <em>OAuth2 Flow Type</em>}' enum.
@@ -2022,7 +2059,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getOAuth2FlowType()
 	 * @generated
 	 */
-	int OAUTH2_FLOW_TYPE = 29;
+	int OAUTH2_FLOW_TYPE = 30;
 
 	/**
 	 * The meta object id for the '<em>Integer</em>' data type.
@@ -2032,7 +2069,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getInteger()
 	 * @generated
 	 */
-	int INTEGER = 30;
+	int INTEGER = 31;
 
 	/**
 	 * The meta object id for the '<em>Boolean</em>' data type.
@@ -2042,7 +2079,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getBoolean()
 	 * @generated
 	 */
-	int BOOLEAN = 31;
+	int BOOLEAN = 32;
 
 	/**
 	 * The meta object id for the '<em>Double</em>' data type.
@@ -2052,7 +2089,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getDouble()
 	 * @generated
 	 */
-	int DOUBLE = 32;
+	int DOUBLE = 33;
 
 
 	/**
@@ -3326,26 +3363,47 @@ public interface OpenAPIProfilePackage extends EPackage {
 	EClass getSecurityRequirement();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapi2.profile.SecurityRequirement#getName <em>Name</em>}'.
+	 * Returns the meta object for the containment reference list '{@link edu.som.uoc.openapi2.profile.SecurityRequirement#getSecuritySchemes <em>Security Schemes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Security Schemes</em>'.
+	 * @see edu.som.uoc.openapi2.profile.SecurityRequirement#getSecuritySchemes()
+	 * @see #getSecurityRequirement()
+	 * @generated
+	 */
+	EReference getSecurityRequirement_SecuritySchemes();
+
+	/**
+	 * Returns the meta object for class '{@link edu.som.uoc.openapi2.profile.RequiredSecurityScheme <em>Required Security Scheme</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Required Security Scheme</em>'.
+	 * @see edu.som.uoc.openapi2.profile.RequiredSecurityScheme
+	 * @generated
+	 */
+	EClass getRequiredSecurityScheme();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.som.uoc.openapi2.profile.RequiredSecurityScheme#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see edu.som.uoc.openapi2.profile.SecurityRequirement#getName()
-	 * @see #getSecurityRequirement()
+	 * @see edu.som.uoc.openapi2.profile.RequiredSecurityScheme#getName()
+	 * @see #getRequiredSecurityScheme()
 	 * @generated
 	 */
-	EAttribute getSecurityRequirement_Name();
+	EAttribute getRequiredSecurityScheme_Name();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link edu.som.uoc.openapi2.profile.SecurityRequirement#getScopes <em>Scopes</em>}'.
+	 * Returns the meta object for the attribute list '{@link edu.som.uoc.openapi2.profile.RequiredSecurityScheme#getScopes <em>Scopes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Scopes</em>'.
-	 * @see edu.som.uoc.openapi2.profile.SecurityRequirement#getScopes()
-	 * @see #getSecurityRequirement()
+	 * @see edu.som.uoc.openapi2.profile.RequiredSecurityScheme#getScopes()
+	 * @see #getRequiredSecurityScheme()
 	 * @generated
 	 */
-	EAttribute getSecurityRequirement_Scopes();
+	EAttribute getRequiredSecurityScheme_Scopes();
 
 	/**
 	 * Returns the meta object for class '{@link edu.som.uoc.openapi2.profile.Tags <em>Tags</em>}'.
@@ -4736,12 +4794,30 @@ public interface OpenAPIProfilePackage extends EPackage {
 		EClass SECURITY_REQUIREMENT = eINSTANCE.getSecurityRequirement();
 
 		/**
+		 * The meta object literal for the '<em><b>Security Schemes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SECURITY_REQUIREMENT__SECURITY_SCHEMES = eINSTANCE.getSecurityRequirement_SecuritySchemes();
+
+		/**
+		 * The meta object literal for the '{@link edu.som.uoc.openapi2.profile.impl.RequiredSecuritySchemeImpl <em>Required Security Scheme</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.som.uoc.openapi2.profile.impl.RequiredSecuritySchemeImpl
+		 * @see edu.som.uoc.openapi2.profile.impl.OpenAPIProfilePackageImpl#getRequiredSecurityScheme()
+		 * @generated
+		 */
+		EClass REQUIRED_SECURITY_SCHEME = eINSTANCE.getRequiredSecurityScheme();
+
+		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SECURITY_REQUIREMENT__NAME = eINSTANCE.getSecurityRequirement_Name();
+		EAttribute REQUIRED_SECURITY_SCHEME__NAME = eINSTANCE.getRequiredSecurityScheme_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Scopes</b></em>' attribute list feature.
@@ -4749,7 +4825,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SECURITY_REQUIREMENT__SCOPES = eINSTANCE.getSecurityRequirement_Scopes();
+		EAttribute REQUIRED_SECURITY_SCHEME__SCOPES = eINSTANCE.getRequiredSecurityScheme_Scopes();
 
 		/**
 		 * The meta object literal for the '{@link edu.som.uoc.openapi2.profile.impl.TagsImpl <em>Tags</em>}' class.

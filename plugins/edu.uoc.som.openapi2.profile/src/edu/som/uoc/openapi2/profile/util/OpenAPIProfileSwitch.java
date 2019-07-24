@@ -169,6 +169,12 @@ public class OpenAPIProfileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME: {
+				RequiredSecurityScheme requiredSecurityScheme = (RequiredSecurityScheme)theEObject;
+				T result = caseRequiredSecurityScheme(requiredSecurityScheme);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case OpenAPIProfilePackage.TAGS: {
 				Tags tags = (Tags)theEObject;
 				T result = caseTags(tags);
@@ -456,6 +462,21 @@ public class OpenAPIProfileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSecurityRequirement(SecurityRequirement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Required Security Scheme</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Required Security Scheme</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRequiredSecurityScheme(RequiredSecurityScheme object) {
 		return null;
 	}
 

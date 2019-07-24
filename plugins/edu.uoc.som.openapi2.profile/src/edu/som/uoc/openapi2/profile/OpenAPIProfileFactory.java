@@ -166,6 +166,15 @@ public interface OpenAPIProfileFactory extends EFactory {
 	SecurityRequirement createSecurityRequirement();
 
 	/**
+	 * Returns a new object of class '<em>Required Security Scheme</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Required Security Scheme</em>'.
+	 * @generated
+	 */
+	RequiredSecurityScheme createRequiredSecurityScheme();
+
+	/**
 	 * Returns a new object of class '<em>Tags</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
