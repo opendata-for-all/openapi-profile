@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Profile xmi:id="_8zK3wHyGEemaV87q0fd26g" name="OpenAPIProfile" metaclassReference="_mD9fcHyHEemaV87q0fd26g _adQYcH0_EemCU627TT0glQ _LtKO8H1EEemCU627TT0glQ _LtLdEH1EEemCU627TT0glQ _ZU2zsH1EEemCU627TT0glQ _LiDgQH1GEemCU627TT0glQ _1sLuQH1HEemCU627TT0glQ _L0cxQIbdEemJAf1U_0U40g">
+  <uml:Profile xmi:id="_8zK3wHyGEemaV87q0fd26g" name="OpenAPIProfile" metaclassReference="_mD9fcHyHEemaV87q0fd26g _adQYcH0_EemCU627TT0glQ _LtKO8H1EEemCU627TT0glQ _LtLdEH1EEemCU627TT0glQ _ZU2zsH1EEemCU627TT0glQ _LiDgQH1GEemCU627TT0glQ _1sLuQH1HEemCU627TT0glQ _L0cxQIbdEemJAf1U_0U40g __wheMK5hEemJ57URG_4tkw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lDYWwHyIEemaV87q0fd26g" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_adKR0H0_EemCU627TT0glQ" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_adKR0X0_EemCU627TT0glQ" key="Version" value="0.0.0"/>
@@ -33,6 +33,9 @@
     </elementImport>
     <elementImport xmi:type="uml:ElementImport" xmi:id="_L0cxQIbdEemJAf1U_0U40g" alias="Type">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Type"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="__wheMK5hEemJ57URG_4tkw" alias="Association">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
     </elementImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_9FTJkHyGEemaV87q0fd26g">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -742,6 +745,16 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__6gMYq1rEemzLvsKk9mT3A"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__6gMY61rEemzLvsKk9mT3A" value="*"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_sl41UK5hEemJ57URG_4tkw" name="Serialization">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yyxOUK5hEemJ57URG_4tkw" name="includesTarget" type="_YOStgIa2EemJAf1U_0U40g"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_D8rVkK5iEemJ57URG_4tkw" name="base_Association" association="_D8jZwK5iEemJ57URG_4tkw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D8rVka5iEemJ57URG_4tkw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_D8jZwK5iEemJ57URG_4tkw" name="E_Serialization_Association1" memberEnd="_D8pgYK5iEemJ57URG_4tkw _D8rVkK5iEemJ57URG_4tkw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_D8pgYK5iEemJ57URG_4tkw" name="extension_Serialization" type="_sl41UK5hEemJ57URG_4tkw" aggregation="composite" association="_D8jZwK5iEemJ57URG_4tkw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_V7D-gIO0EemwsPbmDx6KRQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_V7NIcIO0EemwsPbmDx6KRQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

@@ -206,6 +206,12 @@ public class OpenAPIProfileSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case OpenAPIProfilePackage.SERIALIZATION: {
+				Serialization serialization = (Serialization)theEObject;
+				T result = caseSerialization(serialization);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -552,6 +558,21 @@ public class OpenAPIProfileSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAPIProperty(APIProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Serialization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Serialization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSerialization(Serialization object) {
 		return null;
 	}
 

@@ -79,6 +79,7 @@ public class OpenAPIProfileFactoryImpl extends EFactoryImpl implements OpenAPIPr
 			case OpenAPIProfilePackage.XML_ELEMENT: return createXMLElement();
 			case OpenAPIProfilePackage.API_DATA_TYPE: return createAPIDataType();
 			case OpenAPIProfilePackage.API_PROPERTY: return createAPIProperty();
+			case OpenAPIProfilePackage.SERIALIZATION: return createSerialization();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -394,6 +395,17 @@ public class OpenAPIProfileFactoryImpl extends EFactoryImpl implements OpenAPIPr
 	public APIProperty createAPIProperty() {
 		APIPropertyImpl apiProperty = new APIPropertyImpl();
 		return apiProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Serialization createSerialization() {
+		SerializationImpl serialization = new SerializationImpl();
+		return serialization;
 	}
 
 	/**

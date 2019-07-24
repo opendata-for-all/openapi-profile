@@ -1982,6 +1982,52 @@ public interface OpenAPIProfilePackage extends EPackage {
 	int API_PROPERTY_OPERATION_COUNT = JSON_SCHEMA_SUBSET_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.impl.SerializationImpl <em>Serialization</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.uoc.som.openapi2.profile.impl.SerializationImpl
+	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSerialization()
+	 * @generated
+	 */
+	int SERIALIZATION = 23;
+
+	/**
+	 * The feature id for the '<em><b>Includes Target</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERIALIZATION__INCLUDES_TARGET = 0;
+
+	/**
+	 * The feature id for the '<em><b>Base Association</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERIALIZATION__BASE_ASSOCIATION = 1;
+
+	/**
+	 * The number of structural features of the '<em>Serialization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERIALIZATION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Serialization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERIALIZATION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.SchemeType <em>Scheme Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1989,7 +2035,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSchemeType()
 	 * @generated
 	 */
-	int SCHEME_TYPE = 23;
+	int SCHEME_TYPE = 24;
 
 	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.HTTPMethod <em>HTTP Method</em>}' enum.
@@ -1999,7 +2045,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getHTTPMethod()
 	 * @generated
 	 */
-	int HTTP_METHOD = 24;
+	int HTTP_METHOD = 25;
 
 	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.ParameterLocation <em>Parameter Location</em>}' enum.
@@ -2009,7 +2055,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getParameterLocation()
 	 * @generated
 	 */
-	int PARAMETER_LOCATION = 25;
+	int PARAMETER_LOCATION = 26;
 
 	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.CollectionFormat <em>Collection Format</em>}' enum.
@@ -2019,7 +2065,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getCollectionFormat()
 	 * @generated
 	 */
-	int COLLECTION_FORMAT = 26;
+	int COLLECTION_FORMAT = 27;
 
 	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.JSONDataType <em>JSON Data Type</em>}' enum.
@@ -2029,7 +2075,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getJSONDataType()
 	 * @generated
 	 */
-	int JSON_DATA_TYPE = 27;
+	int JSON_DATA_TYPE = 28;
 
 	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.SecuritySchemeType <em>Security Scheme Type</em>}' enum.
@@ -2039,7 +2085,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSecuritySchemeType()
 	 * @generated
 	 */
-	int SECURITY_SCHEME_TYPE = 28;
+	int SECURITY_SCHEME_TYPE = 29;
 
 	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.APIKeyLocation <em>API Key Location</em>}' enum.
@@ -2049,7 +2095,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getAPIKeyLocation()
 	 * @generated
 	 */
-	int API_KEY_LOCATION = 29;
+	int API_KEY_LOCATION = 30;
 
 	/**
 	 * The meta object id for the '{@link edu.uoc.som.openapi2.profile.OAuth2FlowType <em>OAuth2 Flow Type</em>}' enum.
@@ -2059,7 +2105,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getOAuth2FlowType()
 	 * @generated
 	 */
-	int OAUTH2_FLOW_TYPE = 30;
+	int OAUTH2_FLOW_TYPE = 31;
 
 	/**
 	 * The meta object id for the '<em>Integer</em>' data type.
@@ -2069,7 +2115,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getInteger()
 	 * @generated
 	 */
-	int INTEGER = 31;
+	int INTEGER = 32;
 
 	/**
 	 * The meta object id for the '<em>Boolean</em>' data type.
@@ -2079,7 +2125,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getBoolean()
 	 * @generated
 	 */
-	int BOOLEAN = 32;
+	int BOOLEAN = 33;
 
 	/**
 	 * The meta object id for the '<em>Double</em>' data type.
@@ -2089,7 +2135,7 @@ public interface OpenAPIProfilePackage extends EPackage {
 	 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getDouble()
 	 * @generated
 	 */
-	int DOUBLE = 33;
+	int DOUBLE = 34;
 
 
 	/**
@@ -3687,6 +3733,38 @@ public interface OpenAPIProfilePackage extends EPackage {
 	EAttribute getAPIProperty_Title();
 
 	/**
+	 * Returns the meta object for class '{@link edu.uoc.som.openapi2.profile.Serialization <em>Serialization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Serialization</em>'.
+	 * @see edu.uoc.som.openapi2.profile.Serialization
+	 * @generated
+	 */
+	EClass getSerialization();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.Serialization#getIncludesTarget <em>Includes Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Includes Target</em>'.
+	 * @see edu.uoc.som.openapi2.profile.Serialization#getIncludesTarget()
+	 * @see #getSerialization()
+	 * @generated
+	 */
+	EAttribute getSerialization_IncludesTarget();
+
+	/**
+	 * Returns the meta object for the reference '{@link edu.uoc.som.openapi2.profile.Serialization#getBase_Association <em>Base Association</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Association</em>'.
+	 * @see edu.uoc.som.openapi2.profile.Serialization#getBase_Association()
+	 * @see #getSerialization()
+	 * @generated
+	 */
+	EReference getSerialization_Base_Association();
+
+	/**
 	 * Returns the meta object for enum '{@link edu.uoc.som.openapi2.profile.SchemeType <em>Scheme Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5044,6 +5122,32 @@ public interface OpenAPIProfilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute API_PROPERTY__TITLE = eINSTANCE.getAPIProperty_Title();
+
+		/**
+		 * The meta object literal for the '{@link edu.uoc.som.openapi2.profile.impl.SerializationImpl <em>Serialization</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.uoc.som.openapi2.profile.impl.SerializationImpl
+		 * @see edu.uoc.som.openapi2.profile.impl.OpenAPIProfilePackageImpl#getSerialization()
+		 * @generated
+		 */
+		EClass SERIALIZATION = eINSTANCE.getSerialization();
+
+		/**
+		 * The meta object literal for the '<em><b>Includes Target</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERIALIZATION__INCLUDES_TARGET = eINSTANCE.getSerialization_IncludesTarget();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Association</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERIALIZATION__BASE_ASSOCIATION = eINSTANCE.getSerialization_Base_Association();
 
 		/**
 		 * The meta object literal for the '{@link edu.uoc.som.openapi2.profile.SchemeType <em>Scheme Type</em>}' enum.

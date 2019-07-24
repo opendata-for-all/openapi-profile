@@ -220,6 +220,15 @@ public interface OpenAPIProfileFactory extends EFactory {
 	APIProperty createAPIProperty();
 
 	/**
+	 * Returns a new object of class '<em>Serialization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Serialization</em>'.
+	 * @generated
+	 */
+	Serialization createSerialization();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

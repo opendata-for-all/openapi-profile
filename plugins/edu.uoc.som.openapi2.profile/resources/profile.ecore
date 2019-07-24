@@ -348,4 +348,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Serialization">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="includesTarget" ordered="false"
+        lowerBound="1" eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base_Association" ordered="false"
+        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Association"/>
+  </eClassifiers>
 </ecore:EPackage>

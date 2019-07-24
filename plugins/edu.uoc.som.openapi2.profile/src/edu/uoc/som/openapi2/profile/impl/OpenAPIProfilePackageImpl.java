@@ -31,6 +31,7 @@ import edu.uoc.som.openapi2.profile.SecurityRequirement;
 import edu.uoc.som.openapi2.profile.SecurityScheme;
 import edu.uoc.som.openapi2.profile.SecuritySchemeType;
 import edu.uoc.som.openapi2.profile.SecurityScope;
+import edu.uoc.som.openapi2.profile.Serialization;
 import edu.uoc.som.openapi2.profile.Tag;
 import edu.uoc.som.openapi2.profile.Tags;
 import edu.uoc.som.openapi2.profile.XMLElement;
@@ -216,6 +217,13 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	private EClass apiPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass serializationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1836,6 +1844,36 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	@Override
+	public EClass getSerialization() {
+		return serializationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSerialization_IncludesTarget() {
+		return (EAttribute)serializationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSerialization_Base_Association() {
+		return (EReference)serializationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getSchemeType() {
 		return schemeTypeEEnum;
 	}
@@ -2139,6 +2177,10 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		createEAttribute(apiPropertyEClass, API_PROPERTY__DESCRIPTION);
 		createEAttribute(apiPropertyEClass, API_PROPERTY__TITLE);
 
+		serializationEClass = createEClass(SERIALIZATION);
+		createEAttribute(serializationEClass, SERIALIZATION__INCLUDES_TARGET);
+		createEReference(serializationEClass, SERIALIZATION__BASE_ASSOCIATION);
+
 		// Create enums
 		schemeTypeEEnum = createEEnum(SCHEME_TYPE);
 		httpMethodEEnum = createEEnum(HTTP_METHOD);
@@ -2360,6 +2402,10 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEAttribute(getAPIProperty_Example(), theTypesPackage.getString(), "example", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Title(), theTypesPackage.getString(), "title", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(serializationEClass, Serialization.class, "Serialization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSerialization_IncludesTarget(), this.getBoolean(), "includesTarget", null, 1, 1, Serialization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getSerialization_Base_Association(), theUMLPackage.getAssociation(), null, "base_Association", null, 0, 1, Serialization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(schemeTypeEEnum, SchemeType.class, "SchemeType");
