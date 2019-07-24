@@ -7,9 +7,9 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: edu.som.uoc.openapi2.profile,
- edu.som.uoc.openapi2.profile.impl,
- edu.som.uoc.openapi2.profile.util
+Export-Package: edu.uoc.som.openapi2.profile,
+ edu.uoc.som.openapi2.profile.impl,
+ edu.uoc.som.openapi2.profile.util
 Automatic-Module-Name: edu.uoc.som.openapi2.profile
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
