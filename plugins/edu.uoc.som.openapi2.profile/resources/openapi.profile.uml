@@ -739,6 +739,10 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mINf4Y6nEemxQ8NrvMtPtQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mINf4o6nEemxQ8NrvMtPtQ" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_P-96kLN3EemtrvjarQPoSg" name="isID" visibility="public" type="_YOStgIa2EemJAf1U_0U40g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P-96kbN3EemtrvjarQPoSg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P-96krN3EemtrvjarQPoSg" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:DataType" xmi:id="__6gMYK1rEemzLvsKk9mT3A" name="SecurityRequirement">
       <ownedAttribute xmi:type="uml:Property" xmi:id="__6gMYa1rEemzLvsKk9mT3A" name="securitySchemes" type="_adxp8H1MEemCU627TT0glQ">

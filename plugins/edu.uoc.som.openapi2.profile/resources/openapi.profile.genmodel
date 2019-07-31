@@ -291,6 +291,7 @@
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//APIProperty/example"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//APIProperty/description"/>
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//APIProperty/title"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//APIProperty/isID"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="profile.ecore#//Serialization">
       <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute profile.ecore#//Serialization/includesTarget"/>

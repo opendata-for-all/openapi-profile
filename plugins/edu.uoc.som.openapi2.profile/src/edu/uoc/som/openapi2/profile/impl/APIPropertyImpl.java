@@ -30,6 +30,7 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.uoc.som.openapi2.profile.impl.APIPropertyImpl#getExample <em>Example</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.impl.APIPropertyImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.impl.APIPropertyImpl#getTitle <em>Title</em>}</li>
+ *   <li>{@link edu.uoc.som.openapi2.profile.impl.APIPropertyImpl#getIdentifier <em>Identifier</em>}</li>
  * </ul>
  *
  * @generated
@@ -134,6 +135,26 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	 * @ordered
 	 */
 	protected String title = TITLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIdentifier()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean IDENTIFIER_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getIdentifier() <em>Identifier</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIdentifier()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean identifier = IDENTIFIER_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -337,6 +358,29 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 	 * @generated
 	 */
 	@Override
+	public Boolean getIdentifier() {
+		return identifier;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIdentifier(Boolean newIdentifier) {
+		Boolean oldIdentifier = identifier;
+		identifier = newIdentifier;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.API_PROPERTY__IDENTIFIER, oldIdentifier, identifier));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case OpenAPIProfilePackage.API_PROPERTY__XML:
@@ -366,6 +410,8 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 				return getDescription();
 			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				return getTitle();
+			case OpenAPIProfilePackage.API_PROPERTY__IDENTIFIER:
+				return getIdentifier();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -395,6 +441,9 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 				return;
 			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				setTitle((String)newValue);
+				return;
+			case OpenAPIProfilePackage.API_PROPERTY__IDENTIFIER:
+				setIdentifier((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -426,6 +475,9 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				setTitle(TITLE_EDEFAULT);
 				return;
+			case OpenAPIProfilePackage.API_PROPERTY__IDENTIFIER:
+				setIdentifier(IDENTIFIER_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -450,6 +502,8 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case OpenAPIProfilePackage.API_PROPERTY__TITLE:
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
+			case OpenAPIProfilePackage.API_PROPERTY__IDENTIFIER:
+				return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -472,6 +526,8 @@ public class APIPropertyImpl extends JSONSchemaSubsetImpl implements APIProperty
 		result.append(description);
 		result.append(", title: ");
 		result.append(title);
+		result.append(", identifier: ");
+		result.append(identifier);
 		result.append(')');
 		return result.toString();
 	}

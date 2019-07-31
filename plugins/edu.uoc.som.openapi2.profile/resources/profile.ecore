@@ -347,6 +347,7 @@
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
         eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isID" ordered="false" eType="#//Boolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Serialization">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="includesTarget" ordered="false"

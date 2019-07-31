@@ -1844,6 +1844,16 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	@Override
+	public EAttribute getAPIProperty_Identifier() {
+		return (EAttribute)apiPropertyEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSerialization() {
 		return serializationEClass;
 	}
@@ -2176,6 +2186,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		createEAttribute(apiPropertyEClass, API_PROPERTY__EXAMPLE);
 		createEAttribute(apiPropertyEClass, API_PROPERTY__DESCRIPTION);
 		createEAttribute(apiPropertyEClass, API_PROPERTY__TITLE);
+		createEAttribute(apiPropertyEClass, API_PROPERTY__IDENTIFIER);
 
 		serializationEClass = createEClass(SERIALIZATION);
 		createEAttribute(serializationEClass, SERIALIZATION__INCLUDES_TARGET);
@@ -2402,6 +2413,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEAttribute(getAPIProperty_Example(), theTypesPackage.getString(), "example", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Title(), theTypesPackage.getString(), "title", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIProperty_Identifier(), this.getBoolean(), "identifier", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(serializationEClass, Serialization.class, "Serialization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSerialization_IncludesTarget(), this.getBoolean(), "includesTarget", null, 1, 1, Serialization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

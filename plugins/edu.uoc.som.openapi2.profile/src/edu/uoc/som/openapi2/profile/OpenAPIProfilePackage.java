@@ -1964,13 +1964,22 @@ public interface OpenAPIProfilePackage extends EPackage {
 	int API_PROPERTY__TITLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_PROPERTY__IDENTIFIER = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 6;
+
+	/**
 	 * The number of structural features of the '<em>API Property</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 6;
+	int API_PROPERTY_FEATURE_COUNT = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of operations of the '<em>API Property</em>' class.
@@ -3733,6 +3742,17 @@ public interface OpenAPIProfilePackage extends EPackage {
 	EAttribute getAPIProperty_Title();
 
 	/**
+	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.APIProperty#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see edu.uoc.som.openapi2.profile.APIProperty#getIdentifier()
+	 * @see #getAPIProperty()
+	 * @generated
+	 */
+	EAttribute getAPIProperty_Identifier();
+
+	/**
 	 * Returns the meta object for class '{@link edu.uoc.som.openapi2.profile.Serialization <em>Serialization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5122,6 +5142,14 @@ public interface OpenAPIProfilePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute API_PROPERTY__TITLE = eINSTANCE.getAPIProperty_Title();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute API_PROPERTY__IDENTIFIER = eINSTANCE.getAPIProperty_Identifier();
 
 		/**
 		 * The meta object literal for the '{@link edu.uoc.som.openapi2.profile.impl.SerializationImpl <em>Serialization</em>}' class.

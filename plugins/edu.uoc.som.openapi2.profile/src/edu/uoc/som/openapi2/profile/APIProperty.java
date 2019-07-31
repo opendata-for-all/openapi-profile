@@ -19,6 +19,7 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getExample <em>Example</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getTitle <em>Title</em>}</li>
+ *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getIdentifier <em>Identifier</em>}</li>
  * </ul>
  *
  * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIProperty()
@@ -181,5 +182,31 @@ public interface APIProperty extends JSONSchemaSubset {
 	 * @generated
 	 */
 	void setTitle(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Identifier</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Identifier</em>' attribute.
+	 * @see #setIdentifier(Boolean)
+	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Identifier()
+	 * @model dataType="edu.uoc.som.openapi2.profile.Boolean" ordered="false"
+	 * @generated
+	 */
+	Boolean getIdentifier();
+
+	/**
+	 * Sets the value of the '{@link edu.uoc.som.openapi2.profile.APIProperty#getIdentifier <em>Identifier</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Identifier</em>' attribute.
+	 * @see #getIdentifier()
+	 * @generated
+	 */
+	void setIdentifier(Boolean value);
 
 } // APIProperty
