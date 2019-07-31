@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="edu.uoc.som.openapi2.profile.feature"
-      label="OpenAPI Profile Feature"
-      version="2.0.0.qualifier"
+      label="OpenAPI 2.0 Profile"
+      version="2.0.1.qualifier"
       provider-name="Som Research Lab">
 
    <description url="https://github.com/SOM-Research/openapi-profile">

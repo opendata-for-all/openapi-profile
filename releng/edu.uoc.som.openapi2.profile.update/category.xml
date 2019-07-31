@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature id="edu.uoc.som.openapi2.profile.feature">
-      <category name="OpenAPI Profile"/>
+      <category name="OpenAPI 2.0 Profile"/>
    </feature>
-   <category-def name="OpenAPI Profile" label="OpenAPI Profile"/>
+   <category-def name="OpenAPI 2.0 Profile" label="OpenAPI 2.0 Profile"/>
 </site>
