@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.uoc.som.openapi2.profile.impl.RequiredSecuritySchemeImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.uoc.som.openapi2.profile.impl.RequiredSecuritySchemeImpl#getKey <em>Key</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.impl.RequiredSecuritySchemeImpl#getScopes <em>Scopes</em>}</li>
  * </ul>
  *
@@ -34,24 +34,24 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  */
 public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container implements RequiredSecurityScheme {
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The default value of the '{@link #getKey() <em>Key</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getKey()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String KEY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getKey() <em>Key</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getKey()
 	 * @generated
 	 * @ordered
 	 */
-	protected String name = NAME_EDEFAULT;
+	protected String key = KEY_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getScopes() <em>Scopes</em>}' attribute list.
@@ -88,8 +88,8 @@ public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public String getName() {
-		return name;
+	public String getKey() {
+		return key;
 	}
 
 	/**
@@ -98,11 +98,11 @@ public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
+	public void setKey(String newKey) {
+		String oldKey = key;
+		key = newKey;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__KEY, oldKey, key));
 	}
 
 	/**
@@ -126,8 +126,8 @@ public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container imp
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__NAME:
-				return getName();
+			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__KEY:
+				return getKey();
 			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__SCOPES:
 				return getScopes();
 		}
@@ -143,8 +143,8 @@ public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container imp
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__NAME:
-				setName((String)newValue);
+			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__KEY:
+				setKey((String)newValue);
 				return;
 			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__SCOPES:
 				getScopes().clear();
@@ -162,8 +162,8 @@ public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container imp
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__NAME:
-				setName(NAME_EDEFAULT);
+			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__KEY:
+				setKey(KEY_EDEFAULT);
 				return;
 			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__SCOPES:
 				getScopes().clear();
@@ -180,8 +180,8 @@ public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container imp
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__KEY:
+				return KEY_EDEFAULT == null ? key != null : !KEY_EDEFAULT.equals(key);
 			case OpenAPIProfilePackage.REQUIRED_SECURITY_SCHEME__SCOPES:
 				return scopes != null && !scopes.isEmpty();
 		}
@@ -198,8 +198,8 @@ public class RequiredSecuritySchemeImpl extends MinimalEObjectImpl.Container imp
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (name: ");
-		result.append(name);
+		result.append(" (key: ");
+		result.append(key);
 		result.append(", scopes: ");
 		result.append(scopes);
 		result.append(')');

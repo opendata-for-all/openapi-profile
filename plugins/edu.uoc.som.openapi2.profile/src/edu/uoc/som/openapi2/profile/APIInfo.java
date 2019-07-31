@@ -40,7 +40,7 @@ public interface APIInfo extends EObject {
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_Title()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getTitle();
@@ -118,7 +118,7 @@ public interface APIInfo extends EObject {
 	 * @return the value of the '<em>Version</em>' attribute.
 	 * @see #setVersion(String)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIInfo_Version()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getVersion();

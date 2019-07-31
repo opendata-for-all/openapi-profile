@@ -41,7 +41,7 @@ public interface API extends EObject {
 	 * @return the value of the '<em>Host</em>' attribute.
 	 * @see #setHost(String)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPI_Host()
-	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getHost();
@@ -67,7 +67,7 @@ public interface API extends EObject {
 	 * @return the value of the '<em>Base Path</em>' attribute.
 	 * @see #setBasePath(String)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPI_BasePath()
-	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getBasePath();

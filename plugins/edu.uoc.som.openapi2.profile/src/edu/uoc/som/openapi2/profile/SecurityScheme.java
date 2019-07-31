@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link edu.uoc.som.openapi2.profile.SecurityScheme#getAuthorizationURL <em>Authorization URL</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.SecurityScheme#getTokenURL <em>Token URL</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.SecurityScheme#getScopes <em>Scopes</em>}</li>
- *   <li>{@link edu.uoc.som.openapi2.profile.SecurityScheme#getReferenceName <em>Reference Name</em>}</li>
+ *   <li>{@link edu.uoc.som.openapi2.profile.SecurityScheme#getKey <em>Key</em>}</li>
  * </ul>
  *
  * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme()
@@ -239,29 +239,29 @@ public interface SecurityScheme extends EObject {
 	EList<SecurityScope> getScopes();
 
 	/**
-	 * Returns the value of the '<em><b>Reference Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Reference Name</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Key</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reference Name</em>' attribute.
-	 * @see #setReferenceName(String)
-	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_ReferenceName()
+	 * @return the value of the '<em>Key</em>' attribute.
+	 * @see #setKey(String)
+	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getSecurityScheme_Key()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
-	String getReferenceName();
+	String getKey();
 
 	/**
-	 * Sets the value of the '{@link edu.uoc.som.openapi2.profile.SecurityScheme#getReferenceName <em>Reference Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.uoc.som.openapi2.profile.SecurityScheme#getKey <em>Key</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Reference Name</em>' attribute.
-	 * @see #getReferenceName()
+	 * @param value the new value of the '<em>Key</em>' attribute.
+	 * @see #getKey()
 	 * @generated
 	 */
-	void setReferenceName(String value);
+	void setKey(String value);
 
 } // SecurityScheme

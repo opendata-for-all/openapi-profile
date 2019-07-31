@@ -65,7 +65,7 @@ public interface APIParameter extends JSONSchemaSubset {
 	 * @see edu.uoc.som.openapi2.profile.ParameterLocation
 	 * @see #setLocation(ParameterLocation)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIParameter_Location()
-	 * @model ordered="false"
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	ParameterLocation getLocation();

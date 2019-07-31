@@ -40,7 +40,7 @@ public interface APIDataType extends EObject {
 	 * @see edu.uoc.som.openapi2.profile.JSONDataType
 	 * @see #setType(JSONDataType)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIDataType_Type()
-	 * @model ordered="false"
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	JSONDataType getType();

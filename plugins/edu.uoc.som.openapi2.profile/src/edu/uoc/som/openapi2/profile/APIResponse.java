@@ -41,7 +41,7 @@ public interface APIResponse extends EObject {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIResponse_Description()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getDescription();

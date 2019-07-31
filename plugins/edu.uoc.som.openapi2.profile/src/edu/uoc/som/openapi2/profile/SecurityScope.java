@@ -33,7 +33,7 @@ public interface SecurityScope extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getSecurityScope_Name()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getName();

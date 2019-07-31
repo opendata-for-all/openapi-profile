@@ -41,7 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link edu.uoc.som.openapi2.profile.impl.SecuritySchemeImpl#getAuthorizationURL <em>Authorization URL</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.impl.SecuritySchemeImpl#getTokenURL <em>Token URL</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.impl.SecuritySchemeImpl#getScopes <em>Scopes</em>}</li>
- *   <li>{@link edu.uoc.som.openapi2.profile.impl.SecuritySchemeImpl#getReferenceName <em>Reference Name</em>}</li>
+ *   <li>{@link edu.uoc.som.openapi2.profile.impl.SecuritySchemeImpl#getKey <em>Key</em>}</li>
  * </ul>
  *
  * @generated
@@ -198,24 +198,24 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	protected EList<SecurityScope> scopes;
 
 	/**
-	 * The default value of the '{@link #getReferenceName() <em>Reference Name</em>}' attribute.
+	 * The default value of the '{@link #getKey() <em>Key</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReferenceName()
+	 * @see #getKey()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String REFERENCE_NAME_EDEFAULT = null;
+	protected static final String KEY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getReferenceName() <em>Reference Name</em>}' attribute.
+	 * The cached value of the '{@link #getKey() <em>Key</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReferenceName()
+	 * @see #getKey()
 	 * @generated
 	 * @ordered
 	 */
-	protected String referenceName = REFERENCE_NAME_EDEFAULT;
+	protected String key = KEY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -416,8 +416,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public String getReferenceName() {
-		return referenceName;
+	public String getKey() {
+		return key;
 	}
 
 	/**
@@ -426,11 +426,11 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public void setReferenceName(String newReferenceName) {
-		String oldReferenceName = referenceName;
-		referenceName = newReferenceName;
+	public void setKey(String newKey) {
+		String oldKey = key;
+		key = newKey;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME, oldReferenceName, referenceName));
+			eNotify(new ENotificationImpl(this, Notification.SET, OpenAPIProfilePackage.SECURITY_SCHEME__KEY, oldKey, key));
 	}
 
 	/**
@@ -471,8 +471,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 				return getTokenURL();
 			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				return getScopes();
-			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
-				return getReferenceName();
+			case OpenAPIProfilePackage.SECURITY_SCHEME__KEY:
+				return getKey();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -511,8 +511,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 				getScopes().clear();
 				getScopes().addAll((Collection<? extends SecurityScope>)newValue);
 				return;
-			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
-				setReferenceName((String)newValue);
+			case OpenAPIProfilePackage.SECURITY_SCHEME__KEY:
+				setKey((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -550,8 +550,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				getScopes().clear();
 				return;
-			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
-				setReferenceName(REFERENCE_NAME_EDEFAULT);
+			case OpenAPIProfilePackage.SECURITY_SCHEME__KEY:
+				setKey(KEY_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -581,8 +581,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 				return TOKEN_URL_EDEFAULT == null ? tokenURL != null : !TOKEN_URL_EDEFAULT.equals(tokenURL);
 			case OpenAPIProfilePackage.SECURITY_SCHEME__SCOPES:
 				return scopes != null && !scopes.isEmpty();
-			case OpenAPIProfilePackage.SECURITY_SCHEME__REFERENCE_NAME:
-				return REFERENCE_NAME_EDEFAULT == null ? referenceName != null : !REFERENCE_NAME_EDEFAULT.equals(referenceName);
+			case OpenAPIProfilePackage.SECURITY_SCHEME__KEY:
+				return KEY_EDEFAULT == null ? key != null : !KEY_EDEFAULT.equals(key);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -611,8 +611,8 @@ public class SecuritySchemeImpl extends MinimalEObjectImpl.Container implements 
 		result.append(authorizationURL);
 		result.append(", tokenURL: ");
 		result.append(tokenURL);
-		result.append(", referenceName: ");
-		result.append(referenceName);
+		result.append(", key: ");
+		result.append(key);
 		result.append(')');
 		return result.toString();
 	}

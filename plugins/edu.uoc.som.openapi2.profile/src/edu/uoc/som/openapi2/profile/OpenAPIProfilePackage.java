@@ -1361,13 +1361,13 @@ public interface OpenAPIProfilePackage extends EPackage {
 	int SECURITY_SCHEME__SCOPES = 7;
 
 	/**
-	 * The feature id for the '<em><b>Reference Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_SCHEME__REFERENCE_NAME = 8;
+	int SECURITY_SCHEME__KEY = 8;
 
 	/**
 	 * The number of structural features of the '<em>Security Scheme</em>' class.
@@ -1536,13 +1536,13 @@ public interface OpenAPIProfilePackage extends EPackage {
 	int REQUIRED_SECURITY_SCHEME = 17;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REQUIRED_SECURITY_SCHEME__NAME = 0;
+	int REQUIRED_SECURITY_SCHEME__KEY = 0;
 
 	/**
 	 * The feature id for the '<em><b>Scopes</b></em>' attribute list.
@@ -1964,13 +1964,13 @@ public interface OpenAPIProfilePackage extends EPackage {
 	int API_PROPERTY__TITLE = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * The feature id for the '<em><b>Is ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int API_PROPERTY__IDENTIFIER = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 6;
+	int API_PROPERTY__IS_ID = JSON_SCHEMA_SUBSET_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>API Property</em>' class.
@@ -3322,15 +3322,15 @@ public interface OpenAPIProfilePackage extends EPackage {
 	EReference getSecurityScheme_Scopes();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.SecurityScheme#getReferenceName <em>Reference Name</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.SecurityScheme#getKey <em>Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Reference Name</em>'.
-	 * @see edu.uoc.som.openapi2.profile.SecurityScheme#getReferenceName()
+	 * @return the meta object for the attribute '<em>Key</em>'.
+	 * @see edu.uoc.som.openapi2.profile.SecurityScheme#getKey()
 	 * @see #getSecurityScheme()
 	 * @generated
 	 */
-	EAttribute getSecurityScheme_ReferenceName();
+	EAttribute getSecurityScheme_Key();
 
 	/**
 	 * Returns the meta object for class '{@link edu.uoc.som.openapi2.profile.SecurityScope <em>Security Scope</em>}'.
@@ -3439,15 +3439,15 @@ public interface OpenAPIProfilePackage extends EPackage {
 	EClass getRequiredSecurityScheme();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getKey <em>Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getName()
+	 * @return the meta object for the attribute '<em>Key</em>'.
+	 * @see edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getKey()
 	 * @see #getRequiredSecurityScheme()
 	 * @generated
 	 */
-	EAttribute getRequiredSecurityScheme_Name();
+	EAttribute getRequiredSecurityScheme_Key();
 
 	/**
 	 * Returns the meta object for the attribute list '{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getScopes <em>Scopes</em>}'.
@@ -3742,15 +3742,15 @@ public interface OpenAPIProfilePackage extends EPackage {
 	EAttribute getAPIProperty_Title();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.APIProperty#getIdentifier <em>Identifier</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.uoc.som.openapi2.profile.APIProperty#getIsID <em>Is ID</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Identifier</em>'.
-	 * @see edu.uoc.som.openapi2.profile.APIProperty#getIdentifier()
+	 * @return the meta object for the attribute '<em>Is ID</em>'.
+	 * @see edu.uoc.som.openapi2.profile.APIProperty#getIsID()
 	 * @see #getAPIProperty()
 	 * @generated
 	 */
-	EAttribute getAPIProperty_Identifier();
+	EAttribute getAPIProperty_IsID();
 
 	/**
 	 * Returns the meta object for class '{@link edu.uoc.som.openapi2.profile.Serialization <em>Serialization</em>}'.
@@ -4814,12 +4814,12 @@ public interface OpenAPIProfilePackage extends EPackage {
 		EReference SECURITY_SCHEME__SCOPES = eINSTANCE.getSecurityScheme_Scopes();
 
 		/**
-		 * The meta object literal for the '<em><b>Reference Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Key</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SECURITY_SCHEME__REFERENCE_NAME = eINSTANCE.getSecurityScheme_ReferenceName();
+		EAttribute SECURITY_SCHEME__KEY = eINSTANCE.getSecurityScheme_Key();
 
 		/**
 		 * The meta object literal for the '{@link edu.uoc.som.openapi2.profile.impl.SecurityScopeImpl <em>Security Scope</em>}' class.
@@ -4910,12 +4910,12 @@ public interface OpenAPIProfilePackage extends EPackage {
 		EClass REQUIRED_SECURITY_SCHEME = eINSTANCE.getRequiredSecurityScheme();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Key</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute REQUIRED_SECURITY_SCHEME__NAME = eINSTANCE.getRequiredSecurityScheme_Name();
+		EAttribute REQUIRED_SECURITY_SCHEME__KEY = eINSTANCE.getRequiredSecurityScheme_Key();
 
 		/**
 		 * The meta object literal for the '<em><b>Scopes</b></em>' attribute list feature.
@@ -5144,12 +5144,12 @@ public interface OpenAPIProfilePackage extends EPackage {
 		EAttribute API_PROPERTY__TITLE = eINSTANCE.getAPIProperty_Title();
 
 		/**
-		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Is ID</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute API_PROPERTY__IDENTIFIER = eINSTANCE.getAPIProperty_Identifier();
+		EAttribute API_PROPERTY__IS_ID = eINSTANCE.getAPIProperty_IsID();
 
 		/**
 		 * The meta object literal for the '{@link edu.uoc.som.openapi2.profile.impl.SerializationImpl <em>Serialization</em>}' class.

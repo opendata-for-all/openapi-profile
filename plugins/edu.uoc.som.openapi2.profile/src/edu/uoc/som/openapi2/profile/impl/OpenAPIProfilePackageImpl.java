@@ -1454,7 +1454,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	@Override
-	public EAttribute getSecurityScheme_ReferenceName() {
+	public EAttribute getSecurityScheme_Key() {
 		return (EAttribute)securitySchemeEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1564,7 +1564,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	@Override
-	public EAttribute getRequiredSecurityScheme_Name() {
+	public EAttribute getRequiredSecurityScheme_Key() {
 		return (EAttribute)requiredSecuritySchemeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1844,7 +1844,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAPIProperty_Identifier() {
+	public EAttribute getAPIProperty_IsID() {
 		return (EAttribute)apiPropertyEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -2138,7 +2138,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		createEAttribute(securitySchemeEClass, SECURITY_SCHEME__AUTHORIZATION_URL);
 		createEAttribute(securitySchemeEClass, SECURITY_SCHEME__TOKEN_URL);
 		createEReference(securitySchemeEClass, SECURITY_SCHEME__SCOPES);
-		createEAttribute(securitySchemeEClass, SECURITY_SCHEME__REFERENCE_NAME);
+		createEAttribute(securitySchemeEClass, SECURITY_SCHEME__KEY);
 
 		securityScopeEClass = createEClass(SECURITY_SCOPE);
 		createEAttribute(securityScopeEClass, SECURITY_SCOPE__NAME);
@@ -2153,7 +2153,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		createEReference(securityRequirementEClass, SECURITY_REQUIREMENT__SECURITY_SCHEMES);
 
 		requiredSecuritySchemeEClass = createEClass(REQUIRED_SECURITY_SCHEME);
-		createEAttribute(requiredSecuritySchemeEClass, REQUIRED_SECURITY_SCHEME__NAME);
+		createEAttribute(requiredSecuritySchemeEClass, REQUIRED_SECURITY_SCHEME__KEY);
 		createEAttribute(requiredSecuritySchemeEClass, REQUIRED_SECURITY_SCHEME__SCOPES);
 
 		tagsEClass = createEClass(TAGS);
@@ -2186,7 +2186,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		createEAttribute(apiPropertyEClass, API_PROPERTY__EXAMPLE);
 		createEAttribute(apiPropertyEClass, API_PROPERTY__DESCRIPTION);
 		createEAttribute(apiPropertyEClass, API_PROPERTY__TITLE);
-		createEAttribute(apiPropertyEClass, API_PROPERTY__IDENTIFIER);
+		createEAttribute(apiPropertyEClass, API_PROPERTY__IS_ID);
 
 		serializationEClass = createEClass(SERIALIZATION);
 		createEAttribute(serializationEClass, SERIALIZATION__INCLUDES_TARGET);
@@ -2245,8 +2245,8 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(apiEClass, edu.uoc.som.openapi2.profile.API.class, "API", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAPI_Host(), theTypesPackage.getString(), "host", null, 1, 1, edu.uoc.som.openapi2.profile.API.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getAPI_BasePath(), theTypesPackage.getString(), "basePath", null, 1, 1, edu.uoc.som.openapi2.profile.API.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPI_Host(), theTypesPackage.getString(), "host", null, 0, 1, edu.uoc.som.openapi2.profile.API.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPI_BasePath(), theTypesPackage.getString(), "basePath", null, 0, 1, edu.uoc.som.openapi2.profile.API.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPI_Schemes(), this.getSchemeType(), "schemes", null, 0, -1, edu.uoc.som.openapi2.profile.API.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPI_Consumes(), theTypesPackage.getString(), "consumes", null, 0, -1, edu.uoc.som.openapi2.profile.API.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPI_Produces(), theTypesPackage.getString(), "produces", null, 0, -1, edu.uoc.som.openapi2.profile.API.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2278,7 +2278,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 
 		initEClass(apiParameterEClass, APIParameter.class, "APIParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAPIParameter_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getAPIParameter_Location(), this.getParameterLocation(), "location", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIParameter_Location(), this.getParameterLocation(), "location", null, 1, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIParameter_AllowEmptyValue(), this.getBoolean(), "allowEmptyValue", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIParameter_CollectionFormat(), this.getCollectionFormat(), "collectionFormat", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIParameter_Base_Parameter(), theUMLPackage.getParameter(), null, "base_Parameter", null, 0, 1, APIParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2296,7 +2296,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEAttribute(getJSONSchemaSubset_MultipleOf(), this.getDouble(), "multipleOf", null, 0, 1, JSONSchemaSubset.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiResponseEClass, APIResponse.class, "APIResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAPIResponse_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIResponse_Description(), theTypesPackage.getString(), "description", null, 1, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIResponse_Code(), theTypesPackage.getInteger(), "code", null, 0, 1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIResponse_Headers(), this.getHeader(), null, "headers", null, 0, -1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIResponse_Examples(), this.getExample(), null, "examples", null, 0, -1, APIResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2328,16 +2328,16 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEAttribute(getExample_Value(), theTypesPackage.getString(), "value", null, 0, 1, Example.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiInfoEClass, APIInfo.class, "APIInfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAPIInfo_Title(), theTypesPackage.getString(), "title", null, 0, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIInfo_Title(), theTypesPackage.getString(), "title", null, 1, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIInfo_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIInfo_TermsOfService(), theTypesPackage.getString(), "termsOfService", null, 0, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getAPIInfo_Version(), theTypesPackage.getString(), "version", null, 0, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIInfo_Version(), theTypesPackage.getString(), "version", null, 1, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIInfo_License(), this.getLicense(), null, "license", null, 0, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIInfo_Contact(), this.getContact(), null, "contact", null, 0, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIInfo_Base_Model(), theUMLPackage.getModel(), null, "base_Model", null, 0, 1, APIInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(licenseEClass, License.class, "License", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getLicense_Name(), theTypesPackage.getString(), "name", null, 0, 1, License.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getLicense_Name(), theTypesPackage.getString(), "name", null, 1, 1, License.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getLicense_Url(), theTypesPackage.getString(), "url", null, 0, 1, License.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(contactEClass, Contact.class, "Contact", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2365,10 +2365,10 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEAttribute(getSecurityScheme_AuthorizationURL(), theTypesPackage.getString(), "authorizationURL", null, 0, 1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSecurityScheme_TokenURL(), theTypesPackage.getString(), "tokenURL", null, 0, 1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSecurityScheme_Scopes(), this.getSecurityScope(), null, "scopes", null, 0, -1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSecurityScheme_ReferenceName(), theTypesPackage.getString(), "referenceName", null, 1, 1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSecurityScheme_Key(), theTypesPackage.getString(), "key", null, 1, 1, SecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(securityScopeEClass, SecurityScope.class, "SecurityScope", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSecurityScope_Name(), theTypesPackage.getString(), "name", null, 0, 1, SecurityScope.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSecurityScope_Name(), theTypesPackage.getString(), "name", null, 1, 1, SecurityScope.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSecurityScope_Description(), theTypesPackage.getString(), "description", null, 0, 1, SecurityScope.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(securityEClass, Security.class, "Security", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2380,7 +2380,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEReference(getSecurityRequirement_SecuritySchemes(), this.getRequiredSecurityScheme(), null, "securitySchemes", null, 0, -1, SecurityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(requiredSecuritySchemeEClass, RequiredSecurityScheme.class, "RequiredSecurityScheme", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getRequiredSecurityScheme_Name(), theTypesPackage.getString(), "name", null, 0, 1, RequiredSecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getRequiredSecurityScheme_Key(), theTypesPackage.getString(), "key", null, 1, 1, RequiredSecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getRequiredSecurityScheme_Scopes(), theTypesPackage.getString(), "scopes", null, 0, -1, RequiredSecurityScheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(tagsEClass, Tags.class, "Tags", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2401,7 +2401,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEAttribute(getXMLElement_Wrapped(), this.getBoolean(), "wrapped", null, 0, 1, XMLElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(apiDataTypeEClass, APIDataType.class, "APIDataType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAPIDataType_Type(), this.getJSONDataType(), "type", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIDataType_Type(), this.getJSONDataType(), "type", null, 1, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIDataType_Format(), theTypesPackage.getString(), "format", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIDataType_Base_Enumeration(), theUMLPackage.getEnumeration(), null, "base_Enumeration", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAPIDataType_Base_PrimitiveType(), theUMLPackage.getPrimitiveType(), null, "base_PrimitiveType", null, 0, 1, APIDataType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2413,7 +2413,7 @@ public class OpenAPIProfilePackageImpl extends EPackageImpl implements OpenAPIPr
 		initEAttribute(getAPIProperty_Example(), theTypesPackage.getString(), "example", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Description(), theTypesPackage.getString(), "description", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAPIProperty_Title(), theTypesPackage.getString(), "title", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getAPIProperty_Identifier(), this.getBoolean(), "identifier", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAPIProperty_IsID(), this.getBoolean(), "isID", null, 0, 1, APIProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(serializationEClass, Serialization.class, "Serialization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSerialization_IncludesTarget(), this.getBoolean(), "includesTarget", null, 1, 1, Serialization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

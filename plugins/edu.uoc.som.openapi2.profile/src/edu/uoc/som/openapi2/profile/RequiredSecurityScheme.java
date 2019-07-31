@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getName <em>Name</em>}</li>
+ *   <li>{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getKey <em>Key</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getScopes <em>Scopes</em>}</li>
  * </ul>
  *
@@ -25,30 +25,30 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface RequiredSecurityScheme extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Key</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getRequiredSecurityScheme_Name()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @return the value of the '<em>Key</em>' attribute.
+	 * @see #setKey(String)
+	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getRequiredSecurityScheme_Key()
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
-	String getName();
+	String getKey();
 
 	/**
-	 * Sets the value of the '{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.uoc.som.openapi2.profile.RequiredSecurityScheme#getKey <em>Key</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
+	 * @param value the new value of the '<em>Key</em>' attribute.
+	 * @see #getKey()
 	 * @generated
 	 */
-	void setName(String value);
+	void setKey(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Scopes</b></em>' attribute list.

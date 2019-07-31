@@ -19,7 +19,7 @@ import org.eclipse.uml2.uml.Property;
  *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getExample <em>Example</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getDescription <em>Description</em>}</li>
  *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getTitle <em>Title</em>}</li>
- *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getIdentifier <em>Identifier</em>}</li>
+ *   <li>{@link edu.uoc.som.openapi2.profile.APIProperty#getIsID <em>Is ID</em>}</li>
  * </ul>
  *
  * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIProperty()
@@ -184,29 +184,29 @@ public interface APIProperty extends JSONSchemaSubset {
 	void setTitle(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Identifier</b></em>' attribute.
+	 * Returns the value of the '<em><b>Is ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Identifier</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Is ID</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Identifier</em>' attribute.
-	 * @see #setIdentifier(Boolean)
-	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_Identifier()
+	 * @return the value of the '<em>Is ID</em>' attribute.
+	 * @see #setIsID(Boolean)
+	 * @see edu.uoc.som.openapi2.profile.OpenAPIProfilePackage#getAPIProperty_IsID()
 	 * @model dataType="edu.uoc.som.openapi2.profile.Boolean" ordered="false"
 	 * @generated
 	 */
-	Boolean getIdentifier();
+	Boolean getIsID();
 
 	/**
-	 * Sets the value of the '{@link edu.uoc.som.openapi2.profile.APIProperty#getIdentifier <em>Identifier</em>}' attribute.
+	 * Sets the value of the '{@link edu.uoc.som.openapi2.profile.APIProperty#getIsID <em>Is ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Identifier</em>' attribute.
-	 * @see #getIdentifier()
+	 * @param value the new value of the '<em>Is ID</em>' attribute.
+	 * @see #getIsID()
 	 * @generated
 	 */
-	void setIdentifier(Boolean value);
+	void setIsID(Boolean value);
 
 } // APIProperty
